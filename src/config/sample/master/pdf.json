@@ -1,0 +1,11 @@
+{
+    "pdf": {
+        "limitPropertyImages": 4,
+        "limitDisplayedProperties": 10,
+        "maptype": "roadmap",
+        "markerColour": "gray",
+        "staticMapApi": "//cbre-pdfgenerator.azurewebsites.net/staticmaps",
+        "renderMiddleware": "http://amido-renderme.herokuapp.com/render/",
+        "pdfDownloadApi": "//cbre-pdfgenerator.azurewebsites.net/pdf/download"
+    }
+}

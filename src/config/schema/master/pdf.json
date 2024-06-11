@@ -1,0 +1,61 @@
+{
+    "properties": {
+        "PDF": {
+            "type": "object",
+            "title": "PDF options",
+            "propertyOrder": 95,
+            "options": {
+                "grid_columns": 12,
+                "disable_edit_json": true,
+                "collapsed": true
+            },
+            "format": "grid",
+            "defaultProperties": [
+                "limitPropertyImages",
+                "limitDisplayedProperties",
+                "maptype",
+                "markerColour"
+            ],
+            "properties": {
+                "limitDisplayedProperties": {
+                    "title": "Limit the number of properties displayed in the PDF",
+                    "type": "integer",
+                    "default": 10,
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "limitPropertyImages": {
+                    "title": "Limit the number of images displayed in the PDF detail view",
+                    "type": "integer",
+                    "default": 4,
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "maptype": {
+                    "title": "The type of map that is displayed",
+                    "type": "string",
+                    "enum": [
+                        "roadmap",
+                        "satellite",
+                        "hybrid",
+                        "terrain"
+                    ],
+                    "default": "roadmap",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "markerColour": {
+                    "title": "The colour of the map markers",
+                    "type": "string",
+                    "default": "gray",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                }
+            }
+        }
+    }
+}

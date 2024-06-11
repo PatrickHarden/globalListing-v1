@@ -1,0 +1,455 @@
+.pdp {
+  overflow: visible;
+
+  @media (@tabletLandscapeAndUp) {
+    border: none;
+  }
+
+  .spaceTitle {
+    font-size: 32px;
+    line-height: 41px;
+    color: @gray-base;
+    font-family: @headings-font-family;
+    font-weight: 300;
+  }
+
+  .propertyDescription {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .propertyDetailsStrapline {
+    font-size: 21px;
+    color: #666666;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media (@tabletLandscapeAndUp) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width:520px){
+    .cbre_container {
+      .commercial-header {
+        .cbre_flex {
+          > div {
+            position:relative;
+            .header-content {
+              .header-title {
+                margin-top:-7px;
+                margin-bottom:20px;
+                h1.cbre_h1 {
+                  #addressLine1 {
+                    font-size:21px;
+                    padding-right: 20px;
+                    margin-bottom: 5px;
+                  }     
+                  #addressLine2 {
+                    color: #666666;
+                    font-family: "futura-pt";
+                    font-size: 16px !important;
+                    font-weight: 700 !important;
+                    letter-spacing: 0;
+                    line-height: 21px;
+                  }
+                }
+              }
+              .header-size {
+                margin-bottom:11px;
+              }
+            }  
+            .header-buttons {
+              position:absolute;
+              top:9px;
+              right:0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .cbre_contentBySidebar {
+    width: 100%;
+
+    @media (@tabletLandscapeAndUp) {
+      float: left;
+      margin-right: -(@sidebar-width + 20px);
+      padding-right: (@sidebar-width + 30px);
+    }
+
+    @media (min-width: (@container-width + 1)) {
+      margin-right: -(@sidebar-width + 40px);
+      padding-right: (@sidebar-width + 40px);
+    }
+
+    ~ div > div {
+      padding-bottom: 0px !important;
+      transition: none;
+    }
+
+    .pdp__single_image img {
+      @media (@tabletLandscapeAndUp) {
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  // When PDP has hero image
+  // then sidebar overlaps hero image
+  .cbre_heroWrap ~ .cbre_container .cbre_contentBySidebar {
+    @media (@tabletLandscapeAndUp) {
+      margin-right: -@sidebar-width;
+      padding-right: @sidebar-width;
+    }
+
+    @media (min-width: (@container-width + 1)) {
+      margin-right: -(@sidebar-width + 40px);
+      padding-right: (@sidebar-width + 40px);
+    }
+  }
+
+  .additional-ctas.cbre_verticalList {
+    .related-listing-office__mobile {
+      padding-left: 30px;
+      background: url('../images/icon-meeting.svg') no-repeat left center;
+    }
+  }
+
+  .cbre_sidebar {
+    background: @white;
+    clear: right;
+    pointer-events: auto;
+
+    .cbre_divider__large {
+      background: @accentColor;
+    }
+
+    .related-listing-office {
+      margin: 25px 0;
+      border: 1px solid #dedede;
+      padding: 122px 25px 25px 25px;
+      text-align: center;
+      background: url('../images/icon-circle.svg') no-repeat center 25px;
+
+      > h3 {
+        color: @brand-primary;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.46px;
+        line-height: 22px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+
+      > p {
+        color: rgba(35,31,32,0.85);
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.68px;
+        line-height: 25px;
+        margin: 0;
+        padding: 0;
+      }
+
+      > a {
+        display: inline-block;
+        padding: 15px 25px;
+        margin-top: 25px;
+        background: @brand-primary;
+        color: @white;
+        text-transform: uppercase;
+
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.46px;
+        line-height: 22px;
+
+        &:hover {
+          background: #003728;
+        }
+      }
+    }
+
+    @media (@tabletLandscapeAndUp) {
+      border: 0px solid @lightBorder;
+      border-style: none solid none solid;
+      float: right;
+      width: @sidebar-width;
+      margin-right: 20px;
+      overflow: visible;
+    }
+  }
+
+  .cbre_sidebar__tabletLandscapeAndUp {
+    border-bottom-style: solid;
+    position: relative;
+    display: none;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: @padding_tablet;
+    z-index: 1;
+
+    .cta-wrapper {
+      border: 1px solid #dedede;
+      border-top: none;
+    }
+
+    &.is_fixed {
+      position: fixed;
+    }
+
+    &.is_anchored {
+      position: relative;
+      bottom: 0;
+      top: auto;
+      margin-bottom: 0;
+    }
+
+    &.is_static {
+      position: relative;
+    }
+
+    &.has_animation {
+      transition: none;
+    }
+
+    .hiddenInFixedSidebar {
+      overflow: hidden;
+    }
+
+    .hiddenInFixedSidebar_inner.has_animation {
+      transition: none;
+    }
+
+    @media (@tabletLandscapeAndUp) {
+      display: block;
+    }
+
+    @media (min-width: (@container-width + 1)) {
+      right: inherit;
+      margin-right: 20px;
+    }
+  }
+  .cbre_imageCarousel {
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: @lightGrey;
+    text-align: center;
+    .photo {
+      display: inline-block;
+
+      img {
+        height: 400px;
+        width: auto;
+      }
+    }
+    .imageWrap {
+      height: 400px;
+      max-height: 400px;
+      padding-top: 0; // Alteration to add desktop and landdscape carousel.
+    }
+
+  }
+  .cbre_iframeWrap {
+    max-height: 400px;
+  }
+  .cbre_bulletList {
+    list-style: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-size: 18px;
+    padding-left: 20px;
+    line-height: 2;
+
+    li {
+      &:before {
+        top: 18px;
+      }
+    }
+  }
+
+  .commercial-header {
+    &.sidebar-header {
+      .cbre_h1 {
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: 400;
+        font-size: 22px;
+        @media(@tabletLandscapeAndUp) {
+          margin-bottom: 16px;
+          font-size: 29px;
+        }
+      }
+      .header-price {
+        color: @brand-primary;
+        @media(@tabletLandscapeAndUp) {
+          font-size: 26px;
+        }
+      }
+      .header-area {
+        font-size: 20px;
+        font-family: @font-family-serif;
+        color: @lighterText;
+      }
+      .cbre_subh2 {
+        font-size: 18px;
+        letter-spacing: 0.68px;
+        line-height: 26px;
+        opacity: 0.7;
+        color: rgba(35,31,32,0.85);
+      }
+      .header-size {
+        position: relative;
+
+        &.cbre_subh2 {
+          opacity: 1;
+          color: @defaultText;
+          margin-bottom: 5px;
+          @media(@tabletLandscapeAndUp) {
+            margin-bottom: 0;
+          }
+        }
+
+        > span {
+          &:before {
+            width: 16px;
+            height: 14px;
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+      }
+      .header-content {
+        @media(@tabletLandscapeAndUp) {
+          .flex-two-column();
+          .header-details {
+            .text-right();
+          }
+        }
+      }
+      .header-buttons {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        .cbre_button {
+          margin-top: 0;
+          margin-bottom: 5px;
+          min-height: 31px;
+        }
+        .flag {
+          margin-top: 0;
+          margin-bottom: 5px;
+          white-space: nowrap;
+          display: none;
+        }
+        .cbre_button__favourite {
+          margin-right: 0;
+          margin-bottom: 1px;
+          display: inline-block;
+        }
+      }
+      @media (max-width: @screen-sm) {
+
+        .flex-two-column > * {
+          flex: 1 1 100%;
+          &.text-right{
+            text-align: left;
+          }
+          .header-area {
+            margin-bottom:10px;}
+        }
+      }
+    }
+  }
+
+  .cbre_sidebar {
+    .flex-two-column {
+      border: 1px solid #dedede;
+      border-bottom:none;
+      a {
+        flex: 1 0 auto;
+        width: auto;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: @brand-primary;
+        font-weight: 400;
+        > span {
+          padding-left: 10px;
+
+          &.cbre_icon_social {
+            padding-left: 0;
+          }
+        }
+      }
+      .cbre_button__favourite {
+        align-items: left;
+        margin-right: auto;
+        margin-left: 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: @brand-primary;
+      }
+    }
+  }
+
+  .floorBlock, .energyBlock, .leasesBlock {
+    display: block;
+    float:left;
+    width:100%;
+    .cbre_h5 {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 43px;
+    }
+  }
+
+  .flag {
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+
+  .energy-rating {
+    margin-top: 10px;
+    background: white;
+
+    img {
+      display: inline;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .cbre_multiCarousel {
+    .energy-rating {
+      margin-top: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px;
+    }
+
+    .cardItem .energy-rating {
+      top: auto;
+    }
+  }
+}
+
+
+.header-buttons {
+  width: 20px;
+}

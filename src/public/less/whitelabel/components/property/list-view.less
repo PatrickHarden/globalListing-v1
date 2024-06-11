@@ -1,0 +1,151 @@
+.list-view-item {
+  border-bottom: 1px solid @border-color;
+  margin-bottom: 15px;
+
+  @media (min-width: @screen-sm) {
+    padding: 0;
+  }
+
+  .feature-grid {
+    display: none;
+
+    @media (min-width: @screen-sm) {
+      display: block;
+    }
+  }
+
+  p.property-bedrooms {
+    text-align: right;
+    margin: 0;
+    color: @gray-darker;
+
+    @media (min-width: @screen-sm) {
+      text-align: left;
+    }
+  }
+}
+
+// property details
+@property-image-width-tablet: 260px;
+@property-image-width-desktop: 300px;
+
+.col--property-details {
+  .property-details-wrapper {
+    position: relative;
+    z-index: 0;
+    padding: 15px;
+    float: left;
+    width: 100%;
+
+    @media (min-width: @screen-sm) {
+      padding: 0;
+      margin-left: -@property-image-width-tablet;
+      padding-left: @property-image-width-tablet + @grid-gutter-width;
+    }
+
+    @media (min-width: @screen-md) {
+      margin-left: -@property-image-width-desktop;
+      padding-left: @property-image-width-desktop + @grid-gutter-width;
+    }
+  }
+
+  .property-details-image {
+    position: relative;
+    z-index: 20;
+
+    @media (min-width: @screen-sm) {
+      float: left;
+      display: block;
+      width: @property-image-width-tablet;
+    }
+
+    @media (min-width: @screen-md) {
+      width: @property-image-width-desktop;
+    }
+  }
+
+  > h2 {
+    font-family: @font-family-sans-serif;
+    font-size: 20px;
+    margin: 15px 0 10px;
+
+    &:hover {
+      color: @brand-primary-lighter;
+    }
+
+    @media (min-width: @screen-sm) {
+      margin: 0 0 12px 0;
+    }
+  }
+
+  .col--price {
+    margin-bottom: 8px;
+
+   > h3 {
+      margin: 0;
+      font-size: 20px;
+      color: @brand-primary-lighter;
+    }
+  }
+
+  .col--icons {
+    position: relative;
+    top: -10px;
+    width: 100px;
+    float: right;
+    padding: 0 10px;
+  }
+
+  .col--email,
+  .col--telephone {
+    text-align: right;
+    padding: 0;
+  }
+
+  button {
+    padding: 0;
+
+    &:active,
+    &:focus {
+      background-color: transparent !important;
+    }
+
+    &.cbre-mail,
+    &.cbre-phone {
+      font-size: 28px;
+    }
+  }
+
+  hr {
+    border-color: @brand-primary-lightest;
+    margin-bottom: 12px;
+  }
+
+  .feature-grid {
+    margin-top: 14px;
+
+    .feature-grid__item {
+      margin-bottom: 7px;
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+        color: @brand-primary;
+
+        &:after {
+          color: @brand-primary;
+        }
+      }
+
+      &:after {
+        &:extend(.cbre-icon);
+        &:extend(.cbre-chevron-right:before);
+        font-size: 10px;
+        left: 2px;
+        top: 0;
+        color: @brand-primary-lighter;
+      }
+    }
+  }
+}

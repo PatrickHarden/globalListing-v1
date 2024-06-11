@@ -1,0 +1,42 @@
+.slick-dots {
+  list-style: none;
+  margin: 26px 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 2px;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+
+    button {
+      appearance: none;
+      border-radius: 50%;
+      border: none;
+      background: @border;
+      width: 16px;
+      height: 16px;
+      margin: 0 5px;
+      font-size: 0;
+      color: transparent;
+
+      .hoverStates({
+        color: darken(@border, 10%);
+      });
+
+      &:before {
+        content: '';
+      }
+    }
+  }
+
+  li.slick-active button {
+    @activeBg: shade(@accentColor, 25%);
+    background: @activeBg;
+
+    .hoverStates({
+      color: darken(@activeBg, 10%);
+    });
+  }
+}

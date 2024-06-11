@@ -1,0 +1,31 @@
+.summary {
+  .propertyCount {
+    > p {
+      font-size: 16px;
+      color:@accentColor;
+    }
+    .propertiesTruncated {
+      font-size: 16px;
+    }
+  }
+}
+
+.cbre_sidebar {
+.propertyResults_sortBar {
+    padding: 15px;
+    border:none;
+
+    @media (@tabletLandscapeAndUp) {
+      margin: 10px 20px 0;
+      padding: 8px 0;
+    }
+}}
+
+.cbre_sidebar {
+  &.is_wide {
+    .propertyResults_sortBar {
+      margin: 10px 20px 0;
+      border: none;
+    }
+  }
+}

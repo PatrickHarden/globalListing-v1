@@ -1,0 +1,137 @@
+.input-range {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.input-range__track--container,
+.input-range__label {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.input-range__track--container {
+  flex-grow: 1;
+}
+
+.input-range__track {
+  border-radius: 0;
+  background: @grey;
+  height: 2px;
+}
+
+.input-range__track--active {
+  background: @accentColor;
+  height: 6px;
+  margin-top: -2px;
+  .input-range.is_error & {
+    background: @errorRed;
+  }
+}
+
+.input-range__slider-container {
+  margin-left: 8px;
+  + .input-range__slider-container {
+    margin-left: -8px;
+  }
+}
+
+.input-range__slider {
+  border: none;
+  background: none;
+  height: auto;
+  margin-top: -17px;
+  text-decoration: none;
+  transition: none;
+  &:after {
+    .iconMixin(@char: @icon_slider, @size: 30px, @color: @grey);
+    border-radius: @border-radius-base;
+    background: @white;
+    display: inline-block;
+    overflow: hidden;
+  }
+}
+
+.image-range .input-range__label {
+  display: none;
+}
+
+.input-range__label {
+  flex-shrink: 0;
+  .FontDefault;
+  color: @accentColor;
+  .input-range__label-container {
+    left: auto;
+  }
+}
+
+.InputRangeWrap__valuesBeside,
+.SelectRangeWrap__valuesBeside {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  .input-range .selectRange {
+    order: 1;
+  }
+  .input-range__label,
+  .SelectRange-label {
+    position: relative;
+    top: -2px;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    &.input-range__label--value--min,
+    &.SelectRange-label--value--min {
+      order: 0;
+      .input-range__label-container,
+      .SelectRange-labelContainer {
+        padding-right: 20px;
+      }
+    }
+    &.input-range__label--value--max,
+    &.SelectRange-label--value--max {
+      order: 2;
+      .input-range__label-container,
+      .input-range__label-container,
+      .SelectRange-labelContainer {
+        padding-left: 20px;
+      }
+    }
+    &.input-range__label--value .input-range__label-container:empty,
+    &.SelectRange-label--value .SelectRange-labelContainer:empty {
+      padding: 0;
+    }
+  }
+}
+
+.InputRangeWrap__valuesAbove,
+.SelectRangeWrap__valuesAbove {
+  display: block;
+  .input-range__label,
+  .input-range__label .SelectRange-label {
+    position: static;
+    font-size: 11px;
+    margin-top: 1px;
+    margin-bottom: 7px;
+    &.input-range__label--value--min,
+    &.SelectRange-label--value--min {
+      float: left;
+      padding-right: 0;
+    }
+    &.input-range__label--value--max,
+    &.SelectRange-label--value--max {
+      float: right;
+      padding-left: 0;
+    }
+  }
+}
+
+.InputRangeInnerWrap,
+.SelectRangeInnerWrap {
+  width: 100%;
+}

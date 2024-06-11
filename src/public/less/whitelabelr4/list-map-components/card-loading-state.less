@@ -1,0 +1,142 @@
+.is_placeholder {
+  list-style: none;
+
+  > * {
+    opacity: 0.39;
+  }
+
+  &:first-child > * {
+    opacity: 0.5;
+  }
+
+  &:nth-child(2) > * {
+    opacity: 0.42;
+  }
+
+  &:after {
+    content: "";
+    animation: 1s linear infinite forwards placeholder-shimmer;
+    background-image: linear-gradient(to right, fade(@white, 0%) 0%, fade(@white, 30%) 20%, fade(@white, 0%) 40%, fade(@white, 0%) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.placeholder__image {
+  background: @border;
+  width: 100%;
+  height: 100%;
+}
+
+.placeholder__h3 {
+  background: @black;
+  width: 78%;
+  height: 15px;
+  margin-bottom: 8px;
+}
+
+.placeholder__cbre_subh1,
+.placeholder__cbre_subh2 {
+  height: 9px;
+}
+
+.placeholder__cbre_subh1 {
+  background: @lightGreen;
+  width: 50%;
+  margin-bottom: 11px;
+}
+
+.placeholder__cbre_subh2 {
+  background: @midGrey;
+  width: 31%;
+  margin-bottom: 11px;
+}
+
+.placeholder__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    background: @grey;
+    float: left;
+    width: 28%;
+    height: 8px;
+    margin-bottom: 11px;
+  }
+
+  li:nth-child(2n+1) {
+    margin-right: 22%;
+  }
+}
+
+.placeholder__contacts {
+  background: @lightGrey;
+  width: 100%;
+  height: 47px;
+}
+
+
+/**
+Card placeholder
+**/
+
+.card.is_placeholder {
+  &:after {
+    animation-name: placeholder-shimmer_400;
+  }
+  .placeholder__list {
+    display: none;
+  }
+  .placeholder__cbre_subh2 {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 401px) {
+    &:after {
+      animation-name: placeholder-shimmer_600;
+    }
+  }
+
+  @media (@mobileLandscapeAndUp) {
+    &:after {
+      animation-name: placeholder-shimmer;
+    }
+  }
+}
+
+.cbre_sidebar .card.is_placeholder {
+  &:after {
+    animation-name: placeholder-shimmer_400;
+  }
+}
+
+.cbre_sidebar.is_wide .card.is_placeholder {
+  &:after {
+    animation-name: placeholder-shimmer;
+  }
+  .placeholder__h3 {
+    width: 62%;
+    height: 21px;
+  }
+  .placeholder__cbre_subh1,
+  .placeholder__cbre_subh2 {
+    height: 12px;
+  }
+  .placeholder__cbre_subh1 {
+    width: 38%;
+  }
+  .placeholder__cbre_subh2 {
+    width: 22%;
+    margin-bottom: 22px;
+  }
+  .placeholder__list {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "leasesAndCharges": {
+    "hideLeaseSection": false,
+    "hideInternalParkingSpaceCost": false,
+    "hideExternalParkingSpaceCost": false,
+    "hideDeposit": false,
+    "hideBrokerageFees": false,
+    "hideEstateCharge": false,
+    "hideServiceCharge": false,
+    "hideBusinessRates": false,
+    "hidePrice": false,
+    "hideNextLeaseBreakDate": false,
+    "hideOperatingCost": false,
+    "hideNextRentReviewDate": false,
+    "hideAvailableFrom": false,
+    "hideLeaseType": false,
+    "hideLeaseEnd": false,
+    "hideNextRentReviewCycleDate": false,
+    "showPropertyStatus": true
+  }
+}

@@ -1,0 +1,129 @@
+.cardGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardGroup_list {
+  border: none;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  overflow: hidden;
+
+  > div {
+    border-top: 1px solid @lightGrey;
+  }
+
+  > div:first-child {
+    border-top: none;
+  }
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: @accentColor;
+  color: @white;
+  font-size: 11px;
+  min-height: 28px;
+  overflow: hidden;
+
+  .banner_content,
+  .showHideToggle {
+    padding: 6px 10px;
+  }
+
+  .banner_content {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .showHideToggle {
+    display: block;
+    color: @white;
+  }
+}
+
+.cardGroup__withSpacing {
+  .cardGroup_list .card {
+    margin-top: 2px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+
+.cardGroup__withSpacingLarge {
+  .cardGroup_list > div {
+    border-top: none;
+  }
+  .cardGroup_list .card {
+    margin-top: 4px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .banner {
+    font-size: 13px;
+  }
+}
+
+
+/*
+  Carousel
+*/
+
+.slick-slide {
+  .cardGroup {
+    .cardGroup__withSpacing;
+
+    .cardGroup_list {
+      border-bottom-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+      order: 1;
+    }
+
+    .banner {
+      border-top-right-radius: 2px;
+      border-top-left-radius: 2px;
+    }
+  }
+
+  .banner .showHideToggle,
+  .banner .banner_total {
+    display: none;
+  }
+}
+
+
+/*
+  Sidebar
+*/
+
+.cbre_sidebar {
+  .cardGroup {
+    .cardGroup__withSpacing;
+  }
+  .cardGroup_list {
+    border-bottom: none;
+  }
+}
+
+
+/*
+  Wide sidebar
+*/
+
+.cbre_sidebar.is_wide {
+  .cardGroup {
+    .cardGroup__withSpacingLarge;
+  }
+}

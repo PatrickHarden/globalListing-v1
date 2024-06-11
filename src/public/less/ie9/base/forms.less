@@ -1,0 +1,37 @@
+/* Revert custom checkboxes */
+.checkbox {
+  label {
+    position:relative;
+    overflow:hidden;
+    display:block;
+
+    input[type="checkbox"] {
+      vertical-align:baseline;
+      position: static;
+      width: auto;
+      height: auto;
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        display: none;
+      }
+
+      &:checked {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Override geosuggest input style
+.form-control {
+  &.geosuggest__input {
+    height: auto;
+    line-height: normal;
+  }
+}

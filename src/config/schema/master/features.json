@@ -1,0 +1,425 @@
+{
+    "properties": {
+        "features": {
+            "type": "object",
+            "title": "Enabled features",
+            "propertyOrder": 70,
+            "options": {
+                "grid_columns": 12,
+                "disable_edit_json": true,
+                "collapsed": true
+            },
+            "format": "grid",
+            "defaultProperties": [
+                "searchOnEnter",
+                "relatedProperties",
+                "propertyClustering",
+                "developmentClustering",
+                "useCarouselAspectRatioFilter",
+                "propertyNavigation",
+                "printFavourites",
+                "enhancedMapList",
+                "propertyBanners"
+            ],
+            "properties": {
+                "enableAuthority": {
+                    "title": "Enable Authority field on PDP",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": false,
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "carouselStaticQuery": {
+                    "title": "Enable staticQuery on featured properties carousel",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": false,
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "searchOnEnter": {
+                    "title": "Enable submitting search form on enter",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "enableFavourites": {
+                    "title": "Enable favourites",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayPropertyId": {
+                    "title": "Display the PropertyID on Details page",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayBuildingAvailableDate": {
+                    "title": "Display the building available date in the PDP description block",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayBuildingUsageType": {
+                    "title": "Display the usage type in the PDP description block",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayRelatedListing": {
+                    "title": "Display related listing CTA",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayEnergyRating": {
+                    "title": "Display energy rating certificate image if specified in highlights",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displaySizeInSideHeader": {
+                    "title": "Display the Size in the side header after the number of bedrooms",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "relatedProperties": {
+                    "title": "Enable related properties widget on PDP",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "propertyClustering": {
+                    "title": "Enable clustering of all properties",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": true,
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "developmentClustering": {
+                    "title": "Enable clustering of multiple properties in single locations",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "useCarouselAspectRatioFilter": {
+                    "title": "Enable aspect ratio filtering on PDP carousel",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "useSocialWidgets": {
+                    "title": "Enable social widgets",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "propertyNavigation": {
+                    "title": "Display PDP property nav bar",
+                    "type": "boolean",
+                    "default": true,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "printFavourites": {
+                    "title": "Display print favourites button",
+                    "type": "boolean",
+                    "default": true,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "enhancedMapList": {
+                    "title": "Map-list view property auto-selection",
+                    "type": "boolean",
+                    "default": true,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+
+                "performance": {
+                    "type": "object",
+                    "title": "Experimental perfomance settings",
+                    "format": "grid",
+                    "options": {
+                        "grid_columns": 12,
+                        "disable_edit_json": true,
+                        "disable_collapse": true
+                    },
+                    "properties": {
+                        "useLazyLoad": {
+                            "type": "boolean",
+                            "title": "Use lazy loading on images in search results",
+                            "default": false,
+                            "format": "checkbox",
+                            "options": {
+                                "grid_columns": 4
+                            }
+                        }
+                    }
+                },
+                "propertyBanners": {
+                    "type": "object",
+                    "title": "Property banners",
+                    "format": "grid",
+                    "options": {
+                        "grid_columns": 12,
+                        "disable_edit_json": true,
+                        "disable_collapse": false
+                    },
+                    "properties": {
+                        "showUnderOfferBanner": {
+                            "type": "boolean",
+                            "title": "display Sale Under Offer Banner",
+                            "default": true,
+                            "format": "checkbox",
+                            "options": {
+                                "grid_columns": 12
+                            }
+                        },
+                        "showLetUnderOfferBanner": {
+                            "type": "boolean",
+                            "title": "display Lease Under Offer Banner",
+                            "default": true,
+                            "format": "checkbox",
+                            "options": {
+                                "grid_columns": 12
+                            }
+                        },
+                        "showSoldBanner": {
+                            "type": "boolean",
+                            "title": "display Sold Banner",
+                            "default": false,
+                            "format": "checkbox",
+                            "options": {
+                                "grid_columns": 12
+                            }
+                        },
+                        "showSaleAgreedBanner": {
+                            "type": "boolean",
+                            "title": "display Sale Agreed Banner",
+                            "default": false,
+                            "format": "checkbox",
+                            "options": {
+                                "grid_columns": 12
+                            }
+                        },
+                        "showLeasedBanner": {
+                            "type": "boolean",
+                            "title": "display Leased Banner",
+                            "default": false,
+                            "format": "checkbox",
+                            "options": {
+                                "grid_columns": 12
+                            }
+                        }
+                    }
+                },
+
+                "childListings": {
+                    "type": "object",
+                    "title": "Child listings",
+                    "format": "grid",
+                    "options": {
+                        "grid_columns": 12,
+                        "disable_edit_json": true,
+                        "disable_collapse": true
+                    },
+                    "properties": {
+                        "enableChildListings": {
+                            "title": "enable Child listings on parent pages",
+                            "type": "boolean",
+                            "default": false,
+                            "format": "checkbox",
+                            "options": {
+                                "grid_columns": 12
+                            }
+                        },
+                        "limitChildListings": {
+                            "type": "string",
+                            "title": "Set a limit on child listings results",
+                            "default": "10",
+                            "format": "string",
+                            "options": {
+                                "grid_columns": 12
+                            }
+                        }
+                    }
+                },
+
+                "displayUseClass": {
+                    "title": "Display the UseClass on PDP page",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displaySupplimentaryDisclaimer": {
+                    "title": "Display the supplimentary disclaimer on Contact Form",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+
+                "jumpToChildProperties": {
+                    "title": "Add jump link to child properties [PARENT PROPERTIES ONLY]",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "hideArrangeViewingOnParent": {
+                    "title": "Hide the arrange viewing link on Parent [PARENT PROPERTIES ONLY]",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "hideSizesAndMeasurementsOnParent": {
+                    "title": "Hide the sizes and measurements on Parent [PARENT PROPERTIES ONLY]",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "hideLeaseAndChargesOnParent": {
+                    "title": "Hide the sizes and measurements on Parent [PARENT PROPERTIES ONLY]",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayGenericBrochureName": {
+                    "title": "Displays generic brochure name rather than document name",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "useDefaultFallbackImageForContact": {
+                    "title": "use the Default Fallback Image For Contacts",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "usePropertyAvailabilityRatherThanFloorAvailability": {
+                    "title": "use the property availability rather than the floor availability",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayEmailInContactForm": {
+                    "title": "display contacts email address in contact modal",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayAgentsTitle": {
+                    "title": "display the agents title",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayPropertySubType": {
+                    "title": "display the property subtype in leases and charges section",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "displayPropertyUsageType": {
+                    "title": "display the property usage type in leases and charges section",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "useMaxSizeRatherThanTotalSize": {
+                    "title": "Use the maximum size rather than total size in range",
+                    "type": "boolean",
+                    "default": false,
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "limitBrokers": {
+                    "type": "string",
+                    "title": "Set a limit on the number of brokers to display",
+                    "default": "4",
+                    "format": "string",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                }
+            }
+        }
+    }
+}

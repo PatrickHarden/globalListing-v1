@@ -1,0 +1,82 @@
+table {
+  width: 100%;
+  background: @gray-lighter;
+
+  thead th,
+  tbody th {
+    font-size: 12px;
+    padding: 5px;
+    
+    @media (min-width: @screen-sm) {
+      padding: 12px;
+    }
+  }
+
+  thead th {
+    color: @brand-primary;
+  }
+
+  tbody {
+
+    tr {
+      background: @white;
+    }
+
+    tr:nth-child(even) {
+      background: @gray-lightest;
+    }
+
+    th {
+      color: @gray-base;
+      font-weight: normal;
+      border-right: solid 5px @gray-lighter;
+      border-bottom: solid 1px @gray-lighter;
+
+    }
+  }
+
+  tbody tr {
+
+  }
+
+}
+
+th.status {
+  position: relative;
+  border: none;
+  display: block;
+
+  .status-text {
+    font-family: @font-family-sans-serif;
+  }
+
+  &:before {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+  }
+
+  &.available:before {
+    color: @status-available-color;
+  }
+
+  &.underoffer:before {
+    color: @status-underoffer-color;
+  }
+
+  &.pending:before {
+    color: @status-pending-color;
+  }
+
+  &.let:before {
+    color: @status-let-color;
+  }
+
+  &.withdrawn:before {
+    color: @status-withdrawn-color;
+  }
+
+  &.underoption:before {
+    color: @status-underoption-color;
+  }
+}

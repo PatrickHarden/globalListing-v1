@@ -1,0 +1,33 @@
+.pdp-callout {
+  h3 {
+    font-family: @font-family-serif;
+    margin: 0;
+    padding: 10px;
+    color: @pdp-features-title-color;
+    background: @pdp-features-title-bg-color;
+  }
+
+  .list-group-item {
+    position: relative;
+    border: 0; 
+    border-top: 1px solid @border-color;
+    padding-left: 25px;
+    color: @pdp-features-item-color;
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 2px;
+      background-color: @brand-primary-lighter;
+      left: 10px;
+      top: 20px;
+    }
+
+    &:last-child {
+      border-top: 1px solid @border-color;
+      border-bottom: 5px solid @border-color-primary;
+    }
+  }
+}

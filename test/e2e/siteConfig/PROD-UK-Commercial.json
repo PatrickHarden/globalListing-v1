@@ -1,0 +1,13 @@
+{
+    "search":{
+        "title":"CBRE | UK | Commercial Property Search | CBRE Commercial",
+        "searchText":"Soho",
+        "autoResponse":"Soho, London, United Kingdom",
+        "buyPageTitle":"Offices for Sale in Soho, London, UK - CBRE Commercial",
+        "letPageTitle":"Offices to Rent in Soho, London, UK - CBRE Commercial",
+        "searchResultsPageTitle":"Offices to Rent in Soho, London, UK - CBRE Commercial",
+        "buyButton":false,
+        "letButton":false,
+        "singleSearchButton":true
+    }
+}

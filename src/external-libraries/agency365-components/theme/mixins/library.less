@@ -1,0 +1,68 @@
+/* shared functions */
+.wrapper() {
+    max-width: @wrapperMaxWidth;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cf() {
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+.iconMixin(@char: ">", @size: inherit, @color: inherit) {
+	content: @char;
+	font-size: @size;
+	color: @color;
+	font-family: 'icomoon', serif !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.getFontFace (@name, @path, @weight: 'normal', @style: 'normal') {
+    font-family: @name;
+    src: url('@{path}.eot');
+    src: url('@{path}.eot?#iefix') format('embedded-opentype'),
+        url('@{path}.woff') format('woff'),
+        url('@{path}.ttf')  format('truetype'),
+        url('@{path}.svg') format('svg');
+
+    font-weight: @weight;
+    font-style: @style;
+}
+
+//Body Font (Arial on RESI/Futura book on COMM)
+.FontDefault(){
+	font-family: helvetica, arial, sans-serif;
+	font-weight: normal;
+}
+
+//Alternative Font (Georgia on RESI/Futura Medium on COMM)
+.FontAlternative (){
+	font-family: helvetica, arial, sans-serif;
+	font-weight: 500;
+}
+
+.mobileLinkDefaults() {
+	padding: 12px 15px;
+	color: @defaultText;
+	text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+		color: darken(@defaultText, 10%);
+	}
+}

@@ -1,0 +1,367 @@
+@backgroundColor: #f7f6f6;
+
+.masterSpaceLevelContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.containerTopBar {
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+  z-index: 5;
+  position: relative;
+}
+.spacesContainer .collapsibleSpaceLevelDisplay {
+  background-color: @backgroundColor;
+  color: @gray-base;
+  padding: 18px;
+  border-bottom: none;
+  border-top: 1px solid @border;
+  border-right: 1px solid @border;
+  border-left: 1px solid @border;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.float-right {
+  float: right;
+}
+.lineHeight56 {
+  line-height: 56px;
+}
+.lineHeight40 {
+  line-height: 40px;
+}
+
+.toggle-icon {
+  width: 17px;
+  height: 9px;
+}
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.lineHeight26{
+  line-height: 26px;
+ }
+
+.contentSpaceLevelDisplay {
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: @white;
+  border-top: none;
+  border-bottom: 1px solid @border;
+  border-right: 1px solid @border;
+  border-left: 1px solid @border;
+  margin-bottom: 20px;
+}
+
+
+.priceWrapper{
+  display: flex;
+  align-items: center;
+  &:nth-of-type(2){
+    margin-top: 3px;
+  }
+}
+.pricingTd {
+  text-align: left;
+  background-color: @backgroundColor;
+}
+
+.pricingImg {
+  width: 47px;
+  height: 22px;
+}
+
+.collapsed{
+  margin-bottom: 20px;
+  border-bottom: 1px solid @border !important;
+}
+
+.pricingText {
+  margin-left: 5px;
+  font-size: 18px !important;
+  color: #333;
+  font-weight: 600;
+}
+.mb-zero {
+  margin-bottom: 0px !important;
+}
+
+.image-containerSpaceLevelDisplay {
+  float: left;
+  position: relative;
+  width: 90px;
+  height: 70px;
+}
+
+.image-containerSpaceLevelDisplay .overlaySpaceLevelDisplay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: @white;
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.spaceLevelImageFirst {
+  margin-right: 10px;
+}
+
+.mr-zero {
+  margin-right: 0px;
+}
+.spaceLevelImageExtra {
+  height: 70px;
+  width: 90px;
+  float: left;
+  cursor: pointer;
+}
+.spaceDescription {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.imageOverlayText {
+  padding-top: 23px;
+  font-size: 20px;
+  padding-left: 30px;
+}
+.spaceAreaType {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  > .HeaderInfoSpaceLevelDisplay{
+    padding-bottom: 10px;
+  }
+}
+
+.pricingContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.color-links {
+  color: @gray-base;
+}
+
+.HeaderBoldFont {
+  font-size: 21px !important;
+  color: @gray-base !important;
+  font-family: futura-pt !important;
+  /* fix for AB1368560 */
+  font-weight: 700 !important;
+}
+.HeaderSpaceLevelDisplay {
+  float: left;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.CopySpaceLevelDisplay {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+}
+.HeaderInfoSpaceLevelDisplay {
+  font-size: 18px !important;
+  color: @gray-base;
+}
+
+.FloorBrochureContainerSpaceLevelDisplay {
+  border: 0px solid @gray-base;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.ImagesContainerSpaceLevelDisplay {
+  float: right;
+  border: 0px solid @gray-base;
+  margin-top: 10px;
+}
+.TitleSpaceLevelDisplay {
+  font-size: 21px;
+  font-family: futura-pt-bold !important;
+  font-weight: 400;
+  float: left;
+  width: 40%;
+  text-align: left;
+  min-height: 1px;
+  padding-bottom: 10px;
+}
+.LineSpaceLevelDisplay {
+  height: 2px;
+  border-bottom: 1px solid @border;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.LineSpaceLevelDisplayTop {
+  display: none;
+}
+.HideOnDesktop {
+  display: none;
+}
+.MobileToggleButton {
+  display: none;
+}
+.DesktopToggleButton {
+  display: inherit;
+}
+.AvailableStatusLeaseContainer {
+  overflow: auto;
+  width: 69%;
+  border: 0px solid @gray-base;
+  float: left;
+}
+.ChildPropertiesAvailableStatusLeaseContainer {
+  overflow: auto;
+  width: 95%;
+  border: 0px solid @gray-base;
+  float: left;
+}
+.AvailableStatusLeaseItem {
+  float: left;
+  margin-right: 50px;
+  padding-top: 10px;
+  width: 110px;
+}
+.SpaceLevelItemLinks {
+  float: left;
+  margin-right: 60px;
+  padding-top: 20px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.SpaceLevelItemLinks {
+  img.spaceLevelLinkImage {
+    float: left;
+    height: 22px;
+    width: 24px;
+  }
+
+  p.spaceLevelLinkText {
+    font-size: 14px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-weight: 500;
+    line-height: 22px;
+    color: @gray-base;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1180px) {
+
+  .ImagesContainerSpaceLevelDisplay {
+    float: none;
+  }
+  .TitleSpaceLevelDisplay {
+    float: none;
+    width: 100%;
+  }
+  .CopySpaceLevelDisplay {
+    margin-top: 20px;
+  }
+  .AvailableStatusLeaseContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .masterSpaceLevelContainer {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .LineSpaceLevelDisplay {
+    display: none;
+  }
+  .MobileToggleButton {
+    display: contents;
+  }
+  .DesktopToggleButton {
+    display: none;
+  }
+  .LineSpaceLevelDisplayTop {
+    height: 2px;
+    border-bottom: 1px solid @border;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .masterSpaceLevelContainer {
+    margin-left: 20px;
+  }
+}
+
+.ToggleButtonSpaceLevelDisplay {
+  color: #69be28 !important;
+  text-transform: uppercase;
+  background-color: @white;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  cursor: pointer;
+}
+.DataLabelContentSpaceLevelDisplay {
+  font-size: 16px !important;
+  color: @gray-base;
+  font-weight: 500 !important;
+}
+.DataLabelLabelSpaceLevelDisplay {
+  font-size: 14px !important;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+}
+
+@media screen and (max-width: 500px) {
+  .HideOnMobile {
+    display: none;
+  }
+  .HideOnDesktop {
+    display: flex;
+  }
+  .spaceAreaType {
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  .HeaderInfoSpaceLevelDisplay {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cbre-react-spa .BrochureSpaceLevelDisplay {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .SpaceLevelItemLinks {
+    margin-right: 45px;
+    text-transform: uppercase;
+  }
+}

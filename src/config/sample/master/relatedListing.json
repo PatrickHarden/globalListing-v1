@@ -1,0 +1,11 @@
+{
+  "relatedListing": {
+    "titleText": "Flex space available in this building",
+    "bodyText": "Flexible, purposeful, and thoughtfully designed office space.",
+    "linkText": "Find a space now",
+    "mobileLinkText": "View Flex space available in the building",
+    "linkUrl": "/listmap/details/%(propertyId)s?view-isLetting"
+  }
+}
+
+

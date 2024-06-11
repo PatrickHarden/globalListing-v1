@@ -1,0 +1,73 @@
+.commercialr3 {
+    .bulletList {
+        list-style: none;
+        padding: 0;
+    
+        li {
+            vertical-align: top;
+            padding-left: 15px;
+            position: relative;
+            margin: 0 0 3px 0;
+            font-family: 'Futura PT Medium';
+            font-size:16px;
+            color:#3A3A3A;
+            letter-spacing: .2px;
+            
+    
+            &:before {
+                content: "";
+                background: #00B2DD;
+                border-radius: 1px;
+                display: block;
+                position: absolute;
+                top: 0.5em;
+                left: 0;
+                width: 8px !important;
+                height: 8px !important;
+            }
+        }
+    }
+}
+
+.bulletList {
+    list-style: none;
+    padding: 0;
+
+
+    li {
+        vertical-align: top;
+        padding-left: 10px;
+        position: relative;
+        margin: 0 0 3px 0;
+
+        &:before {
+            content: "";
+            background: @accentColor;
+            border-radius: 1px;
+            display: block;
+            position: absolute;
+            top: 0.5em;
+            left: 0;
+            width: 4px;
+            height: 4px;
+        }
+    }
+}
+
+.bulletList__2col {
+    columns: 2;
+}
+.bulletList__2colLargeBreakpoints {
+    @media (@tabletLandscapeAndUp) {
+        columns: 2;
+    }
+}
+.bulletList__2colMobileLandscape {
+    @media (@mobileLandscapeAndUp) {
+        columns: 2;
+    }
+
+    @media (@tabletAndUp) {
+        columns: 1;
+    }
+}

@@ -1,0 +1,64 @@
+// Position modal.
+.listmap-modal.modal {
+
+    .modal-dialog {
+
+      margin: 75px auto;
+
+      /* mobile */
+      @media(@mobile){
+        margin: 5px auto;
+      }
+
+      /* tablet */
+      @media(@tabletAndUp){
+        margin: 55px auto;
+      }
+    }
+}
+
+
+// Prefix BB styles with listmap-modal class.
+.listmap-modal .modal-header {
+  background: #006A4D;
+  display: flex;
+  align-items: center;
+  min-height: 55px;
+
+  @media(@mobile){    
+    button {
+      margin-right: 5px;
+    }
+  }
+}
+
+.listmap-modal .modal-title {
+  .FontAlternative;
+  font-weight: 600;
+  flex-grow: 1;
+  font-size: 17px;
+  margin: 0 12px;
+  color: white;
+  text-transform: uppercase;
+
+  @media(@mobile){
+    font-size: 14px;
+  }
+}
+
+.listmap-modal .modal-content {
+  border-radius: @border-radius-small;
+}
+
+.listmap-modal button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  order: 10;
+  color: #ffffff;
+  font-size: 38px;
+  line-height: 0;
+  font-weight:100;
+}

@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "breadcrumbPrefix": {
+            "type": "array",
+            "title": "Breadcrumb prefix",
+            "format": "tab",
+            "propertyOrder": 80,
+            "options": {
+                "grid_columns": 12,
+                "collapsed": true
+            },
+            "items": {
+                "type": "object",
+                "title": "Filter",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text"
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Url"
+                    }
+                }
+            }
+        }
+    }
+}

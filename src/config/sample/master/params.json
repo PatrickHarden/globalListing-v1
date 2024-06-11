@@ -1,0 +1,12 @@
+{
+  "location": {
+    "Lat": "51.48",
+    "Lon": "0"
+  },
+
+  "params": {
+    "CurrencyCode": "GBP",
+    "Unit": "sqft",
+    "Interval": "Monthly"
+  }
+}

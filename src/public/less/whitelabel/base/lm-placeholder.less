@@ -1,0 +1,145 @@
+[class^="placeholder__"],
+[class*=" placeholder__"] {
+  opacity: 0.5;
+}
+
+.placeholder__image {
+  background: @border;
+  width: 100%;
+  padding-top: 75%;
+}
+
+.placeholder__h1 {
+  background: @black;
+  width: 84%;
+  height: 21px;
+  margin-bottom: 8px;
+}
+
+.placeholder__h2 {
+  background: @black;
+  width: 70%;
+  height: 21px;
+  margin-bottom: 8px;
+}
+
+.placeholder__h3 {
+  background: @black;
+  margin-bottom: 8px;
+}
+
+.placeholder__h4 {
+  background: @black;
+  width: 45%;
+  height: 16px;
+  margin-bottom: 8px;
+}
+
+.placeholder__h5 {
+  background: @black;
+  width: 38%;
+  height: 14px;
+  margin-bottom: 8px;
+}
+
+.placeholder__h6 {
+  background: @black;
+  width: 24%;
+  height: 10px;
+  margin-bottom: 8px;
+}
+
+.placeholder__subh1 {
+  background: @lightGreen;
+  margin-bottom: 11px;
+}
+
+.placeholder__subh2 {
+  background: @midGrey;
+  margin-bottom: 22px;
+}
+
+.placeholder__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    background: @grey;
+    float: left;
+    width: 28%;
+    height: 8px;
+    margin-bottom: 11px;
+  }
+
+  li:nth-child(2n+1) {
+    margin-right: 22%;
+  }
+}
+
+.placeholder__p {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 25%,
+    @grey 25%,
+    @grey
+  );
+  background-size: 100% 16px;
+  height: (16px * 8);
+}
+
+.placeholder__contact {
+  background: @lightGrey;
+  width: 100%;
+  height: 46px;
+}
+
+.placeholder__contacts {
+  background: @lightGrey;
+  width: 100%;
+  height: 47px;
+}
+
+.default_placeholder_sizes;
+
+
+.default_placeholder_sizes() {
+  .placeholder__h3 {
+    width: 62%;
+    height: 21px;
+  }
+
+  .placeholder__subh1,
+  .placeholder__subh2 {
+    height: 12px;
+  }
+
+  .placeholder__subh1 {
+    width: 45%;
+  }
+
+  .placeholder__subh2 {
+    width: 28%;
+  }
+}
+
+.smaller_placeholder_sizes() {
+  .placeholder__h3 {
+    width: 78%;
+    height: 15px;
+  }
+
+  .placeholder__subh1,
+  .placeholder__subh2 {
+    height: 9px;
+  }
+
+  .placeholder__subh1 {
+    width: 50%;
+  }
+
+  .placeholder__subh2 {
+    width: 31%;
+  }
+}

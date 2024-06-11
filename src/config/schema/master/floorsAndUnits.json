@@ -1,0 +1,49 @@
+{
+    "properties": {
+        "floorsAndUnits": {
+            "type": "object",
+            "title": "Floors and Units settings",
+            "propertyOrder": 70,
+            "options": {
+                "grid_columns": 12,
+                "disable_edit_json": true,
+                "collapsed": false
+            },
+            "format": "grid",
+            "defaultProperties": [],
+            "properties": {
+                "hideFloorsAndUnits": {
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": false,
+                    "title": "Hide Floors and Units section.",
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "showOnlyFloorFields": {
+                    "type": "string",
+                    "format": "string",
+                    "default": "",
+                    "title":
+                        "Configure the fields to show in Floors and Units. ",
+                    "options": {
+                        "grid_columns": 12
+                    },
+                    "propertyOrder": 0
+                },
+                "useDisplayName": {
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": false,
+                    "title":
+                        "Use Floor Display Name rather than default Text name ",
+                    "options": {
+                        "grid_columns": 12
+                    },
+                    "propertyOrder": 0
+                }
+            }
+        }
+    }
+}

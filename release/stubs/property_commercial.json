@@ -1,0 +1,262 @@
+{
+  "Found": true,
+  "ElapsedTime": "00:00:00.0310000",
+  "Document": {
+    "Common.ActualAddress": {
+      "Common.Line1": "public 196 Camden Road",
+      "Common.Line2": "London",
+      "Common.Locallity": "London",
+      "Common.Region": "Greater London",
+      "Common.PostalAddresses": [
+        {
+          "Common.Language": "en",
+          "Common.Line1": "33196 Camden Road",
+          "Common.Line2": "London",
+          "Common.Locallity": "London",
+          "Common.Region": "Greater London"
+        }
+      ],
+      "Common.Country": "UK",
+      "Common.PostCode": "NW1 9HG"
+    },
+    "Common.Aspects": [
+      "isDevelopmentOpportunity",
+      "isSale",
+      "isLetting",
+      "hasParking"
+    ],
+    "Common.Availability": {
+      "Common.AvailabilityKind": "AvailableFromKnownDate",
+      "Common.AvailabilityDate": "2017-03-08"
+    },
+    "Common.AvailableFrom": "2017-03-08T00:00:00",
+    "Common.Charges": [
+      {
+        "Common.ChargeKind": "Rent",
+        "Common.CurrencyCode": "GBP",
+        "Common.Interval": "Annually",
+        "Common.Amount": 10.0,
+        "Common.AmountKind": "Value",
+        "Common.PerUnit": "sqft",
+        "Common.TaxModifer": "None"
+      },
+      {
+        "Common.ChargeKind": "SalePrice",
+        "Common.OnApplication": true,
+        "Common.ChargeModifer": "OnApplication"
+      }
+    ],
+    "Common.ContactGroup": {
+      "Common.Address": {
+        "Common.Line1": "St Martins Court",
+        "Common.Line2": "10 Paternoster Row",
+        "Common.Locallity": "London",
+        "Common.PostalAddresses": [
+          {
+            "Common.Language": "en",
+            "Common.Line1": "St Martins Court",
+            "Common.Line2": "10 Paternoster Row",
+            "Common.Locallity": "London"
+          }
+        ],
+        "Common.Country": "UK",
+        "Common.PostCode": "EC4M 7HP"
+      },
+      "Common.GroupType": "AreaOffice",
+      "Common.Contacts": [
+        {
+          "Common.EmailAddress": "andy.talbot@cbre.com",
+          "Common.AgentName": "Andy Talbot",
+          "Common.Avatar": "/resources/avatars/andy.talbot-cbre.com.jpg"
+        }
+      ]
+    },
+    "Common.Coordinate": {
+      "lat": 51.5454178,
+      "lon": -0.13345349999997325
+    },
+    "Common.Created": "2017-03-08T15:27:43",
+    "Common.FloorsAndUnits": [
+      {
+        "Common.SubdivisionName": [
+          {
+            "Common.CultureCode": "en-GB",
+            "Common.Text": "Test"
+          }
+        ],
+        "Common.Areas": [
+          {
+            "Common.Units": "sqft",
+            "Common.Area": 0.0
+          }
+        ],
+        "Common.Unit.Status": "Available",
+        "Common.Unit.Use": "AncillarySpace",
+        "Common.AvailableFrom": "2017-03-09T14:53:58",
+        "Common.Availability": {
+          "Common.AvailabilityKind": "AvailableFromKnownDate",
+          "Common.AvailabilityDate": "2017-03-09"
+        }
+      }
+    ],
+    "Common.GeoLocation": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.5454178,
+          -0.13345349999997325
+        ]
+      },
+      "Common.Exact": true
+    },
+    "Common.Highlights": [
+      {
+        "Common.Highlight": [
+          {
+            "Common.CultureCode": "en-GB",
+            "Common.Text": "6 Car Parking Spaces"
+          }
+        ]
+      },
+      {
+        "Common.Highlight": [
+          {
+            "Common.CultureCode": "en-GB",
+            "Common.Text": "2 Workshop Bays"
+          }
+        ]
+      },
+      {
+        "Common.Highlight": [
+          {
+            "Common.CultureCode": "en-GB",
+            "Common.Text": "1 Car Wash Bays"
+          }
+        ]
+      }
+    ],
+    "Common.HomeSite": "uk-comm",
+    "Common.LastUpdated": "2017-03-15T14:34:07.8492172Z",
+    "Common.LongDescription": [
+      {
+        "Common.CultureCode": "en-GB",
+        "Common.Text": "\"Workshop Leicester Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+      }
+    ],
+    "Common.NumberOfBedrooms": 0,
+    "Common.Photos": [
+      {
+        "Common.ImageCaption": "BUILDING 3",
+        "Common.ImageResources": [
+          {
+            "Common.Breakpoint": "original",
+            "Common.Image.Height": 2848,
+            "Common.Image.Width": 4288,
+            "Common.Resource.Uri": "/resources/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg",
+            "Source.Uri": "https://uatlistingssearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg"
+          },
+          {
+            "Common.Breakpoint": "small",
+            "Common.Image.Height": 480,
+            "Common.Image.Width": 640,
+            "Common.Resource.Uri": "/resources/fileassets/GB-Plus-449134/9bd8340b/Building%203_Photo_1_small.jpg",
+            "Source.Uri": "https://uatlistingssearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg"
+          },
+          {
+            "Common.Breakpoint": "medium",
+            "Common.Image.Height": 960,
+            "Common.Image.Width": 1280,
+            "Common.Resource.Uri": "/resources/fileassets/GB-Plus-449134/9bd8340b/Building%203_Photo_1_medium.jpg",
+            "Source.Uri": "https://uatlistingssearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg"
+          },
+          {
+            "Common.Breakpoint": "large",
+            "Common.Image.Height": 1200,
+            "Common.Image.Width": 1600,
+            "Common.Resource.Uri": "/resources/fileassets/GB-Plus-449134/9bd8340b/Building%203_Photo_1_large.jpg",
+            "Source.Uri": "https://uatlistingssearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg"
+          }
+        ]
+      }
+    ],
+    "Common.PrimaryKey": "GB-Plus-449134",
+    "Common.PropertySubType": "PetrolFillingStation",
+    "Common.Sizes": [
+      {
+        "Common.SizeKind": "TotalSize",
+        "Common.Dimensions": [
+          {
+            "Common.DimensionsUnits": "acre",
+            "Common.Amount": 3.25
+          }
+        ]
+      }
+    ],
+    "Common.SourceLastupdated": "2017-03-15T14:33:00",
+    "Common.TotalSize": [
+      {
+        "Common.Size": 3.25,
+        "Common.Units": "acre"
+      }
+    ],
+    "Common.UsageType": "PetroleumAutomotive",
+    "UnitedKingdom.VATPayable": false,
+    "Dynamic.NewHome": false,
+    "Dynamic.UnderOffer": false,
+    "Dynamic.LetUnderOffer": false,
+    "Dynamic.Furnished": "unfurnished",
+    "Dynamic.HasSwimmingPool": false,
+    "Dynamic.HasGym": false,
+    "Dynamic.HasDoorkeeper": false,
+    "Dynamic.IsPenthouse": false,
+    "Dynamic.HasBalcony": false,
+    "Dynamic.HasParking": true,
+    "Dynamic.HasLift": false,
+    "Dynamic.HasGarden": false,
+    "Dynamic.DevelopmentOpportunity": true,
+    "Dynamic.LettingCharge": 0.83,
+    "Dynamic.SalePrice": null,
+    "Dynamic.MinArea": "0",
+    "Dynamic.TotalArea": 141570.06095440543,
+    "Dynamic.PrimaryImage": {
+      "Common.ImageCaption": "BUILDING 3",
+      "Common.ImageResources": [
+        {
+          "Common.Breakpoint": "original",
+          "Common.Image.Height": 2848,
+          "Common.Image.Width": 4288,
+          "Common.Resource.Uri": "/resources/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg",
+          "Source.Uri": "https://uatlistingssearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg"
+        },
+        {
+          "Common.Breakpoint": "small",
+          "Common.Image.Height": 480,
+          "Common.Image.Width": 640,
+          "Common.Resource.Uri": "/resources/fileassets/GB-Plus-449134/9bd8340b/Building%203_Photo_1_small.jpg",
+          "Source.Uri": "https://uatlistingssearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg"
+        },
+        {
+          "Common.Breakpoint": "medium",
+          "Common.Image.Height": 960,
+          "Common.Image.Width": 1280,
+          "Common.Resource.Uri": "/resources/fileassets/GB-Plus-449134/9bd8340b/Building%203_Photo_1_medium.jpg",
+          "Source.Uri": "https://uatlistingssearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg"
+        },
+        {
+          "Common.Breakpoint": "large",
+          "Common.Image.Height": 1200,
+          "Common.Image.Width": 1600,
+          "Common.Resource.Uri": "/resources/fileassets/GB-Plus-449134/9bd8340b/Building%203_Photo_1_large.jpg",
+          "Source.Uri": "https://uatlistingssearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-449134/9bd8340b/Building%203.jpg"
+        }
+      ]
+    },
+    "Common.LastProcessed": "2017-03-15T14:36:04.7830734Z",
+    "Dynamic.TotalSize": [
+      {
+        "Common.Size": 3.25,
+        "Common.Units": "acre"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "i18n": {
+    "StampDutyCalculatorButtonText":"Stamp Duty Tax Calculator",
+    "StampDutyCalculatorModalTitle": "Stamp Duty Tax Calculator",
+    "StampDutyCalculatorTaxText":"Stamp Duty Tax",
+    "StampDutyCalculatorBtnText": "Calculate",
+    "StampDutyCalculatorHelpText": "Enter a property price in £ (numbers only)",
+    "StampDutyCalculatorDisclaimerLine1": "N.B. Stamp duty calculator should be used as a guide only.",
+    "StampDutyCalculatorDisclaimerLine2": "Please consult HMRC for latest tax information",
+    "StampDutyCalculatorErrorText": "Numbers only accepted, no punctuation or other characters",
+    "StampDutyCalculatorEnterValueText": "Please enter a value",
+    "StampDutyCalculatorCurrencySymbol": "£",
+    "uk_standard_i18nkey": "Uk Standard",
+    "buy_to_let_i18nkey": "Buy to let"
+  },
+  "calculatorGroups": {
+    "UKHomeSiteId": [{
+        "key": "uk_standard_i18nkey",
+        "boundaries": [
+          {
+            "min": 0,
+            "max": 125000,
+            "percentage": 0
+          },
+          {
+            "min": 125001,
+            "max": 250000,
+            "percentage": 2
+          },
+          {
+            "min": 250001,
+            "max": 925000,
+            "percentage": 5
+          },
+          {
+            "min": 925001,
+            "max": 1500000,
+            "percentage": 10
+          },
+          {
+            "min": 1500001,
+            "max": 9999999,
+            "percentage": 12
+          },
+          {
+            "min": 9999999,
+            "max": 10000000000000,
+            "percentage": 12
+          }
+        ]
+      }, {
+        "key": "buy_to_let_i18nkey",
+        "boundaries": [
+          {
+            "min": 0,
+            "max": 125000,
+            "percentage": 3
+          }, {
+            "min": 125001,
+            "max": 250000,
+            "percentage": 5
+          }, {
+            "min": 250001,
+            "max": 925000,
+            "percentage": 8
+          }, {
+            "min": 925001,
+            "max": 1500000,
+            "percentage": 13
+          }, {
+            "min": 1500001,
+            "max": 9999999,
+            "percentage": 15
+          },
+          {
+            "min": 9999999,
+            "max": 10000000000000,
+            "percentage": 15
+          }
+        ]
+      }
+    ]
+  }
+}

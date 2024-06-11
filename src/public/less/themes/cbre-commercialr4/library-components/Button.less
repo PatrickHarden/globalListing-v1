@@ -1,0 +1,93 @@
+.cbre_button__avatar.cbre_button__small.commercial_contact {
+  padding: 5px 30px 5px 5px;
+
+  .cbre_button_text {
+    padding-left: 5px;
+    -ms-word-wrap: normal;
+    word-break: normal;
+    word-wrap: break-word;
+
+    p {
+      word-wrap: break-word;
+      white-space: pre-line;
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+
+
+  .cbre_icon {
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    right: 5px;
+  }
+
+  .cbre_icon:first-of-type {
+    top: 2px;
+    right: 6px;
+    bottom: auto;
+  }
+}
+
+.contact {
+  .cbre_button_text {
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+.additional-ctas {
+  &.cbre_verticalList {
+    & > li {
+      margin: 0;
+      border-bottom: 1px solid @white;
+
+      &:last-child {
+        border: none;
+      }
+      .cbre_blockLink {
+        font-family: futura-pt;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.9px;
+        line-height: 16px;
+      }
+    }
+    .cbre_button__flat,
+    .cbre_blockLink {
+      @media(@tabletLandscapeAndUp) {
+        font-size: 18px;
+      }
+      .cbre_button_text {
+        font-family: futura-pt;
+        font-size: 14px;
+        letter-spacing: 0.9px;
+        line-height: 16px;
+        margin-left: 20px;
+      }
+    }
+    .cbre_button__secondary {
+      border-left: none;
+      border-right: none;
+    }
+    .cbre_blockLink {
+      margin-left: 25px;
+    }
+    .cbre_button_text {
+      padding-left: 0;
+    }
+    .cbre_icon {
+      width:30px;
+      &:before {
+        width: 16px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+}

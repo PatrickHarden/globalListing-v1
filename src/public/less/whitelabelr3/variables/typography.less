@@ -1,0 +1,267 @@
+@icon-font-path:  "../fonts/";
+@font-path:  "../fonts/";
+
+// Bootstrap glyphicons
+@icon-font-name: "glyphicons-halflings-regular";
+@icon-font-svg-id: "glyphicons_halflingsregular";
+
+// CBRE Icons
+@custom-icon-font-name: "cbre-icons";
+@custom-icon-font-svg-id: "cbre_icons";
+
+// Whitelabel Typography
+@font-family-sans-serif:  Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+@font-size-base:          14px;
+@font-size-h1:            24px;
+@font-size-h1-sm:         34px;
+@font-size-h2:            20px;
+@font-size-h2-sm:         24px;
+@font-size-h3:            20px;
+@font-size-h3-sm:         20px;
+@font-size-h4:            18px;
+@font-size-h4-sm:         18px;
+@font-size-h5:            16px;
+@font-size-h5-sm:         16px;
+@font-size-h6:            14px;
+@font-size-h6-sm:         14px;
+
+@font-size-icon-buttons:  floor((@font-size-base * 2.15)); // ~30px
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+@headings-font-family:    @font-family-sans-serif;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          @brand-primary;
+
+@icon_phone_right: "\e90b";
+@icon_puzzle: "\e905";
+@icon_facebook: "\e91b";
+@icon_instagram: "\e91c";
+@icon_linkedIn: "\e91d";
+@icon_pinterest: "\e91e";
+@icon_twitter: "\e91f";
+@icon_slider: "\e919";
+@icon_filter: "\e920";
+@icon_tick: "\e921";
+@icon_close: "\e900";
+@icon_heart_selected: "\e901";
+@icon_heart: "\e902";
+@icon_star_selected: "\e903";
+@icon_star: "\e904";
+@icon_chevron_down: "\e907";
+@icon_mail: "\e908";
+@icon_list: "\e909";
+@icon_map: "\e90a";
+@icon_phone: "\e90c";
+@icon_arrow_right: "\e90d";
+@icon_clock: "\e910d";
+@icon_chevron_right: "\e90e";
+@icon_chevron_left: "\e90f";
+@icon_documents: "\e910";
+@icon_calculator: "\e911";
+@icon_calculator_alt: "\e912";
+@icon_layers: "\e913";
+@icon_graph: "\e914";
+@icon_loupe: "\e915";
+@icon_social: "\e916";
+@icon_chevron_down_alt: "\e917";
+@icon_globe: "\e918";
+@icon_camera: "\e91a";
+
+/*[class^="cbre_icon_"], [class*=" cbre_icon_"] {
+    !* use !important to prevent issues with browser extensions that change fonts *!
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    !* Better Font Rendering =========== *!
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+
+/** Icon helpers **/
+
+.cbre_icon__large {
+    font-size: 40px;
+}
+
+/** Icon helpers end **/
+
+.cbre_icon_phone_right {
+    &:before {
+        content: @icon_phone_right;
+    }
+}
+.cbre_icon_puzzle {
+    &:before {
+        content: @icon_puzzle;
+    }
+}
+.cbre_icon_facebook {
+    &:before {
+        content: @icon_facebook;
+    }
+}
+.cbre_icon_instagram {
+    &:before {
+        content: @icon_instagram;
+    }
+}
+.cbre_icon_linkedIn {
+    &:before {
+        content: @icon_linkedIn;
+    }
+}
+.cbre_icon_pinterest {
+    &:before {
+        content: @icon_pinterest;
+    }
+}
+.cbre_icon_twitter {
+    &:before {
+        content: @icon_twitter;
+    }
+}
+.cbre_icon_slider {
+    &:before {
+        content: @icon_slider;
+    }
+}
+.cbre_icon_filter {
+    &:before {
+        content: @icon_filter;
+    }
+}
+.cbre_icon_tick {
+    &:before {
+        content: @icon_tick;
+    }
+}
+.cbre_icon_close {
+    &:before {
+        content: @icon_close;
+    }
+}
+.cbre_icon_heart_selected {
+    &:before {
+        content: @icon_heart_selected;
+    }
+}
+.cbre_icon_heart {
+    &:before {
+        content: @icon_heart;
+    }
+}
+.cbre_icon_star_selected {
+    &:before {
+        content: @icon_star_selected;
+    }
+}
+.cbre_icon_star {
+    &:before {
+        content: @icon_star;
+    }
+}
+.cbre_icon_chevron_down {
+    &:before {
+        content: @icon_chevron_down;
+    }
+}
+.cbre_icon_mail {
+    &:before {
+        content: @icon_mail;
+    }
+}
+.cbre_icon_list {
+    &:before {
+        content: @icon_list;
+    }
+}
+.cbre_icon_map {
+    &:before {
+        content: @icon_map;
+    }
+}
+.cbre_icon_phone {
+    &:before {
+        content: @icon_phone;
+    }
+}
+.cbre_icon_arrow_right {
+    &:before {
+        content: @icon_arrow_right;
+    }
+}
+.cbre_icon_clock {
+    &:before {
+        content: @icon_clock;
+    }
+}
+.cbre_icon_chevron_right {
+    &:before {
+        content: @icon_chevron_right;
+    }
+}
+.cbre_icon_chevron_left {
+    &:before {
+        content: @icon_chevron_left;
+    }
+}
+.cbre_icon_documents {
+    &:before {
+        content: @icon_documents;
+    }
+}
+.cbre_icon_calculator {
+    &:before {
+        content: @icon_calculator;
+    }
+}
+.cbre_icon_calculator_alt {
+    &:before {
+        content: @icon_calculator_alt;
+    }
+}
+.cbre_icon_layers {
+    &:before {
+        content: @icon_layers;
+    }
+}
+.cbre_icon_graph {
+    &:before {
+        content: @icon_graph;
+    }
+}
+.cbre_icon_loupe {
+    &:before {
+        content: @icon_loupe;
+    }
+}
+.cbre_icon_social {
+    &:before {
+        content: @icon_social;
+    }
+}
+.cbre_icon_chevron_down_alt {
+    &:before {
+        content: @icon_chevron_down_alt;
+    }
+}
+.cbre_icon_globe {
+    &:before {
+        content: @icon_globe;
+    }
+}
+.cbre_icon_camera {
+    &:before {
+        content: @icon_camera;
+    }
+}

@@ -1,0 +1,12 @@
+extend ../layout
+
+block content
+    #container
+
+    script.
+        var cbreRenderType = 'renderSearch';
+        function initMap() {
+            document.addEventListener('DOMContentLoaded', function() {
+                renderSPA();
+            }, false);
+        }

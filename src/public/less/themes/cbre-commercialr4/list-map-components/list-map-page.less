@@ -1,0 +1,123 @@
+.cardItem {
+  .energy-rating {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: white;
+
+    img {
+      display: inline;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+.child-properties-container {
+  .cardItem .card_body {
+    .flex-two-column {
+      display: block;
+    }
+  }
+}
+
+// Active Property Card
+@media (@mobile) {
+  .cardItem,
+  .child-properties-container .cardItem {
+    border: 1px solid @midGrey;
+    box-shadow: -5px 4px 5px 0 rgba(225,225,225,0.5) !important;
+    margin: 15px;
+    .slick-list & {
+      border-bottom: none;
+    }
+  }
+
+  .cardGroup_list {
+    .cardItem {
+      margin: 0;
+    }
+  }
+}
+
+@media (@tabletAndUp) {
+  .cardItem {
+
+    box-shadow: none;
+    transition: none;
+    &.is_selected {
+      box-shadow: none !important; // prevent standard grey hover.
+      border: 1px solid @accentCommercial !important;
+    }
+
+    > span{
+      width:100%;
+    }
+  }
+
+  .child-properties-container .cardItem {
+    border: 1px solid @midGrey;
+    box-shadow: -5px 4px 5px 0 rgba(225,225,225,0.5) !important;
+    margin-bottom: 15px;
+  }
+}
+
+.cbre_sidebar {
+  &.is_wide {
+    .card_list > div {
+      .cbre_subh1 {
+        .property-price {
+          font-size: 18px;
+        }
+      }
+      .cbre_subh2 {
+        font-size: 15px;
+      }
+      ul.bulletList > li {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .card_list > div {
+    border-top: none;
+    margin-bottom: 16px;
+
+    h1.cbre_h3 {
+      font-weight: 400;
+    }
+  }
+  .no-touchevents & .card_list > div.is_selected.r3PropertyCard {
+    box-shadow:  -6px 6px 12px #d9d9d9, 
+             6px -6px 12px #ffffff !important;
+    transition: .2s ease all !important;
+  }
+  .no-touchevents & .card_list > div > div > div:not(.is_placeholder) {
+    box-shadow: none;
+    box-shadow: -5px 4px 5px 0 rgba(225,225,225,0.5) !important;
+    border: 1px solid @midGrey;
+    transition: .2s ease all !important;
+  }
+  .no-touchevents & .card_list > div > div > div:not(.is_placeholder):hover,
+  .no-touchevents & .card_list > div > div > div:not(.is_placeholder).is-selected {
+    // box-shadow: none;
+    // box-shadow:  -6px 6px 12px #d9d9d9, 
+    //          6px -6px 12px #ffffff !important;
+    border: 1px solid @accentCommercial;
+  }
+}
+
+.propertyResults_carouselCount {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+
+  p {
+    display: inline-block;
+    background-color: @accentCommercial;
+    color: @white;
+    margin: 0;
+    padding: 5px;
+  }
+}

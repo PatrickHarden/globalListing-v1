@@ -1,0 +1,52 @@
+.btn--cbre-icon {
+  padding: 12px;
+  position: relative;
+
+  .text {
+    top: 1px;
+    position: relative;
+    padding-left: 10px;
+  }
+
+  .cbre-icon {
+    border-right: solid 3px @border-color;
+
+    &:before {
+      font-size: 30px;
+    }
+  }
+}
+
+.btn--icon-tab {
+  border: 1px solid @gray-light;
+
+  &:focus,
+  &:active,
+  &:hover {
+    border-color: @gray-light !important;
+  }
+
+  &.active {
+    border-color: @gray-light !important;
+
+    span.text {
+      color: @brand-primary;
+    }
+  }
+
+  .cbre-icon {
+    border-left: solid 1px @gray-light;
+
+    &:before {
+      top: 9px;
+    }
+  }
+}
+
+.ribbon_item_link {
+  &.cbre_button__favourite {
+    &.is_highlighted {
+      color: @text-color;
+    }
+  }
+}

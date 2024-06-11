@@ -1,0 +1,254 @@
+{
+    "extendSearches": false,
+    "disableMetaData": false,
+    "errorLogging": {
+        "enableErrorLogging": "true",
+        "errorLoggingKey": "67dd91731ec9463697b2add826b0c026"
+    },
+    "mapStyle":"default",
+    "searchMode": "pin",
+    "searchConfig": {
+        "searchResultsPage": "/listmap",
+        "searchLocationName": "London, UK",
+        "searchPathSelector": [
+            {
+                "value": "/listmap/office",
+                "label": "Offices in"
+            },
+            {
+                "value": "/listmap/industrial",
+                "label": "Industrial in"
+            }
+        ],
+        "useSearchPathSelector": true
+    },
+    "params": {
+        "radius": "10"
+    },
+    "floorsAndUnits": {
+        "hideFloorsAndUnits": false
+    },
+    "filters": [
+        {
+            "name": "radius",
+            "type": "select",
+            "label": "Set Radius",
+            "placement": "lm_locationFilter",
+            "options": [
+                {
+                    "value": "4000",
+                    "label": "No radius"
+                },
+                {
+                    "value": "0.1",
+                    "label": "Within 0.1 mile"
+                },
+                {
+                    "value": "1",
+                    "label": "Within 1 mile"
+                },
+                {
+                    "value": "10",
+                    "label": "Within 10 miles"
+                },
+                {
+                    "value": "20",
+                    "label": "Within 20 miles"
+                },
+                {
+                    "value": "30",
+                    "label": "Within 30 miles"
+                }
+            ]
+        },
+        {
+            "name": "Dynamic.SalePrice",
+            "type": "range",
+            "label": "Rent range",
+            "placement": "lm_primaryFilter",
+            "minValues": [
+                {
+                    "label": "No min"
+                },
+                {
+                    "value": "500000",
+                    "label": "£500,000"
+                },
+                {
+                    "value": "600000",
+                    "label": "£600,000"
+                },
+                {
+                    "value": "700000",
+                    "label": "£700,000"
+                }
+            ],
+            "maxValues": [
+                {
+                    "value": "600000",
+                    "label": "£600,000"
+                },
+                {
+                    "value": "700000",
+                    "label": "£700,000"
+                },
+                {
+                    "value": "800000",
+                    "label": "£800,000"
+                },
+                {
+                    "label": "No max"
+                }
+            ]
+        },
+        {
+            "name": "Dynamic.MinArea|Dynamic.TotalArea",
+            "type": "range",
+            "label": "Size",
+            "placement": "lm_groupFilters",
+            "minValues": [
+                {
+                    "label": "No min"
+                },
+                {
+                    "value": "2500",
+                    "label": "2,500 sq ft"
+                },
+                {
+                    "value": "5000",
+                    "label": "5,000 sq ft"
+                },
+                {
+                    "value": "10000",
+                    "label": "10,000 sq ft"
+                }
+            ],
+            "maxValues": [
+                {
+                    "value": "5000",
+                    "label": "5,000 sq ft"
+                },
+                {
+                    "value": "10000",
+                    "label": "10,000 sq ft"
+                },
+                {
+                    "value": "20000",
+                    "label": "20,000 sq ft"
+                },
+                {
+                    "label": "No max"
+                }
+            ]
+        },
+        {
+            "name": "Sort",
+            "type": "select",
+            "label": "Order results by",
+            "placement": "lm_sortFilter",
+            "options": [
+                {
+                    "value": "asc(Common.LastUpdated)",
+                    "label": "Last updated",
+                    "default": true
+                },
+                {
+                    "value": "asc(Dynamic.SalePrice)",
+                    "label": "Sale price (Lowest first)"
+                },
+                {
+                    "value": "desc(Dynamic.SalePrice)",
+                    "label": "Sale price (Highest first)"
+                },
+                {
+                    "value": "asc(_distance)",
+                    "label": "Closest"
+                }
+            ]
+        },
+        {
+            "name": "options",
+            "type": "group",
+            "label": "More options",
+            "placement": "lm_groupFilters",
+            "children": [
+                {
+                    "name": "Dynamic.UnderOffer",
+                    "type": "checkbox",
+                    "action": "SWITCH",
+                    "label": "Include under offer",
+                    "value": "true,false",
+                    "uncheckedValue": "false",
+                    "checked": true,
+                    "conditional": {
+                        "Common.Aspects": "isSale"
+                    }
+                },
+                {
+                    "name": "Dynamic.LetUnderOffer",
+                    "type": "checkbox",
+                    "action": "SWITCH",
+                    "label": "Include let under offer",
+                    "value": "true,false",
+                    "uncheckedValue": "false",
+                    "conditional": {
+                        "Common.Aspects": "isLetting"
+                    }
+                },
+                {
+                    "name": "isNew",
+                    "type": "toggle",
+                    "label": "Include new homes only",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "label": "Furnished",
+            "name": "Furnished",
+            "type": "group",
+            "placement": "lm_groupFilters",
+            "conditional": {
+                "Common.Aspects": "isLetting"
+            },
+            "children": [
+                {
+                    "label": "Furnished",
+                    "name": "Dynamic.Furnished",
+                    "type": "toggle",
+                    "action": "OR",
+                    "value": "furnished-yes",
+                    "uncheckedValue": "",
+                    "checked": true,
+                    "conditional": {}
+                },
+                {
+                    "label": "Unfurnished",
+                    "name": "Dynamic.Furnished",
+                    "type": "toggle",
+                    "action": "OR",
+                    "value": "unfurnished",
+                    "uncheckedValue": "",
+                    "checked": true,
+                    "conditional": {}
+                },
+                {
+                    "label": "Part Furnished",
+                    "name": "Dynamic.Furnished",
+                    "type": "toggle",
+                    "action": "OR",
+                    "value": "partfurnished",
+                    "uncheckedValue": "",
+                    "checked": true,
+                    "conditional": {}
+                }
+            ]
+        }
+    ],
+    "i18n": {
+        "TokenReplaceStrings": {
+            "AddressSummaryShort": "%(Line1)s, %(Locality)s, %(PostCode)s",
+            "AddressSummary": "%(Line1)s %(Line2)s, %(Locality)s, %(PostCode)s"
+        }
+    }
+}

@@ -1,0 +1,224 @@
+.input-range__slider {
+  appearance: none;
+  background: #3f51b5;
+  border: 1px solid #3f51b5;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: 1rem;
+  margin-left: -0.5rem;
+  margin-top: -0.65rem;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  width: 1rem;
+}
+
+.input-range__slider:active {
+  transform: scale(1.3);
+}
+
+.input-range__slider:focus {
+  box-shadow: 0 0 0 5px rgba(63, 81, 181, 0.2);
+}
+
+.input-range--disabled .input-range__slider {
+  background: #cccccc;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  transform: none;
+}
+
+.input-range__slider-container {
+  transition: left 0.3s ease-out;
+}
+
+.input-range__label {
+  color: #aaaaaa;
+  font-family: 'Helvetica Neue', san-serif;
+  font-size: 0.8rem;
+  transform: translateZ(0);
+  white-space: nowrap;
+}
+
+.input-range__label--min,
+.input-range__label--max {
+  bottom: -1.4rem;
+  position: absolute;
+}
+
+.input-range__label--min {
+  left: 0;
+}
+
+.input-range__label--max {
+  right: 0;
+}
+
+.input-range__label--value {
+  position: absolute;
+  top: -1.8rem;
+}
+
+.input-range__label-container {
+  left: -50%;
+  position: relative;
+}
+
+.input-range__label--max .input-range__label-container {
+  left: 50%;
+}
+
+.input-range__track {
+  background: #eeeeee;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: block;
+  height: 0.3rem;
+  position: relative;
+  transition: left 0.3s ease-out, width 0.3s ease-out;
+}
+
+.input-range--disabled .input-range__track {
+  background: #eeeeee;
+}
+
+.input-range__track--background {
+  left: 0;
+  margin-top: -0.15rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.input-range__track--active {
+  background: #3f51b5;
+}
+
+.input-range {
+  height: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.input-range {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.input-range__track,
+.input-range__label {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.input-range__track {
+  flex-grow: 1;
+}
+
+.input-range__track {
+  border-radius: 0;
+  background: @grey;
+  height: 2px;
+}
+
+.input-range__track--active {
+  background: @accentColor;
+  height: 6px;
+  margin-top: -2px;
+  .input-range.is_error & {
+    background: @errorRed;
+  }
+}
+
+.input-range__slider-container {
+  margin-left: 8px;
+  + .input-range__slider-container {
+    margin-left: -8px;
+  }
+}
+
+.input-range__slider {
+  border: none;
+  background: none;
+  height: auto;
+  margin-top: -17px;
+  text-decoration: none;
+  transition: none;
+  &:after {
+    .iconMixin(@char: @icon_slider, @size: 30px, @color: @grey);
+    border-radius: @border-radius-base;
+    background: @white;
+    display: inline-block;
+    overflow: hidden;
+  }
+}
+
+.input-range .input-range__label {
+  display: none;
+}
+
+.input-range__label {
+  flex-shrink: 0;
+  .FontDefault;
+  color: @accentColor;
+  .input-range__label-container {
+    left: auto;
+  }
+}
+
+.InputRangeWrap__valuesBeside {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  .input-range {
+    order: 1;
+  }
+  .input-range__label {
+    position: relative;
+    top: -2px;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    &.input-range__label--value--min {
+      order: 0;
+      .input-range__label-container {
+        padding-right: 20px;
+      }
+    }
+    &.input-range__label--value--max {
+      order: 2;
+      .input-range__label-container {
+        padding-left: 20px;
+      }
+    }
+    &.input-range__label--value .input-range__label-container:empty {
+      padding: 0;
+    }
+  }
+}
+
+.InputRangeWrap__valuesAbove {
+  display: block;
+  .input-range__label {
+    position: static;
+    font-size: 11px;
+    margin-top: 1px;
+    margin-bottom: 7px;
+    &.input-range__label--value--min {
+      float: left;
+      padding-right: 0;
+    }
+    &.input-range__label--value--max {
+      float: right;
+      padding-left: 0;
+    }
+  }
+}

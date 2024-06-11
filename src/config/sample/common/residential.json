@@ -1,0 +1,36 @@
+{
+  "siteType": "residential",
+  "params": {
+    "Site": "uk-resi",
+    "Common.Aspects": "isSale"
+  },
+  "enableStampDutyCalculator": true,
+  "stampDutyCalculatorConfigUrl": "http://localhost:3000/config/external/stam-duty-calculator.json",
+  "searchConfig": {
+    "searchResultsPage": "/",
+    "searchLocationName": "London",
+    "restrictToCountry": "gb",
+    "searchBias": {
+      "lat": "51.48",
+      "lon": "0"
+    },
+    "biasRadius": "300",
+    "locationTypeDefinitions": [
+      {
+        "name": "city",
+        "definitions": [
+          "postal_town",
+          "locality,political"
+        ],
+        "radius": "20"
+      },
+      {
+        "name": "default",
+        "definitions": [],
+        "radius": "1"
+      }
+    ],
+    "hideSearchToBuy": false,
+    "hideSearchToLet": true
+  }
+}

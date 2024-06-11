@@ -1,0 +1,109 @@
+input.textInput {
+  .textInputMixin();
+  box-sizing: border-box;
+  height: (@textInput-lineHeight + (@textInput-paddingY * 2));
+
+  &.is_error {
+    .inputErrorMixin;
+  }
+  
+  &.is_disabled {
+    background: @ghostWhite;
+  }
+
+  .placeholder(#aaa);
+
+  &.is_small {
+    height: (@textInput-lineHeight + (@textInput_small-paddingY * 2));
+  }
+}
+
+.prefixWrap {
+  position: relative;
+
+  .prefixWrap_prefix {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+  }
+
+  input.textInput {
+    padding-left: 22px;
+  }
+}
+
+.multiTextInput {
+  .textInputMixin();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &, &.is_small {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.focus {
+    .inputFocus();
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  input.textInput {
+    border: none;
+    background: transparent;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.multiTextInput_value {
+  @value-lineHeight: @textInput-lineHeight;
+  @value_small-lineHeight: 21px;
+  @paddingY: (@textInput-paddingY - 1px);
+  @paddingY_small: (@textInput_small-paddingY - 1px) + (@textInput-lineHeight - @value_small-lineHeight)/2;
+
+  border: 1px solid @grey;
+  border-radius: @border-radius-base;
+  position: relative;
+  display: inline-flex;
+  background: @midGrey;
+  color: @lighterText;
+  margin: @paddingY 7px @paddingY 0;
+  font-size: 14px;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  .multiTextInput.is_small & {
+    line-height: @value_small-lineHeight;
+    margin: @paddingY_small 7px @paddingY_small 0;
+  }
+
+  .multiTextInput_value_label {
+    padding: 0 5px;
+  }
+
+  .close {
+    position: relative;
+    border-left: 1px solid @grey;
+    display: block;
+    width: 22px;
+    text-decoration: none;
+
+    &:after {
+      .iconMixin(@icon_close, 7px, @lighterText);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}

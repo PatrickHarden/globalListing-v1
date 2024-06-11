@@ -1,0 +1,118 @@
+.cbre-multiselect {
+
+  .Select--multi {
+    margin-bottom: 15px;
+
+    .Select-control {
+      border-radius: 0;
+      box-shadow: none;
+      border-color: @gray-light;
+      color: @text-color;
+      background-color: @brand-secondary-lighter;
+      height: @height-large-form-control;
+      font-size: @font-size-large-text-form-control;
+
+      .Select-placeholder {
+        color: @text-color;
+        line-height: @height-large-form-control;
+        height:45px;
+      }
+
+      .Select-arrow-zone {
+        font-family: 'CBRE Icons';
+        font-style: normal;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        font-size: @font-size-icon-form-control;
+        background-image: none;
+        width: 30px;
+        border-left: solid 1px @gray-light;
+        padding: 0 5px;
+
+        .Select-arrow {
+          display:none;
+        }
+
+        &:before {
+          color: @brand-primary;
+          content: "\e601";
+        }
+      }
+    }
+
+    .Select-input {
+      margin-top: 6px;
+      position: static;
+    }
+
+    .Select-menu-outer {
+      border: 1px solid @gray-light;
+      background-color: @brand-secondary-lighter;
+      border-radius: 0;
+
+      .Select-option {
+        color: @text-color;
+        border-radius: 0;
+
+        &.is-focused {
+          background-color: @brand-secondary-lighter;
+          color: @text-color;
+        }
+
+        &:nth-child(even) {
+          background-color: @brand-secondary-light;
+
+          &.is-focused {
+            background-color: @brand-secondary-light;
+          }
+        }
+      }
+    }
+
+    &.is-focused:not(.is-open) > .Select-control {
+      border-color: @gray-light;
+      box-shadow: none;
+    }
+
+    .Select-item {
+      background-color: @white;
+      border-radius: 0;
+      border: 1px solid @gray-light;
+      color: @text-color;
+      line-height: 21px;
+      height: 35px;
+
+      .Select-item-label {
+        padding: 6px;
+      }
+
+      .Select-item-icon {
+        cursor: pointer;
+        border-right: 1px solid @gray-light;
+        padding: 6px;
+
+        &:hover,
+        &:focus {
+          background-color: @white;
+          color: @text-color;
+        }
+
+        &:active {
+          background-color: @white;
+        }
+      }
+    }
+
+    .Select-clear-zone {
+      padding-right: 4px;
+    }
+
+    .cbre-spa--search & {
+      @media (min-width: @screen-sm) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+}

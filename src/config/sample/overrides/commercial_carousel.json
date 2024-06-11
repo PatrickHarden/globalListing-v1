@@ -1,0 +1,46 @@
+{
+    "title": "Featured Properties",
+    "language": "en-gb",
+    "siteId": "uk-comm",
+    "siteType": "commercial",
+    "api": "/api",
+    "propertyContactApiUrl": "/api/reactpropertycontactrequest",
+    "cdnUrl": "",
+    "smallPlaceholderImageUrl": "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=640\u0026h=480",
+    "mediumPlaceholderImageUrl": "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=1280\u0026h=960",
+    "largePlaceholderImageUrl": "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=1600\u0026h=1200",
+    "mapMarkerIconUrl": "https://cbresearchtesting.blob.core.windows.net/cbre-search-spa/3/images/map-marker.png",
+    "mapMarkerIconUrlInactive": "https://cbresearchtesting.blob.core.windows.net/cbre-search-spa/3/images/map-marker_inactive.png",
+    "urlPropertyAddressFormat": "%(Line1)s-%(Line2)s",
+    "placesAddressLookupStringFormat": "%(PostCode)s, %(Country)s",
+    "tenantFeesLinkUrl": null,
+    "recaptchaKey": "6LfKO3wUAAAAAMw7fKx3yHpyApTykEkJBCG_m4lv",
+    "searchConfig": {},
+    "carouselConfig": {
+        "searchResultsPage": "node/866",
+        "callToActionLinkTitle": "LinkFromMainConfig",
+        "callToActionLink": "http://www.google.com",
+        "type": "Card"
+    },
+    "params": {
+        "Site": "uk-comm",
+        "Common.Aspects": "isLetting",
+        "Common.UsageType": "Office"
+    },
+    "filters": [],
+    "pdf": {
+        "staticMapApi": "https://uat-pdf-gen-cbre-eu-north.azurewebsites.net/staticmaps",
+        "pdfDownloadApi": "http://uat.dataservices.cbre.eu/pdf/download",
+        "renderMiddleware": ""
+    },
+    "bitlyToken": "357dffe58e9d9b79933980711986da63e88e9acb",
+    "pdpContentDrivenBlock": null,
+    "pdpContentDrivenBlockLettings": null,
+    "breakpoints": {
+        "xsmall": "300",
+        "small": "768",
+        "medium": "992",
+        "large": "1200"
+    },
+    "location": { "Lat": "", "Lon": "", "radius": "" }
+}

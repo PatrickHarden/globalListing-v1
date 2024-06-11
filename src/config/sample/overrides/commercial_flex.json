@@ -1,0 +1,452 @@
+{
+    "title": "flex-results-spa",
+    "language": "en-gb",
+    "siteId": "uk-comm",
+    "siteType": "commercial",
+    "api": "/api",
+    "propertyContactApiUrl": "/api/reactpropertycontactrequest",
+    "cdnUrl": "",
+    "smallPlaceholderImageUrl": "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=640\u0026h=480",
+    "mediumPlaceholderImageUrl": "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=1280\u0026h=960",
+    "largePlaceholderImageUrl": "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=1600\u0026h=1200",
+    "mapMarkerIconUrl": "https://cbresearchtesting.blob.core.windows.net/cbre-search-spa/3/images/map-marker.png",
+    "mapMarkerIconUrlInactive": "https://cbresearchtesting.blob.core.windows.net/cbre-search-spa/3/images/map-marker_inactive.png",
+    "urlPropertyAddressFormat": "%(line1)s-%(line2)s-%(postcode)s",
+    "placesAddressLookupStringFormat": "%(PostCode)s, %(Country)s",
+    "tenantFeesLinkUrl": null,
+    "recaptchaKey": "6LfKO3wUAAAAAMw7fKx3yHpyApTykEkJBCG_m4lv",
+    "searchConfig": {
+        "searchResultsPage": "/en-GB/listings/flex",
+        "locationTypeDefinitions": [
+            { "name": "default", "definitions": [], "radius": 0.25 },
+            {
+                "name": "neighbourhood",
+                "definitions": ["neighborhood"],
+                "radius": 0.25
+            },
+            {
+                "name": "london area",
+                "definitions": ["administrative_area_level_3"],
+                "radius": 0.25
+            },
+            {
+                "name": "Postcode",
+                "definitions": ["postal_code"],
+                "radius": 0.25
+            },
+            { "name": "City", "definitions": ["locality"], "radius": 0.25 },
+            { "name": "Town", "definitions": ["postal_town"], "radius": 0.25 },
+            {
+                "name": "county",
+                "definitions": ["administrative_area_level_2"],
+                "radius": 0.25
+            },
+            {
+                "name": "country",
+                "definitions": ["administrative_area_level_1", "country"],
+                "radius": 200
+            }
+        ],
+        "searchHeaderLinkUrl": "/en-GB/properties-for-sale",
+        "searchPlaceTypes": [],
+        "searchBias": { "lat": "53.48095", "lon": "-2.23743" },
+        "biasRadius": 300000,
+        "searchLocationName": "London, United Kingdom",
+        "restrictToCountry": "GB",
+        "hideSearchToBuy": true
+    },
+    "carouselConfig": {},
+    "params": {
+        "Site": "uk-comm",
+        "Common.Aspects": "isLetting",
+        "Common.UsageType": "FlexOffice",
+        "RadiusType": "Miles",
+        "CurrencyCode": "GBP",
+        "Unit": "pp",
+        "Interval": "Annually"
+    },
+    "floorsAndUnits": {
+        "hideFloorsAndUnits": false
+    },
+    "filters": [
+        {
+            "name": "sort",
+            "type": "select",
+            "label": "Sort order",
+            "placement": "lm_sortFilter",
+            "options": [
+                {
+                    "value": "asc(_distance)",
+                    "label": "Closest",
+                    "default": true
+                },
+                {
+                    "value": "desc(Dynamic.SalePrice)",
+                    "label": "Sale Price (High to low)",
+                    "default": false
+                },
+                {
+                    "value": "asc(Dynamic.SalePrice)",
+                    "label": "Sale Price (Low to high)",
+                    "default": false
+                },
+                {
+                    "value": "desc(Common.LastUpdated)",
+                    "label": "Last Updated",
+                    "default": false
+                }
+            ],
+            "conditional": { "Common.Aspects": "isSale" },
+            "modifier": "query"
+        },
+        {
+            "name": "sort",
+            "type": "select",
+            "label": "Sort order",
+            "placement": "lm_sortFilter",
+            "options": [
+                {
+                    "value": "asc(_distance)",
+                    "label": "Closest",
+                    "default": true
+                },
+                {
+                    "value": "desc(Dynamic.LettingCharge)",
+                    "label": "Rent (High to low)",
+                    "default": false
+                },
+                {
+                    "value": "asc(Dynamic.LettingCharge)",
+                    "label": "Rent (Low to high)",
+                    "default": false
+                },
+                {
+                    "value": "desc(Common.LastUpdated)",
+                    "label": "Last Updated",
+                    "default": false
+                },
+                {
+                    "value": "asc(Dynamic.MinArea)",
+                    "label": "Size (smallest)",
+                    "default": false
+                },
+                {
+                    "value": "desc(Dynamic.TotalArea)",
+                    "label": "Size (largest)",
+                    "default": false
+                }
+            ],
+            "conditional": { "Common.Aspects": "isLetting" }
+        },
+        {
+            "name": "Dynamic.FlexCharge",
+            "type": "select",
+            "label": "Price",
+            "placement": "lm_primaryFilter",
+            "conditional": { "Common.Aspects": "isLetting" },
+            "options": [
+                { "value": "", "label": "All Prices", "default": false },
+                {
+                    "value": "...10GBP_Monthly",
+                    "label": "Up to \u00a310",
+                    "default": false
+                },
+                {
+                    "value": "...20GBP_Monthly",
+                    "label": "Up to \u00a320",
+                    "default": false
+                },
+                {
+                    "value": "...30GBP_Monthly",
+                    "label": "Up to \u00a330",
+                    "default": false
+                }
+            ]
+        },
+        {
+            "name": "Dynamic.DeskRange",
+            "type": "select",
+            "label": "Size",
+            "placement": "lm_secondaryFilter",
+            "options": [
+                { "value": "", "label": "No Min", "default": false },
+                { "value": "5", "label": "5 or more", "default": false },
+                { "value": "10", "label": "10 or more", "default": false },
+                { "value": "20", "label": "20 or more", "default": false }
+            ]
+        },
+        {
+            "name": "Dynamic.SalePrice",
+            "type": "range",
+            "label": "Price",
+            "placement": "lm_primaryFilter",
+            "minValues": [
+                {
+                    "value": "",
+                    "label": "No Min",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "100000GBP",
+                    "label": "\u00a3100,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "200000GBP",
+                    "label": "\u00a3200,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "300000GBP",
+                    "label": "\u00a3300,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "400000GBP",
+                    "label": "\u00a3400,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "500000GBP",
+                    "label": "\u00a3500,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "750000GBP",
+                    "label": "\u00a3750,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "1000000GBP",
+                    "label": "\u00a31,000,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "1500000GBP",
+                    "label": "\u00a31,500,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "2000000GBP",
+                    "label": "\u00a32,000,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "5000000GBP",
+                    "label": "\u00a35,000,000",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "10000000GBP",
+                    "label": "\u00a310,000,000",
+                    "default": false,
+                    "type": "min"
+                }
+            ],
+            "maxValues": [
+                {
+                    "value": "",
+                    "label": "No Max",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "200000GBP",
+                    "label": "\u00a3200,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "350000GBP",
+                    "label": "\u00a3350,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "500000GBP",
+                    "label": "\u00a3500,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "750000GBP",
+                    "label": "\u00a3750,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "1000000GBP",
+                    "label": "\u00a31,000,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "1500000GBP",
+                    "label": "\u00a31,500,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "2000000GBP",
+                    "label": "\u00a32,000,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "5000000GBP",
+                    "label": "\u00a35,000,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "7500000GBP",
+                    "label": "\u00a37,500,000",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "10000000GBP",
+                    "label": "\u00a310,000,000",
+                    "default": false,
+                    "type": "max"
+                }
+            ],
+            "conditional": { "Common.Aspects": "isSale" },
+            "includePOA": true
+        },
+        {
+            "name": "radius",
+            "type": "select",
+            "label": "Radius",
+            "placement": "lm_locationFilter",
+            "options": [
+                { "value": "", "label": "No Radius", "default": false },
+                { "value": "0.25", "label": "0.25 Miles", "default": false },
+                { "value": "0.5", "label": "0.5 Miles", "default": false },
+                { "value": "1", "label": "1 Mile", "default": false },
+                { "value": "3", "label": "3 Miles", "default": false },
+                { "value": "5", "label": "5 Miles", "default": false },
+                { "value": "10", "label": "10 Miles", "default": false },
+                { "value": "15", "label": "15 Miles", "default": false },
+                { "value": "20", "label": "20 Miles", "default": false },
+                { "value": "30", "label": "30 Miles", "default": false },
+                { "value": "40", "label": "40 Miles", "default": false },
+                { "value": "50", "label": "50 Miles", "default": false },
+                { "value": "500", "label": "500 Miles", "default": false }
+            ]
+        },
+        {
+            "name": "options",
+            "type": "group",
+            "label": "More options",
+            "placement": "lm_groupFilters",
+            "conditional": { "Common.Aspects": "isSale" },
+            "options": [],
+            "children": [
+                {
+                    "label": "Include under offer",
+                    "name": "Dynamic.UnderOffer",
+                    "type": "checkbox",
+                    "action": "SWITCH",
+                    "value": "true,false",
+                    "uncheckedValue": "false",
+                    "checked": true,
+                    "conditional": {}
+                }
+            ]
+        },
+        {
+            "name": "options",
+            "type": "group",
+            "label": "More Options",
+            "placement": "lm_groupFilters",
+            "conditional": { "Common.Aspects": "isLetting" },
+            "children": [
+                {
+                    "label": "Include under offer",
+                    "name": "Dynamic.LetUnderOffer",
+                    "type": "checkbox",
+                    "action": "SWITCH",
+                    "value": "true,false",
+                    "uncheckedValue": "false",
+                    "checked": true,
+                    "conditional": {}
+                }
+            ]
+        },
+        {
+            "name": "usageType",
+            "type": "select",
+            "modifier": "url",
+            "label": "Usage Type",
+            "options": [
+                { "value": "office", "label": "The Office", "default": true },
+                { "value": "other", "label": "Other", "default": false }
+            ]
+        }
+    ],
+    "pdf": {
+        "staticMapApi": "https://uat-pdf-gen-cbre-eu-north.azurewebsites.net/staticmaps",
+        "pdfDownloadApi": "http://uat.dataservices.cbre.eu/pdf/download",
+        "renderMiddleware": ""
+    },
+    "bitlyToken": "357dffe58e9d9b79933980711986da63e88e9acb",
+    "pdpContentDrivenBlock": null,
+    "pdpContentDrivenBlockLettings": null,
+    "breakpoints": {
+        "xsmall": "300",
+        "small": "768",
+        "medium": "992",
+        "large": "1200"
+    },
+    "location": {},
+    "countryCode": "UK",
+    "searchMode": "bounding",
+    "enableClustering": false,
+    "features": {
+        "searchOnEnter": true,
+        "relatedProperties": false,
+        "propertyClustering": true,
+        "developmentClustering": true,
+        "useCarouselAspectRatioFilter": true,
+        "propertyNavigation": true,
+        "propertyBanners": {
+            "showUnderOfferBanner": true,
+            "showLetUnderOfferBanner": true,
+            "showSoldBanner": false,
+            "showSaleAgreedBanner": false,
+            "showLeasedBanner": false
+        },
+        "useSocialWidgets": true,
+        "performance": { "useLazyLoad": false }
+    },
+    "socialSharing": {
+        "facebookAppId": "1728542657413670",
+        "socialServices": {
+            "facebookShare": true,
+            "linkedInShare": true,
+            "pintrestPinIt": false,
+            "twitterTweet": true,
+            "googlePlus": true
+        }
+    },
+    "mapClustering": { "gridSize": 60, "maxZoom": 50, "minimumClusterSize": 2 },
+    "backToSearchRadius": "20",
+    "extendSearches": false,
+    "localPropertiesRadius": 1,
+    "carouselAspectRatio": "4:3",
+    "additionalEmailAddresses": ["simon.williams@cbre.com"],
+    "mapStyle": "default",
+    "leasesAndCharges": { "hideLeaseSection": true }
+}

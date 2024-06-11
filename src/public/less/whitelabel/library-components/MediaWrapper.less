@@ -1,0 +1,125 @@
+.imageWrap {
+  background: @midGrey;
+  position: relative;
+  overflow: hidden;
+
+  // position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+
+  //   overflow: hidden;
+
+
+  img {
+    // position: relative;
+    // display: block;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    height: auto;
+
+    max-height: none;
+    max-width: none;
+
+    min-height: 100%;
+    min-width: 100%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    object-fit: unset;
+  }
+  picture {
+    // position: relative;
+    // display: block;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    height: auto;
+
+    max-height: none;
+    max-width: none;
+
+    min-height: 100%;
+    min-width: 100%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    object-fit: unset;
+  }
+}
+
+.imageWrap__4to3 {
+  height: 0;
+  padding-top: 75%;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+.imageWrap__coverFitWidth,
+.imageWrap__coverFitHeight {
+  img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+  }
+}
+
+.imageWrap__coverFitWidth img {
+  width: 100%;
+  height: auto;
+}
+
+.imageWrap__coverFitHeight img {
+  width: auto;
+  height: 100%;
+}
+
+.imageWrap__fitWidth {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  img {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    // object-fit: unset;
+  }
+}
+
+.imageWrap__fitHeight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    align-self: center;
+    width: auto;
+    height: 100%;
+    // object-fit: unset;
+  }
+}

@@ -1,0 +1,258 @@
+{
+    "extendSearches": false,
+    "searchMode": "polygon",
+    "searchConfig": {
+        "searchResultsPage": "/listmap",
+        "searchType": "isSale",
+        "searchPlaceTypes": ["geocode"],
+        "polygons": [
+            {
+                "name": "Mayfair",
+                "coords":
+                    "\"51.483627853536,-0.0176811218261718\", \"51.4737919834436,-0.0223159790039062\", \"51.4680712357453,-0.00823974609375\", \"51.4676969562233,0.00884056091308593\", \"51.4695683231317,0.0164794921875\", \"51.4750215832054,0.0239467620849609\", \"51.4943166109661,0.0236892700195312\", \"51.5053768360806,0.00188827514648437\", \"51.5023849627287,-0.00223159790039062\", \"51.4834951250261,-0.0177444867639451\""
+            },
+            {
+                "name": "Maddox Collection",
+                "coords":
+                    "\"51.5135901212271,-0.141234397888183\", \"51.5131761536719,-0.14207124710083\", \"51.513737012036,-0.142500400543212\", \"51.5139506705488,-0.14155626296997\""
+            }
+        ]
+    },
+    "params": {
+        "radius": "1"
+    },
+    "filters": [
+        {
+            "name": "Dynamic.SalePrice",
+            "type": "rangeSlider",
+            "includePOA": true,
+            "label": "Price",
+            "placement": "lm_primaryFilter",
+            "conditional": {
+                "Common.Aspects": "isSale"
+            },
+            "settings": {
+                "min": "500000",
+                "max": "1000000",
+                "step": "100000",
+                "prependText": "",
+                "appendText": "",
+                "prependValue": "",
+                "appendValue": "",
+                "intl": "currency"
+            }
+        },
+        {
+            "name": "Dynamic.MinArea|Dynamic.TotalArea",
+            "type": "rangeSlider",
+            "label": "Size",
+            "placement": "lm_groupFilters",
+            "settings": {
+                "min": "1500",
+                "max": "20000",
+                "step": "500",
+                "prependText": "",
+                "appendText": "",
+                "prependValue": "",
+                "appendValue": "",
+                "intl": "area"
+            }
+        },
+        {
+            "name": "Dynamic.LettingPrice",
+            "type": "range",
+            "label": "Rent",
+            "placement": "lm_primaryFilter",
+            "conditional": {
+                "Common.Aspects": "isLetting"
+            },
+            "minValues": [
+                {
+                    "label": "No min",
+                    "default": true
+                },
+                {
+                    "value": "175",
+                    "label": "£175 pw"
+                },
+                {
+                    "value": "250",
+                    "label": "£250 pw"
+                },
+                {
+                    "value": "350",
+                    "label": "£350 pw"
+                }
+            ],
+            "maxValues": [
+                {
+                    "value": "250",
+                    "label": "£250 pw"
+                },
+                {
+                    "value": "350",
+                    "label": "£350 pw"
+                },
+                {
+                    "value": "500",
+                    "label": "£500 pw",
+                    "default": true
+                },
+                {
+                    "label": "No max"
+                }
+            ]
+        },
+        {
+            "name": "Common.NumberOfBedrooms",
+            "type": "select",
+            "label": "Number of bedrooms",
+            "placement": "lm_secondaryFilter",
+            "options": [
+                {
+                    "value": "0...",
+                    "label": "Studio +"
+                },
+                {
+                    "value": "1...",
+                    "label": "1+ Bedrooms",
+                    "default": true
+                },
+                {
+                    "value": "2...",
+                    "label": "2+ Bedrooms"
+                },
+                {
+                    "value": "3...",
+                    "label": "3+ Bedrooms"
+                }
+            ]
+        },
+        {
+            "name": "Sort",
+            "type": "select",
+            "label": "Order results by",
+            "placement": "lm_sortFilter",
+            "options": [
+                {
+                    "value": "asc(Common.LastUpdated)",
+                    "label": "Last updated",
+                    "default": true
+                },
+                {
+                    "value": "asc(Dynamic.SalePrice)",
+                    "label": "Sale price (Lowest first)"
+                },
+                {
+                    "value": "desc(Dynamic.SalePrice)",
+                    "label": "Sale price (Highest first)"
+                },
+                {
+                    "value": "asc(_distance)",
+                    "label": "Closest"
+                }
+            ]
+        },
+        {
+            "name": "types",
+            "type": "group",
+            "label": "Property types",
+            "placement": "lm_groupFilters",
+            "children": [
+                {
+                    "name": "Common.PropertySubType",
+                    "type": "toggle",
+                    "action": "OR",
+                    "label": "Apartment",
+                    "value": "Apartment",
+                    "checked": true
+                },
+                {
+                    "name": "Common.PropertySubType",
+                    "type": "toggle",
+                    "action": "OR",
+                    "label": "House",
+                    "value": "House"
+                }
+            ]
+        },
+        {
+            "name": "options",
+            "type": "group",
+            "label": "More options",
+            "placement": "lm_groupFilters",
+            "children": [
+                {
+                    "name": "Dynamic.UnderOffer",
+                    "type": "checkbox",
+                    "action": "SWITCH",
+                    "label": "Include under offer",
+                    "value": "true,false",
+                    "uncheckedValue": "false",
+                    "checked": true,
+                    "conditional": {
+                        "Common.Aspects": "isSale"
+                    }
+                },
+                {
+                    "name": "Dynamic.LetUnderOffer",
+                    "type": "checkbox",
+                    "action": "SWITCH",
+                    "label": "Include let under offer",
+                    "value": "true,false",
+                    "uncheckedValue": "false",
+                    "conditional": {
+                        "Common.Aspects": "isLetting"
+                    }
+                },
+                {
+                    "name": "isNew",
+                    "type": "toggle",
+                    "label": "Include new homes only",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "label": "Furnished",
+            "name": "Furnished",
+            "type": "group",
+            "placement": "lm_groupFilters",
+            "conditional": {
+                "Common.Aspects": "isLetting"
+            },
+            "children": [
+                {
+                    "label": "Furnished",
+                    "name": "Dynamic.Furnished",
+                    "type": "toggle",
+                    "action": "OR",
+                    "value": "furnished",
+                    "uncheckedValue": "",
+                    "checked": true,
+                    "conditional": {}
+                },
+                {
+                    "label": "Unfurnished",
+                    "name": "Dynamic.Furnished",
+                    "type": "toggle",
+                    "action": "OR",
+                    "value": "unfurnished",
+                    "uncheckedValue": "",
+                    "checked": true,
+                    "conditional": {}
+                },
+                {
+                    "label": "Part Furnished",
+                    "name": "Dynamic.Furnished",
+                    "type": "toggle",
+                    "action": "OR",
+                    "value": "partfurnished",
+                    "uncheckedValue": "",
+                    "checked": true,
+                    "conditional": {}
+                }
+            ]
+        }
+    ]
+}

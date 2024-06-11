@@ -1,0 +1,42 @@
+// Position modal.
+.listmap-modal.modal {
+    .modal-dialog {
+      margin: 70px auto;
+
+      @media (min-width: @screen-sm-min) {
+        margin-top: 90px;
+      }
+    }
+}
+
+
+// Prefix BB styles with listmap-modal class.
+.listmap-modal .modal-header {
+  background: @lightGrey;
+  display: flex;
+  align-items: center;
+}
+
+.listmap-modal .modal-title {
+  .FontAlternative;
+  font-size: 17px;
+  font-weight: 400;
+  flex-grow: 1;
+  margin: 0 12px;
+  color: @darkerText;
+}
+
+.listmap-modal .modal-content {
+  border-radius: @border-radius-small;
+}
+
+.listmap-modal button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  order: 10;
+  color: @grey;
+  font-size: 23px;
+}

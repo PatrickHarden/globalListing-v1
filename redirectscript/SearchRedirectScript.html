@@ -1,0 +1,161 @@
+<html>
+<head></head>
+<body>
+	<div id="map"></div>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places&language=en"></script>
+	<script>
+        
+        var config = {
+            "cbreresidential.com/uk": "property",
+            "commerciallistings.cbre.co.uk/": "listings/property"
+        };
+        
+        var spaPathPrefix = getSpaPath(config, window.location.href);
+        
+        if ( isPrerender() )
+        {
+            window.prerenderReady = false;
+            var redirectPath = transformPath(window.location.href, wrapUrlForLanguageCode(prerenderRedirect));
+        } else {
+            var redirectPath = transformPath(window.location.href, wrapUrlForLanguageCode(browserRedirect));
+        }
+
+        function getSpaPath(config, url)
+        {
+            for ( var site in config)
+            {
+                if ( url.search(site) > -1 )
+                {
+                    return config[site];
+                }
+            }
+        }
+
+        function wrapUrlForLanguageCode(callback)
+        {
+            return function(path) {
+                if ( window.location.pathname.indexOf('en-GB') == -1 )
+                {
+                    path = 'en-GB/' + path;
+                }
+                callback(path);
+            };
+        }
+
+        function transformPath(spaPath, callback)
+        {
+            var listingArgs = parseHashBangArgs(spaPath);
+            if ('place_id' in listingArgs)
+            {
+                var map = new google.maps.Map(document.getElementById('map'));
+                var service = new google.maps.places.PlacesService(map);
+                var request = {placeId: listingArgs['place_id'] };
+
+                service.getDetails(request, function(place, status) {
+                    var locationArgs = getLocationArgs(place, status) + "&placeId=" + listingArgs['place_id'];
+                    buildPath(spaPath, listingArgs, locationArgs, callback);
+                });
+            } else {
+                buildPath(spaPath, listingArgs, "", callback);
+            }
+        }
+
+        function buildPath(spaPath, listingArgs, locationArgs, callback) {
+            if ('LettingsOnly' in listingArgs )	{
+                callback(spaPathPrefix + "/results?Common.Aspects=isLetting&" + locationArgs );
+            } else if ( 'SalesOnly' in listingArgs ) {
+                callback(spaPathPrefix + "/results?Common.Aspects=isSale&" + locationArgs);
+            } else {
+                var regex = /property\/([-A-Za-z0-9]+)(\/([A-Za-z].*))*/;
+                var match = spaPath.match(regex);
+                
+                if ( match ) {
+                    var id = match[1];
+                    var viewPart = match[3] || '';
+                    var view = viewPart.indexOf('sales') > -1 ? 'isSale' : 
+                            viewPart.indexOf('lettings') > -1 ? 'isLetting' : 
+                            null;
+
+                    var idParts = id.split('-');
+                    var addressSummary = '';
+                    if ( spaPath.indexOf('cbrrps') > 0 ) {
+                        id = 'GB-ReapIT-cbrrps-' + idParts[idParts.length-1];
+                        addressSummary = idParts.slice(0, idParts.length -2).join('-');
+                        
+                    } else {
+                        id = 'GB-Plus-' + idParts[idParts.length-1];
+                        addressSummary = idParts.slice(0, idParts.length -1).join('-');   
+                    }
+
+                    
+                    callback(spaPathPrefix + "/details/" + id + "/" + addressSummary + (view ? "?view=" + view : ''));
+                } else {
+                    callback(spaPathPrefix + "/results");
+                }
+            }
+        }
+
+        function getLocationArgs(place, status)
+        {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                return "Lat=" + place.geometry.location.lat() + "&Lon=" + place.geometry.location.lng();
+            } else {
+                return "";
+            }
+        }
+
+
+        function isPrerender() {
+                    return /PhantomJS/.test(window.navigator.userAgent);
+        }
+
+        function getQueryStringValue (key) {
+            return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+        }
+        function prerenderRedirect(path)
+        {
+            writeMetaTag("prerender-status-code", "301");
+            writeMetaTag("prerender-header", "Location: " + path);
+            window.prerenderReady = true;
+        }
+
+        function browserRedirect(path)
+        {
+            window.location = path;	
+        }
+
+        function writeMetaTag(name, value)
+        {
+            var meta = document.createElement('meta');
+            meta.name = name;
+            meta.content = value;
+            document.getElementsByTagName('head')[0].appendChild(meta);
+        }
+
+        /*
+        Parse Hashbang url.
+        Returns Object with query string params as as key:value pairs
+        */
+        function parseHashBangArgs(url) {
+            
+            var params = {};
+            var splitPoint = url.indexOf('#') > -1 ? url.indexOf('#') : url.indexOf('_escaped_fragment_=');
+            var hashedURL = url.slice(splitPoint).replace('#!/?', '').replace('/?', '').split('&'); // + 4 to remove '#!/?'
+
+            // Build query parms object.
+            for (var i = 0; i < hashedURL.length; i++) {
+                var queryItem = hashedURL[i].split('=');
+
+                if(queryItem.length > 1) {
+                    params[queryItem[0]] = queryItem[1];
+                } else {
+                    params[queryItem[0]] = null;
+                }      
+            }
+
+            return params;
+        }
+
+	</script>
+</body>
+</html>

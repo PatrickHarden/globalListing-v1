@@ -1,0 +1,126 @@
+.summary {
+  .propertyCount {
+    > p {
+      font-weight: 700;
+      font-size: 14px;
+      color: @defaultText;
+    }
+    .propertiesTruncated {
+      font-size: 14px;
+    }
+  }
+  @media(@tabletAndUp) {
+    .propertyCount {
+      display: flex;
+      align-items: center;
+
+      > p {
+        font-size: 21px;
+      }
+      .propertiesTruncated {
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+.propertyResults_sortBar {
+
+  .share_button_text_R3 {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .share-button-text {
+    font-size: 12px;
+    color: #575757;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+  }
+
+  .sortBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    justify-items: center;
+
+    .sortBar-right{
+      display: flex;
+      align-items: center;
+      justify-items: center;
+
+      .cbre_button, .filters-wrapper {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .cbre_button{
+        margin-right: 30px;
+      }
+
+      .filters-wrapper{
+        .selectArrowZone{
+          color: @energizing-green;
+        }
+      }
+
+      .selectValueIndicator{
+        display: none;
+      }
+
+      .Select-value-label{
+        margin-top: 4px;
+        font-size: 16px;
+        color: #444444;
+        font-weight: 500;
+      }
+
+      @media(@mobile){
+        .cbre_button{
+          margin-right: 0;
+        }
+      }
+    }
+    
+    @media(@mobile){
+      height: 40px;
+    }
+  }
+}
+
+.cbre_sidebar {
+  &.is_wide {
+    .propertyResults_sortBar {
+      margin: 10px 20px 0;
+      border: none;
+    }
+  }
+}
+
+.clear-favorites-button {
+  display: flex;
+  justify-content: space-between;
+  height: 18px;
+  margin-left: 25px !important;
+  > img{
+    display: flex;
+    width: 18px;
+    height: 18px !important;
+  }
+  @media(@mobile){
+    display: none;
+  }
+}
+
+.clear-favorites-button-text {
+  font-size: 12px;
+  color: #575757;
+  font-weight: 500 !important;
+  line-height: normal;
+  margin-left: 10px;
+  width: 100%;
+}

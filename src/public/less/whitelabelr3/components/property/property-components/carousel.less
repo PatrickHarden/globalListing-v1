@@ -1,0 +1,258 @@
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0);
+    visibility: hidden;
+  }
+}
+
+.slideOutRight {
+  animation-name: slideOutRight;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+}
+
+.slideOutLeft {
+  animation-name: slideOutLeft;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.pdp-carousel {
+  height: 280px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background: @gray-lighter;
+
+  @media (min-width: @screen-sm) {
+    height: 570px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      background-color: fade(@white, 85%);
+      bottom: 0px;
+    }
+  }
+
+  @media (min-width: @screen-md) {
+    height: 675px;
+  }
+
+  .react-spinner {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  &.pdp-carousel--loading:before {
+    background: fade(black, 25%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .react-spinner,
+  &.pdp-carousel--loading:before {
+    animation-name: fadeIn;
+    animation-duration: .2s;
+  }
+}
+
+.pdp-carousel-images {
+  background: url('../images/preloader.gif') no-repeat center center;
+  height: 280px;
+  width: 100%;
+  cursor: pointer;
+
+  @media (min-width: @screen-sm) {
+    height: 570px;
+  }
+
+  @media (min-width: @screen-md) {
+    height: 675px;
+  }
+
+  > div {
+    &:extend(.pdp-carousel-images);
+    background-size: cover;
+    background-position: center;
+  } 
+}
+
+.pdp-carousel-item {
+  visibility: hidden;
+  animation-duration: .6s;
+  // animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &.pdp-carousel-item--active,
+  &.slideInRight,
+  &.slideOutRight,
+  &.slideInLeft,
+  &.slideOutLeft {
+    visibility: visible;
+  }
+
+  &.pdp-carousel-item--active {
+    transition: opacity .3s;
+
+    &.not-loaded {
+      opacity: 0;
+    }
+
+    &.loaded {
+      opacity: 1;
+    }
+  }
+}
+
+
+.pdp-carousel-control-count-wrapper {
+
+  @media (min-width: @screen-md) {
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    right: 0;
+  }
+
+  .pdp-carousel-control-count {
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    width: 100%;
+
+    @media (min-width: @screen-sm) {
+      bottom: 22px;
+      right: 5px;
+      width: 100px;
+    }
+
+    .inner {
+      width: 65px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0,0,0,.7);
+    }
+  }
+}
+
+.pdp-carousel-control {
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  left: -11px;
+  bottom: 0px;
+  display: block;
+  height: 22px;
+  width: 22px;
+
+  &.pdp-carousel-control--next {
+    left: auto;
+    right: -11px;
+  }
+
+  .glyphicon {
+    display: inline-block;
+    font-family: 'CBRE Icons';
+    margin-top: -10px;
+    position: absolute;
+    top: 14px;
+    z-index: 5;
+  }
+
+  .glyphicon-chevron-left {
+    left: 13px;
+    margin-left: -10px;
+
+    &:before {
+      &:extend(.cbre-chevron-left:before);
+    }
+  }
+
+  .glyphicon-chevron-right {
+    right: 13px;
+    margin-right: -10px;
+
+    &:before {
+      &:extend(.cbre-chevron-right:before);
+    }
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+// One slide handling.
+.pdp-carousel--single{
+  .pdp-carousel-control,
+  .pdp-carousel-count {
+    display: none;
+  }
+}
+

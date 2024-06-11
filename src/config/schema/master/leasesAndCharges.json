@@ -1,0 +1,172 @@
+{
+  "properties": {
+    "leasesAndCharges": {
+      "type": "object",
+      "title": "Leases and Charges settings",
+      "propertyOrder": 70,
+      "options": {
+        "grid_columns": 12,
+        "disable_edit_json": true,
+        "collapsed": false
+      },
+      "format": "grid",
+      "defaultProperties": ["hideLeaseSection"],
+      "properties": {
+        "hideLeaseSection": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the whole Lease Info and charges section",
+          "options": {
+            "grid_columns": 12
+          },
+          "propertyOrder": 0
+        },
+        "hideLeaseType": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Lease Type field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideAvailableFrom": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Available From field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideLeaseEnd": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Lease End Date field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideNextRentReviewDate": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the next Rent Review Date field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideNextRentReviewCycleDate": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the rent Review Cycle Date field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideNextLeaseBreakDate": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the next Lease Break Date field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hidePrice": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Price field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideBusinessRates": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Business rates field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideServiceCharge": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Service Charge field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideEstateCharge": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Estate Charge field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideOperatingCost": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Operating cost field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideBrokerageFees": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Brokerage Fees field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideDeposit": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Deposit field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideInternalParkingSpaceCost": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the Internal Parking field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "hideExternalParkingSpaceCost": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Hide the External Parking field",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "showPropertyStatus": {
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "title": "Show the property status in Leases and Units, if exists",
+          "options": {
+            "grid_columns": 12
+          }
+        }
+      }
+    }
+  }
+}

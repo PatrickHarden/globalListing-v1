@@ -1,0 +1,188 @@
+h1.listings-page-title {
+  margin-bottom: 50px;
+  font-size: 20px;
+
+  @media (min-width: @screen-sm) {
+    margin-bottom: 10px;
+    padding-right: 300px;
+  }
+}
+
+.cbre-spa--listings-body {
+  // Override some grid styles top move tabs up.
+  @media (max-width: @screen-md) {
+    > .container {
+      position: relative;
+
+      > .col-md-9.col-xs-12 {
+        position: static;
+      }
+    }
+  }
+
+  .col--main {
+    position: static; // Allow tabs to position outside of this element.
+
+    h2 {
+      font-family: @font-family-sans-serif;
+      margin-bottom: 10px;
+
+      @media (min-width: @screen-sm) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  > .container {
+    position: relative;
+  }
+
+  .filters-secondary {
+    label {
+      display: none;
+    
+      @media (min-width: @screen-md) {
+        display: inline-block;
+      }
+    }
+  }
+
+  .btn--submitButton {
+    margin-bottom: 10px;
+  }
+
+  aside { 
+    position: relative;
+    z-index: 30;
+
+    h2 {
+      float: left;
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+}
+
+ul.nav-tabs {
+  position: absolute;
+  top: -42px;
+  left: 10px;
+
+  @media (min-width: @screen-sm) {
+    right: 10px;
+  }
+
+  li {
+    float: right;
+
+    a {
+      color: @brand-primary-light;
+    }
+
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @brand-primary-light;
+      }
+    }
+  }
+}
+
+// Filter Tabs
+.filter-tabs {
+  button {
+    margin-right: 10px;
+    padding: 9px 50px 9px 12px;
+  }
+
+  button:last-child {
+    margin-right: 0;
+  }
+
+  button:first-child {
+    padding: 9px 40px 9px 0;
+
+    .cbre-icon {
+      border-left: none;
+    }
+
+    span:first-child {
+      display: block;
+      text-indent: -999px;
+      overflow: hidden;
+    }
+
+    @media (min-width: @screen-sm) {
+      padding: 9px 50px 9px 12px;
+
+      .cbre-icon {
+        border-left: 1px solid @gray-light;
+      }
+
+      span:first-child {
+        display: block;
+        text-indent: 0;
+      }
+    }
+  }
+}
+
+.filter-tabs-content {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+
+  @media (min-width: @screen-md) {
+    display: block;
+    margin-top: 0px;
+  }
+
+  &.filter-tabs-content--active {
+    display: block;
+  }
+}
+
+.filter-tabs-close {
+  width: 100%;
+  float: left;
+  border-top: 1px solid @border-color;
+  border-bottom: 1px solid @border-color;
+  margin-top: 15px;
+  text-align: right;
+  padding: @grid-gutter-width/2;
+
+  @media (min-width: @screen-sm) {
+    padding: @grid-gutter-width;
+  }
+
+  @media (min-width: @screen-md) {
+    display: none;
+  }
+
+  .btn--close {
+    padding: 0;
+    color: @border-color;
+
+    .icon {
+      margin-left: 10px;
+      position: relative;
+      top: 3px;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid @border-color;
+      display: inline-block;
+      line-height: 20px;
+    }
+
+    &:hover {
+      .icon,
+      .text {
+        color: @brand-primary;
+        border-color: @brand-primary;
+      }
+    }
+  }
+}

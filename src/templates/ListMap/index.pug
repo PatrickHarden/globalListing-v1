@@ -1,0 +1,12 @@
+extend ../layout
+
+block content
+    #container.cbre-react-spa-container
+
+    script.
+        var cbreRenderType = 'renderListMap';
+        function initMap() {
+            document.addEventListener('DOMContentLoaded', function () {
+                renderSPA('/listmap', true);
+            }, false);
+        }

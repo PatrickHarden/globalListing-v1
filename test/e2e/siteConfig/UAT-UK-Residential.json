@@ -1,0 +1,13 @@
+{
+    "search":{
+        "title":"CBRE Residential UK - Properties for sale/to rent in London | CBRE",
+        "searchText":"Soho",
+        "autoResponse":"Soho, London, United Kingdom",
+        "buyPageTitle":"Residential Properties for Sale in Soho, London, UK - CBRE Residential",
+        "letPageTitle":"Residential Properties to Rent in Soho, London, UK - CBRE Residential",
+        "searchResultsPageTitle":"Residential Properties to Rent in Soho, London, UK - CBRE Residential",
+        "buyButton":true,
+        "letButton":true,
+        "singleSearchButton":false
+    }
+}

@@ -1,0 +1,42 @@
+.bulletList {
+    list-style: none;
+    padding: 0;
+
+
+    li {
+        vertical-align: top;
+        padding-left: 10px;
+        position: relative;
+        margin: 0 0 3px 0;
+
+        &:before {
+            content: "";
+            background: #00B2DD;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            top: 0.5em;
+            left: 0;
+            width: 6px;
+            height: 6px;
+        }
+    }
+}
+
+.bulletList__2col {
+    columns: 2;
+}
+.bulletList__2colLargeBreakpoints {
+    @media (@tabletLandscapeAndUp) {
+        columns: 2;
+    }
+}
+.bulletList__2colMobileLandscape {
+    @media (@mobileLandscapeAndUp) {
+        columns: 2;
+    }
+
+    @media (@tabletAndUp) {
+        columns: 1;
+    }
+}

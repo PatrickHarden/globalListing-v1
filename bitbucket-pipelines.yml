@@ -1,0 +1,144 @@
+image: agency365/bitbucket-python-pip-yarn
+pipelines:
+  tags:
+    release-*:                  
+      # - step: 
+      #     name: Run tests
+      #     caches:
+      #       - node
+      #     script: 
+      #       - npm install
+      #       - npm run grunt release
+      #       - python ./pipeline_scripts/pipeline-functions.py --Type UNIT_TESTS
+      - step:
+          name: check it builds
+          caches:
+            - node
+          script: 
+            - npm install
+            - npm run grunt release
+            - python ./pipeline_scripts/pipeline-functions.py --Type CODE_BUILD
+          artifacts:
+            - build/**
+      # - step:
+      #       name: Deploy to Azure PROD
+      #       image: microsoft/azure-cli:latest
+      #       deployment: production
+      #       trigger: manual
+      #       script:
+      #         - pip install requests
+      #         - chmod +x ./pipeline_scripts/deploy-azure-storage.py
+      #         - python3 pipeline_scripts/deploy-azure-storage.py --AzureName ${AZURE_STORAGE_ACCOUNT_PROD_EUN} --AzureKey ${AZURE_STORAGE_ACCESS_KEY_PROD_EUN} --AzureContainer ${AZURE_PROD_CONTAINER} --AzureContainerFolder ${BITBUCKET_TAG}
+      #         - python3 pipeline_scripts/deploy-azure-storage.py --AzureName ${AZURE_STORAGE_ACCOUNT_PROD_EUW} --AzureKey ${AZURE_STORAGE_ACCESS_KEY_PROD_EUW} --AzureContainer ${AZURE_PROD_CONTAINER} --AzureContainerFolder ${BITBUCKET_TAG}
+      #         - python3 ./pipeline_scripts/pipeline-functions.py --Type CD_PROD
+  branches:
+    default:
+      - step:
+          name: check it builds
+          caches:
+            - node
+          script: 
+            - npm install
+            - npm run grunt release
+            - python ./pipeline_scripts/pipeline-functions.py --Type CODE_BUILD
+    release/*:
+      # - step: 
+      #     name: Run tests
+      #     caches:
+      #       - node
+      #     script: 
+      #       - yarn
+      #       - yarn test:ci
+      #       - python ./pipeline_scripts/pipeline-functions.py --Type UNIT_TESTS
+      - step:
+          name: check it builds
+          caches:
+            - node
+          script: 
+            - npm install
+            - npm run grunt release
+            - python ./pipeline_scripts/pipeline-functions.py --Type CODE_BUILD
+    develop:
+      - step:
+          name: Dev Ops dashboard - code check-in notification
+          script:
+            - python --version
+            - chmod +x ./pipeline_scripts/pipeline-functions.py
+            - python ./pipeline_scripts/pipeline-functions.py --Type CODE_CHECKIN
+      # - step: 
+      #     name: Run tests
+      #     caches:
+      #       - node
+      #     script: 
+      #       - yarn
+      #       - yarn test:ci
+      #       - python ./pipeline_scripts/pipeline-functions.py --Type UNIT_TESTS
+      - step:
+          name: check it builds
+          caches:
+            - node
+          script: 
+            - npm install
+            - npm run grunt release
+            - python ./pipeline_scripts/pipeline-functions.py --Type CODE_BUILD
+          artifacts:
+            - build/**
+      # - step:
+      #     name: Deploy to Azure UAT
+      #     image: microsoft/azure-cli:latest
+      #     deployment: staging
+      #     script:
+      #       - pip install requests
+      #       - chmod +x ./pipeline_scripts/deploy-azure-storage.py
+      #       - python3 pipeline_scripts/deploy-azure-storage.py --AzureName ${AZURE_STORAGE_ACCOUNT_UAT_EUN} --AzureKey ${AZURE_STORAGE_ACCESS_KEY_UAT_EUN} --AzureContainer ${AZURE_UAT_CONTAINER} --AzureContainerFolder dev-new
+      #       - python3 pipeline_scripts/deploy-azure-storage.py --AzureName ${AZURE_STORAGE_ACCOUNT_UAT_EUW} --AzureKey ${AZURE_STORAGE_ACCESS_KEY_UAT_EUW} --AzureContainer ${AZURE_UAT_CONTAINER} --AzureContainerFolder dev-new
+      #       - python3 ./pipeline_scripts/pipeline-functions.py --Type CD_STAGING
+  custom:
+    uatRelease:
+      - step:
+          name: Trigger UAT deployment
+          deployment: staging
+          script:
+            - python3 ./pipeline_scripts/pipeline-functions.py --Type CD_STAGING 
+    prodRelease:
+      - step:
+          name: Trigger PROD deployment
+          deployment: staging
+          script:
+            - python3 ./pipeline_scripts/pipeline-functions.py --Type CD_PROD         
+    nightlyTests:
+      # - parallel: 
+      #   - step:
+      #       name: run tests
+      #       caches:
+      #         - node
+      #       script: 
+      #         - yarn
+      #         - yarn test:ci
+      #         - python ./pipeline_scripts/pipeline-functions.py --Type UNIT_TESTS
+      #   - step:
+      #      name: run cypress tests
+      #      image: agency365/bitbucket-cypress-python
+      #      caches:
+      #        - node
+      #      script: 
+      #        - yarn
+      #        - yarn cypress:ci
+      #        - python ./pipeline_scripts/pipeline-functions.py --Type REGRESSION_TESTS
+      - step:
+          name: check it builds
+          caches:
+            - node
+          script: 
+            - npm install
+            - npm run grunt release
+            - python./pipeline_scripts/pipeline-functions.py --Type CODE_BUILD
+      # - step:
+      #     name: Trigger UAT deployment
+      #     image: microsoft/azure-cli:latest
+      #     deployment: staging
+      #     script:
+      #       - chmod +x ./pipeline_scripts/deploy-azure-storage.py
+      #       - python3 pipeline_scripts/deploy-azure-storage.py --AzureName ${AZURE_STORAGE_ACCOUNT_UAT_EUN} --AzureKey ${AZURE_STORAGE_ACCESS_KEY_UAT_EUN} --AzureContainer ${AZURE_UAT_CONTAINER} --AzureContainerFolder dev-new
+      #       - python3 pipeline_scripts/deploy-azure-storage.py --AzureName ${AZURE_STORAGE_ACCOUNT_UAT_EUW} --AzureKey ${AZURE_STORAGE_ACCESS_KEY_UAT_EUW} --AzureContainer ${AZURE_UAT_CONTAINER} --AzureContainerFolder dev-new
+      #       - python3 ./pipeline_scripts/pipeline-functions.py --Type CD_STAGING 

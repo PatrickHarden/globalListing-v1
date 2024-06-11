@@ -1,0 +1,53 @@
+/**
+ * The geosuggest module
+ */
+.geosuggest {
+  position: relative;
+  text-align: left;
+}
+
+.geosuggest__suggests {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  max-height: 25em;
+  padding: 0;
+  margin-top: -1px;
+  background: @input-bg;
+  border: 1px solid @input-border;
+  border-top-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  list-style: none;
+  z-index: 1000;
+  background: url('../images/powered-by-google.png') no-repeat right bottom !important;
+  background-color: white !important;
+  padding-bottom: 30px;
+}
+
+.geosuggest__suggests--hidden {
+  max-height: 0;
+  overflow: hidden;
+  border: none;
+  padding-bottom: 0;
+}
+
+/**
+ * A geosuggest item
+ */
+.geosuggest-item {
+  padding: @padding-base-vertical @padding-base-horizontal;
+  cursor: pointer;
+}
+.geosuggest-item:hover,
+.geosuggest-item:focus {
+  background: @gray-lighter;
+}
+.geosuggest-item--active {
+  background: @gray-light;
+  color: @white;
+}
+.geosuggest-item--active:hover,
+.geosuggest-item--active:focus {
+  background: @gray;
+}

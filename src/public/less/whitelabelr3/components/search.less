@@ -1,0 +1,131 @@
+.cbre-spa--search-header {
+  padding: 10px 20px;
+  background-color: @brand-primary;
+  min-height: 40px;
+
+  h4 {
+    display: inline;
+    color: @white;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    display: none;
+
+    @media (min-width: @screen-sm) {
+      display: block;
+      float: right;
+      text-decoration: none;
+      color: @brand-primary-lighter;
+    }
+  }
+}
+
+.cbre-spa--search {
+  padding: 35px @grid-gutter-width 0 @grid-gutter-width;
+  background: fade(@white, 70%);
+  position: relative;
+  z-index: 10;
+
+  .cbre-spa--search_form,
+  .cbre-spa--search_button-group {
+    margin-bottom: @grid-gutter-width;
+
+    .search-btn .cbre-icon {
+      padding-left: 7px;
+    }
+  }
+
+  .search-input,
+  .form-group,
+  .search-btn {
+    width: 100%;
+    float: left;
+  }
+
+  .search-input {
+    @media (min-width: @screen-sm) {
+      width: 73%;
+
+      .geosuggest {
+        margin-right: 10px;
+      }
+    }
+
+    @media (min-width: @screen-md) {
+      width: 80%;
+    }
+  }
+
+  .path-selector{
+    @media (min-width: @screen-sm) {
+      width: 25%;
+    }
+
+    @media (min-width: @screen-md) {
+      width: 25%;
+    }
+  }
+
+  .search-btn {
+    @media (min-width: @screen-sm) {
+      width: 27%;
+    }
+
+    @media (min-width: @screen-md) {
+      width: 20%;
+    }
+  }
+
+  .btn--buy,
+  .btn--let {
+    padding: 0;
+    width: 50%;
+    float: left;
+  }
+
+  .btn--buy {
+    .inner {
+      margin-right: 2px;
+    }
+  }
+
+  .btn--let {
+    .inner {
+      margin-left: 2px;
+    }
+  }
+}
+
+.cbre-spa--search-filters {
+  padding: 20px @grid-gutter-width 5px @grid-gutter-width;
+  background: @brand-primary;
+  position: relative;
+
+  > div {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .control-label {
+    padding-top: 5px;
+    color: @white;
+  }
+
+  .control-label,
+  .form-group {
+    float: left;
+    width: 50%;
+  }
+
+  .spa-range-filter--range {
+    .control-label {
+      width: 20%;
+      margin-top: 0px;
+    }
+
+    .form-group {
+      width: 40%;
+    }
+  }
+}

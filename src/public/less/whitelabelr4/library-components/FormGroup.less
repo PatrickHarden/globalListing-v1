@@ -1,0 +1,36 @@
+.formGroup {
+    @fieldsetPaddingVerticalDesktop: 14px;
+    @fieldsetPaddingVerticalTablet: 18px;
+    @fieldsetPaddingVerticalMobile: 18px;
+    @fieldPaddingVerticalDesktop: @fieldsetPaddingVerticalDesktop;
+    @fieldPaddingVerticalTablet: @fieldsetPaddingVerticalTablet;
+    @fieldPaddingVerticalMobile: 8px;
+
+    position: relative;
+    background: @white;
+    margin-top: @fieldsetPaddingVerticalMobile - @fieldPaddingVerticalMobile;
+
+    @media (@tabletAndUp) {
+        margin-top: @fieldPaddingVerticalTablet;
+
+        &.is_collapsable:not(:first-child) {
+            margin-top: @fieldPaddingVerticalTablet - 10px;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid @lightGrey;
+        }
+
+        &.is_collapsable:not(.is_expanded):last-child {
+            border-bottom: none;
+        }
+    }
+
+    @media (@desktopAndUp) {
+        margin-top: @fieldsetPaddingVerticalDesktop;
+
+        &.is_collapsable:not(:first-child) {
+            margin-top: @fieldsetPaddingVerticalDesktop - 10px;
+        }
+    }
+}

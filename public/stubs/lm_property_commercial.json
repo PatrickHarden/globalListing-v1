@@ -1,0 +1,270 @@
+{
+  "Found": true,
+  "ElapsedTime": "00:00:00.0310000",
+  "Document": {
+     "Common.ActualAddress": {
+      "Common.Line1": "Prospect Place",
+      "Common.Line2": "0 50",
+      "Common.Locallity": "Edmonton",
+      "Common.Region": "Alberta",
+      "Common.PostalAddresses": [
+        {
+          "Common.Language": "en",
+          "Common.Line1": "Prospect Place",
+          "Common.Line2": "0 50",
+          "Common.Locallity": "Edmonton",
+          "Common.Region": "Alberta"
+        },
+        {
+          "Common.Language": "fr",
+          "Common.Line1": "Prospect Place",
+          "Common.Line2": "50",
+          "Common.Locallity": "Edmonton"
+        }
+      ],
+      "Common.Country": "CA",
+      "Common.PostCode": "T6L"
+    },
+    "Common.ContactGroup": {
+      "Common.Address": {
+        "Common.Line1": "St. Clair",
+        "Common.Locallity": "Toronto",
+        "Common.PostalAddresses": [
+          {
+            "Common.Language": "en",
+            "Common.Line1": "St. Clair",
+            "Common.Locallity": "Toronto"
+          }
+        ],
+        "Common.Country": "CA",
+        "Common.PostCode": "M4V 1N5"
+      },
+      "Common.GroupType": "AreaOffice"
+    },
+    "Common.Aspects": [
+      "isSale",
+      "isLetting",
+      "hasBicycleRack"
+    ],
+    "Common.Charges": [
+      {
+        "Common.ChargeKind": "ServiceCharge",
+        "Common.CurrencyCode": "CAD",
+        "Common.Interval": "Annually",
+        "Common.Amount": 30.0,
+        "Common.AmountKind": "Value",
+        "Common.PerUnit": "sqft",
+        "Common.TaxModifer": "None"
+      },
+      {
+        "Common.ChargeKind": "Rent",
+        "Common.OnApplication": true,
+        "Common.ChargeModifer": "CallForInfo"
+      },
+      {
+        "Common.ChargeKind": "SalePrice",
+        "Common.OnApplication": true,
+        "Common.ChargeModifer": "CallForInfo"
+      }
+    ],
+    "Common.Coordinate": {
+      "lat": 53.4603,
+      "lon": -113.421
+    },
+    "Common.GeoLocation": {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.4603,
+          -113.421
+        ]
+      },
+      "Common.Exact": true
+    },
+    "Common.Created": "2016-10-18T08:16:32",
+    "Common.Sizes": [
+      {
+        "Common.SizeKind": "MaximumSize",
+        "Common.Dimensions": [
+          {
+            "Common.DimensionsUnits": "sqft",
+            "Common.Amount": 160.0
+          }
+        ]
+      },
+      {
+        "Common.SizeKind": "TotalSize",
+        "Common.Dimensions": [
+          {
+            "Common.DimensionsUnits": "sqft",
+            "Common.Amount": 460.0
+          }
+        ]
+      },
+      {
+        "Common.SizeKind": "TotalBuildingSize",
+        "Common.Dimensions": [
+          {
+            "Common.DimensionsUnits": "sqft",
+            "Common.Amount": 44000.0
+          }
+        ]
+      }
+    ],
+    "Common.FloorsAndUnits": [
+      {
+        "Common.SubdivisionName": [
+          {
+            "Common.CultureCode": "en-GB",
+            "Common.Text": "Test Floor 1"
+          }
+        ],
+        "Common.Unit.Status": "Available",
+        "Common.Unit.Use": "Office",
+        "Common.Charges": [
+          {
+            "Common.ChargeKind": "Rent",
+            "Common.OnApplication": true,
+            "Common.ChargeModifer": "OnApplication"
+          },
+          {
+            "Common.ChargeKind": "SalePrice",
+            "Common.OnApplication": true,
+            "Common.ChargeModifer": "OnApplication"
+          }
+        ]
+      },
+      {
+        "Common.SubdivisionName": [
+          {
+            "Common.CultureCode": "en-GB",
+            "Common.Text": "Test Floor"
+          }
+        ],
+        "Common.Unit.Status": "Pending",
+        "Common.Unit.Use": "Office",
+        "Common.Charges": [
+          {
+            "Common.ChargeKind": "Rent",
+            "Common.OnApplication": true,
+            "Common.ChargeModifer": "OnApplication"
+          },
+          {
+            "Common.ChargeKind": "SalePrice",
+            "Common.OnApplication": true,
+            "Common.ChargeModifer": "OnApplication"
+          }
+        ]
+      },
+      {
+        "Common.SubdivisionName": [
+          {
+            "Common.CultureCode": "en-GB",
+            "Common.Text": "Test Floor"
+          }
+        ],
+        "Common.Unit.Status": "Available",
+        "Common.Unit.Use": "Office"
+      },
+      {
+        "Common.SubdivisionName": [
+          {
+            "Common.CultureCode": "en-GB",
+            "Common.Text": "4"
+          }
+        ],
+        "Common.Unit.Status": "Available",
+        "Common.Unit.Use": "Office",
+        "Common.Charges": [
+          {
+            "Common.ChargeKind": "Rent",
+            "Common.OnApplication": true,
+            "Common.ChargeModifer": "OnApplication"
+          },
+          {
+            "Common.ChargeKind": "SalePrice",
+            "Common.OnApplication": true,
+            "Common.ChargeModifer": "OnApplication"
+          }
+        ]
+      }
+    ],
+    "Common.Highlights": [
+      {
+        "Common.Highlight": [
+          {
+            "Common.CultureCode": "en-CA",
+            "Common.Text": "10 After Hours HVAC Cost"
+          },
+          {
+            "Common.CultureCode": "fr-CA",
+            "Common.Text": "10 Coûts après heures d’affaires"
+          }
+        ]
+      },
+      {
+        "Common.Highlight": [
+          {
+            "Common.CultureCode": "en-CA",
+            "Common.Text": "Yes Bicycle Parking"
+          },
+          {
+            "Common.CultureCode": "fr-CA",
+            "Common.Text": "Oui Stationnement pour vélos"
+          }
+        ]
+      },
+      {
+        "Common.Highlight": [
+          {
+            "Common.CultureCode": "en-CA",
+            "Common.Text": "Life/Safety Generator"
+          },
+          {
+            "Common.CultureCode": "fr-CA",
+            "Common.Text": "Maintien des services à l'immeuble Génératrice"
+          }
+        ]
+      }
+    ],
+    "Common.HomeSite": "ca-comm",
+    "Common.LastUpdated": "2017-06-21T05:54:02.2252627Z",
+    "Common.SourceLastupdated": "2017-06-13T13:14:41",
+    "Common.MaximumSize": [
+      {
+        "Common.Units": "sqft",
+        "Common.Area": 160.0
+      }
+    ],
+    "Common.NumberOfBedrooms": 0,
+    "Common.Photos": [
+      {
+        "Common.ImageCaption": "SAMPLEIMAGE",
+        "Common.ImageResources": [
+          {
+            "Common.Image.Height": 2935,
+            "Common.Resource.Uri": "file:///D:/AgencyFiles/PrivateFileShare/PropertyListing/CA-Plus-90212/default/5c5dd75b/SampleImage.jpg",
+            "Common.Image.Width": 3876
+          }
+        ]
+      }
+    ],
+    "Common.PrimaryKey": "CA-Plus-11823",
+    "Common.PropertyTypes": [
+      "Office"
+    ],
+    "Common.TotalSize": [
+      {
+        "Common.Units": "sqft",
+        "Common.Area": 460.0
+      }
+    ],
+    "Common.UsageType": "Office",
+    "UnitedKingdom.UseClass": [
+      "A"
+    ],
+    "Common.PropertySubType": "OfficeBuilding",
+    "Common.ListingCount": 4,
+    "Common.IsParent": true
+  }
+}

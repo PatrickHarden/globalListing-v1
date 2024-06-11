@@ -1,0 +1,52 @@
+{
+    "features": {
+        "childListings": {
+            "enableChildListings": true,
+            "limitChildListings": 3
+        },
+        "enableAuthority": true,
+        "carouselStaticQuery": true,
+        "developmentClustering": true,
+        "displayAgentsTitle": true,
+        "displayBuildingAvailableDate": true,
+        "displayBuildingUsageType": true,
+        "displayEmailInContactForm": false,
+        "displayEnergyRating": true,
+        "displayGenericBrochureName": false,
+        "displayGenericVideoName": false,
+        "displayPropertyId": true,
+        "displayPropertySubType": true,
+        "displayPropertyUsageType": false,
+        "displayRelatedListing": true,
+        "displaySizeInSideHeader": true,
+        "displaySupplimentaryDisclaimer": false,
+        "displayUseClass": false,
+        "enableFavourites": true,
+        "enhancedMapList": true,
+        "hideArrangeViewingOnParent": false,
+        "hideLeaseAndChargesOnParent": true,
+        "hideSizesAndMeasurementsOnParent": true,
+        "jumpToChildProperties": false,
+        "limitBrokers": 1,
+        "performance": {
+            "useLazyLoad": true
+        },
+        "printFavourites": true,
+        "propertyBanners": {
+            "showLeasedBanner": true,
+            "showLetUnderOfferBanner": true,
+            "showSaleAgreedBanner": true,
+            "showSoldBanner": true,
+            "showUnderOfferBanner": true
+        },
+        "propertyClustering": true,
+        "propertyNavigation": true,
+        "relatedProperties": true,
+        "searchOnEnter": true,
+        "useCarouselAspectRatio": true,
+        "useDefaultFallbackImageForContact": false,
+        "useMaxSizeRatherThanTotalSize": false,
+        "usePropertyAvailabilityRatherThanFloorAvailability": false,
+        "useSocialWidgets": true
+    }
+}

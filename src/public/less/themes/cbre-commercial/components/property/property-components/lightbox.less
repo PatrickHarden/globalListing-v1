@@ -1,0 +1,27 @@
+@pdp-lightbox-icon-size: 60px;
+
+.pdp-lighbox-cta {
+  position: relative;
+
+  &:before {
+    font-family: 'CBRE Icons';
+    content: "\e615"; // Magnifying glass.
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -@pdp-lightbox-icon-size/2;
+    margin-top: -35px;
+    color: @white;
+    line-height: @pdp-lightbox-icon-size;
+    font-size: @pdp-lightbox-icon-size;
+    width: @pdp-lightbox-icon-size;
+    height: @pdp-lightbox-icon-size;
+    opacity: 0.7;
+  }
+}
+
+.pdp-lighbox-cta__item-count {
+  text-align: center;
+  margin: 7px 0;
+  color: @gray-light;
+}

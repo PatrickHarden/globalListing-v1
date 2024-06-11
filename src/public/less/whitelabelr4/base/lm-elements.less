@@ -1,0 +1,142 @@
+// Divider
+
+.cbre_divider {
+  background: @border;
+  width: 100%;
+  height: 1px;
+}
+
+.cbre_divider__large {
+  background: @dividerColor;
+  width: 100%;
+  height: 2px;
+}
+
+// Pipe prefix
+
+.has_pipePrefix {
+  position: relative;
+  line-height: 1.35em;
+  padding-left: 10px;
+
+  &:before {
+    content: "";
+    background: @lightGreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1.3em;
+  }
+}
+
+// Block link
+
+.cbre_blockLink {
+  .FontDefault;
+  display: block;
+  padding: 10px 0;
+  font-size: @blockLink-fontSize;
+  text-decoration: none;
+  color: @defaultText;
+
+  .hoverStates({
+    color: @accentColor;
+  });
+}
+
+// Iframe wrap
+
+.cbre_iframeWrap {
+  background: @border;
+}
+
+
+// Show hide toggle
+
+.showHideToggle {
+  .FontDefault;
+  text-decoration: none;
+  flex-shrink: 0;
+  clear: both;
+
+  .more,
+  &.is_expanded .less {
+    display: inline-block;
+  }
+
+  .less,
+  &.is_expanded .more {
+    display: none;
+  }
+}
+
+.showHideToggle.has_arrow {
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1em;
+  color: @accentColor;
+  background-color: #E6EAEA;
+
+  .hoverStates({
+    color: @accentColorHover;
+  });
+
+  &:after{
+    .iconMixin(@char:@icon_chevron_solid_down, @size:5px);
+    position: relative;
+    display: inline-block;
+    transition: transform 0.2s, linear;
+    top: -1px;
+    margin-left: 1px;
+    vertical-align: middle;
+  }
+
+  &.is_expanded:after {
+    transform: rotate(180deg) translateY(50%);
+    top: 1px;
+  }
+}
+
+// Flag
+
+.flag {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.flag__text {
+  background: #00B2DD;
+  color: @white;
+  bottom: 0;
+  padding: 5px 7px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  @media (@tabletAndUp) {
+    font-size: 11px;
+  }
+}
+
+.flag__large {
+  @media (@tabletAndUp) {
+    padding: 9px 15px;
+    font-size: 13px;
+  }
+}
+
+.flag__vr {
+  background: rgba(255,255,255,0.8);
+  color: @accentColor;
+  top: 0;
+  padding: 3px 7px 6px 7px;
+  font-size: 17px;
+  &:before {
+    .iconMixin(@char: @icon_camera);
+    vertical-align: middle;
+  }
+}

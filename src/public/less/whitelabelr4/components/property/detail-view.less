@@ -1,0 +1,226 @@
+.pdp {
+  overflow: hidden;
+  position: relative;
+}
+
+// PDP Top
+.pdp-top {
+  position: relative;
+  margin-bottom: 10px;
+
+  @media (min-width: @screen-sm) {
+    margin-bottom: 60px;
+  }
+}
+
+.pdp-leader-info {
+  position: relative;
+  background-color: fade(@white, 85%);
+  padding: 15px @grid-gutter-width / 2;
+  margin: 0 (-@grid-gutter-width / 2);
+
+  @media (min-width: @screen-sm) {
+    position: absolute;
+    bottom: 0;
+    margin: 0 110px 10px 0;
+    padding: 16px 20px;
+  }
+
+  h1 {
+    margin: 0 70px 0 0;
+
+    @media (min-width: @screen-sm) {
+      margin: 0 160px 0 0;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-style: normal;
+    color: @pdp-price-color;
+    margin: 5px 75px 5px 0;
+
+    @media (min-width: @screen-sm) {
+      font-size: 34px;
+      display: inline-block;
+      margin: 0 50px 0 0;
+    }
+  }
+
+  .pdp-bedrooms {
+    @media (min-width: @screen-sm) {
+      margin: 20px 75px 0 0;
+      display: inline-block;
+    }
+
+    p {
+      margin: 0;
+      color: @gray-darker;
+    }
+  }
+}
+
+// PDP Main.
+.pdp-strapline {
+  position: relative;
+
+  @media (min-width: @screen-sm) {
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: -30px;
+      width: 40%;
+      border-top: 3px solid @brand-primary;
+    }
+  }
+
+  h2 {
+    color: @pdp-strapline-color;
+    font-style: italic;
+
+    @media (min-width: @screen-sm) {
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.pdp-long-description {
+  white-space: pre-wrap;
+  max-height: 0;
+  overflow: hidden;
+  clear: both;
+
+  &.pdp-long-description--showAll {
+    max-height: 1000px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @screen-md) {
+    column-count: 2;
+    column-gap: 30px;
+  }
+
+  @media (min-width: @screen-sm) {
+    max-height: inherit;
+    margin-bottom: 20px;
+  }
+
+}
+
+.pdp-show-more {
+  display: inline-block;
+  height: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:after {
+    .cbre-icon;
+    content: '\e601';
+    top: 3px;
+    margin-left: 5px;
+  }
+
+  @media (min-width: @screen-sm) {
+    display: none;
+  }
+}
+
+// Reusable accordian units.
+.collapsable-block {
+  position: relative;
+  border-bottom: solid 2px @brand-primary;
+  background-color: @gray-lighter;
+  padding: 8px 10px;
+  margin: 0;
+
+  @media (min-width: @screen-sm) {
+    padding: 8px 25px;
+  }
+
+  @media (min-width: @screen-md) {
+    margin: 30px 0;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin: 0 25px 0 0;
+    padding: 15px 0;
+    display: inline-block
+  }
+
+  table {
+    border-top: solid 1px @gray-light;
+    margin-bottom: 15px;
+  }
+
+  .expand-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: @brand-primary-lighter;
+    cursor: pointer;
+
+    @media (min-width: @screen-md) {
+      display: none;
+    }
+  }
+
+  @media (max-width: @screen-md) {
+    .collapsable-content {
+       display: none;
+    }
+  }
+
+  &.expanded {
+    .collapsable-content {
+      display: block;
+    }
+
+    table.collapsable-content {
+      display: table;
+    }
+
+    // Switch chevron position.
+    .expand-toggle {
+      &:before {
+        opacity: 0.5;
+        &:extend(.cbre-chevron-up:before);
+      }
+    }
+  }
+}
+
+.pdp-specification {
+  .list-unstyled {
+    padding-bottom: 0;
+    margin: 0;
+
+    @media (min-width: @screen-lg) {
+      column-count: 2;
+      column-gap: 20px;
+    }
+  }
+
+  .list-item--border-top {
+    break-inside: avoid;
+    border-top: solid 1px @gray-light;
+    padding: 15px 0;
+    font-size: 12px;
+  }
+}
+
+.cbre-spa--pdp-carousel {
+  h2 {
+    padding: 0 10px;
+  }
+}
+
+.pdp-callout {
+  .pdp-inserted-content {
+    margin-bottom: 10px;
+  }
+}

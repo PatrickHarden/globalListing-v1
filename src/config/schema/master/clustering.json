@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "mapClustering": {
+      "type": "object",
+      "title": "Map clustering options",
+      "propertyOrder": 90,
+      "options": {
+        "grid_columns": 12,
+        "disable_edit_json": true,
+        "collapsed": true
+      },
+      "format": "grid",
+      "defaultProperties": [
+        "gridSize",
+        "maxZoom",
+        "minimumClusterSize"
+      ],
+      "properties": {
+        "gridSize": {
+          "title": "The grid size of a cluster in pixels",
+          "type": "integer",
+          "default": 60,
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "maxZoom": {
+          "title": "The maximum zoom level at which clustering is enabled",
+          "type": "integer",
+          "default": 17,
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "minimumClusterSize": {
+          "title": "The minimum number of markers needed in a cluster before the markers are hidden and a cluster marker appears",
+          "type": "integer",
+          "default": 2,
+          "options": {
+            "grid_columns": 12
+          }
+        }
+      }
+    }
+  }
+}

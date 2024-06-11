@@ -1,0 +1,60 @@
+{
+  "properties": {
+    "relatedListing": {
+      "type": "object",
+      "title": "Related listing CTA",
+      "propertyOrder": 80,
+      "options": {
+        "grid_columns": 12,
+        "disable_edit_json": true,
+        "collapsed": true
+      },
+      "format": "grid",
+      "defaultProperties": [
+        "titleText",
+        "bodyText",
+        "linkText",
+        "mobileLinkText",
+        "linkUrl"
+      ],
+      "properties": {
+        "titleText": {
+          "title": "Title text for non mobile devices",
+          "type": "string",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "bodyText": {
+          "title": "Body text for non mobile devices",
+          "type": "string",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "linkText": {
+          "title": "Link text for non mobile devices",
+          "type": "string",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "mobileLinkText": {
+          "title": "Link text for mobile devices",
+          "type": "string",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "linkUrl": {
+          "title": "URL pattern",
+          "type": "string",
+          "default": "<path>/%(propertyId)s?<query>",
+          "options": {
+            "grid_columns": 12
+          }
+        }
+      }
+    }
+  }
+}

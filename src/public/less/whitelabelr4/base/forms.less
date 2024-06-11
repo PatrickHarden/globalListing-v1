@@ -1,0 +1,437 @@
+/* Cancel out jQuery "chosen" plug-in's background images */
+
+.chosen-container-single {
+  .chosen-single abbr {
+    background-image: none !important;
+  }
+  .chosen-single div {
+    b {
+      background-image: none !important;
+    }
+  }
+  .chosen-search-input[type='text'] {
+    background-image: none !important;
+    border: none;
+  }
+}
+
+.chosen-container-multi {
+  .chosen-choices li {
+    &.search-choice {
+      .search-choice-close {
+        background-image: none !important;
+      }
+    }
+  }
+}
+
+.chosen-rtl {
+  .chosen-search-input[type='text'] {
+    background-image: none !important;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 144dpi),
+  only screen and (min-resolution: 1.5dppx) {
+  .chosen-rtl .chosen-search-input[type='text'],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input[type='text'],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+  .chosen-container .chosen-results-scroll-up span {
+    background-image: none !important;
+  }
+}
+
+/* Style bootstrap form controls */
+
+@height-form-control: 30px;
+@height-large-form-control: 46px;
+@font-size-icon-form-control: 20px;
+@font-size-text-form-control: 14px;
+@font-size-large-text-form-control: 16px;
+@form-label-margin-bottom: 5px;
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  height: @height-form-control;
+  font-size: @font-size-text-form-control;
+  color: @text-color;
+  background-color: #FFFFFF;
+  &.geosuggest__input {
+    height: @height-large-form-control;
+    font-size: @font-size-large-text-form-control;
+    margin-bottom: @form-group-margin-bottom;
+    border: none !important;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+/* Drop down select boxes */
+
+.chosen-container {
+  display: inline-block;
+}
+
+.chosen-container-single {
+  .chosen-single,
+  .chosen-drop,
+  &.chosen-with-drop .chosen-single {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: @gray-light;
+    color: @text-color;
+    background-color: @brand-secondary-lighter;
+  }
+  .chosen-single {
+    height: @height-form-control;
+    line-height: @height-form-control;
+    span {
+      font-size: @font-size-text-form-control;
+      margin-right: 35px;
+      text-overflow: clip;
+    }
+    div {
+      width: 30px;
+      border-left: solid 1px @gray-light;
+      b {
+        .cbre-icon;
+        text-align: center;
+        font-size: @font-size-icon-form-control;
+        line-height: 28px;
+        height: 30px;
+        background-image: none;
+        &:before {
+          color: @brand-primary;
+          content: '\e601';
+        }
+      }
+    }
+  }
+}
+
+.chosen-container-single.chosen-with-drop {
+  .chosen-single {
+    background-image: none;
+    div {
+      border-left: solid 1px @gray-light;
+      b {
+        &:before {
+          content: '\e601';
+        }
+      }
+    }
+  }
+  .chosen-drop {
+    .chosen-results {
+      font-size: @font-size-text-form-control;
+      padding-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      li {
+        padding-left: 8px;
+        line-height: inherit;
+        &.highlighted {
+          background-color: @gray-light;
+          background-image: none;
+          color: @white;
+        }
+      }
+    }
+  }
+}
+.cbre-spa--search {
+  .form-group {
+    height: @height-large-form-control;
+    font-size: @font-size-large-text-form-control;
+    margin-bottom: @form-group-margin-bottom;
+    .Select {
+      .Select-input {
+        height: (@height-large-form-control - 2);
+        background: @brand-secondary-lighter;
+      }
+      &.is-open > .Select-control {
+        .border-bottom-radius( 0 );
+        background: @brand-secondary-lighter;
+        border-color: @gray-light;
+      }
+      &.is-focused:not(.is-open) > .Select-control {
+        border-color: @gray-light;
+        box-shadow: none;
+        background: @brand-secondary-lighter;
+      }
+      .Select-control {
+        color: @text-color;
+        border-radius: 0;
+        background: @brand-secondary-lighter;
+        height: @height-large-form-control;
+
+        .Select-placeholder {
+          color: @text-color;
+          line-height: (@height-large-form-control - 2);
+        }
+        .Select-value {
+          line-height: (@height-large-form-control - 2);
+        }
+      }
+    }
+
+    .Select-menu-outer {
+      .border-bottom-radius( 0 );
+      background: @brand-secondary-lighter;
+    }
+
+    .Select-option {
+      background-color: @brand-secondary-lighter;
+      color: @text-color;
+
+      &:last-child {
+        .border-bottom-radius( 0 );
+      }
+
+      &.is-selected {
+        background-color: @brand-secondary-lighter;
+        color: @text-color;
+      }
+
+      &.is-focused {
+        background-color: @accentColor;
+        color: @white;
+      }
+    }
+  }
+}
+.control-label {
+  font-size: @font-size-h6;
+  color: @brand-primary;
+  font-weight: normal;
+  &.form-error {
+    color: #f00;
+  }
+}
+
+/* Labels For Filters */
+
+.formLabel {
+  margin-top: 0;
+  margin-bottom: @form-label-margin-bottom;
+  font-size: @font-size-h6;
+  &.formLabel--filter {
+    color: @brand-primary;
+  }
+}
+
+// Sort Order
+.filters-secondary {
+  .chosen-container-single {
+    //float: left;
+    width: 40px !important; // override inline js styles.
+    margin-right: 20px;
+    @media (min-width: @screen-sm) {
+      min-width: 140px;
+      width: auto !important;
+    }
+    @media (min-width: @screen-md) {
+      min-width: auto;
+      width: 100% !important;
+    }
+    .chosen-single {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      padding: 0;
+      @media (min-width: @screen-sm) {
+        width: auto;
+        padding: 0 0 0 8px;
+      }
+      @media (min-width: @screen-md) {
+        height: 30px;
+        line-height: 30px;
+      }
+      span {
+        display: none;
+        margin-right: 45px;
+        color: @brand-primary;
+        @media (min-width: @screen-sm) {
+          display: inline;
+        }
+        @media (min-width: @screen-md) {
+          color: @gray-base;
+        }
+      }
+      > div {
+        width: 40px;
+        height: 40px;
+        @media (min-width: @screen-md) {
+          width: 30px;
+          height: 100%;
+        }
+        b {
+          line-height: 38px;
+          top: 0px;
+          @media (min-width: @screen-md) {
+            line-height: 30px;
+          }
+          &:before {
+            color: @brand-primary;
+            content: '\e622';
+          }
+        }
+      }
+    }
+    &.chosen-with-drop {
+      .chosen-drop {
+        border-top: solid 1px @border-color;
+        width: 168px;
+        @media (min-width: @screen-sm) {
+          width: 100%;
+        }
+      }
+      .chosen-single {
+        div {
+          b {
+            &:before {
+              content: '\e622';
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Filter groups
+.cbre-filter-group {
+  width: 100%;
+  @media (min-width: @screen-sm) {
+    float: left;
+    width: 50%;
+  }
+  @media (min-width: @screen-md) {
+    width: 100%;
+  }
+}
+
+/* Custom checkboxes */
+
+.checkbox {
+  position: relative;
+  float: left;
+  width: 100%;
+  label {
+    padding-left: 0;
+  }
+  span {
+    padding-left: 30px;
+    font-family: @font-family-sans-serif;
+    float: left;
+    &:before,
+    &:after {
+      font-family: 'CBRE Icons';
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      display: block;
+      top: 0;
+    }
+    &:before {
+      left: 0;
+      background: @white;
+      border: 1px solid @gray-light;
+    }
+    &:after {
+      left: 4px;
+    }
+  }
+  input[type='checkbox'] {
+    display: none;
+    & + span:after {
+      content: '';
+    }
+    &:checked + span:after {
+      color: @brand-primary-lighter;
+      &:extend(.cbre-tick:before);
+    }
+  }
+}
+
+input[type='radio'] {
+  margin: 0px 5px 0 0;
+}
+
+.modal-content {
+  min-width: 72vw;
+  margin-top: 202px;
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translate(-50%, -50%);
+  display: table;
+  @media (max-width: @screen-sm-min) {
+    min-width: unset;
+  }
+  @media (max-width: 520px){
+    width: 100% !important;
+  }
+}
+
+.stamp-duty-calculator {
+  padding: 10px 25px;
+  .control-label {
+    margin-top: 10px;
+  }
+}
+
+.disclaimer {
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.currency-input {
+  position: relative;
+  .currency-input--type {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 45%;
+    pointer-events: none;
+    margin-left: 8px;
+  }
+}
+
+input[type='number'] {
+  text-indent: 20px;
+  width: 100%;
+  height: 45px;
+  line-height: 1.3;
+  margin-bottom: 5px;
+  font-weight: normal;
+  padding: 10px 10px 10px 0px;
+  color: @gray-base;
+  border-color: @gray-light;
+  background-color: @brand-secondary-light;
+  border: solid 1px;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.modal-body{
+  padding: 0px 0px 15px 0px;
+  @media (@mobile) {
+    padding: 0px 20px 15px 20px;
+  }
+  @media (@tabletAndUp) {
+    padding: 0px 20px 15px 20px;
+  }
+}

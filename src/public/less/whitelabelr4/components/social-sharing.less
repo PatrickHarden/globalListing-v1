@@ -1,0 +1,46 @@
+.react-social-widgets {
+	clear: both;
+}
+
+.react-social-widget {
+  display: inline-block;
+  vertical-align: top;
+  height: 25px;
+  margin-right: 5px;
+  width:67px;
+}
+
+.pinterest-pinit-button {
+  position: relative;
+  top: -1px;
+}
+
+.pinterest-pinit-button i {
+	background-image: url('//s-passets.pinimg.com/images/pidgets/pinit_bg_en_rect_gray_20_1.png');
+  background-position: 0 -20px;
+  background-size: 40px 60px;
+  display: inline-block;
+  height: 20px;
+  vertical-align: middle;
+  width: 40px;
+}
+
+// Override some Twitter inline styles.
+#twitter-widget {
+ width: 65px !important;
+ height: 25px !important;
+ overflow: hidden !important; 
+} 
+
+// Listing / Map 
+.cbre-spa--listings-body {
+  .react-social-widgets {
+    margin-bottom: 10px;
+    text-align: center;
+    
+    @media (min-width: @screen-md) {
+      float: right;
+      text-align: left;
+    }
+  }
+}

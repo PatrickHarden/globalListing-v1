@@ -1,0 +1,34 @@
+
+/* Custom checkboxes */
+.checkbox {
+  label {
+    input[type="checkbox"] {
+
+      &:after {
+        background: @gray-lighter;
+      }
+
+      &:checked {
+        &:after {
+          color: @brand-primary-lighter;
+        }
+      }
+    }
+  }
+}
+
+// Sort Order
+.filters-secondary {
+  .chosen-container-single {
+    &.chosen-with-drop {
+      .chosen-drop {
+        width: 166px;
+        border-top: solid 1px @gray-light;
+               
+        @media (min-width: @screen-sm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+// Typography
+
+// Responsive heading sizes (not in boostrap)
+@media (min-width: @screen-sm) {
+  h1, .h1 {
+    font-size: @font-size-h1-sm;
+  }
+  h2, .h2 {
+    font-size: @font-size-h2-sm;
+  }
+  h3, .h3 {
+    font-size: @font-size-h3-sm;
+  }
+  h4, .h4 {
+    font-size: @font-size-h4-sm;
+  }
+  h5, .h5 {
+    font-size: @font-size-h5-sm;
+  }
+  h6, .h6 {
+    font-size: @font-size-h6-sm;
+  }
+}
+
+// Override boostrap
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media (min-width: @screen-sm) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+// Needed as override when spa is included elsewhere.
+p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Needed to allow use of \n in translatable text strings.
+.cbre-spa--pre-line {
+  white-space: pre-line;
+}
+
+// SLICK Icon font
+@font-face {
+  font-family: 'slick';
+  src: url('@{icon-font-path}slick.eot');
+  src: url('@{icon-font-path}slick.eot?#iefix') format('embedded-opentype'),
+  url('@{icon-font-path}slick.woff') format('woff'),
+  url('@{icon-font-path}slick.ttf') format('truetype'),
+  url('@{icon-font-path}slick.svg#slick') format('svg');
+  font-weight: normal; font-style: normal;
+}
+
+// CBRE Icon font
+@font-face {
+  font-family: 'CBRE Icons';
+  src: url('@{icon-font-path}@{custom-icon-font-name}.eot');
+  src: url('@{icon-font-path}@{custom-icon-font-name}.eot?#iefix') format('embedded-opentype'),
+       url('@{icon-font-path}@{custom-icon-font-name}.woff') format('woff'),
+       url('@{icon-font-path}@{custom-icon-font-name}.ttf') format('truetype'),
+       url('@{icon-font-path}@{custom-icon-font-name}.svg#@{custom-icon-font-svg-id}') format('svg');
+}
+
+.slick-prev:before {
+  font-family: "CBRE Icons";
+  content: "\e602";
+}
+
+.slick-next:before {
+  font-family: "CBRE Icons";
+  content: "\e603";
+}
+
+.cbre-icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'CBRE Icons';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+// CBRE icon
+.cbre-cbre:before {
+  content: "\e600";
+}
+.cbre-cbre:before {
+  content: "\e600";
+}
+.cbre-chevron-down:before {
+  content: "\e601";
+}
+.cbre-chevron-left:before {
+  content: "\e602";
+}
+.cbre-chevron-right:before {
+  content: "\e603";
+}
+.cbre-chevron-up:before {
+  content: "\e604";
+}
+.cbre-circle:before {
+  content: "\e605";
+}
+.cbre-clock:before {
+  content: "\e606";
+}
+.cbre-convert:before {
+  content: "\e607";
+}
+.cbre-document-inspect:before {
+  content: "\e608";
+}
+.cbre-documents:before {
+  content: "\e609";
+}
+.cbre-double-chevron-down:before {
+  content: "\e60a";
+}
+.cbre-double-chevron-left:before {
+  content: "\e60b";
+}
+.cbre-double-chevron-right:before {
+  content: "\e60c";
+}
+.cbre-double-chevron-up:before {
+  content: "\e60d";
+}
+.cbre-EPC-graph:before {
+  content: "\e60e";
+}
+.cbre-facebook:before {
+  content: "\e60f";
+}
+.cbre-filter:before {
+  content: "\e610";
+}
+.cbre-floorplan:before {
+  content: "\e611";
+}
+.cbre-google-plus:before {
+  content: "\e612";
+}
+.cbre-instagram:before {
+  content: "\e613";
+}
+.cbre-linkedIn:before {
+  content: "\e614";
+}
+.cbre-magnifying-glass:before {
+  content: "\e615";
+}
+.cbre-mail:before {
+  content: "\e616";
+}
+.cbre-map-pin-2:before {
+  content: "\e617";
+}
+.cbre-map-pin:before {
+  content: "\e618";
+}
+.cbre-mobile-menu:before {
+  content: "\e619";
+}
+.cbre-phone:before {
+  content: "\e61a";
+}
+.cbre-pinterest:before {
+  content: "\e61b";
+}
+.cbre-plus-square:before {
+  content: "\e61c";
+}
+.cbre-plus:before {
+  content: "\e61d";
+}
+.cbre-printer:before {
+  content: "\e61e";
+}
+.cbre-tick:before {
+  content: "\e61f";
+}
+.cbre-twitter:before {
+  content: "\e620";
+}
+.cbre-under-offer:before {
+  content: "\e621";
+}
+.cbre-up-down:before {
+  content: "\e622";
+}
+.cbre-world:before {
+  content: "\e623";
+}
+.cbre-home3:before {
+  content: "\e624";
+}
+.cbre-pencil:before {
+  content: "\e625";
+}
+.cbre-folder:before {
+  content: "\e626";
+}
+.cbre-price-tag:before {
+  content: "\e627";
+}
+.cbre-calendar:before {
+  content: "\e628";
+}
+.cbre-bubble:before {
+  content: "\e629";
+}
+.cbre-bubble2:before {
+  content: "\e62a";
+}
+.cbre-eye:before {
+  content: "\e62b";
+}
+.cbre-arrow-up-left:before {
+  content: "\e62c";
+}
+.cbre-arrow-up:before {
+  content: "\e62d";
+}
+.cbre-arrow-up-right:before {
+  content: "\e62e";
+}
+.cbre-arrow-right:before {
+  content: "\e62f";
+}
+.cbre-arrow-down-right:before {
+  content: "\e630";
+}
+.cbre-arrow-down:before {
+  content: "\e631";
+}
+.cbre-arrow-down-left:before {
+  content: "\e632";
+}
+.cbre-arrow-left:before {
+  content: "\e633";
+}
+.cbre-circle-up:before {
+  content: "\e634";
+}
+.cbre-circle-right:before {
+  content: "\e635";
+}
+.cbre-circle-down:before {
+  content: "\e636";
+}
+.cbre-circle-left:before {
+  content: "\e637";
+}
+.cbre-radio-checked:before {
+  content: "\e638";
+}
+.cbre-calculator-icon:before {
+  content: "\e900";
+}
+
+.typography-to-lowercase {
+  text-transform: lowercase;
+}

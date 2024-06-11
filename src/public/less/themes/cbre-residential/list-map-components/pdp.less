@@ -1,0 +1,72 @@
+.pdp {
+    .cbre_sidebar {
+        .cbre_divider__large {
+            background: @dividerColor;
+        }
+        @media (max-width: @tabletPortraitMax) {
+            >.cbre_verticalList {
+                .cbre_verticalList__lineSeparated;
+                .collapsableBlock .cbre_button.is_expanded {
+                    border-bottom: 1px solid @lightBorder;
+                }
+                .collapsableBlock .cbre_verticalList__lineSeparated>li {
+                    &:first-child {
+                        border-top: none;
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+    .cbre_sidebar .cbre_button__primary {
+        .cbre_icon {
+            position: relative;
+            top: 1px;
+            align-self: flex-start;
+            .icon_list {
+                font-size: 10px;
+            }
+        }
+        span {
+            display: block;
+        }
+        @media (@mobileLandscapeAndUp) {
+            span {
+                display: inline;
+            }
+        }
+        @media (@tabletLandscapeAndUp) {
+            span {
+                display: block;
+            }
+        }
+    }
+    .propertyDescription {
+        clear: both;
+    }
+    .cbre_sidebar__placeholder_top_margin {
+        top: -126px;
+    }
+    .cbre_imageCarousel .imageWrap {
+        height: 75vw;
+        max-height: 70vh;
+        padding-top: 0; // Alteration to add desktop and landdscape carousel.
+        @media (@tabletLandscapeAndUp) {
+            height: 480px;
+            max-height: 480px;
+        }
+        @media (@desktopAndUp) {
+            height: 675px;
+            max-height: 675px;
+        }
+
+        img {
+          width: auto !important;
+          height: auto !important;
+          object-fit: cover !important;
+        }
+
+    }
+}

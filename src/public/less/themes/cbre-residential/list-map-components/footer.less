@@ -1,0 +1,145 @@
+.cbre_footer {
+    background: @chiffon;
+
+    &, p, li, a {
+        color: @defaultText;
+        text-transform: none;
+        .FontDefault();
+    }
+
+    .cbre_subfooter {
+        background: @white;
+    }
+
+    .cbre_divider {
+        background: @border;
+    }
+
+    .cbre_footer_primary {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        @media (@tabletAndUp) {
+            padding-bottom: 30px;
+        }
+
+        @media (min-width: @tabletMin) and (max-width: @tabletPortraitMax) {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+
+    .cbre_container,
+    .cbre_footer_primary {
+        @media (@tabletAndUp) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .cbre_footer_secondary {
+        @media (@tabletAndUp) {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding-left: 20px;
+        }
+    }
+
+    .collapsableBlock .collapsableBlock_header,
+    .collapsableBlock .collapsableBlock_body_inner {
+        border-color: @dividerColor;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .collapsableBlock .collapsableBlock_header {
+
+        .headers({
+            color: @accentColor;
+            text-transform: none;
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: 0;
+        }, ~".cbre_title");
+
+        &:after {
+            .iconMixin(@icon_chevron_down, 8px, @grey);
+        }
+
+        @media (@tabletAndUp) {
+            margin-bottom: 0;
+            padding-top: 0;
+
+            &:after {
+                content: none;
+            }
+        }
+    }
+
+    .collapsableBlock.is_expanded .collapsableBlock_header {
+        margin-bottom: 0;
+
+        &:after {
+            .iconMixin(@icon_chevron_up, 8px, @grey);
+        }
+
+        @media (@tabletAndUp) {
+
+            &:after {
+                content: none;
+            }
+        }
+    }
+
+    .cbre_footer_logos {
+        @media (@tabletAndUp) {
+            display: block;
+            flex-grow: 1;
+        }
+    }
+
+    a.cbre_icon_logo {
+        color: @cbreGreen;
+
+        .hoverStates({
+            color: @cbreGreen;
+        });
+
+        @media (@tabletAndUp) {
+            margin-bottom: 12px;
+        }
+    }
+
+    .cbre_footer_primary_links > li:last-child {
+        @media (@tabletAndUp) {
+            margin-bottom: 0;
+        }
+    }
+
+    .cbre_footer_secondary_links {
+        justify-content: flex-end;
+
+        li {
+            border-color: @accentColor;
+        }
+
+        a {
+            color: @accentColor;
+
+            .hoverStates({
+                color: @cbreGreen;
+            });
+        }
+
+        > li:nth-child(2n) {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+        > li:nth-child(2n + 1) {
+            flex-basis: 50%;
+        }
+    }
+}

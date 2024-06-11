@@ -1,0 +1,283 @@
+// Don't remove this block
+// Overrides drupal default styles for some stuff
+// Add any classes which are being affected by ^
+.propertyResults_content,
+.propertyDetails_content,
+.propertyResults_sortBar {
+    h1 {
+        .FontAlternative;
+        line-height: 1.25;
+        color: @darkerText;
+        font-weight: 400;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+    .cbre_h1,
+    .cbre_h2,
+    .cbre_h3,
+    .cbre_h4,
+    .cbre_h5 {
+        .FontAlternative;
+        a {
+            text-decoration: none;
+            color: @accentColor;
+            .hoverStates( {
+                color: darken(@accentColor, 10%);
+            }
+            );
+        }
+    }
+    .cbre_h6 {
+        .FontDefault;
+    }
+    .cbre_h1 {
+        font-size: @h1-size;
+        font-weight: 400;
+        margin-bottom: 3px;
+        @media (@tabletAndUp) {
+            font-size: @h1-size_tablet;
+            margin-bottom: 4px;
+        }
+    }
+    .cbre_h2 {
+        font-size: @h2-size;
+        font-weight: @h2-weight;
+        color: @accentColor;
+        margin-bottom: 0.5em;
+        @media (@tabletAndUp) {
+            font-size: @h2-size_tablet;
+        }
+    }
+    .cbre_h3 {
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(17, 17, 17); 
+        margin-bottom: 5px; 
+        line-height: 1.5; 
+        margin-right: 15px;
+    }
+    .cbre_h4 {
+        font-size: @h4-size;
+        font-weight: 400;
+        color: @accentColor;
+        line-height: 1;
+        margin-bottom: 0.85em;
+        @media (@tabletAndUp) {
+            font-size: @h4-size_tablet;
+        }
+    }
+    .cbre_h5 {
+        font-size: @h5-size;
+        font-weight: 400;
+        color: @defaultText;
+        margin-bottom: 0.25em;
+    }
+    .cbre_h6 {
+        font-size: @h6-size;
+        font-weight: 400;
+        color: @lighterText;
+    }
+    p {
+        .FontDefault();
+        font-size: @p-size;
+        line-height: 1.4;
+        margin: 0 0 0.9em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (@tabletAndUp) {
+            font-size: @p-size_tablet;
+        }
+    }
+}
+
+
+/* Header classes */
+
+.cbre_h1,
+.cbre_h2,
+.cbre_h3,
+.cbre_h4,
+.cbre_h5 {
+    .FontAlternative;
+    a {
+        text-decoration: none;
+        color: @accentColor;
+        .hoverStates( {
+            color: darken(@accentColor, 10%);
+        }
+        );
+    }
+}
+
+.cbre_h6 {
+    .FontDefault;
+}
+
+.cbre_h1 {
+    font-size: @h1-size;
+    font-weight: 400;
+    margin-bottom: 3px;
+    @media (@tabletAndUp) {
+        font-size: @h1-size_tablet;
+        margin-bottom: 4px;
+    }
+}
+
+.cbre_h2 {
+    font-size: @h2-size;
+    font-weight: @h2-weight;
+    color: @accentColor;
+    margin-bottom: 0.5em;
+    @media (@tabletAndUp) {
+        font-size: @h2-size_tablet;
+    }
+}
+
+.cbre_h2_underlined {
+    font-size: @h2-size;
+    font-weight: @h2-weight;
+    color: @accentColor;
+    margin-bottom: 0.5em;
+    @media (@tabletAndUp) {
+        font-size: 18px;
+    }
+    font-family: 'futura',
+    helvetica,
+    arial,
+    sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
+    color: #006b4c;
+    line-height: 1;
+    border-top: none;
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 20px !important;
+    padding: 15px 0;
+    cursor: default;
+}
+
+.cbre_h3 {
+    font-size: @h3-size;
+    font-weight: 500;
+    @media (@tabletAndUp) {
+        font-size: @h3-size_tablet;
+        margin-bottom: 4px;
+    }
+}
+
+.cbre_h4 {
+    font-size: @h4-size;
+    font-weight: 400;
+    color: @accentColor;
+    line-height: 1;
+    margin-bottom: 0.85em;
+    @media (@tabletAndUp) {
+        font-size: @h4-size_tablet;
+    }
+}
+
+.cbre_h5 {
+    font-size: @h5-size;
+    font-weight: 400;
+    color: @defaultText;
+    margin-bottom: 0.25em;
+}
+
+.cbre_h6 {
+    font-size: @h6-size;
+    font-weight: 400;
+    color: @lighterText;
+}
+
+.headingJumbo {
+    font-size: @headingJumbo-size;
+    font-weight: 200;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    @media (@tabletAndUp) {
+        font-size: @headingJumbo-size_tablet;
+    }
+}
+
+.cbre_largeText,
+p.cbre_largeText,
+.cbre_largeText>p {
+    font-size: @p_large-size;
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @media (@tabletAndUp) {
+        font-size: @p_large-size_tabletPortrait;
+    }
+    @media (@tabletLandscapeAndUp) {
+        font-size: @p_large-size_tablet;
+    }
+}
+
+.cbre_smallText,
+p.cbre_smallText,
+.cbre_smallText>p {
+    font-size: @p_small-size;
+    font-weight: 400;
+    >a {
+        color: @accentColor;
+        text-decoration: none;
+        .hoverStates( {
+            color: darken(@accentColor, 10%);
+        }
+        );
+    }
+}
+
+.cbre_subh1Mobile() {
+    .FontDefault;
+    font-size: @cbre_subh1-size;
+    color: @accentColor;
+    font-weight: @cbre_subh1-weight;
+    margin-bottom: 3px;
+}
+
+.cbre_subh1Tablet() {
+    .FontAlternative;
+    font-size: @cbre_subh1-size_tablet;
+    color: @accentColor;
+    font-weight: @cbre_subh1-weight_tablet;
+    margin-bottom: 4px;
+}
+
+.cbre_subh2Mobile() {
+    font-size: @cbre_subh2-size;
+    color: @lighterText;
+    font-weight: @cbre_subh2-weight;
+}
+
+.cbre_subh2Tablet() {
+    font-size: @cbre_subh2-size_tablet;
+    color: @lighterText;
+    font-weight: @cbre_subh2-weight_tablet;
+    margin-bottom: 4px;
+}
+
+.cbre_subh1 {
+    .cbre_subh1Mobile;
+    @media (@tabletAndUp) {
+        .cbre_subh1Tablet;
+    }
+}
+
+.cbre_subh2 {
+    .cbre_subh2Mobile;
+    @media (@tabletAndUp) {
+        .cbre_subh2Tablet;
+    }
+}

@@ -1,0 +1,255 @@
+// From BB distribution.
+.cbre_imageCarousel {
+    position: relative;
+    max-width:100% !important;
+    img:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width:768px){
+    .cbre_imageCarousel {
+        .slick-list {margin: 0 -3px !important;}
+        .slick-slide>div {padding: 0 3px !important;}
+    }
+}
+
+.cbre_imageCarousel_items {
+    background: @border;
+    opacity: 0;
+    position: relative;
+    display: block;
+    right: auto;
+    left: auto;
+    margin: 0;
+    padding: 75% 0 0 0;
+    transition: background 1s linear 1s, opacity 1s linear 1s;
+    >div {
+        display: none;
+        opacity: 0;
+    }
+    &.slick-initialized {
+        background: transparent;
+        padding: 0;
+        opacity: 1;
+        >div {
+            display: block;
+            opacity: 1;
+            animation: 1s linear forwards fade-in;
+        }
+    }
+    .slick-next {
+        .arrowButton(right);
+    }
+    .slick-prev {
+        .arrowButton(left);
+    }
+    .slick-next,
+    .slick-prev {
+        top: auto;
+        bottom: -20px;
+    }
+    .slick-prev {
+        left: auto;
+    }
+    .slick-list,
+    .slick-track {
+        height: 100%;
+    }
+    .slick-slide {
+        position: relative;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+// Carousel in hero region.
+.cbre_heroWrap {
+    .cbre_imageCarousel_items {
+        @media (@tabletLandscapeAndUp) {
+            height: 480px;
+        }
+        @media (@desktopAndUp) {
+            height: 675px;
+        }
+        .slick-next,
+        .slick-prev {
+            @media (@tabletLandscapeAndUp) {
+                top: 50%;
+            }
+        }
+        .slick-prev {
+            @media (@tabletLandscapeAndUp) {
+                left: 0px;
+            }
+        }
+    }
+}
+
+// Mobile unslicked view
+.cbre_multiCarousel {
+    >.card {
+        box-shadow: none;
+        margin-bottom: 10px;
+        &:after {
+            content: "";
+            background: @lightGrey;
+            position: absolute;
+            display: block;
+            bottom: -6px;
+            width: 100%;
+            height: 1px;
+            margin-top: 5px;
+        }
+        .cbre_button__favourite:before {
+            font-size: 20px;
+        }
+    }
+}
+
+.featuredCarousel {
+    .cbre_multiCarousel {
+        margin-bottom:60px !important;
+    }
+    .cbre-spa--v2carousel {
+        .cbre-spa--carousel_title {
+            h2 {
+                font-family: 'futura-pt';
+                color:#333;
+                font-weight:700;
+            }
+        }
+        .cbre-spa--carousel_cta{
+            display:flex;
+            justify-content: flex-end;
+            a {
+                color:#77C734;
+                transition:.2s ease all;
+                &:after {
+                    display:none;
+                }
+                &:hover {
+                    filter: brightness(0.8);
+                }
+            }
+            #cta-image {
+                width:19px;
+                height:12px;
+                margin-top:6px;
+                margin-left:6px;
+                transition:.2s ease all;
+            }
+            &:hover {
+                #cta-image {
+                    filter: brightness(0.8);
+                }
+            }
+        }
+        .r3PropertyCard.featuredCarouselCard {
+            transition: .2s ease all;
+            &:hover {
+                border: 1px solid #006B4C !important;
+                box-shadow:  -6px 6px 12px #e6e6e6, 
+                6px -6px 12px #ffffff !important;
+            }
+        }
+    }
+    .slick-dots {
+        bottom:-35px !important;
+    }
+}
+
+// Tablet+ slick view
+.cbre_multiCarousel {
+    margin: 0 -10px;
+    &.margin-bottom-40 {
+        margin-bottom: 40px;
+    }
+    &.cbre_standalone_carousel {
+        .imageWrap {
+            padding-top: 75%;
+        }
+
+        .featuredCarouselCard {
+            min-height:208px !important;
+            .imageWrap {
+                padding-top: 245px;
+            }
+            .featuredCardDescription {
+                color: #333333;
+                font-size: 21px;
+                font-weight:700;
+                font-family: 'futura-pt';
+            }
+            #featuredAddress1, #featuredAddress2 {
+                font-family: 'futura-pt';
+                font-size: 16px;
+                color: #666;
+                font-weight: 500;
+            }
+            #featuredAddress2 {
+                margin-top:3px;
+            }
+            .flex-two-column {
+                .cbre_subh2.customh2{
+                    margin-bottom: 15px;
+                }
+            }
+            .onApplication {
+                width: 100%;
+                .featuredCarouselPrice {
+                    width:100%;
+                    float:left;
+                    .carouselImg {
+                        height:22px;
+                        width:auto;
+                        margin-left:20px;
+                        float:left;
+                    } 
+                    > span, > span div {
+                        width:fit-content;
+                        float:left;
+                    }
+                }
+                > .featuredCarouselPrice:nth-of-type(1) {
+                    margin-bottom:15px;
+                }
+            }
+        }
+    }
+    .slick-list {
+        margin: 0;
+        .slick-slide .card {
+            margin: 10px;
+        }
+        .card {
+            .card__portrait;
+        }
+        .no-touchevents & .card.slick-slide:hover,
+        >.card.slick-slide {
+            box-shadow: none;
+        } // animating box-shadow flickers on ie10
+        // animate opacity of pseudo element with shadow instead
+        .card:before {
+            .shadow(0);
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .no-touchevents & .card:hover:before {
+            opacity: 1;
+        }
+    }
+}
+
+.pdp {
+    .cbre_multiCarousel {
+        margin-bottom: 40px;
+    }
+}

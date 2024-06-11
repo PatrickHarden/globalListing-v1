@@ -1,0 +1,99 @@
+.subnav {
+    .cf();
+    border: 1px solid @lightBorder;
+    border-style: solid none;
+    background: #006A4D;
+    font-family: 'futura-pt';
+    font-weight:500;
+
+    a, a:after, span{
+        color: #fff !important;
+        transition: .2s ease all;
+    }
+
+    a, span {
+        font-family: 'futura-pt' !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
+
+    a:before, a:after, li:after, li:before, a:hover span, .subnav_link:hover, .breadcrumb_item a:hover  {
+        color: #BFD857 !important;
+    }
+
+    a:before, a:after, li:after, li:before {
+        position:relative;
+        top:-1px;
+    }
+
+
+    .cbre_container {
+        display: block !important;
+    }
+
+    .cbre_body & {
+        border-color: @border;
+    }
+
+    .breadcrumb {
+        float: left;
+    }
+
+    .subnav_links {
+        float: right;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        .propertyNavigationDivider {
+            position:relative;
+            top:-1px;
+            opacity:.6;
+        }
+        .subnav_link{
+            text-transform:none !important;
+        }
+    }
+
+    @media (@tabletLandscapeAndUp) {
+        .breadcrumb {
+            padding-left: 0;
+        }
+
+     .subnav_link:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:520px){
+    .subnav_links .subnav_link__next {
+        margin-left:25px !important;
+    }
+    .subnav {
+        a:before, a:after, li:after, li:before {
+            top:0;
+        }
+    }
+}
+
+.subnav.graySubnav {
+    background: #EBEBEB !important;
+    margin-bottom:50px !important;
+
+    a, span{
+        color: #616161 !important;
+    }
+
+    a:before, a:after, li:after, li:before, a:hover span, .subnav_link:hover, .breadcrumb_item a:hover  {
+        color: #69BE28 !important;
+    }
+
+    #propertyNavigationDivider {
+        color: #D2D2D2 !important;
+    }
+}

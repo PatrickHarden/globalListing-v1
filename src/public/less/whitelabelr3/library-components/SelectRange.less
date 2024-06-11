@@ -1,0 +1,123 @@
+.SelectRange-label {
+  color: #aaaaaa;
+  font-family: "Helvetica Neue", san-serif;
+  font-size: 0.8rem;
+  white-space: nowrap; }
+
+.SelectRange-label--min,
+.SelectRange-label--max {
+  bottom: -1.4rem;
+  position: absolute; }
+
+.SelectRange-label--min {
+  left: 0; }
+
+.SelectRange-label--max {
+  right: 0; }
+
+.SelectRange-label--value {
+  position: absolute;
+  top: -1.8rem; }
+
+.SelectRange-labelContainer {
+  left: -50%;
+  position: relative; }
+  .SelectRange-label--max .SelectRange-labelContainer {
+    left: 50%; }
+
+.SelectRange {
+  cursor: pointer;
+  height: 1rem;
+  position: relative;
+  width: 100%; }
+
+// BB styles
+
+.SelectRange {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.SelectRange-label {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.SelectRange .SelectRange-label {
+  display: none;
+}
+
+.SelectRange-label {
+  flex-shrink: 0;
+  .FontDefault;
+  color: @accentColor;
+
+  .SelectRange-labelContainer {
+    left: auto;
+  }
+}
+
+.SelectRangeWrap__valuesBeside {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+
+  .SelectRange {
+    order: 1;
+  }
+
+  .SelectRange-label {
+    position: relative;
+    top: -2px;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &.SelectRange-label--value--min {
+      order: 0;
+
+      .SelectRange-labelContainer {
+        padding-right: 20px;
+      }
+    }
+
+    &.SelectRange-label--value--max {
+      order: 2;
+
+      .SelectRange-labelContainer {
+        padding-left: 20px;
+      }
+    }
+
+    &.SelectRange-label--value .SelectRange-labelContainer:empty {
+      padding: 0;
+    }
+  }
+}
+
+.SelectRangeWrap__valuesAbove {
+  display: block;
+
+  .SelectRange-label {
+    position: static;
+    font-size: 11px;
+    margin-top: 1px;
+    margin-bottom: 7px;
+
+    &.SelectRange-label--value--min {
+      float: left;
+      padding-right: 0;
+    }
+
+    &.SelectRange-label--value--max {
+      float: right;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,187 @@
+# Node.js with Grunt
+# Build a Node.js project using the Grunt task runner.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+      - develop
+      - release/*
+      - hotfix/*
+      - develop-master-redesign-merge
+
+pr: none
+
+name: $(MajorMinorVersion).$(Rev:r)
+
+stages:
+  - stage: Build
+    displayName: Build SPA
+    jobs:
+      - job: Build
+        workspace:
+          clean: all
+        displayName: Build
+        pool:
+          name: "Global Listings Ubuntu"
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: "14.15.4"
+            displayName: "Install Node.js"
+
+          - task: SonarQubePrepare@4
+            inputs:
+              SonarQube: "sq.cbre.com"
+              scannerMode: "CLI"
+              configMode: "manual"
+              cliProjectKey: "globallistings-search.spa"
+              cliProjectName: "globallistings-search.spa"
+              cliSources: "."
+              extraProperties: |
+                sonar.exclusions="*/public/**, **/*.css, **/*.less, node_modules/**, src/assets/**, **/__tests__/**, /src/**/*.spec.js, **/*.less"
+            continueOnError: true
+            
+          - task: SonarQubeAnalyze@4
+            displayName: "Run Static Code Analysis"
+            continueOnError: true
+              
+            
+          - task: SonarQubePublish@4
+            displayName: "Publish Quality Gate Result"
+            continueOnError: true
+
+          - task: CmdLine@2
+            inputs:
+              script: "printenv"
+            displayName: "Display environment variables"
+
+          - script: |
+              npm cache clean --force
+              npm install
+              npm run grunt release
+            displayName: "run grunt"
+          - task: CopyFiles@2
+            inputs:
+              contents: "release/**"
+              targetFolder: $(Build.ArtifactStagingDirectory)
+            displayName: "Copy Release to Artifact Staging"
+
+          - task: CopyFiles@2
+            inputs:
+              contents: "pipeline_scripts/**"
+              targetFolder: $(Build.ArtifactStagingDirectory)
+            displayName: "Copy pipeline_scripts to Artifact Staging"
+
+          - task: CopyFiles@2
+            inputs:
+              contents: "deploy-azure-storage.py"
+              targetFolder: $(Build.ArtifactStagingDirectory)
+            displayName: "Copy deploy-azure-storage.py to Artifact Staging"
+
+          - task: CopyFiles@2
+            inputs:
+              contents: "package.json"
+              targetFolder: $(Build.ArtifactStagingDirectory)
+            displayName: "Copy package.json to Artifact Staging"
+
+          - task: CopyFiles@2
+            inputs:
+              contents: "build.json"
+              targetFolder: $(Build.ArtifactStagingDirectory)
+            displayName: "Copy build.json to Artifact Staging"
+
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              pathtoPublish: $(Build.ArtifactStagingDirectory)
+              artifactName: drop
+
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 3 -t 95'
+            displayName: Post-Gate2 Code Checkin
+            continueOnError: true
+              
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 50 -t 242'
+            displayName: Post-Gate3 Build Artifacts
+            continueOnError: true
+              
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 4 -t 242'
+            displayName: Post-Gate4 Code Build
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 56 -t 242'
+            displayName: Post-Gate5 Secret Management
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 54 -t 95'
+            displayName: Post-Gate6 Code Review
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 5 -t 42'
+            displayName: Post-Gate7 Unit Test
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 45 -t 22'
+            displayName: Post-Gate8 Static Code Analysis
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 19 -t 22'
+            displayName: Post-Gate9 Security Test
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 34 -t 3'
+            displayName: Post-Gate10 Dynamic Env Deploy & Release
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 16 -t 19'
+            displayName: Post-Gate11 Regression Test
+            continueOnError: true
+            
+          - task: CmdLine@2
+            inputs:
+              script: 'chmod +x ./metrics.sh; ./metrics.sh -a 787 -p 37 -t 3'
+            displayName: Post-Gate15 Production Monitoring
+            continueOnError: true
+
+  # ff
+  # - stage: SecurityScan
+  #   displayName: Security SCan
+  #   jobs:
+  #     - job: Checkmarx
+  #       displayName: Checkmarx Scan
+  #       pool:
+  #         name: "gcso-checkmarx"
+  #       steps:
+  #       - task: Application security testing@2020
+  #         inputs:
+  #           projectName: 'GL-SearchSPA'
+  #           enableProxy: false
+  #           enableSastScan: true
+  #           CheckmarxService: 'Checkmarx Connection'
+  #           customPreset: 'Checkmarx Default'
+  #           fullTeamName: 'CxServer\SP\Company\globallistings'
+  #           enableDependencyScan: false
+  #

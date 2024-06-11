@@ -1,0 +1,20 @@
+{
+    "breadcrumbPrefix": [
+        {
+            "text": "Item 1",
+            "url": "http://www.google.com"
+        },
+        {
+            "text": "Item 2",
+            "url": "/"
+        },
+        {
+            "text": "Item 3",
+            "url": "/"
+        },
+        {
+            "text": "Item 4",
+            "url": "/"
+        }
+    ]
+}

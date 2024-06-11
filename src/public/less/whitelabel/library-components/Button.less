@@ -1,0 +1,345 @@
+.cbre_button {
+  .FontDefault();
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Default raised buttons */
+
+.cbre_button__primary,
+.cbre_button__secondary,
+.cbre_button__tertiary {
+  border-radius: @border-radius-base;
+  width: 100%;
+  min-width: 84px;
+  min-height: 48px;
+  line-height: 48px;
+  padding: 0 14px;
+  text-align: center;
+}
+
+.cbre_button__large__mobile() {
+  min-height: 48px;
+  line-height: 48px;
+}
+
+.cbre_button__large {
+  .cbre_button__large__mobile;
+  @media (@tabletAndUp) {
+    min-height: 66px;
+    line-height: 64px;
+  }
+}
+
+.cbre_button__primary {
+  background: @accentColor;
+  color: @white;
+  &:not(.cbre_button__flat) {
+    border: 1px solid darken(@accentColor, 4%);
+  }
+  .buttonHoverStates( {
+        color: @white;
+        background: darken(@accentColor, 2%);
+    }
+    );
+}
+
+.cbre_button__secondary {
+  background: @white;
+  color: @lighterText;
+  &:not(.cbre_button__flat) {
+    border: 1px solid @border;
+  }
+  .buttonHoverStates( {
+        color: @lighterText;
+        background: darken(@white, 5%);
+    }
+    );
+  @media (@tabletAndUp) {
+    color: @grey;
+  }
+}
+
+.cbre_button__tertiary {
+  background: @white;
+  color: @accentColor;
+  font-weight: 600;
+  &:not(.cbre_button__flat) {
+    border: 1px solid @border;
+  }
+  .buttonHoverStates( {
+        color: @accentColor;
+        background: darken(@white, 5%);
+    }
+    );
+}
+
+.cbre_button__favourite {
+  &:before {
+    .iconMixin(@char: @icon_star, @size: 28px);
+  }
+  &.is_selected:before {
+    .iconMixin(@char: @icon_star_selected, @size: 28px);
+  }
+}
+
+.cbre_button__circle,
+.cbre_button__icon,
+.cbre_button__favourite {
+  position: relative;
+  z-index: 9;
+  font-size: 20px;
+  color: @iconButtonColor;
+  &:focus {
+    color: @iconButtonColor;
+  }
+  &:hover {
+    color: @iconButtonInvertedColor;
+  }
+  &.active,
+  &:focus {
+    color: @iconButtonColor;
+    &:hover {
+      color: @iconButtonInvertedColor;
+    }
+  }
+}
+
+.cbre_button__circle,
+.cbre_button__favourite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: @filterRibbon-fontSize;
+}
+
+.cbre_button__circle {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 50%;
+  background: @white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  &:before {
+    position: relative;
+    top: 0 !important;
+  }
+}
+
+.cbre_button__small {
+  border-radius: @border-radius-medium;
+  min-height: 38px;
+  line-height: 38px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: auto;
+  &.cbre_button__tertiary {
+    font-weight: 600;
+  }
+  @media (@tabletAndUp) {
+    text-transform: none;
+  }
+}
+
+.cbre_button__tiny {
+  border-radius: @border-radius-medium;
+  min-height: 0;
+  line-height: 1.4em;
+  padding: 6px 10px 8px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  width: auto;
+  min-width: 0;
+}
+
+.cbre_button.cbre_smallText {
+  font-size: 13px;
+}
+
+/* Flat buttons */
+
+.cbre_button__flat {
+  .FontAlternative;
+  border-radius: 0;
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  min-height: 42px;
+  line-height: 23px;
+  padding: 11px @padding;
+  align-items: center;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  &.row {
+    display: flex;
+    max-width: none;
+    width: auto;
+  }
+  &.cbre_button__secondary {
+    color: @defaultText;
+  }
+  [class^='col-'],
+  [class*=' col-'] {
+    display: flex;
+    align-items: center;
+  }
+  @media (@tabletAndUp) {
+    padding: 9px @padding_tablet;
+  }
+  @media (@tabletLandscapeAndUp) {
+    font-size: 17px;
+  }
+  .cbre_button_text ~ .cbre_icon {
+    margin-left: 17px;
+    font-size: 11px;
+    @media (@tabletAndUp) {
+      margin-left: 16px;
+    }
+  }
+}
+
+.cbre_button__avatar {
+  .cbre_button__flat;
+  .FontDefault();
+  background: @lightGrey;
+  color: @defaultText;
+  padding: 7px @padding;
+  @media (@tabletAndUp) {
+    padding: 7px @padding_tablet;
+  }
+  .buttonHoverStates( {
+        background: darken(@lightGrey, 10%);
+    }
+    );
+  .cbre_button_text {
+    line-height: 1.3em;
+    font-weight: 600;
+    font-size: 13px;
+    // align-items: center;
+    // display: flex;
+    // flex-flow: wrap;
+    // align-items: center;
+    // display: flex;
+    span {
+      overflow-wrap: normal;
+      word-break: normal;
+      white-space: normal;
+    }
+  }
+  [class^='col-'] > & .cbre_button_text,
+  [class*=' col-'] > & .cbre_button_text {
+    font-size: 12px;
+    span {
+      display: block;
+    }
+  }
+  .cbre_button_text ~ .cbre_icon {
+    color: @accentColor;
+    font-size: 11px;
+    @media (@tabletAndUp) {
+      font-size: 15px;
+    }
+  }
+  .cbre_button_text ~ .cbre_icon_phone {
+    font-size: 15px;
+    @media (@tabletAndUp) {
+      font-size: 18px;
+    }
+  }
+}
+
+.cbre_button__nav {
+  border-radius: 0;
+  position: relative;
+  min-height: 35px;
+  line-height: 1.5em;
+  padding: @headerNav-paddingY @headerNav-paddingX;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: @selectMenu-textTransform;
+  letter-spacing: @uppercase-letterSpacing;
+  &:after {
+    .iconMixin(@icon_chevron_right, 12px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: @headerNav-paddingX;
+  }
+  @media (@tabletLandscapeAndUp) {
+    border-radius: @border-radius-medium;
+    text-align: center;
+    line-height: 35px;
+    padding: 0 16px;
+    font-size: 14px;
+    &:after {
+      content: none;
+    }
+  }
+}
+
+.cbre_button__avatar.cbre_button__small {
+  padding: 7px 12px 7px 14px;
+  .cbre_button_text ~ .cbre_icon {
+    font-size: 11px;
+  }
+}
+
+.cbre_button_text {
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: 400;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  -ms-word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  span {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.cbre_button__flat {
+  @media (@tabletLandscapeAndUp) {
+    font-size: 16px;
+  }
+}
+
+.cbre_button__avatar .cbre_button_text {
+  font-weight: 400;
+}
+
+.cbre_button__favourite {
+  &:before {
+    content: @icon_star;
+  }
+  &.is_selected:before,
+  &.is_selected.is_highlighted:before {
+    content: @icon_star_selected;
+  }
+  &.is_highlighted:before {
+    content: @icon_star_count;
+    @media (@desktopAndUp) {
+      content: @icon_star_selected;
+    }
+  }
+  span.cbre_iconCount {
+    font-size: 9px;
+  }
+}

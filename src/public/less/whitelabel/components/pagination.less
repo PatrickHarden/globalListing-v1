@@ -1,0 +1,54 @@
+.cbre-pager {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+
+  @media (min-width: @screen-sm) {
+    margin-left: -10px;
+  }
+
+  .cbre-pager__count {
+    float: left;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: @screen-sm) {
+      width: auto;
+      float: left;
+      text-align: left;
+    }
+
+    p {
+      margin: 9px 0 0 0;
+    }
+
+    span:first-child {
+      text-transform: capitalize;
+    }
+  }
+
+  .cbre-pager__action {
+    padding-right: 0;
+    width: 100%;
+
+    @media (min-width: @screen-sm) {
+      float: right;
+      width: auto;
+    }
+    
+    a {
+      margin: 0 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: @screen-sm) {
+      .btn-group {
+        float: right;
+      }
+    }
+  }
+}
+

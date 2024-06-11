@@ -1,0 +1,14 @@
+{
+  "socialSharing": {
+    "facebookAppId": "1552675454953251",
+    "socialServices": {
+	    "facebookShare": true,
+	    "linkedInShare": true,
+	    "pintrestPinIt": true,
+	    "twitterTweet": true,
+	    "googlePlus": true
+    }
+  }
+} 
+
+

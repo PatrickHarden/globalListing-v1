@@ -1,0 +1,104 @@
+
+
+
+.propertyResults_sortBar {
+    border-bottom: 1px solid @lightGrey;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 38px;
+    line-height: 1.4em;
+    padding: 5px 15px;
+    font-size: 13px;
+
+    .summary {
+        position: relative;
+        top: -1px;
+        flex-grow: 1;
+        font-size: 15px;
+
+        p, span {
+            .FontDefault;
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 0px;
+
+            @media(@tabletAndUp) {
+              margin-bottom: 10px;
+              font-size: 1em;
+            }
+        }
+
+        .propertiesTruncated {
+          color: @available-properties-color;
+        }
+
+        a {
+            color: @accentColor;
+            font-weight: 700;
+
+            .hoverStates({
+                color: @accentColorHover;
+            });
+        }
+    }
+
+    .cbre_button__icon {
+        margin-left: 10px;
+    }
+
+    .cbre_popover {
+        top: 100%;
+        margin-top: 0;
+        width: 100%;
+        min-width: 315px;
+        z-index: 2;
+        text-align: center;
+
+        @media(@tabletAndUp) {
+            width: auto;
+        }
+    }
+
+    .Select {
+        .Select__small;
+        margin-left: 15px;
+    }
+}
+
+/*
+   Large sort bar
+*/
+
+.propertyResults_sortBar__large() {
+  min-height: 52px;
+  margin: 0 15px;
+  padding: 7px 0;
+  font-size: 16px;
+
+  @media (@tabletLandscapeAndUp) {
+    margin: 0 20px;
+    padding: 8px 0;
+  }
+
+  .propertyCountSuffix {
+    display: none;
+  }
+}
+
+/*
+   Wide sort bar
+*/
+
+.propertyResults_sortBar__wide() {
+  margin: 0 20px;
+
+  .Select,
+  .shareMenu_trigger {
+    margin-left: 20px;
+  }
+
+  .propertyCountSuffix {
+    display: inline;
+  }
+}

@@ -1,0 +1,36 @@
+.external-libraries-list-container {
+  list-style: none;
+  padding: 0;
+  list-style-position: inside;
+}
+
+ul.external-libraries-list-container {
+  > li {
+    vertical-align: top;
+    padding-left: 10px;
+    position: relative;
+    margin: 0 0 3px 0;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0.5em;
+      left: 0;
+      width: 5px;
+      height: 5px;
+    }
+  }
+}
+
+.external-libraries-list-cols-2 {
+  columns: 2;
+}
+
+.external-libraries-list-cols-3 {
+  columns: 3;
+}
+
+.external-libraries-list-cols-4 {
+  columns: 4;
+}

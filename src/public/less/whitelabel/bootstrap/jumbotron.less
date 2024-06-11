@@ -1,0 +1,38 @@
+//
+// Jumbotron
+// --------------------------------------------------
+
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: @padding;
+  flex-grow: 1;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.jumbotron_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding: @padding;
+
+  @media (@tabletAndUp) {
+    flex-grow: 0;
+  }
+
+  .headers({
+    .headingJumbo;
+  });
+}
+
+.jumbotron_buttons {
+  margin-top: 10px;
+  a {
+    margin-bottom: 10px;
+  }
+}

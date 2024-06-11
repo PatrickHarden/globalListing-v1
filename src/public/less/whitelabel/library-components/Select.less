@@ -1,0 +1,543 @@
+// IMPORTANT
+// Leave shared classes at end intact
+.list-map-view {
+    .Select {
+        .SelectFontsizeMixin;
+        .SelectOptionColorMixin;
+        .FontDefault();
+        .SelectOptionPaddingMixin;
+        .SelectPaddingMixin;
+        .SelectColorMixin( @color: @accentColor, @hoverColor: @accentColor, @placeholderColor: @black, @placeholderHoverColor: @accentColor );
+        overflow: visible;
+        height: 40px;
+        @media (@tabletAndUp) {
+            height: 47px;
+            .SelectOptionPaddingMixin( @paddingX: 20px, @paddingY: 8px);
+            .SelectPaddingMixin( @paddingX: 20px);
+        }
+    }
+    .SelectSuffix {
+        display: none;
+        position: relative;
+        top: -1px;
+        color: @grey;
+        font-size: 17px;
+        flex-shrink: 0;
+        padding: 0 15px;
+        .Select.is-open+& {
+            display: none !important;
+        }
+    }
+    .Select-control,
+    .Select-menu-outer,
+    .is-open>.Select-control {
+        border-color: @border;
+    }
+    .Select.is-error {
+        .Select-control {
+            .inputErrorMixin;
+        }
+        .Select-menu-outer {
+            border-color: @errorRed;
+        }
+    }
+    .Select-control,
+    .Select-menu-outer {
+        box-shadow: 0 2px 1px 0 #f5f5f5;
+    }
+    .Select.cbre_icon:before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        line-height: 1em;
+        font-size: 14px;
+        color: @lighterText;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .Select-control {
+        border-color: @border;
+        display: flex;
+        height: 45px;
+        line-height: 45px;
+        color: inherit;
+        cursor: pointer;
+    }
+    .Select-menu-outer {
+        position: relative;
+        box-shadow: none;
+        border-bottom-right-radius: 1px;
+        border-bottom-left-radius: 1px;
+        top: 0;
+        max-height: 348px;
+        overflow: hidden;
+        z-index: 10;
+        .formLabel {
+            margin-bottom: 4px;
+            padding-top: 12px;
+        }
+        width: auto;
+    }
+    .Select-menu {
+        max-height: 248px;
+        white-space: nowrap;
+        .is-searchable & {
+            padding-bottom: 38px;
+        }
+    }
+    .Select--single>.Select-control .Select-value,
+    .Select-input>input,
+    .Select-placeholder {
+        font-weight: 400;
+    }
+    .Select--single>.Select-control .Select-value,
+    .Select-placeholder {
+        position: static;
+        flex-grow: 1;
+        line-height: inherit;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .Select-input,
+    .Select-placeholder {
+        height: inherit;
+        line-height: inherit;
+    }
+    .Select-input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        flex-grow: 1;
+        z-index: 2;
+        .Select.is-searchable.is-focused &,
+        .Select.is-searchable.is-open & {
+            position: static;
+        }
+        >input {
+            .FontDefault();
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: inherit;
+        }
+    }
+    .Select-noresults,
+    .Select-option {
+        position: relative;
+        font-weight: 400;
+    }
+    .Select-option {
+        &:last-child {
+            border-bottom-right-radius: 1px;
+            border-bottom-left-radius: 1px;
+        }
+        .highlight {
+            font-weight: 600;
+        }
+    }
+    .Select .Select-option.Select-option__groupTitle {
+        .navItemStyle;
+        @media (@mobile) {
+            font-weight: 600;
+        }
+    }
+    .Select-arrow-zone {
+        width: auto;
+        padding-right: 0;
+    }
+    .Select-arrow {
+        position: relative;
+        top: -3px;
+        border: none;
+        width: auto;
+        &:after {
+            .iconMixin(@icon_chevron_down, 6px, @grey);
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: 5px;
+        }
+        .is-open &:after {
+            .iconMixin(@icon_chevron_up, 6px);
+        }
+    }
+    .Select--multi {
+        .SelectOptionColorMixin( @color: @defaultText, @hoverColor: @white, @bg: @white, @alternatingBg: @lightGrey, @hoverBg: @accentColor, @selectedBg: @accentColor, @selectedColor: @white, @highlightColor: @accentColor );
+        .SelectOptionPaddingMixin( @paddingX: 16px, @paddingY: 6px);
+        .SelectPaddingMixin( @paddingX: 16px);
+        .Select-option.is-selected:after {
+            .iconMixin(@icon_close, 12px, @white);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .Select-control {
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .Select-control .Select-input {
+            margin-left: 0;
+        }
+        .Select-value {
+            border: none;
+            background: transparent;
+            position: relative;
+            display: flex;
+            flex-shrink: 0;
+            line-height: inherit;
+            margin: 0;
+            padding: 0;
+        }
+        &.has_overflow:not(.is-open) .Select-value {
+            flex-grow: 1;
+            &~.Select-value {
+                display: none;
+            }
+        }
+        &.is-focused .Select-value {
+            visibility: hidden;
+        }
+        .Select-value-icon {
+            display: none;
+        }
+        .Select-value-label {
+            display: inline-block;
+            left: 0;
+            right: 0;
+            padding: 0;
+            &:before {
+                content: ' ,';
+                display: inline-block;
+                padding: 0 4px 0 1px;
+            }
+        }
+        &.has_overflow:not(.is-open) .Select-value-label {
+            position: absolute;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .Select-placeholder+.Select-value .Select-value-label:before {
+            content: none;
+        }
+    }
+    .Select__small {
+        .SelectColorMixin( @color: @lighterText, @hoverColor: @accentColor );
+        .SelectFontsizeMixin(@fontsize: 14px);
+        .SelectOptionColorMixin( @color: @lighterText, @hoverColor: @white, @hoverBg: @accentColor, @highlightColor: @accentColor );
+        .SelectOptionPaddingMixin( @paddingX: 13px, @paddingY: 5px);
+        .SelectPaddingMixin( @paddingX: 13px);
+        height: 31px;
+        .Select-arrow:after {
+            color: @grey;
+        }
+        .Select-input {
+            height: 29px;
+        }
+        .Select-control {
+            height: 29px;
+            line-height: 29px;
+        }
+        .Select-arrow-zone {
+            width: 34px;
+        }
+        &.Select--multi .Select-control {
+            padding-right: 34px;
+        }
+        @media (@tabletAndUp) {
+            height: 34px;
+            .SelectPaddingMixin( @paddingX: 20px);
+            .Select-control {
+                height: 32px;
+                line-height: 32px;
+            }
+            .Select-input {
+                height: 32px;
+            }
+        }
+    }
+    .Select__large {
+        .SelectFontsizeMixin(@fontsize: 17px);
+        &.is-open .Select-placeholder,
+        .Select-placeholder,
+        .no-touchevents &:hover .Select-placeholder {
+            color: @lighterText;
+        }
+    }
+    .Select__ribbon {
+        height: 42px;
+        .SelectPaddingMixin( @paddingX: 16px, @iconPadding: 28px);
+        .SelectOptionPaddingMixin( @paddingX: 13px, @paddingY: 5px);
+        .SelectFontsizeMixin(@filterRibbon-fontSize);
+        .SelectColorMixin( @placeholderColor: @black, @placeholderHoverColor: @accentColor, @color: @accentColor, @hoverColor: @accentColor );
+        &.cbre_icon:before {
+            font-size: 17px;
+            color: @grey;
+        }
+        &.is-searchable.is-focused {
+            border-bottom: 1px solid @accentColor;
+            height: 43px;
+            margin-bottom: -1px;
+        }
+        .Select-arrow:after {
+            color: @grey;
+        }
+        .Select-menu-outer {
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+            border: none;
+            position: absolute;
+            top: 100%;
+            margin-top: 1px;
+        }
+        .Select-input {
+            height: 42px;
+        }
+        .Select-control {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            height: 42px;
+            line-height: 42px;
+        }
+        @media (@tabletAndUp) {
+            height: 47px;
+            &.is-searchable.is-focused {
+                border-bottom: none;
+                height: 47px;
+                margin-bottom: 0;
+            }
+            &.is-searchable.is-focused .Select-menu-outer {
+                border-top: 1px solid @accentColor;
+                margin-top: 0;
+            }
+            .SelectPaddingMixin( @paddingX: 20px, @iconPadding: 36px);
+            .Select-input {
+                height: 47px;
+            }
+            .Select-control {
+                height: 47px;
+                line-height: 47px;
+            }
+            &.cbre_icon:before {
+                font-size: 23px;
+            }
+        }
+        @media (@desktopAndUp) {
+            .SelectFontsizeMixin(@filterRibbon-fontSize_desktop);
+        }
+    }
+    .Select__ribbonAlt {
+        height: 40px;
+        margin-bottom: -1px;
+        .SelectColorMixin( @color: @select-ribbonAlt-value-color, @hoverColor: @accentColor, @placeholderColor: @black, @placeholderHoverColor: @accentColor );
+        .SelectOptionColorMixin( @color: @defaultText, @hoverColor: @accentColor, @bg: @white, @hoverBg: @white );
+        .SelectFontsizeMixin( @fontsize: @select-ribbonAlt-fontSize, @optionFontsize: @select-ribbonAlt-option-fontSize );
+        .SelectPaddingMixin( @paddingX: 13px);
+        .SelectOptionPaddingMixin( @paddingX: 13px, @paddingY: 9px);
+        &.is-open .Select-control,
+        .Select-menu-outer {
+            border-color: @lightBorder;
+            background: @white;
+        }
+        .Select-option {
+            border-bottom: 1px solid @lightBorder;
+            &:last-child {
+                border-bottom: none;
+            }
+            &.is-selected {
+                display: none;
+            }
+        }
+        .Select-menu,
+        .Select-menu-outer {
+            max-height: none;
+        }
+        .Select-menu-outer,
+        .Select-option:last-child {
+            border-bottom-left-radius: @border-radius-large;
+            border-bottom-right-radius: @border-radius-large;
+        }
+        .Select-control {
+            border-top-left-radius: @border-radius-large;
+            border-top-right-radius: @border-radius-large;
+            border-color: transparent;
+            background: transparent;
+            box-shadow: none;
+            height: 40px;
+            line-height: 39px;
+        }
+        .Select-arrow:after {
+            .iconMixin(@char: @icon_chevron_solid_down, @size: 5px, @color: @select-ribbonAlt-arrow-color);
+        }
+        &:hover .Select-arrow:after {
+            color: darken(@select-ribbonAlt-arrow-color, 20%);
+        }
+        &.is-open .Select-arrow:after {
+            .iconMixin(@char: @icon_chevron_solid_up, @size: 5px, @color: darken(@select-ribbonAlt-arrow-color, 20%));
+            top: -1px;
+        }
+        .Select-option.Select-option__groupTitle {
+            padding-right: 10px;
+            padding-left: 10px;
+            color: @lighterText;
+        }
+    }
+    .Select__menu {
+        .SelectColorMixin( @color: @select-ribbonAlt-value-color, @hoverColor: @accentColor, @placeholderColor: @defaultText, @placeholderHoverColor: @accentColor );
+        .SelectFontsizeMixin( @fontsize: @headerNav-fontSize, @optionFontsize: @headerSubnav-fontSize );
+        .SelectPaddingMixin( @iconPadding: 0px, @paddingX: @headerNav-paddingX, @paddingY: @headerNav-paddingY );
+        .SelectOptionPaddingMixin( @paddingX: @headerNav-paddingX, @paddingY: @headerNav-paddingY );
+        .SelectOptionColorMixin( @color: @defaultText, @hoverColor: @accentColor, @bg: @ghostWhite, @hoverBg: @ghostWhite, @selectedBg: @ghostWhite );
+        height: auto;
+        .Select-menu,
+        .Select-menu-outer {
+            border: none;
+            max-height: none;
+        } // Always show placeholder instead of value
+        .Select-placeholder {
+            display: block !important;
+        }
+        .Select-value {
+            display: none !important;
+        }
+        .Select-option {
+            border-bottom: 1px solid @lightBorder;
+            &.is-selected {
+                color: @accentColor;
+            }
+        }
+        .Select-menu-outer {
+            margin-top: 0;
+        }
+        .Select-control {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border: 1px solid @lightBorder;
+            border-style: none none solid none;
+            background: @white;
+            box-shadow: none;
+            height: auto;
+            line-height: @headerNav-lineHeight;
+        }
+        &.Select--single>.Select-control .Select-value,
+        .Select-placeholder {
+            .navItemStyle;
+            text-transform: @selectMenu-textTransform;
+        }
+        .Select-arrow {
+            height: 100%;
+            &:after {
+                color: @headerNav-arrow-color;
+                font-size: @headerNav-arrow-fontSize;
+            }
+        }
+        &.cbre_icon:before {
+            display: none;
+        }
+    }
+    div.Select.is-searchable {
+        .SelectColorMixin( @color: @black, @hoverColor: @black, @placeholderColor: @defaultText, @placeholderHoverColor: @defaultText );
+        &:not(.Select--multi) {
+            .SelectOptionColorMixin( @color: @defaultText, @hoverColor: @white, @hoverBg: @accentColor, @highlightColor: @accentColor );
+        }
+        .Select-menu-outer:after {
+            content: '';
+            background: @white no-repeat url('../images/powered-by-google.png');
+            background-size: 130px auto;
+            background-position: right 8px;
+            position: absolute;
+            display: block;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 36px;
+            border-right: 15px solid @white;
+        }
+        &.Select--single>.Select-control .Select-value {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .Select-arrow-zone {
+            display: none;
+        }
+        .Select-input input,
+        .Select-placeholder,
+        .Select-value {
+            cursor: text;
+        }
+    }
+}
+
+
+/* Non-BB styles - please do not change when adding BB updates */
+
+.list-map-view {
+    .Select-aria-only {
+        width: 0;
+        position: absolute;
+    }
+    .Select.Select--single .Select-input,
+    .Select.Select--single .Select-placeholder {
+        position: static !important;
+    }
+    .Select .Select-multi-value-wrapper {
+        position: absolute;
+        width: calc(~'100% - 40px');
+        .Select-input,
+        input {
+            width: 100%;
+        }
+    } // Display select values in a row
+    .Select.Select--multi .Select-value {
+        display: inline-block;
+    } // Remove ',' from first
+    .Select.Select--multi .Select-value:first-of-type .Select-value-label {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:before {
+            content: none;
+        }
+    }
+    .Select.Select--multi .Select-menu-outer:after {
+        content: none;
+        display: none !important;
+    }
+}
+
+// We can't add SelectSuffix in the desired location because react would require
+// a containing <div>, breaking styles. Keep BB styles as is for compatability
+// but add our own --inline override for this one implementation
+.list-map-view .Select .SelectSuffix.SelectSuffix--inline {
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+// Those shared classes that you need to leave intact
+.Select__small {
+    .shared_select_small;
+}
+
+.Select__large {
+    .shared_select_large;
+}
+
+.Select__ribbon {
+    .shared_select_ribbon;
+}
+
+.Select__ribbonAlt {
+    .shared_select_ribbonAlt;
+}
+
+.Select__menu {
+    .shared_select_menu;
+}

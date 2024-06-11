@@ -1,0 +1,8 @@
+{
+  "breakpoints": {
+    "xsmall": "300",
+    "small": "768",
+    "medium": "992",
+    "large": "1200"
+  }
+}

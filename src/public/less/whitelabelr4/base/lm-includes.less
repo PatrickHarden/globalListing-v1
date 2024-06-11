@@ -1,0 +1,336 @@
+.shared_select_small {
+    .SelectColorMixin(
+        @color: @lighterText,
+        @hoverColor: @accentColor
+    );
+    .SelectFontsizeMixin(@fontsize: 14px);
+    .SelectOptionColorMixin(
+        @color: @lighterText,
+        @hoverColor: @white,
+        @hoverBg: @accentColor,
+        @highlightColor: @accentColor
+    );
+    .SelectOptionPaddingMixin(
+        @paddingX: 13px,
+        @paddingY: 5px
+    );
+    .SelectPaddingMixin(
+        @paddingX: 13px
+    );
+
+    height: 31px;
+
+    .Select-arrow:after {
+        color: @lime-green;
+    }
+
+    .Select-input {
+        height: 29px;
+    }
+
+    .Select-control {
+        height: 29px;
+        line-height: 29px;
+    }
+
+    .Select-arrow-zone {
+        width: 34px;
+    }
+    &.Select--multi .Select-control {
+        padding-right: 34px;
+    }
+
+
+    @media (@tabletAndUp) {
+        height: 34px;
+
+        .SelectPaddingMixin(
+            @paddingX: 20px
+        );
+
+        .Select-control {
+            height: 32px;
+            line-height: 32px;
+        }
+
+        .Select-input {
+            height: 32px;
+        }
+    }
+}
+
+.shared_select_large {
+    .SelectFontsizeMixin(@fontsize: 17px);
+
+    .Select-placeholder,
+    .no-touchevents &:hover .Select-placeholder,
+    &.is-open .Select-placeholder {
+        color: @lighterText;
+    }
+}
+
+.shared_select_ribbon {
+    height: 42px;
+
+    .SelectPaddingMixin(
+        @paddingX: 16px,
+        @iconPadding: 28px
+    );
+
+    .SelectOptionPaddingMixin(
+        @paddingX: 13px,
+        @paddingY: 5px
+    );
+
+    .SelectFontsizeMixin(@filterRibbon-fontSize);
+
+    .SelectColorMixin(
+        @placeholderColor: @black,
+        @placeholderHoverColor: @accentColor,
+        @color: @accentColor,
+        @hoverColor: @accentColor
+    );
+
+    &.cbre_icon:before {
+        font-size: 17px;
+        color: @grey;
+    }
+
+    &.is-searchable.is-focused {
+        border-bottom: none;
+        margin-bottom: -1px;
+
+        @media (@tabletAndUp) {
+            height: 50px;
+        }
+    }
+
+    .Select-arrow:after {
+        color: @lime-green;
+    }
+
+    .Select-menu-outer {
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+        border: none;
+        position: absolute;
+        top: 100%;
+        margin-top: 1px;
+    }
+
+    .Select-input {
+        height: 31px;
+    }
+
+    .Select-value, .Select-placeholder{
+        height: 31px;
+    }
+
+    .Select-control {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        height: 40px;
+        line-height: 38px;
+    }
+
+    @media (@tabletAndUp) {
+        height: 48px;
+
+        &.is-searchable.is-focused {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        &.is-searchable.is-focused .Select-menu-outer {
+            border-top: 1px solid @accentColor;
+            margin-top: 0;
+        }
+
+        .SelectPaddingMixin(
+            @paddingX: 20px,
+            @iconPadding: 36px
+        );
+
+        .Select-input {
+            height: 36px;
+        }
+
+        .Select {
+            height: 48px;
+        }
+
+        .Select-control {
+            height: 50px;
+            line-height: 48px;
+        }
+
+        &.cbre_icon:before {
+            font-size: 23px;
+            color: @white !important;
+        }
+
+        .Select-value, .Select-placeholder{
+            height: 50px;
+        }
+    }
+
+    @media (@desktopAndUp) {
+        .SelectFontsizeMixin(@filterRibbon-fontSize_desktop);
+    }
+}
+
+.shared_select_ribbonAlt {
+    height: 40px;
+    margin-bottom: -1px;
+
+    .SelectColorMixin(
+        @color: @select-ribbonAlt-value-color,
+        @hoverColor: @accentColor,
+        @placeholderColor: @black,
+        @placeholderHoverColor: @accentColor
+    );
+
+    .SelectOptionColorMixin(
+        @color: @defaultText,
+        @hoverColor: @accentColor,
+        @bg: @white,
+        @hoverBg: @white
+    );
+
+    .SelectFontsizeMixin(
+        @fontsize: @select-ribbonAlt-fontSize,
+        @optionFontsize: @select-ribbonAlt-option-fontSize
+    );
+
+    .SelectPaddingMixin(
+        @paddingX: 13px
+    );
+
+    .SelectOptionPaddingMixin(
+        @paddingX: 13px,
+        @paddingY: 9px
+    );
+
+    &.is-open .Select-control,
+    .Select-menu-outer {
+        border-color: @black;
+        background: @white;
+    }
+
+    .Select-option {
+        border-bottom: 1px solid @lightBorder;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &.is-selected {
+            display: none;
+        }
+    }
+
+    .Select-menu-outer,
+    .Select-menu {
+        max-height: none;
+    }
+
+    .Select-menu-outer,
+    .Select-option:last-child {
+        border-bottom-left-radius: @border-radius-large;
+        border-bottom-right-radius: @border-radius-large;
+    }
+
+    .Select-control {
+        border-top-left-radius: @border-radius-large;
+        border-top-right-radius: @border-radius-large;
+        border-color: transparent;
+        background: transparent;
+        box-shadow: none;
+        height: 40px;
+        line-height: 39px;
+    }
+
+    .Select-arrow:after {
+        .iconMixin(@char:@icon_chevron_solid_down, @size:5px, @color: "@lime-green");
+    }
+
+    &:hover .Select-arrow:after {
+        color: darken(@lime-green, 20%);
+    }
+
+    &.is-open .Select-arrow:after {
+        .iconMixin(@char:@icon_chevron_solid_up, @size:5px, @color: darken(@lime-green, 20%));
+        top: -1px;
+    }
+
+    .Select-option.Select-option__groupTitle {
+        padding-right: 10px;
+        padding-left: 10px;
+        color: @lighterText;
+    }
+}
+
+.shared_select_menu {
+    .SelectColorMixin( @color: @select-ribbonAlt-value-color, @hoverColor: @accentColor, @placeholderColor: @defaultText, @placeholderHoverColor: @accentColor );
+    .SelectFontsizeMixin( @fontsize: @headerNav-fontSize, @optionFontsize: @headerSubnav-fontSize );
+    .SelectPaddingMixin( @iconPadding: 0px, @paddingX: @headerNav-paddingX, @paddingY: @headerNav-paddingY );
+    .SelectOptionPaddingMixin( @paddingX: @headerNav-paddingX, @paddingY: @headerNav-paddingY );
+    .SelectOptionColorMixin( @color: @defaultText, @hoverColor: @accentColor, @bg: @ghostWhite, @hoverBg: @ghostWhite, @selectedBg: @ghostWhite );
+    height: auto;
+
+    .Select-menu,
+    .Select-menu-outer {
+        border: none;
+        max-height: none;
+    }
+    // Always show placeholder instead of value
+    .Select-placeholder {
+        display: block !important;
+    }
+
+    .Select-value {
+        display: none !important;
+    }
+
+    .Select-option {
+        border-bottom: 1px solid @lightBorder;
+
+        &.is-selected {
+            color: @accentColor;
+        }
+    }
+
+    .Select-menu-outer {
+        margin-top: 0;
+    }
+
+    .Select-control {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: 1px solid @lightBorder;
+        border-style: none none solid none;
+        background: @white;
+        box-shadow: none;
+        height: auto;
+        line-height: @headerNav-lineHeight;
+    }
+
+    &.Select--single > .Select-control .Select-value,
+    .Select-placeholder {
+        .navItemStyle;
+        text-transform: @selectMenu-textTransform;
+    }
+
+    .Select-arrow {
+        height: 100%;
+
+        &:after {
+            color: @headerNav-arrow-color;
+            font-size: @headerNav-arrow-fontSize;
+        }
+    }
+
+    &.cbre_icon:before {
+        display: none;
+    }
+}

@@ -1,0 +1,423 @@
+@page_paddingX: 0px;
+@page_paddingY: 30px;
+
+// PDF specific styles
+.cbre_brochure {
+  background-color: @white;
+
+  .headerLogoWrap .cbre_icon_logo {
+    float: left;
+    display: block;
+    font-size: 25px;
+    color: @cbreGreen;
+  }
+
+  .headerLogoWrap_cbreLink {
+    display: none;
+    float: left;
+    margin-left: 15px;
+    color:@defaultText;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .pdf_header {
+    .cbre_h3 {
+      color: @darkerText;
+    }
+  }
+
+  .pdf_body {
+    h1 {
+      color: @darkerText;
+      font-size: 20px;
+      margin: 0 0 2px 0;
+      line-height: 1.3em;
+      font-weight: 400;
+    }
+
+    .cbre_subh1,
+    .cbre_subh2 {
+      line-height: 1.45em;
+      font-size: 12px;
+      height: 17px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .addressWrap h3 {
+      margin: 0;
+    }
+
+    &.pdf_detail {
+      .cbre_subh2 {
+        padding-left: 15px;
+      }
+
+      .contactTable {
+        tr {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  .is_highlighted {
+    color: @accentColor;
+  }
+
+  .cbre_disclaimer {
+    font-weight: normal;
+    color: @lighterText;
+    font-size: 10px;
+    line-height: 1.5em;
+  }
+}
+
+.avoidPageBreak {
+    page-break-after: avoid;
+}
+
+.contactTable {
+    background: @lightGrey;
+    font-size: 12px;
+    width: 100%;
+
+    td {
+        vertical-align: middle;
+        padding: 8px 0 0 12px;
+
+        &:last-child {
+            padding-right: 12px;
+        }
+    }
+
+    tr:first-child td,
+    td[rowspan] {
+        padding-top: 10px;
+    }
+
+    tr:last-child td,
+    td[rowspan] {
+        padding-bottom: 10px;
+    }
+
+    td.cbre_icon {
+        color: @accentColor;
+        text-align: center;
+    }
+
+    td.cbre_icon + td {
+        padding-left: 7px;
+    }
+
+    td.cbre_icon_user {
+        font-size: 18px;
+
+        + td {
+            width: 100%;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+
+    td.cbre_icon_phone {
+        font-size: 15px;
+
+        + td {
+            white-space: nowrap;
+        }
+    }
+
+    td.cbre_icon_mail {
+        font-size: 12px;
+
+        &:before {
+            vertical-align: middle;
+        }
+
+        + td {
+            width: 100%;
+        }
+    }
+
+    .cbre_avatar {
+        width: 36px;
+        height: 36px;
+        vertical-align: middle;
+    }
+}
+
+.contactTable + .contactTable {
+    margin-top: 15px;
+}
+
+div.cbre_disclaimer {
+    float: footnote;
+
+    @media screen {
+        margin-top: auto;
+        padding-top: 40px;
+    }
+
+    p, ol {
+        .FontDefault();
+        color: @lighterText;
+        font-size: 10px;
+        line-height: 1.5em;
+    }
+
+    ol {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+    }
+}
+
+.cbre_disclaimer::footnote-call {
+    /* controls the footnote markers in the main page text */
+    content: "";
+}
+.cbre_disclaimer::footnote-marker {
+    /* controls the footnote markers in the footnote section */
+    content: "";
+}
+
+.cbre_pageBreak {
+    display: block;
+    page-break-before: always;
+
+    @media screen {
+        width: 100%;
+        height: 0;
+    }
+}
+
+.cbre_page {
+    margin: 0 auto;
+
+    @media screen {
+        display: flex;
+        flex-direction: column;
+        max-width: 8.5in;
+        min-height: 100vh;
+        padding: @page_paddingY @page_paddingX;
+
+        > * {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.cbre_brochure {
+
+    .cbre_bulletList {
+        font-size: 13px;
+        li {
+            margin-bottom: 0px;
+            padding-bottom: 8px;
+        }
+    }
+    .row {
+        .cf();
+    }
+    .cbre_h1 {
+        font-size: 20px;
+        margin-bottom: 2px;
+        line-height: 1.3em;
+    }
+    .cbre_h2 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .cbre_h3 {
+        font-size: 19px;
+    }
+    .cbre_h4 {
+        font-size: 15px;
+    }
+    .cbre_h6 {
+        font-size: 11px;
+    }
+
+    .cbre_subh1,
+    .cbre_subh2 {
+        line-height: 1.45em;
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.9em;
+    }
+    p.cbre_largeText {
+        font-size: 14px;
+        margin: 0.7em 0 0.8em 0;
+    }
+
+    td {
+        page-break-inside: avoid;
+    }
+
+    .imageWrap {
+        .imageWrap__4to3;
+    }
+}
+
+.cbre_simpleHeader {
+    display: table;
+    width: 100%;
+
+    @media screen {
+        max-width: 8.5in;
+        padding: 0 0 35px 0;
+    }
+
+    > div {
+
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .headerLogoWrap {
+        .cbre_icon_logo,
+        .headerLogoWrap_cbreLink {
+            display: inline-block;
+        }
+
+        .headerLogoWrap_cbreLink {
+            background: white;
+        }
+        .cbre_icon_logo {
+            font-size: 40px;
+        }
+        .headerLogoWrap_cbreLink {
+            font-size: 18px;
+        }
+        .headerLogoWrap_cbreLink:after {
+            content: none;
+        }
+
+    }
+
+    .cbre_headerTitle {
+        background: white;
+    }
+    .cbre_smallText {
+        background: white;
+    }
+
+    .cbre_headerTitle {
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+}
+
+.pdf_body {
+    padding: 0;
+}
+
+.pdf_header,
+.pdf_subheader {
+    border-bottom: 1px solid @lightBorder;
+    page-break-after: avoid;
+
+    &.is_borderless {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    * {
+        margin-bottom: 0;
+    }
+}
+
+.pdf_header {
+    margin: 25px 0;
+    padding-bottom: 10px;
+}
+
+.pdf_subheader {
+    border-color: @border;
+    margin: 25px 0 14px 0;
+    padding-bottom: 15px;
+
+    .cbre_h4 {
+        font-weight: 400;
+    }
+}
+
+.staticListingsMap {
+    display: block;
+    width: 640px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.staticListings {
+    margin-bottom: -25px;
+}
+
+.staticListings_Item {
+    display: table !important;
+    table-layout: fixed;
+    margin-bottom: 20px;
+
+    &:nth-child(2n + 1) {
+        padding-right: 20px;
+    }
+
+    &:nth-child(2n) {
+        padding-left: 20px;
+    }
+
+    > div {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .staticListings_Item_image {
+        width: 100px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .detailsWrap {
+        max-height: 77px;
+        overflow: hidden;
+    }
+
+    .addressWrap {
+        max-height: 60px;
+        margin-bottom: 3px;
+        overflow: hidden;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 1.3em;
+        font-weight: 400;
+        color: @black;
+        margin-bottom: 0;
+    }
+
+    .cbre_subh1,
+    .cbre_subh2 {
+        height: 17px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .cbre_subh1 {
+        margin-bottom: 1px;
+    }
+
+    .cbre_subh2 {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "location": {
+    "radius": "20"
+  },
+  "carouselConfig": {
+    "searchResultsPage": "/",
+    "callToActionLinkTitle": "Browse all",
+    "callToActionLink": "http://www.google.co.uk",
+    "callToActionTarget": "_blank",
+    "type": "Card",
+    "numberOfItems": 4
+  }
+}

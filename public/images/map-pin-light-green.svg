@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="53px" viewBox="0 0 44 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Misc/Map/Pin" transform="translate(-10.000000, -6.000000)" fill="#69BE28">
+            <path d="M32,59 C17.3333333,46.4335097 10,36.1001763 10,28 C10,15.8497355 19.8497355,6 32,6 C44.1502645,6 54,15.8497355 54,28 C54,36.1001763 46.6666667,46.4335097 32,59 Z M32,39 C38.0751322,39 43,34.0751322 43,28 C43,21.9248678 38.0751322,17 32,17 C25.9248678,17 21,21.9248678 21,28 C21,34.0751322 25.9248678,39 32,39 Z" id="map-pin"></path>
+        </g>
+    </g>
+</svg>

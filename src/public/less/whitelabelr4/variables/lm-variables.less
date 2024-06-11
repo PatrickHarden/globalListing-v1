@@ -1,0 +1,209 @@
+/* WARNING !
+  EXTRA RULES ADDED AT BOTTOM
+  DO NOT DELETE WHEN UPDATING BB STYLES
+
+  they have to go down there to inherit stuff from BB soz
+*/
+
+
+/* base less */
+@mobilePortraitMin: 320px;
+@mobileLandscapeMin: 568px;
+@tabletMin: 768px;
+@tabletLandscapeMin: 1024px;
+@desktopMin: 1440px;
+
+@mobilePortraitMax: (@mobileLandscapeMin - 1px);
+@mobileMax: (@tabletMin - 1px);
+@tabletPortraitMax: (@tabletLandscapeMin - 1px);
+@tabletMax: (@desktopMin - 1px);
+
+@tabletAboveLandscape: (@tabletLandscapeMin + 1px);
+
+@mobile: ~"max-width: @{mobileMax}";
+@mobilePortrait: ~"max-width: @{mobilePortraitMax}"; // col-xs
+@mobileLandscapeAndUp: ~"min-width: @{mobileLandscapeMin}"; // col-sm
+@tabletAndUp: ~"min-width: @{tabletMin}"; // col-md
+@tabletLandscapeAndUp: ~"min-width: @{tabletLandscapeMin}"; // col-lg
+@desktopAndUp: ~"min-width: @{desktopMin}"; // col-xl
+
+@columns: 12;
+@gridGutter: 20px;
+
+@container-width: 1060px;
+@sidebar-width: 396px;
+@sidebar-width-wide: 730px;
+
+@padding: 15px;
+@padding_tablet: 20px;
+
+@border-radius-base: 2px;
+@border-radius-large: 4px;
+@border-radius-medium: 3px;
+@border-radius-small: 1px;
+
+// PLP card
+
+@cardImage-width: 104px;
+@cardImage-width_wide: 288px;
+
+// Colors
+
+@cbreGreen: #006B4C;
+@white: #FFFFFF;
+@ghostWhite: #F9F9F9;
+@chiffon: #FDFBF9;
+@lightGrey: #F5F5F5;
+@midGrey: #D8D8D8;
+@grey: #B0B0B0;
+@black: #000000;
+@highlightColor: rgba(245, 245, 245, 0.5);
+@darkerText: #111111;
+@defaultText: #333333;
+@lighterText: #717171;
+@errorRed: #AF3434;
+@errorBg: rgba(255, 0, 0, 0.1);
+
+@lightBorder: #EEEEEE;
+@border: #D1D1D1;
+@lightGreen: #5CA623;
+
+@accentColor: @cbreGreen;
+@accentColorHover: @energizing-green;
+@dividerColor: @border;
+
+// Type
+
+.FontDefault() {
+  font-family: @font-family-sans-serif;
+  font-weight: normal;
+}
+.FontAlternative() {
+  font-family: @font-family-sans-serif;
+  font-weight: 600;
+}
+
+@h1-size: 22px;
+@h1-size_tablet: 24px;
+
+@h2-size: 15px;
+@h2-size_tablet: 22px;
+@h2-weight: 600;
+
+@h3-size: 14px;
+@h3-size_tablet: 20px;
+
+@h4-size: 14px;
+@h4-size_tablet: 18px;
+@h4-weight: 600;
+
+@h5-size: 17px;
+@h6-size: 12px;
+
+@headingJumbo-size: 27px;
+@headingJumbo-size_tablet: 37px;
+
+@cbre_subh1-size: 14px;
+@cbre_subh1-weight: 400;
+@cbre_subh1-size_tablet: 15px;
+@cbre_subh1-weight_tablet: 600;
+@cbre_subh2-size: 12px;
+@cbre_subh2-weight: 300;
+@cbre_subh2-size_tablet: 15px;
+@cbre_subh2-weight_tablet: 300;
+
+@p_small-size: 12px;
+
+@p-size: 13px;
+@p-size_tablet: 14px;
+
+@p_large-size: 15px;
+@p_large-size_tabletPortrait: 15px;
+@p_large-size_tablet: 16px;
+
+@largeHighlight-size: 17px;
+@largeHighlight-size_tablet: 22px;
+@largeHighlight-weight: 600;
+
+@blockLink-fontSize: 15px;
+
+@uppercase-letterSpacing: 1px;
+
+// Header
+
+@headerNav-paddingX: 20px;
+@headerNav-paddingY: 12px;
+@headerNav-lineHeight: 1.5em;
+@headerNav-fontWeight: 600;
+@headerNav-fontSize: 16px;
+@headerNav-fontSize_largeScreen: 14px;
+@headerNav-arrow-color: @grey;
+@headerNav-arrow-fontSize: 8px;
+
+@headerSubnav-fontSize: 14px;
+@headerSubnav-fontSize_largeScreen: 13px;
+
+// Select menu
+
+@selectMenu-textTransform: uppercase;
+
+// Select ribbon alt
+
+@select-ribbonAlt-value-color: @defaultText;
+@select-ribbonAlt-arrow-color: @grey;
+@select-ribbonAlt-fontSize: 14px;
+@select-ribbonAlt-option-fontSize: 13px;
+
+// PLP filter ribbon
+
+@filterRibbon-fontSize: 12px;
+@filterRibbon-fontSize_desktop: 12px;
+@filterRibbon-height: 50px;
+@filterRibbon-height_tablet: 50px;
+
+// PDP Breadcrumb
+
+@breadcrumb-height: 30px;
+@breadcrumb-height_tabletLandscape: 42px;
+@breadcrumb-fontSize: 13px;
+@breadcrumb-fontSize_tabletLandscape: 15px;
+
+// Bootstrap modal
+
+@modal-inner-padding: 15px;
+@modal-title-padding: 12px 15px;
+@modal-title-line-height: 25px;
+@modal-content-bg: @white;
+@modal-content-border-color: @border;
+@modal-content-fallback-border-color: @border;
+@modal-header-border-color: transparent;
+@modal-lg: 900px;
+@modal-md: 450px;
+@modal-sm: 335px;
+
+
+// Forms
+
+@fieldsetPaddingVerticalDesktop: 14px;
+@fieldsetPaddingVerticalTablet: 18px;
+@fieldsetPaddingVerticalMobile: 18px;
+@fieldPaddingVerticalDesktop: @fieldsetPaddingVerticalDesktop;
+@fieldPaddingVerticalTablet: @fieldsetPaddingVerticalTablet;
+@fieldPaddingVerticalMobile: 8px;
+
+@textInput-lineHeight: 23px;
+@textInput-paddingY: 10px;
+@textInput_small-paddingY: 5px;
+
+
+
+/* EXTRA RULES
+  DO NOT DELETE WHEN UPDATING BB STYLES
+  THANKS X
+*/
+
+@dropShadowPrimary: #036d4e;
+@dropShadowSecondary: rgba(0, 0, 0, 0.4);
+
+@iconButtonColor: @cbreGreen;
+@iconButtonInvertedColor: @lightGreen;

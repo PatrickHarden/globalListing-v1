@@ -1,0 +1,43 @@
+{
+    "siteType": "commercial",
+    "errorLogging": {
+        "enableErrorLogging": false,
+        "errorLoggingConfigUrl":
+            "https://5956a9802fe048fc8bc9232a69539525@sentry.io/1191393"
+    },
+    "params": {
+        "Site": "uk-comm",
+        "Sort": "desc(Common.LastUpdated)",
+        "Common.Aspects": "isLetting"
+    },
+    "searchConfig": {
+        "searchResultsPage": "/",
+        "searchType": "isLetting",
+        "searchLocationName": "London, UK",
+        "restrictToCountry": "uk",
+        "searchBias": {
+            "lat": "51.48",
+            "lon": "0"
+        },
+        "biasRadius": "300",
+        "locationTypeDefinitions": [
+            {
+                "name": "city",
+                "definitions": [
+                    "postal_town",
+                    "locality,political",
+                    "test, spaced"
+                ],
+                "radius": "20"
+            },
+            {
+                "name": "default",
+                "definitions": [],
+                "radius": "1"
+            }
+        ],
+        "hideSearchToBuy": true,
+        "hideSearchToLet": false,
+        "searchSuggestDebounce": 600
+    }
+}

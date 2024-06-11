@@ -1,0 +1,3026 @@
+{
+    "Found": true,
+    "DocumentCount": 10,
+    "Documents": [
+        [
+            {
+                "Common.PrimaryKey": "GB-Plus-316130",
+                "Common.Coordinate": { "lon": -0.144585, "lat": 51.509878 },
+                "Common.ContactGroup": {
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Address": {
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Line2": "8 Henrietta Place",
+                                "Common.Line1": "Henrietta House",
+                                "Common.Locallity": "London",
+                                "Common.Language": "en"
+                            }
+                        ],
+                        "Common.Line2": "8 Henrietta Place",
+                        "Common.Line1": "Henrietta House",
+                        "Common.Locallity": "London",
+                        "Common.Country": "UK",
+                        "Common.PostCode": "W1G 0NB"
+                    },
+                    "Common.Contacts": [
+                        {
+                            "Common.TelephoneNumber": "+44 207 182 2277",
+                            "Common.EmailAddress": "ralph.dorey@cbre.com",
+                            "Common.AgentName": "Ralph Dorey"
+                        },
+                        {
+                            "Common.TelephoneNumber": "+44 207 182 8092",
+                            "Common.EmailAddress": "Mark.Radford@cbre.com",
+                            "Common.AgentName": "Mark Radford"
+                        },
+                        {
+                            "Common.TelephoneNumber": "+44 20 3214 1862",
+                            "Common.EmailAddress": "Becky.Sleath@cbre.com",
+                            "Common.AgentName": "Becky Sleath"
+                        }
+                    ]
+                },
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 50,
+                "Dynamic.TotalDesks": 100,
+                "Dynamic.HasHotDesks": true,
+                "Dynamic.FlexCharge": 10,
+                "Common.BuildingOperator": "The Office Group",
+                "Common.BuildingOperatorID": "A12345",
+                "Common.UsageType": "FlexOffice",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 10,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "4-Pipe Fan Coil Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "F BER Certification"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "8 x 16 person Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "24 Hour Access"
+                            }
+                        ]
+                    }
+                ],
+                "Dynamic.PrimaryImage": {
+                    "Common.ImageCaption": "BSH RECEPTION PHOTO",
+                    "Common.ImageResources": [
+                        {
+                            "Common.Image.Width": 1366,
+                            "Common.Image.Height": 1076,
+                            "Common.Breakpoint": "original",
+                            "Source.Uri": "https://uatlistingssearchcbreeuw.blob.core.windows.net/fileassets/GB-Plus-316130/93c724cc/BSH%20Reception%20Photo.jpg",
+                            "Common.Resource.Uri": "/resources/fileassets/GB-Plus-316130/93c724cc/BSH%20Reception%20Photo.jpg"
+                        },
+                        {
+                            "Common.Image.Width": 640,
+                            "Common.Image.Height": 504,
+                            "Common.Breakpoint": "small",
+                            "Source.Uri": "https://uatlistingssearchcbreeuw.blob.core.windows.net/fileassets/GB-Plus-316130/93c724cc/BSH%20Reception%20Photo.jpg",
+                            "Common.Resource.Uri": "/resources/fileassets/GB-Plus-316130/93c724cc/BSH%20Reception%20Photo_Photo_1_small.jpg"
+                        },
+                        {
+                            "Common.Image.Width": 1280,
+                            "Common.Image.Height": 1008,
+                            "Common.Breakpoint": "medium",
+                            "Source.Uri": "https://uatlistingssearchcbreeuw.blob.core.windows.net/fileassets/GB-Plus-316130/93c724cc/BSH%20Reception%20Photo.jpg",
+                            "Common.Resource.Uri": "/resources/fileassets/GB-Plus-316130/93c724cc/BSH%20Reception%20Photo_Photo_1_medium.jpg"
+                        },
+                        {
+                            "Common.Image.Width": 1600,
+                            "Common.Image.Height": 1260,
+                            "Common.Breakpoint": "large",
+                            "Source.Uri": "https://uatlistingssearchcbreeuw.blob.core.windows.net/fileassets/GB-Plus-316130/93c724cc/BSH%20Reception%20Photo.jpg",
+                            "Common.Resource.Uri": "/resources/fileassets/GB-Plus-316130/93c724cc/BSH%20Reception%20Photo_Photo_1_large.jpg"
+                        }
+                    ]
+                },
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 50
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 100
+                            }
+                        ]
+                    }
+                ],
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Hotdesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 50,
+                                "Common.MinArea": 50,
+                                "Common.MaxArea": 100
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "HotDesk",
+                        "Common.AvailableFrom": "2019-03-08T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-08"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 10,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.TotalSize": [
+                    { "Common.Size": 100, "Common.Units": "pp" }
+                ],
+                "Common.MinimumSize": [
+                    { "Common.Size": 50, "Common.Units": "pp" }
+                ],
+                "Common.ActualAddress": {
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Line2": "Berkeley Square",
+                            "Common.Line1": "Berkeley Square House",
+                            "Common.Locallity": "London",
+                            "Common.Language": "en"
+                        }
+                    ],
+                    "Common.Line2": "Berkeley Square",
+                    "Common.Line1": "Berkeley Square House",
+                    "Common.Locallity": "London",
+                    "Common.Country": "UK",
+                    "Common.PostCode": "W1J 6BQ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning",
+                    "hasCeiling-Suspended"
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "coordinates": [51.509878, -0.144585],
+                        "type": "Point"
+                    },
+                    "Common.Exact": true
+                },
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 50,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 100,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "hasHotdesks",
+                    "has24HourAccess",
+                    "hasTeaCoffee"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 10,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "London Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Hotdesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 50,
+                                "Common.MinArea": 50,
+                                "Common.MaxArea": 100
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "HotDesk",
+                        "Common.AvailableFrom": "2019-03-08T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-08"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 10,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The Office Group",
+                "Common.BuildingOperatorID": "A12345",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 50
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00001",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 50
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 100
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 100
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 50,
+                "Dynamic.TotalDesks": 100,
+                "Dynamic.HasHotDesks": true,
+                "Dynamic.FlexCharge": 10,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 50,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 100,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "hasHotdesks",
+                    "has24HourAccess",
+                    "hasTeaCoffee"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 9.95,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "Flex Test TEAM London UK"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Hotdesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 150,
+                                "Common.MinArea": 150,
+                                "Common.MaxArea": 150
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "HotDesk",
+                        "Common.AvailableFrom": "2019-03-25T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-25"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 9.95,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The Test Office  Group",
+                "Common.BuildingOperatorID": "A12317",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 150
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00002",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 150
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 150
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 150
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 150,
+                "Dynamic.TotalDesks": 150,
+                "Dynamic.HasHotDesks": true,
+                "Dynamic.FlexCharge": 9.95,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 150,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 150,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "hasHotdesks",
+                    "hasFixeddesks",
+                    "has24HourAccess",
+                    "hasTeaCoffee"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 11,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "UK Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Hotdesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 100,
+                                "Common.MinArea": 100,
+                                "Common.MaxArea": 200
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "HotDesk",
+                        "Common.AvailableFrom": "2019-03-11T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-11"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 11.95,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Fixeddesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 100,
+                                "Common.MinArea": 100,
+                                "Common.MaxArea": 200
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "FixedDesk",
+                        "Common.AvailableFrom": "2019-03-10T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-10"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 11,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The Office Test1 UK Group",
+                "Common.BuildingOperatorID": "A22344",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 100
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00003",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 100
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 400
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 400
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 100,
+                "Dynamic.TotalDesks": 400,
+                "Dynamic.HasHotDesks": true,
+                "Dynamic.HasFixedDesks": true,
+                "Dynamic.FlexCharge": 11,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 100,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 400,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "has24HourAccess",
+                    "hasTeaCoffee",
+                    "hasFixeddesks"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 12.95,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "Kings Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Fixeddesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 200,
+                                "Common.MinArea": 200,
+                                "Common.MaxArea": 200
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "FixedDesk",
+                        "Common.AvailableFrom": "2019-03-12T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-12"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 12.95,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The Office1 Test2 Group",
+                "Common.BuildingOperatorID": "A22235",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 200
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00004",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 200
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 200
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 200
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 200,
+                "Dynamic.TotalDesks": 200,
+                "Dynamic.HasFixedDesks": true,
+                "Dynamic.FlexCharge": 12.95,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 200,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 200,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "has24HourAccess",
+                    "hasTeaCoffee",
+                    "hasServicedOffices"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 16.6,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "Checq Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "ServicedOffices"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 100,
+                                "Common.MinArea": 100,
+                                "Common.MaxArea": 600
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "ServicedOffice",
+                        "Common.AvailableFrom": "2019-03-14T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-14"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 16.6,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The Office-UK TEST Group",
+                "Common.BuildingOperatorID": "A267345",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 100
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00005",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 100
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 600
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 600
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 100,
+                "Dynamic.TotalDesks": 600,
+                "Dynamic.HasServicedOffices": true,
+                "Dynamic.FlexCharge": 16.6,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 100,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 600,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "hasHotdesks",
+                    "hasServicedOffices",
+                    "has24HourAccess",
+                    "hasTeaCoffee"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 14.75,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "UK-London office Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Hotdesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 100,
+                                "Common.MinArea": 100,
+                                "Common.MaxArea": 550
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "HotDesk",
+                        "Common.AvailableFrom": "2019-03-19T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-19"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 15.75,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "ServicedOffices"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 100,
+                                "Common.MinArea": 100,
+                                "Common.MaxArea": 1000
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "ServicedOffice",
+                        "Common.AvailableFrom": "2019-03-15T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-15"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 14.75,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The Office-Test2 UK Office Group",
+                "Common.BuildingOperatorID": "A22356",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 100
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00006",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 100
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 1550
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 1550
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 100,
+                "Dynamic.TotalDesks": 1550,
+                "Dynamic.HasHotDesks": true,
+                "Dynamic.HasServicedOffices": true,
+                "Dynamic.FlexCharge": 14.75,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 100,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 1550,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "hasFixeddesks",
+                    "hasServicedOffices",
+                    "has24HourAccess",
+                    "hasTeaCoffee"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 19,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "London head office Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Fixeddesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 400,
+                                "Common.MinArea": 400,
+                                "Common.MaxArea": 400
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "FixedDesk",
+                        "Common.AvailableFrom": "2019-03-19T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-19"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 20,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "ServicedOffices"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 1500,
+                                "Common.MinArea": 1500,
+                                "Common.MaxArea": 1500
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "ServicedOffice",
+                        "Common.AvailableFrom": "2019-03-20T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-20"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 19,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The Office-Test London Office Group",
+                "Common.BuildingOperatorID": "A21348",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 400
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00007",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 400
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 1900
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 1900
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 400,
+                "Dynamic.TotalDesks": 1900,
+                "Dynamic.HasFixedDesks": true,
+                "Dynamic.HasServicedOffices": true,
+                "Dynamic.FlexCharge": 19,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 400,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 1900,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "hasHotdesks",
+                    "hasFixeddesks",
+                    "hasServicedOffices",
+                    "has24HourAccess",
+                    "hasTeaCoffee"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 11,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "Flex Wembly head office Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Hotdesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 400,
+                                "Common.MinArea": 400,
+                                "Common.MaxArea": 1000
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "HotDesk",
+                        "Common.AvailableFrom": "2019-03-11T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-11"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 14,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Fixeddesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 1200,
+                                "Common.MinArea": 1200,
+                                "Common.MaxArea": 1200
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "FixedDesk",
+                        "Common.AvailableFrom": "2019-03-19T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-19"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 19,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "ServicedOffices"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 1600,
+                                "Common.MinArea": 1600,
+                                "Common.MaxArea": 1600
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "ServicedOffice",
+                        "Common.AvailableFrom": "2019-03-28T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-28"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 11,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The Test GB Group",
+                "Common.BuildingOperatorID": "A22389",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 400
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00008",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 400
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 3800
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 3800
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 400,
+                "Dynamic.TotalDesks": 3800,
+                "Dynamic.HasHotDesks": true,
+                "Dynamic.HasFixedDesks": true,
+                "Dynamic.HasServicedOffices": true,
+                "Dynamic.FlexCharge": 11,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 400,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 3800,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "hasHotdesks",
+                    "hasFixeddesks",
+                    "hasServicedOffices",
+                    "has24HourAccess",
+                    "hasTeaCoffee"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 21,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "Flex Test head1 office Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Hotdesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 1350,
+                                "Common.MinArea": 1350,
+                                "Common.MaxArea": 1350
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "HotDesk",
+                        "Common.AvailableFrom": "2019-03-27T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-27"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 21,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Fixeddesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 100,
+                                "Common.MinArea": 100,
+                                "Common.MaxArea": 1300
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "FixedDesk",
+                        "Common.AvailableFrom": "2019-03-20T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-20"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 24,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "ServicedOffices"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 1700,
+                                "Common.MinArea": 1700,
+                                "Common.MaxArea": 1700
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "ServicedOffice",
+                        "Common.AvailableFrom": "2019-03-29T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-29"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 26,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The UK GB Test Group",
+                "Common.BuildingOperatorID": "A22350",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 100
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00009",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 100
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 4350
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 4350
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 100,
+                "Dynamic.TotalDesks": 4350,
+                "Dynamic.HasHotDesks": true,
+                "Dynamic.HasFixedDesks": true,
+                "Dynamic.HasServicedOffices": true,
+                "Dynamic.FlexCharge": 21,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 100,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 4350,
+                        "Common.Units": "pp"
+                    }
+                ]
+            },
+            {
+                "Common.ActualAddress": {
+                    "Common.Line1": "The Exchange",
+                    "Common.Line2": "1 Market Street",
+                    "Common.Locallity": "Aberdeen",
+                    "Common.PostalAddresses": [
+                        {
+                            "Common.Language": "en",
+                            "Common.Line1": "The Exchange",
+                            "Common.Line2": "1 Market Street",
+                            "Common.Locallity": "Aberdeen"
+                        }
+                    ],
+                    "Common.Country": "UK",
+                    "Common.PostCode": "AB11 5PJ"
+                },
+                "Common.Aspects": [
+                    "isLetting",
+                    "hasAir-Conditioning-VRV",
+                    "hasCeiling-Suspended",
+                    "hasFloors-Raised",
+                    "hasHotdesks",
+                    "hasFixeddesks",
+                    "hasServicedOffices",
+                    "has24HourAccess",
+                    "hasBreakoutSpace",
+                    "hasRoofTerrace",
+                    "hasWheelchairAccess",
+                    "hasTeaCoffee",
+                    "hasFreeMeetingRooms",
+                    "hasCleaning"
+                ],
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-09-28"
+                },
+                "Common.AvailableFrom": "2017-09-28T00:00:00",
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "FlexRent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 27,
+                        "Common.AmountKind": "Value",
+                        "Common.PerUnit": "pp",
+                        "Common.ChargeModifer": "From",
+                        "Common.TaxModifer": "PlusVAT"
+                    }
+                ],
+                "Common.ContactGroup": {
+                    "Common.Address": {
+                        "Common.Line1": "1 Albyn Terrace",
+                        "Common.Locallity": "Aberdeen",
+                        "Common.PostalAddresses": [
+                            {
+                                "Common.Language": "en",
+                                "Common.Line1": "1 Albyn Terrace",
+                                "Common.Locallity": "Aberdeen"
+                            }
+                        ],
+                        "Common.Country": "UK",
+                        "Common.PostCode": "AB10 1YP"
+                    },
+                    "Common.GroupType": "AreaOffice",
+                    "Common.Contacts": [
+                        {
+                            "Common.EmailAddress": "iain.landsman@cbre.com",
+                            "Common.TelephoneNumber": "+44 122 421 9000",
+                            "Common.AgentName": "Iain Landsman"
+                        },
+                        {
+                            "Common.EmailAddress": "amy.tyler@cbre.com",
+                            "Common.TelephoneNumber": "+44 1224 219 034",
+                            "Common.AgentName": "Amy Tyler"
+                        }
+                    ],
+                    "Common.GroupName": [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "Flex Test1 head2 office Flex Team"
+                        }
+                    ]
+                },
+                "Common.Coordinate": {
+                    "lat": 57.144343,
+                    "lon": -2.0949611999999433
+                },
+                "Common.Created": "2017-09-28T11:54:54",
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Hotdesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 1400,
+                                "Common.MinArea": 1400,
+                                "Common.MaxArea": 1400
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "HotDesk",
+                        "Common.AvailableFrom": "2019-03-29T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-29"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 28,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Fixeddesks"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 1500,
+                                "Common.MinArea": 1500,
+                                "Common.MaxArea": 1500
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "FixedDesk",
+                        "Common.AvailableFrom": "2019-03-21T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-21"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 27,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "ServicedOffices"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "pp",
+                                "Common.Area": 100,
+                                "Common.MinArea": 100,
+                                "Common.MaxArea": 1800
+                            }
+                        ],
+                        "Common.Unit.Status": "Available",
+                        "Common.Unit.Use": "ServicedOffice",
+                        "Common.AvailableFrom": "2019-03-29T00:00:00",
+                        "Common.Availability": {
+                            "Common.AvailabilityKind": "AvailableFromKnownDate",
+                            "Common.AvailabilityDate": "2019-03-29"
+                        },
+                        "Common.Charges": [
+                            {
+                                "Common.ChargeKind": "FlexRent",
+                                "Common.CurrencyCode": "GBP",
+                                "Common.Interval": "Monthly",
+                                "Common.Amount": 31,
+                                "Common.AmountKind": "Value",
+                                "Common.PerUnit": "pp",
+                                "Common.ChargeModifer": "From",
+                                "Common.TaxModifer": "PlusVAT"
+                            }
+                        ]
+                    }
+                ],
+                "Common.BuildingOperator": "The London Test Group",
+                "Common.BuildingOperatorID": "A22338",
+                "Common.GeoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [57.144343, -2.0949611999999433]
+                    },
+                    "Common.Exact": true
+                },
+                "Common.Highlights": [
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "VRV Air Conditioning"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Suspended Ceiling"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "Raised Floors"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2 x 10 person passenger Lifts"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "11 Parking Spaces"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.Highlight": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "E Rated EPC"
+                            }
+                        ]
+                    }
+                ],
+                "Common.HomeSite": "uk-comm",
+                "Common.LastUpdated": "2019-03-06T11:18:08.2588318Z",
+                "Common.LeaseTypes": ["Assignment", "SubLease"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "The Exchange is located on the west side of Market Street, over looking the busy harbour area in the heart of the city centre.  This central location provides easy access to public transport and benefits from being close to Union Street, Aberdeen’s main commercial thoroughfare, and immediately adjacent to the 700,000 sq ft Union Square Shopping and Leisure Centre. Aberdeen’s principal bus and rail stations are conveniently placed immediately to the rear of the property. Surrounding occupiers include IHS Markit, Sodexo, Gulfmark, CNR and UK Oil & Gas UK.\r\n\r\nThe Exchange provides high quality, open plan office accommodation arranged over ground and eight upper floors and split between two buildings. The subjects comprise of the 5th Floor of Exchange No.1. The suite was fully refurbished by the landlord in 2014."
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 100
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.PrimaryKey": "GB-Plus-00010",
+                "Common.PropertySubType": "FlexOffice",
+                "Common.PropertyTypes": ["Office"],
+                "Common.RelatedListingOffice": "GB-Plus-00002",
+                "Common.Sizes": [
+                    {
+                        "Common.SizeKind": "MinimumSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 100
+                            }
+                        ]
+                    },
+                    {
+                        "Common.SizeKind": "TotalSize",
+                        "Common.Dimensions": [
+                            {
+                                "Common.DimensionsUnits": "pp",
+                                "Common.Amount": 4700
+                            }
+                        ]
+                    }
+                ],
+                "Common.SourceLastupdated": "2019-03-06T11:17:31",
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "pp",
+                        "Common.Area": 4700
+                    }
+                ],
+                "Common.UsageType": "FlexOffice",
+                "UnitedKingdom.UseClass": ["B"],
+                "UnitedKingdom.VATPayable": false,
+                "Dynamic.MinDesks": 100,
+                "Dynamic.TotalDesks": 4700,
+                "Dynamic.HasHotDesks": true,
+                "Dynamic.HasFixedDesks": true,
+                "Dynamic.HasServicedOffices": true,
+                "Dynamic.FlexCharge": 27,
+                "Dynamic.MinimumSize": [
+                    {
+                        "Common.Size": 100,
+                        "Common.Units": "pp"
+                    }
+                ],
+                "Dynamic.TotalSize": [
+                    {
+                        "Common.Size": 4700,
+                        "Common.Units": "pp"
+                    }
+                ]
+            }
+        ]
+    ],
+    "Aggregations": [[]],
+    "Took": "00:00:09.1926922"
+}

@@ -1,0 +1,13 @@
+extend ../layout
+block content
+    #container
+    script.
+        var cbreRenderType = 'renderListings';
+        function initMap() {
+            document.addEventListener('DOMContentLoaded', function () {
+                renderSPA({
+                    path: '/this-is/a-test-route',
+                    subPath: ''
+                });
+            }, false);
+        }

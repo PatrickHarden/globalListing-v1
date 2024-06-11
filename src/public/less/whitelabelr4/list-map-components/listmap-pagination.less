@@ -1,0 +1,82 @@
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+.lm-pagination {
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 0;
+    margin: 5px 20px 5px 20px;
+    border-radius: 0;
+  
+    > .break-me {
+      color: red;
+    }
+
+    > .next, .previous {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    > li {
+      display: inline; // Remove list-style and block-level defaults
+      > a,
+      > span {
+        position: relative;
+        float: left; // Collapse white-space
+        padding: @padding-base-vertical @padding-base-horizontal;
+        line-height: @line-height-base;
+        text-decoration: none;
+        color: #000;
+        background-color: @pagination-bg;
+        border: none !important;
+        margin-left: -1px;
+      }
+    }
+  
+    > li > a,
+    > li > span {
+      &:hover,
+      &:focus {
+        z-index: 10;
+        color: @pagination-hover-color;
+      }
+    }
+  
+    > .active > a,
+    > .active > span {
+      &,
+      &:hover,
+      &:focus {
+        z-index: 10;
+        cursor: default;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+    }
+  
+    > .disabled {
+      > span,
+      > span:hover,
+      > span:focus,
+      > a,
+      > a:hover,
+      > a:focus {
+        color: @pagination-disabled-color;
+        cursor: @cursor-disabled;
+      }
+    }
+  }
+
+  // Sizing
+  // --------------------------------------------------
+  
+  // Large
+  .lm-pagination-lg {
+    .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; 0);
+  }
+  
+  // Small
+  .lm-pagination-sm {
+    .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; 0);
+  }

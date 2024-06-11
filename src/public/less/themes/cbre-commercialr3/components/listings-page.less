@@ -1,0 +1,175 @@
+@header-border: 6px;
+@header-height: 45px;
+@header-height-sm: 60px;
+@header-height-md: 66px;
+
+.header-height(@border: @header-border) {
+  height: @header-height - @border;
+
+  @media (min-width: @screen-sm) {
+    height: @header-height-sm - @border;
+  }
+
+  @media (min-width: @screen-md) {
+    height: @header-height-md - @border;
+  }
+}
+
+.header {
+  .header-height(0);
+  background: @brand-primary-dark;
+  border-bottom: @header-border solid @brand-primary;
+
+  @media (min-width: @screen-lg) {
+    background: linear-gradient(to right, @brand-primary 0%, @brand-primary 50%, @brand-primary-dark 50%, @brand-primary-dark 100%);
+  }
+
+  > .container {
+    padding-right: 92px + @grid-gutter-width;
+  }
+
+  .col-xs-12 {
+    display: table;
+    margin-left: -20px;
+    width: 100%;
+  }
+}
+
+h1.listings-page-title {
+  .header-height();
+  color: @white;
+  display: table-cell;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: @grid-gutter-width;
+  padding-right: 0;
+  padding-top: 5px;
+  vertical-align: middle;
+  width: 100%;
+
+  @media (min-width: @screen-xs) {
+    font-size: 15px;
+  }
+
+  @media (min-width: @screen-sm) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @screen-lg) {
+    background: @brand-primary-dark;
+  }
+
+}
+
+ul.nav-tabs {
+  left: auto;
+  top: -@header-height;
+  right: 10px; // Always on right.
+  border-bottom: 0;
+
+  @media (min-width: @screen-sm) {
+    top: -@header-height-sm;
+  }
+
+  @media (min-width: @screen-md) {
+    top: -@header-height-md;
+  }
+
+  li {
+    .header-height();
+    width: 40px;
+    float: right;
+
+    @media (min-width: @screen-sm) {
+      width: 54px;
+    }
+
+    @media (min-width: @screen-md) {
+      width: 60px;
+    }
+
+    > a {
+      background: @brand-primary-dark;
+      border-radius: 0;
+      border: none !important;
+      color: @white;
+      height: 100%;
+      margin-right: 0;
+      padding: 0;
+      position: relative;
+      text-indent: -9999px;
+      width: 100%;
+
+      &:after {
+        -webkit-font-smoothing: antialiased;
+        bottom: 0;
+        content: "\e618";
+        display: table-cell;
+        font-family: 'CBRE Icons';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        left: 0;
+        line-height: 1;
+        margin-top: -9px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        text-indent: 0;
+        top: 50%;
+        vertical-align: middle;
+
+        @media (min-width: @screen-xs) {
+          font-size: 22px;
+          margin-top: -12px;
+        }
+
+        @media (min-width: @screen-sm) {
+          font-size: 28px;
+        }
+      }
+
+      &:focus, &:hover {
+        background: @brand-primary !important; // bootstrap annoyances
+        color: @white !important; // bootstrap annoyances
+      }
+    }
+
+    &.active, &:hover, &.active:hover {
+      > a {
+        background: @brand-primary;
+        color: @white;
+      }
+    }
+
+    &:last-child {
+      > a:after {
+        content: "\e619";
+      }
+    }
+  }
+}
+
+.filter-tabs-close {
+  border-color: @gray-light;
+
+  .btn--close {
+    color: @gray-light;
+
+    .icon {
+      top: 0;
+      border: 1px solid @gray-light;
+      line-height: 15px;
+    }
+
+    &:hover {
+      .icon,
+      .text {
+        color: @brand-primary;
+        border-color: @brand-primary;
+      }
+    }
+  }
+}

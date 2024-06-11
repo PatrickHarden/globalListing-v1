@@ -1,0 +1,538 @@
+{
+    "Found": true,
+    "ElapsedTime": "00:00:00.0500000",
+    "Document": {
+        "currentAppVersion": "1.0.0.0",
+        "Common.ActualAddress": {
+            "Common.HouseName": "Apartment 4 Printers Inn Court",
+            "Common.HouseNumber": "14",
+            "Common.Line1": "Cursitor Street",
+            "Common.Line2": "City Of London",
+            "Common.PostCode": "EC4A 1LR"
+        },
+        "Common.Agency": {
+            "Common.AgentAddress": {
+                "Common.Line1": " 9-12 Bow Street",
+                "Common.Line2": "London",
+                "Common.Line3": "",
+                "Common.Line4": "",
+                "Common.PostCode": "WC2E 7AB"
+            },
+            "Common.AgencyName": "West End Lettings",
+            "Common.EmailAddress": "residential.westend@cbre.com",
+            "Common.TelephoneNumber": "+44 (0)20 7420 3060"
+        },
+        "Common.Agents": [
+            {
+                "Common.EmailAddress": "Mike.knowles@cbre.com",
+                "Common.AgentName": "Mike Knowles                  ",
+                "Common.TelephoneNumber": "020 7420 3032"
+            }
+        ],
+        "Common.LeaseInfo": {
+            "Common.LeaseContractStartDate": "2015-05-20",
+            "Common.LeaseContractEndDate": "2025-05-20",
+            "Common.LeaseContractBreakDate": "2022-05-20",
+            "Common.LeaseRentReviewCycle": 5,
+            "Common.LeaseRentNextReviewDate": "2020-05-20"
+        },
+        "Common.Aspects": ["isFurnished", "isLetting"],
+        "Common.AvailableFrom": "2016-01-01T00:00:00",
+        "Common.Brochures": [
+            {
+                "Common.Uri": "/path/to/brochure/file%20with%20space.pdf",
+                "Common.CultureCode": "en-GB"
+            },
+            {
+                "Common.Uri": "263367_Brochure_2.pdf",
+                "Common.CultureCode": "es-SP"
+            },
+            {
+                "Common.Uri": "263367_Brochure_3.pdf",
+                "Common.CultureCode": "en-GB"
+            }
+        ],
+        "Common.Charges": [
+            {
+                "Common.ChargeKind": "Rent",
+                "Common.CurrencyCode": "USD",
+                "Common.Interval": "Monthly",
+                "Common.Amount": 1300.0,
+                "Common.OnApplication": false,
+                "Common.Year": 0,
+                "Common.Exact": false,
+                "Common.Unit": "sqft",
+                "Common.TaxModifer": "PlusVAT"
+            },
+            {
+                "Common.ChargeKind": "Rent",
+                "Common.CurrencyCode": "GBP",
+                "Common.Interval": "Weekly",
+                "Common.Amount": 595.0,
+                "Common.OnApplication": false,
+                "Common.Year": 0,
+                "Common.Exact": false,
+                "Common.Unit": "m2",
+                "Common.TaxModifer": "PlusSalesTax"
+            }
+        ],
+        "Common.EnergyPerformanceInformation": [
+            {
+                "Common.Uri": "en-GBcbrrps-CAR150038_EPC_1_1280x960.png",
+                "Common.CultureCode": "en-GB"
+            },
+            {
+                "Common.Uri": "es-cbrrps-CAR150038_EPC_1_1280x960.png",
+                "Common.CultureCode": "es-ES"
+            }
+        ],
+        "Common.Coordinate": {
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        "Common.Created": "2015-07-07T15:25:20.457",
+        "Common.FloorPlans": [
+            {
+                "Common.ImageCaption": "Image.Photo-1",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 768,
+                        "Common.Resource.Uri":
+                            "cbrrps-WES141641_Floorplan_1.jpg",
+                        "Common.Image.Width": 543
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Image.Photo-1",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 768,
+                        "Common.Resource.Uri":
+                            "cbrrps-WES141641_Floorplan_1.jpg",
+                        "Common.Image.Width": 543
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Image.Photo-1",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 768,
+                        "Common.Resource.Uri":
+                            "cbrrps-WES141641_Floorplan_1.jpg",
+                        "Common.Image.Width": 543
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Image.Photo-1",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 768,
+                        "Common.Resource.Uri":
+                            "cbrrps-WES141641_Floorplan_1.jpg",
+                        "Common.Image.Width": 543
+                    }
+                ]
+            }
+        ],
+        "Common.FloorsAndUnits": [],
+        "Common.Highlights": [
+            [
+                {
+                    "Common.CultureCode": "en-GB",
+                    "Common.Text": "Unfurnished"
+                }
+            ],
+            [
+                {
+                    "Common.CultureCode": "en-GB",
+                    "Common.Text": "Recently refurbished"
+                }
+            ],
+            [
+                {
+                    "Common.CultureCode": "en-GB",
+                    "Common.Text": "Brand new furniture"
+                }
+            ],
+            [
+                {
+                    "Common.CultureCode": "en-GB",
+                    "Common.Text": "Two decking areas"
+                }
+            ],
+            [
+                {
+                    "Common.CultureCode": "en-GB",
+                    "Common.Text": "Natural light"
+                }
+            ]
+        ],
+        "Common.LastProcessed": "2015-10-28T17:01:14.0643904+00:00",
+        "Common.LastUpdated": "2015-07-16T15:35:58.42",
+        "Common.LeaseTypes": [""],
+        "Common.LongDescription": [
+            {
+                "Common.CultureCode": "en-GB",
+                "Common.Text":
+                    "This one bedroom flat to rent is located on the lower ground floor of this popular private gated development on Cursitor Street, just off Chancery Lane. The apartments in Printers Inn Court are all professionally managed by CBRE and comprise of 19 apartments in total, within two separate blocks, both centering around a communal courtyard.\n\nThe apartment has recently been refurbished and boasts a large double bedroom with inbuilt storage and a large bathroom located off the hallway. There is a fully fitted kitchen which is open plan to the spacious reception room, which faces the internal communal courtyard. The bedroom is located at the rear of the building allowing for a quiet sleeping environment.    \n \nPrinters Inn Court is located 320 metres from Chancery Lane (Central Line) underground station, 800 metres from Temple (Circle and District) underground station and 800 metres from City Thames Link (National rail) overground station. Situated between Fetter lane and Chancery Lane this would be ideal for those working in the City or its periphery. With a 450 metre walk to Lincoln&#039;s Inn Fields you have a very pleasant outdoor area, within close proximity to the apartment.     \n \nThe property is available to let immediately on a furnished basis.\n\nFor more information about our fees please visit our web-site&#146;s &#145;Tenant Fees&#146; page located under the Rent tab.\n"
+            }
+        ],
+        "Common.MaximumSize": [
+            {
+                "Common.Units": "sqft",
+                "Common.Size": 0.0
+            }
+        ],
+        "Common.MinimumSize": [
+            {
+                "Common.Units": "sqft",
+                "Common.Size": 0.0
+            }
+        ],
+        "Common.NumberOfBedrooms": 1,
+        "Common.Photos": [
+            {
+                "Common.ImageCaption": "Kitchen",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_1_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_1_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_1_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Kitchen",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_2_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_2_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_2_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Kitchen",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_3_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_3_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_3_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Reception",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_4_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_4_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_4_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Reception",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_5_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_5_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_5_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Hall",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_6_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_6_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_6_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Bedroom",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_7_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_7_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_7_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Bathroom",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_8_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_8_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_8_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Decking Area",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_9_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_9_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_9_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Bedroom",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_10_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_10_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_10_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "Decking Area",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_11_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_11_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_11_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "External",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 480,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_12_small.jpg",
+                        "Common.Image.Width": 640,
+                        "Common.Breakpoint": "small"
+                    },
+                    {
+                        "Common.Image.Height": 960,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_12_medium.jpg",
+                        "Common.Image.Width": 1280,
+                        "Common.Breakpoint": "medium"
+                    },
+                    {
+                        "Common.Image.Height": 1200,
+                        "Common.Resource.Uri":
+                            "cbrrps-BSL150152_Photo_12_large.jpg",
+                        "Common.Image.Width": 1600,
+                        "Common.Breakpoint": "large"
+                    }
+                ]
+            }
+        ],
+        "Common.PrimaryKey": "cbrrps-BSL150152",
+        "Common.PropertyTypes": ["Apartment"],
+        "Common.Strapline": [
+            {
+                "Common.CultureCode": "en-GB",
+                "Common.Text":
+                    "One bedroom apartment to rent in the City of London"
+            }
+        ],
+        "Common.TotalSize": [
+            {
+                "Common.Units": "sqft",
+                "Common.Size": 0.0
+            }
+        ],
+        "Common.UsageType": "Residential",
+        "Dynamic.SalePrice": 0.0,
+        "Dynamic.LettingPriceAnnual": 0.0,
+        "Dynamic.LettingPriceWeekly": 595.0,
+        "Dynamic.LettingPriceMonthly": 0.0,
+        "Dynamic.MinArea": 0.0,
+        "Dynamic.TotalArea": 0.0,
+        "Dynamic.NewHome": false,
+        "Dynamic.UnderOffer": false,
+        "Dynamic.LetUnderOffer": false,
+        "Common.Walkthrough":
+            "http://api.inspiredlabs.com/viewer?embed=247700361404341"
+    }
+}

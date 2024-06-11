@@ -1,0 +1,301 @@
+//Mixins for both themes
+/* shared functions */
+.wrapper() {
+    max-width: @wrapperMaxWidth;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cf() {
+    &:after {
+    content: " ";
+    display: table;
+    clear: both;
+    }
+}
+
+.iconMixin(@char: ">", @size: inherit, @color: inherit) {
+    content: @char;
+    font-size: @size;
+    color: @color;
+    font-family: 'icomoon', serif !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.getFontFace (@name, @path, @weight: normal, @style: normal) {
+    font-family: @name;
+    src: url('@{path}.eot');
+    src: url('@{path}.eot?#iefix') format('embedded-opentype'),
+        url('@{path}.woff') format('woff'),
+        url('@{path}.ttf')  format('truetype'),
+        url('@{path}.svg') format('svg');
+
+    font-weight: @weight;
+    font-style: @style;
+}
+
+// //Body Font (Arial on RESI/Futura book on COMM)
+// .FontDefault(){
+//  font-family: helvetica, arial, sans-serif;
+//  font-weight: normal;
+// }
+
+// //Alternative Font (Georgia on RESI/Futura Medium on COMM)
+// .FontAlternative (){
+//  font-family: helvetica, arial, sans-serif;
+//  font-weight: 500;
+// }
+
+
+.hoverStates(@props, @state: false) {
+  .no-touchevents &:hover, &:active {
+    @props();
+  }
+  &.@{state} when not(@state=false) {
+    @props();
+  }
+}
+
+.buttonHoverStates(@props) {
+  .hoverStates(@props, is_selected);
+}
+
+.mobileLinkDefaults() {
+    padding: 12px 15px;
+    color: @defaultText;
+    text-decoration: none;
+
+  .hoverStates({
+    color: darken(@defaultText,10%);
+  });
+}
+
+.panelPadding(){
+    margin-left: 15px;
+    margin-right: 15px;
+    @media (@tabletAndUp) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media (@tabletLandscapeAndUp) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+.headingLevel2() {
+    .FontAlternative();;
+    font-size: 20px;
+    margin: 0;
+}
+.divider() {
+    border-bottom: 1px solid @dividerColor;
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+.iconLink {
+    position: relative;
+    text-decoration: none;
+    padding: 9px 14px 9px 42px;
+    display: block;
+    font-size: 16px;
+    line-height: 1.2;
+    color: @defaultText;
+
+    .icon {
+        display: block;
+        font-size: 15px;
+        left: 14px;
+    transform: translateY(50%);
+    margin-top: -5px;
+        position: absolute;
+    }
+
+  .hoverStates({
+    color: darken(@defaultText,10%);
+  });
+}
+.panelPadding(){
+    margin-left: 15px;
+    margin-right: 15px;
+    @media (@tabletAndUp) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media (@tabletLandscapeAndUp) {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+}
+.headingLevel2() {
+    .FontAlternative();;
+    font-size: 20px;
+    margin: 0;
+}
+.divider() {
+    border-bottom: 1px solid @dividerColor;
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+.arrow__down() {
+  content: "";
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  border-color: @grey;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 14px;
+  height: 8px;
+  width: 8px;
+  margin-top: -6px;
+  transform: rotate(-225deg);
+  vertical-align: middle;
+
+  @media (@tabletAndUp) {
+    right: 20px;
+  }
+}
+
+.arrow__up() {
+  .arrow__down;
+  transform: rotate(-45deg);
+  margin-top: -3px;
+}
+
+/*
+.SelectOptionsSmall() {
+  .Select-option,
+  .Select-noresults {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &:first-child {
+      padding-top: (5px + 2px);
+    }
+
+    &:last-child {
+      padding-bottom: (5px + 2px);
+    }
+  }
+
+  .Select-option,
+  .Select-noresults {
+    font-size: 14px;
+  }
+}
+
+
+.SelectFontsizeMixin(
+  @fontsize: 1em
+) {
+  .Select-value,
+  &.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+  &.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label,
+  .Select-input input,
+  .Select-placeholder {
+    font-size: @fontsize;
+  }
+}
+
+.SelectColorMixin(
+  @color: @accentColor,
+  @hoverColor: darken(@accentColor, 10%)
+) {
+
+  &.Select--single > .Select-control .Select-value,
+  &.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+  &.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label,
+  .Select-input input,
+  .Select-placeholder {
+    color: @color;
+  }
+
+  .no-touchevents &.Select--single:hover .Select-value,
+  .no-touchevents &.Select--single.has-value:hover .Select-value .Select-value-label,
+  .no-touchevents &.has-value.is-pseudo-focused.Select--single:hover .Select-value .Select-value-label,
+  .no-touchevents &:hover .Select-input input,
+  .no-touchevents &:hover .Select-placeholder,
+  &.Select--single.is-open .Select-value,
+  &.Select--single.has-value.is-open .Select-value .Select-value-label,
+  &.has-value.is-pseudo-focused.Select--single.is-open .Select-value .Select-value-label,
+  &.is-open .Select-input input,
+  &.is-open .Select-placeholder {
+    color: @hoverColor;
+  }
+}*/
+
+.headerNavigationSectionHeader(){
+  .FontAlternative();
+    font-size: 18px;
+    color: @defaultText;
+    padding-left: 20px;
+
+    &:after {
+      color: @lighterText;
+    }
+
+    .hoverStates({
+      color: darken(@defaultText,10%);
+    });
+
+    @media(@tabletAndUp) {
+      font-size: 16px;
+    }
+}
+.headerLinkIconStyle(@color){
+  &:after {
+      .iconMixin(@icon_chevron_right, 10px);
+      position: absolute;
+      margin-top: -7px;
+      right: 20px;
+      top: 50%;
+      color: @color;
+
+  }
+}
+.headerHighlightedLink() {
+  background: @accentColor;
+  color: @white;
+  font-size: 18px;
+  position: relative;
+  padding: 13px 20px;
+  display: block;
+  text-decoration: none;
+
+  &:focus,
+  &:active,
+  .no-touchevents &:hover {
+    background: darken(@accentColor, 10%);
+    color: @white;
+  }
+  .headerLinkIconStyle(@white);
+}
+.shadow(@depth: 1) {
+  transition: box-shadow 0.3s ease;
+
+  & when(@depth = 1) {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  }
+
+  & when (@depth = 2) {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.08);
+  }
+
+  & when (@depth = 3) {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.31);
+  }
+}

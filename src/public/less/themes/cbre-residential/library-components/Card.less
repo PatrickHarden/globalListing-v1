@@ -1,0 +1,29 @@
+.card {
+  .cbre_subh1 {
+    font-weight: 400;
+  }
+  .cbre_subh1, .cbre_subh2 {
+    @media (@mobileLandscapeAndUp) {
+      font-size: 11px;
+    }
+  }
+}
+
+.card__wide {
+  .cbre_subh1 {
+    font-size: 15px;
+  }
+  .cbre_subh2 {
+    font-size: 14px;
+  }
+}
+
+.cbre_sidebar.is_wide .card {
+  .card__wide;
+}
+
+@media (@mobilePortrait) {
+  .propertyResults:not(.carousel) .card {
+    .card__portrait;
+  }
+}

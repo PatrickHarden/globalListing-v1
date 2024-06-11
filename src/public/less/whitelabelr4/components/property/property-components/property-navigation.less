@@ -1,0 +1,63 @@
+.property-navigation {
+  background-color: fade(@white, 85%);
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+
+  .btn {
+    background-color: transparent;
+    color: @brand-primary;
+
+    span:not(.cbre-icon) {
+      display: none;
+      @media (min-width: @screen-sm) {
+        display:inline;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: fade(@brand-primary-light, 70%);
+    }
+
+    &.cbre-icon {   
+      font-size: 11px;
+      top: 0px;
+    }
+  }
+
+  .btn--pdp-back {
+    float: left;
+  }
+
+  .btn--pdp-prev,
+  .btn--pdp-back {
+    .cbre-icon {
+      margin-right: 3px;
+    } 
+  }
+
+  .pdp-prev-next {
+    float: right;
+
+    .cbre-icon {
+      margin-left: 3px;
+    } 
+  }
+
+  // Bottom navigation
+  .pdp-navigation-bottom & {
+    top: auto;
+    bottom: 0;
+    border-bottom: solid 1px @brand-primary;
+
+    .btn {
+      color: @brand-primary-lighter;
+
+      &:hover {
+        color: @brand-primary;
+      }
+    }
+  }
+}

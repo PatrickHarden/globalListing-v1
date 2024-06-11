@@ -1,0 +1,146 @@
+// Global contacts Styles
+.contact-cta {
+  border: 3px solid @border-color;
+  overflow: visible;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  &:hover {
+    border: 3px solid fade(@brand-primary-lighter, 50%);
+
+    .contact--name {
+      color: @brand-primary-lighter;
+    }
+  }
+
+  .contact--name {
+    float: left;
+    color: @brand-primary;
+    max-width: 60%;
+  }
+
+  .contact--telephone-email {
+    float: right;
+
+    .col--telephone,
+    .col--email {
+      text-align: center;
+      padding: 0;
+
+      button.cbre-icon {
+        padding: 0px 5px;
+        font-size: 18px;
+        color: @brand-primary-light;
+
+        &:hover:before {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .col--telephone {
+      border-right: 3px solid @border-color;
+    }
+  }
+
+  // Alter default flyout btn styles.
+  .btn--with-flyout {
+    .btn--flyout {
+      padding: 0 5px;
+      top: -3px;
+      background-color: @white;
+
+      .btn--name {
+        display: none;
+      }
+
+      .btn--number {
+        font-size: 14px;
+      }
+    }
+
+    &.flyout-open {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+// PDP contacts Styles
+.pdp-contacts {
+  float: left;
+  width: 100%;
+
+  h3 {
+    color: @brand-primary-lighter;
+  }
+
+  h4 {
+    color: @brand-primary;
+    margin-bottom: 20px;
+  }
+}
+
+.col--contacts {
+  float: left;
+  margin-bottom: 10px;
+  width: 100%;
+
+  @media (min-width: @screen-sm) {
+    margin-bottom: 20px;
+  }
+}
+
+.pdp-contact {
+  padding: 0;
+
+  .contact-cta {
+    padding: 12px;
+
+    .contact--name {
+      font-size: 18px;
+      top: 1px;
+      position: relative;
+    }
+  }
+
+  .contact--telephone-email {
+    .col--telephone,
+    .col--email {
+      button.cbre-icon {
+        padding: 0;
+
+        &:before {
+          font-size: 27px;
+        }
+      }
+    }
+
+    .col--telephone {
+      text-align: left;
+    }
+
+    .col--email {
+      text-align: right;
+
+      button {
+        margin-right: 5px
+      }
+    }
+  }
+
+  // Alter default flyout btn styles ONLY on pdp.
+  .btn--with-flyout {
+    .btn--flyout {
+      top: 0px;
+      padding: 0 10px;
+
+      .btn--number {
+        font-size: 18px;
+      }
+    }
+  }
+}

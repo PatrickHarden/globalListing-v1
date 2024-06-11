@@ -1,0 +1,33 @@
+.under-offer {
+  transform: rotate(10deg);
+  background-color: @under-offer-bg-color;
+  display: table;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  color: @reverse-text-colour;
+  padding: 10px;
+  text-align: center;
+
+  .under-offer-text {
+    display: table-cell; 
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 1.1;
+  }
+
+  .cbre-spa--map-info-window &,
+  .cbre-spa--carousel__slide-content & {
+    width: 45px;
+    height: 45px;
+    top: 10px;
+    right: 10px;
+
+    .under-offer-text {
+      font-size: 10px;
+    }
+  }
+}

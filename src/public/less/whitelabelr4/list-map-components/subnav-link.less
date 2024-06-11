@@ -1,0 +1,35 @@
+.subnav_link {
+  .arrowLink();
+  float: left;
+  border-right: 1px solid @lightGrey;
+  color: @defaultText;
+  border: none;
+
+  .hoverStates({
+    color: @accentColor;
+  });
+
+  &:last-child {
+   border-right: none;
+  }
+}
+
+.subnav_link__prev {
+  .arrowLink(left);
+
+  @media (@mobile) {
+    &:before {
+      content: none;
+    }
+  }
+}
+
+.subnav_link__next {
+  .arrowLink(right);
+
+  @media (@mobile) {
+    &:after {
+      content: none;
+    }
+  }
+}

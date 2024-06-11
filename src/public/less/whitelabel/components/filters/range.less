@@ -1,0 +1,30 @@
+/* Range filter */
+.spa-range-filter {
+  margin-bottom: 15px;
+  height: 55px;
+  @media (max-width: @screen-sm) {
+    height: 100px;
+  }
+  .form-group {
+    @media (min-width: @screen-sm) {
+      width: 50%;
+      float: left;
+    }
+  }
+
+  .spa-range-filter--range > label {
+    display: block;
+  }
+
+  .form-group:nth-child(odd) {
+    @media (min-width: @screen-sm) {
+      padding-left: @grid-gutter-width/2;
+    }
+  }
+
+  .form-group:nth-child(even) {
+    @media (min-width: @screen-sm) {
+      padding-right: @grid-gutter-width/2;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.subnav {
+    .cf();
+    border: 1px solid @lightBorder;
+    border-style: solid none;
+
+    .cbre_container {
+        display: block !important;
+    }
+
+    .cbre_body & {
+        border-color: @border;
+    }
+
+    .breadcrumb {
+        float: left;
+    }
+
+    .subnav_links {
+        float: right;
+    }
+
+    @media (@tabletLandscapeAndUp) {
+        .breadcrumb {
+            padding-left: 0;
+        }
+
+     .subnav_link:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .container {
+        padding: 0;
+    }
+}

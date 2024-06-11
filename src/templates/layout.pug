@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title CBRE Search App
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='description' content='This is a description')
+    link(href='http://localhost:3000' rel='canonical')
+    meta(property='og:site_name' content='CBRE')
+    meta(property='og:type' content='article')
+    meta(property='og:url' content='http://localhost:3000')
+    meta(property='og:title' content='CBRE Search App')
+    meta(property='og:description' content='This is a description')
+    meta(property='og:updated_time' content='2015-07-21T12:50:12+00:00')
+    meta(property='og:image' content='http://localhost:3000/images/logo.png')
+    meta(property='article:published_time' content='2015-04-09T10:59:04+00:00')
+    meta(property='article:modified_time' content='2015-07-21T12:50:12+00:00')
+    meta(name='viewport' content='width=device-width,initial-scale=1.0')
+
+    //-script(src='/gmap-mock.js')
+
+    
+    //- script(src="https://cdn.ravenjs.com/3.23.1/raven.min.js" crossorigin="anonymous")
+    //- script.
+    //-     Raven.config('https://67dd91731ec9463697b2add826b0c026@sentry.io/300255').install()
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='/js/utils/devToolbar.js')
+    link(rel='stylesheet', type='text/css', href='/js/utils/devToolbar.css')
+
+    script.
+        // Dev toolbar rendering option defaults
+        !localStorage.getItem('cbreStyleSheet') ? localStorage.setItem('cbreStyleSheet', '/css/cbre-residential.css') : null;
+        !localStorage.getItem('cbreConfigFile') ? localStorage.setItem('cbreConfigFile', '/config/sample_residential.json') : null;
+        !localStorage.getItem('cbreSiteType') ? localStorage.setItem('cbreSiteType', 'residential') : null;
+
+        window.cbreSiteType = localStorage.getItem('cbreSiteType');
+        window.cbreSiteTheme = localStorage.getItem('cbreSiteTheme');
+        
+    script(src='http://localhost:35729/livereload.js')
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEw2NaQFixR7sZCLnZ1oGQljW7AxLZ7k&callback=initMap&libraries=places" defer)
+    script(src='/js/application.js' id='spa-app' defer)
+    script(src="https://www.google.com/recaptcha/api.js"  defer)
+  body
+    block content

@@ -1,0 +1,69 @@
+// Flyout
+.btn--with-flyout {
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &.flyout-open {
+    position: relative;
+    z-index: 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -17px;
+      height: 55px;
+      width: 57px;
+      background-color: @brand-secondary-lighter;
+      z-index: -1;
+    }
+  }
+
+  .btn--flyout {
+    z-index: 2;
+    position: absolute;
+    top: -17px;
+    right: 100%;
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: auto;
+    padding: 5px 10px;
+    background-color: @brand-secondary-lighter;
+    text-align: left;
+    color: @brand-primary-lighter;
+    white-space: nowrap;
+
+    &:active,
+    &:focus {
+      background-color: @brand-secondary-lighter !important;
+    }
+
+    .btn--name {
+      font-size: 11px;
+      font-family: @font-family-sans-serif;
+    }
+
+    .btn--number {
+      font-size: 22px;
+      white-space: nowrap;
+    }
+  }
+}
+
+// PDP Call to actions
+.btn-block--pdp-actions {
+  margin-top: 0;
+  text-align: left;
+
+  &.btn--telephone {
+    .btn--number {
+      display: block;
+      margin-left: 31px;
+    }
+  }
+}

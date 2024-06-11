@@ -1,0 +1,132 @@
+.list-view-item {
+  border-bottom: solid 1px @brand-primary;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  @media (min-width: @screen-sm) {
+    padding-bottom: 0;
+  }
+
+  .col--property-details {
+    position: relative;
+    margin-bottom: 5px;
+
+    .row {
+      position: relative;
+    }
+
+    @media (min-width: @screen-sm) {
+      margin-bottom: 0px;
+    }
+
+    h2 {
+      font-size: 22px;
+      float: left;
+
+      @media (min-width: @screen-sm) {
+        margin: 0 0 8px 0;
+        float: none;
+      }
+    }
+
+  .property-details-image {
+    .img-container {
+      border-bottom: solid 1px @brand-primary;
+
+      @media (min-width: @screen-sm) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .property-details-wrapper {
+    padding: 0;
+    width: 100%;
+
+    @media (min-width: @screen-sm) {
+      padding-left: @property-image-width-tablet + @grid-gutter-width;
+    }
+
+    @media (min-width: @screen-md) {
+      padding-left: @property-image-width-desktop + @grid-gutter-width;
+    }
+  }
+
+  .col--email,
+  .col--telephone {
+    padding: 0;
+  }
+
+  .col--price {
+    margin-bottom: 0;
+
+    @media (min-width: @screen-sm) {
+      float: left;
+    }
+
+    > h3 {
+      font-size: 14px;
+      line-height: 1.4;
+      clear: both;
+    }
+
+    .property-size {
+      white-space: nowrap;
+    }
+  }
+
+  .col--details-link  {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 20px;
+
+    @media (min-width: @screen-sm) {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      font-size: 14px;
+      text-align: right;
+      float: right;
+    }
+
+    .text {
+      display: none;
+
+      @media (min-width: @screen-sm) {
+        display: inline-block;
+      }
+    }
+  }
+
+  .feature-grid {
+    clear: both;
+    margin-bottom: 5px;
+    margin-top: 0;
+
+    .feature-grid__item {
+      margin-bottom: 3px;
+    }
+
+    .feature-grid__link--no-features {
+      display: none;
+    }
+  }
+
+  .col--contacts {
+    @media (min-width: @screen-sm) {
+      margin-bottom: 10px;
+
+      .contact-cta {
+          margin-bottom: 0;
+      }
+    }
+  }
+
+  .col--divide hr {
+      border-color: @border-color;
+      margin-bottom: 4px;
+      margin-top: 5px;
+    }
+  }
+}

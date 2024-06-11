@@ -1,0 +1,56 @@
+.cbre_header {
+    @media (@tabletLandscapeAndUp) {
+        background: @chiffon;
+    }
+
+    .headerLogoWrap {
+        background: @chiffon;
+
+        @media (@tabletLandscapeAndUp) {
+            background: transparent;
+            position: static;
+            float: left;
+            transform: none;
+        }
+    }
+
+    a.cbre_menuToggle {
+        color: @accentColor;
+
+        .hoverStates({
+            color: @accentColorHover;
+        });
+    }
+
+    .cbre_header_topRight__buttons {
+        @media (@tabletLandscapeAndUp) {
+            background: @chiffon;
+        }
+    }
+
+    .masthead_navItem_link {
+        @media (@tabletLandscapeAndUp) {
+            text-transform: none;
+        }
+    }
+
+    .masthead_navItems__secondary .masthead_navItem_link {
+        @media (@tabletLandscapeAndUp) {
+            color: @accentColor;
+
+            .hoverStates({
+                color: @accentColorHover;
+            });
+        }
+    }
+
+    .masthead_navItems__primary .masthead_navItem_link {
+        @media (@tabletLandscapeAndUp) {
+            color: @lighterText;
+
+            .hoverStates({
+                color: @accentColorHover;
+            });
+        }
+    }
+}

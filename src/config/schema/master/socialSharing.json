@@ -1,0 +1,79 @@
+{
+  "properties": {
+    "socialSharing": {
+      "type": "object",
+      "title": "Social Sharing",
+      "propertyOrder": 70,
+      "options": {
+        "grid_columns": 12,
+        "disable_edit_json": true,
+        "collapsed": true
+      },
+      "format": "grid",
+      "defaultProperties": [
+        "facebookAppId",
+        "facebookShare",
+        "linkedInShare",
+        "pintrestPinIt",
+        "twitterTweet",
+        "googlePlus"
+
+      ],
+      "properties": {
+        "facebookAppId": {
+          "title": "Facebook App ID",
+          "type": "string",
+          "options": {
+            "grid_columns": 12
+          }
+        },
+        "socialServices": {
+          "type": "object",
+          "title": "services",
+          "properties": {
+            "facebookShare": {
+              "title": "Enable Facbook Share - this requires a valid App ID",
+              "type": "boolean",
+              "format": "checkbox",
+              "options": {
+                "grid_columns": 12
+              }
+            },
+            "linkedInShare": {
+              "title": "Enable LinkedIn Share",
+              "type": "boolean",
+              "format": "checkbox",
+              "options": {
+                "grid_columns": 12
+              }
+            },
+            "pintrestPinIt": {
+              "title": "Enable Pintrest PinIt",
+              "type": "boolean",
+              "format": "checkbox",
+              "options": {
+                "grid_columns": 12
+              }
+            },
+            "twitterTweet": {
+              "title": "Enable Twitter Tweet",
+              "type": "boolean",
+              "format": "checkbox",
+              "options": {
+                "grid_columns": 12
+              }
+            },
+            "googlePlus": {
+              "title": "Enable Google+",
+              "type": "boolean",
+              "format": "checkbox",
+              "options": {
+                "grid_columns": 12
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

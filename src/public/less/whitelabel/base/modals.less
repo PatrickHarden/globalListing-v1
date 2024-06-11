@@ -1,0 +1,68 @@
+.modal {
+    .close {
+        opacity: 1;
+    }
+
+  &.fade .modal-dialog {
+    .transition(none)
+  }
+
+}
+
+.modal-backdrop {
+  background-color: white;
+  // Fade for backdrop
+  &.in { .opacity(.75); }
+}
+
+.spa-listings-modal {
+    .modal-dialog {
+      max-width: 364px;
+      margin: 30px auto;
+    }
+
+    .modal-content {
+      background-color: @white;
+      border: 1px solid @brand-primary-lighter;
+      border-radius: 0;
+      .box-shadow(none);
+    }
+
+    .modal-header {
+      background: @brand-primary-lighter;
+
+      .close,
+      h4.modal-title {
+        color: @white;
+      }
+
+
+      h4 {
+        font-size: 16px;
+      }
+
+      .close {
+        width: 20px;
+        height: 20px;
+        border: solid 1px #fff;
+        opacity: 1;
+        text-shadow: none;
+        font-weight: normal;
+        line-height: 20px;
+        margin-top: 1px !important;
+
+        span {
+          position: relative;
+          top: -3px;
+        }
+      }
+    }
+
+    .modal-body {
+      .form-control {
+        font-size: 12px;
+      }
+    }
+}
+
+

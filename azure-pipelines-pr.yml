@@ -1,0 +1,69 @@
+# Node.js with Grunt
+# Build a Node.js project using the Grunt task runner.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger: none
+
+pr:
+  - develop
+
+name: pr$(System.PullRequest.PullRequestNumber)-r$(Rev:r)
+
+pool:
+  name: "Global Listings Ubuntu"
+
+steps:
+  # - bash: |
+  #     title=$(curl -s -u ${USER}:${PAT} -X GET "https://dev.azure.com/cbre/GlobalListings/_apis/build/builds/${BUILD_BUILDID}?api-version=5.1" | jq '.triggerInfo["pr.title"]')
+
+  #     if echo "$title" | grep AB#[0-9]+ -E; then
+  #       exit 0
+  #     else
+  #       echo "A work item link could not be found in the PR title. Please follow the AB#{ID} convention: https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops"
+  #       exit 1
+  #     fi
+  #   displayName: 'Ensure work item in PR title'
+  #   env:
+  #     PAT: $(PAT)
+
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "10.x"
+    displayName: "Install Node.js"
+
+  - script: |
+      npm install
+      npm run grunt js-build
+    displayName: "npm install and run grunt"
+
+  - task: CopyFiles@2
+    inputs:
+      contents: "release/**"
+      targetFolder: $(Build.ArtifactStagingDirectory)
+    displayName: "Copy Release to Artifact Staging"
+
+  - task: CopyFiles@2
+    inputs:
+      contents: "pipeline_scripts/**"
+      targetFolder: $(Build.ArtifactStagingDirectory)
+    displayName: "Copy pipeline_scripts to Artifact Staging"
+
+  - task: CopyFiles@2
+    inputs:
+      contents: "deploy-azure-storage.py"
+      targetFolder: $(Build.ArtifactStagingDirectory)
+    displayName: "Copy deploy-azure-storage.py to Artifact Staging"
+
+  - task: CopyFiles@2
+    inputs:
+      contents: "package.json"
+      targetFolder: $(Build.ArtifactStagingDirectory)
+    displayName: "Copy package.json to Artifact Staging"
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: drop
+
+

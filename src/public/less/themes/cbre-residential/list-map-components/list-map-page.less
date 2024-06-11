@@ -1,0 +1,23 @@
+// Active Property Card
+@media(@mobile) {
+  .cardItem {
+    box-shadow: 0 0 10px 1px @dropShadowSecondary;
+    transition: box-shadow 0.3s ease;
+
+    &:first-of-type {
+      margin-top: 11px;
+    }
+
+    &.is_selected {
+      box-shadow: 0 0 10px 1px @dropShadowPrimary;
+      z-index: 1; // push shadow over adjecent cards
+    }
+
+    .slick-list & {
+      box-shadow: none !important;
+      &:first-of-type {
+        margin-top: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "backToSearchRadius": {
+      "type": "string",
+      "title": "Back to search radius",
+      "default": "20",
+      "format": "string",
+      "options": {
+        "grid_columns": 4
+      }
+    }
+  }
+}

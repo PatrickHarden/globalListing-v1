@@ -1,0 +1,160 @@
+@accf-prefix: ~'.amido-cbre-contact-form';
+
+@accf-max-width: 364px;
+
+@accf-color-error: #FF0000;
+
+.accf-visuallyHidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@{accf-prefix} {
+  opacity: 0;
+  text-align: left;
+  transition: opacity .25s;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@{accf-prefix}-show {
+  display: block;
+  opacity: 1;
+}
+
+@{accf-prefix}-hide {
+  opacity: 0;
+}
+
+@{accf-prefix}-overlay {
+  background: rgba(0, 0, 0, .75);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 5000;
+}
+
+@{accf-prefix}-container {
+  background-color: #fff;
+  border: 1px solid #000;
+  left: 50%;
+  top: 18%;
+  margin-left: -(@accf-max-width / 2);
+  max-height: 100%;
+  max-width: @accf-max-width;
+  position: fixed;
+  width: 100%;
+  z-index: 5001;
+
+  @media (max-width: @accf-max-width) {
+    height: 100%;
+    left: 0;
+    max-height: none;
+    top: 0;
+  }
+}
+
+@{accf-prefix}-condensed {
+  height: 140px;
+}
+
+@{accf-prefix}-form {
+  padding: 20px;
+}
+
+@{accf-prefix}-title {
+  color: #000;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+
+@{accf-prefix}-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@{accf-prefix}-form-component {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@{accf-prefix}-form > button {
+  width: 100%;
+}
+
+@{accf-prefix}-form-component-error {
+  color: @accf-color-error;
+}
+
+@{accf-prefix}-form-component--input > input,
+@{accf-prefix}-form-component--textarea > textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+@{accf-prefix}-form-component--textarea > textarea {
+  height: 200px;
+  padding: 5px;
+  width: 100%;
+}
+
+@{accf-prefix}-label-is-hidden > label {
+  .accf-visuallyHidden();
+}
+
+.ContactForm-form {
+  .form-control {
+    line-height: @line-height-base;
+  }
+  .contact_button_wrapper{
+    display: block;
+    .submit_spinner{
+      position: absolute;
+      margin-top: 25px;
+      margin-left: 10%;
+      display: inline-block;
+      top:inherit;
+      left:inherit;
+    }
+  }
+}
+
+.ContactForm-message {
+  text-align: center;
+  font-family: @font-family-serif;
+  font-size: @font-size-h2;
+  color: @gray-dark;
+
+  button {
+    font-family: @font-family-sans-serif;
+    font-size: @font-size-base;
+    color: @gray-dark;
+  }
+}
+
+.contact-form-container{
+
+  width: 376px;
+  margin: 38px auto 20px auto;
+
+  @media(@mobile){
+    width: 90%;
+    margin: 10px auto 10px auto;
+  }
+
+  @media(@mobilePortrait){
+    font-size: 14px;
+  }
+}

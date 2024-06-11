@@ -1,0 +1,82 @@
+/* generic global scafolding */
+@wrapperMaxWidth: 1000px;
+
+
+html:after {
+  content: "mobilePortrait";
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden;
+}
+
+@media (@mobileLandscapeAndUp) {
+  html:after {
+    content: "mobileLandscape";
+  }
+}
+
+@media (@tabletAndUp) {
+  html:after {
+    content: "tabletPortrait";
+  }
+}
+@media (@tabletLandscapeAndUp) {
+  html:after {
+    content: "tabletLandscape";
+  }
+}
+@media (@desktopAndUp) {
+  html:after {
+    content: "desktop";
+  }
+}
+
+.wrapper {
+  .FontDefault;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+
+  &.plp {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
+.main {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.cbre_body {
+  overflow-x: hidden;
+}
+
+.cbre_container {
+  width: @container-width;
+  max-width: 100%;
+  margin: 0 auto;
+  // overflow-x: hidden;
+}
+
+.has_overlay:after {
+  content: "";
+  background: rgba(0,0,0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}

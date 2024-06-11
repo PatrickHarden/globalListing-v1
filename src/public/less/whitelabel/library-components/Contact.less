@@ -1,0 +1,62 @@
+.contact {
+    @rightPos: 9px;
+    @iconSize: 11px;
+    &_link {
+        text-decoration: none;
+        padding: 8px @rightPos 8px 15px;
+        background: @lightGrey;
+        .cf();
+        display: block;
+        position: relative;
+        &:hover,
+        &:focus,
+        &:active {
+            background: darken(@lightGrey, 10%);
+        }
+    }
+
+    &_icons {
+        float: right;
+        position: absolute;
+        top: 50%;
+        margin-top: -(round(@iconSize/2)); //half of font size to vertically align
+        right: @rightPos;
+        line-height: 0;
+        &:after {
+            .iconMixin("\e908", @iconSize, @accentColor);
+            display: inline-block;
+
+        }
+        &:before {
+            .iconMixin("\e90b", @iconSize, @accentColor);
+            margin-right: 10px;
+            display: inline-block;
+            transform: scaleX(-1);
+        }
+
+    }
+
+    &__largeIcons {
+        .contact_icons {
+            @iconSize: 15px;
+            margin-top: -(round(@iconSize/2)); //half of font size to vertically align
+            &:after,
+            &:before {
+                @media(@tabletLandscapeAndUp) {
+                    font-size: @iconSize;
+
+                }
+            }
+        }
+    }
+    &_name {
+        max-width: 70%;
+        float: left;
+        .FontAlternative();
+        font-size: 14px;
+        line-height: 1.4;
+        padding-top: 6px;
+
+    }
+    // .avatarStyles();
+}

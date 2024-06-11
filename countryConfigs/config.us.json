@@ -1,0 +1,1372 @@
+{
+    "title": "USA commercial search result SPA",
+    "language": "en-US",
+    "siteId": "us-comm",
+    "siteType": "commercial",
+    "api": "/property-api",
+    "propertyContactApiUrl": "/property-api/reactpropertycontactrequest",
+    "cdnUrl": "",
+    "smallPlaceholderImageUrl":
+        "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=640\u0026h=480",
+    "mediumPlaceholderImageUrl":
+        "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=1280\u0026h=960",
+    "largePlaceholderImageUrl":
+        "https://placeholdit.imgix.net/~text?txtsize=20\u0026txt=No%20image%20available\u0026w=1600\u0026h=1200",
+    "mapMarkerIconUrl":
+        "https://cbresearchtesting.blob.core.windows.net/cbre-search-spa/3/images/map-marker.png",
+    "mapMarkerIconUrlInactive":
+        "https://cbresearchtesting.blob.core.windows.net/cbre-search-spa/3/images/map-marker_inactive.png",
+    "urlPropertyAddressFormat": "%(line1)s-%(line2)s-%(locality)s-%(postcode)s",
+    "placesAddressLookupStringFormat": "%(PostCode)s, %(Country)s",
+    "tenantFeesLinkUrl": null,
+    "recaptchaKey": "6LezMAQTAAAAAC8lClZZbDPkX81xro_kRuH2KALb",
+    "searchConfig": {
+        "searchResultsPage": "/listings/commercial",
+        "searchLocationName": "United States",
+        "locationTypeDefinitions": [
+            {
+                "name": "default",
+                "definitions": [],
+                "radius": 1
+            },
+            {
+                "name": "neighbourhood",
+                "definitions": ["neighborhood"],
+                "radius": 5
+            },
+            {
+                "name": "london area",
+                "definitions": ["administrative_area_level_3"],
+                "radius": 10
+            },
+            {
+                "name": "Postcode",
+                "definitions": ["postal_code"],
+                "radius": 10
+            },
+            {
+                "name": "City",
+                "definitions": ["locality"],
+                "radius": 20
+            },
+            {
+                "name": "Town",
+                "definitions": ["postal_town"],
+                "radius": 20
+            },
+            {
+                "name": "county",
+                "definitions": ["administrative_area_level_2"],
+                "radius": 50
+            },
+            {
+                "name": "country",
+                "definitions": ["administrative_area_level_1", "country"],
+                "radius": 500
+            }
+        ],
+        "restrictToCountry": "us",
+        "searchHeaderLinkUrl": "",
+        "polygons": []
+    },
+    "carouselConfig": {},
+    "params": {
+        "Site": "us-comm",
+        "Sort": "asc(Dynamic.SalePrice)",
+        "Common.Aspects": "isLetting",
+        "radius": "3000",
+        "Lat": "42.8777",
+        "Lon": "-97.381",
+        "RadiusType": "Miles",
+        "CurrencyCode": "USD",
+        "Unit": "sqft",
+        "Interval": "Annually",
+        "Dynamic.UnderOffer": "true,false",
+        "Dynamic.LetUnderOffer": "true,false",
+        "Common.HomeSite": "us-comm"
+    },
+    "filters": [
+        {
+            "name": "Sort",
+            "type": "select",
+            "label": "Sort order",
+            "placement": "lm_sortFilter",
+            "options": [
+                {
+                    "value": "asc(_distance)",
+                    "label": "Closest",
+                    "default": true
+                },
+                {
+                    "value": "desc(Dynamic.SalePrice)",
+                    "label": "Sale Price (High to low)",
+                    "default": false
+                },
+                {
+                    "value": "asc(Dynamic.SalePrice)",
+                    "label": "Sale Price (Low to high)",
+                    "default": false
+                },
+                {
+                    "value": "desc(Common.LastUpdated)",
+                    "label": "Last Updated",
+                    "default": false
+                }
+            ],
+            "conditional": {
+                "Common.Aspects": "isSale"
+            }
+        },
+        {
+            "name": "Sort",
+            "type": "select",
+            "label": "Sort order",
+            "placement": "lm_sortFilter",
+            "options": [
+                {
+                    "value": "asc(_distance)",
+                    "label": "Closest",
+                    "default": true
+                },
+                {
+                    "value": "desc(Dynamic.LettingCharge)",
+                    "label": "Rent (High to low)",
+                    "default": false
+                },
+                {
+                    "value": "asc(Dynamic.LettingCharge)",
+                    "label": "Rent (Low to high)",
+                    "default": false
+                },
+                {
+                    "value": "desc(Common.LastUpdated)",
+                    "label": "Last Updated",
+                    "default": false
+                },
+                {
+                    "value": "asc(Dynamic.MinArea)",
+                    "label": "Size (smallest)",
+                    "default": false
+                },
+                {
+                    "value": "desc(Dynamic.TotalArea)",
+                    "label": "Size (largest)",
+                    "default": false
+                }
+            ],
+            "conditional": {
+                "Common.Aspects": "isLetting"
+            }
+        },
+        {
+            "name": "Dynamic.LettingCharge",
+            "type": "range",
+            "label": "Rent",
+            "placement": "lm_primaryFilter",
+            "conditional": {
+                "Common.Aspects": "isLetting"
+            },
+            "minValues": [
+                {
+                    "value": "",
+                    "label": "No min",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "10GBP_Annually",
+                    "label": "\u00a310/sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "20GBP_Annually",
+                    "label": "\u00a320/sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "30GBP_Annually",
+                    "label": "\u00a330/sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "40GBP_Annually",
+                    "label": "\u00a340/sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "50GBP_Annually",
+                    "label": "\u00a350/sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "60GBP_Annually",
+                    "label": "\u00a360/sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "70GBP_Annually",
+                    "label": "\u00a370/sqft",
+                    "default": false,
+                    "type": "min"
+                }
+            ],
+            "maxValues": [
+                {
+                    "value": "",
+                    "label": "No max",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "10GBP_Annually",
+                    "label": "\u00a310/sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "20GBP_Annually",
+                    "label": "\u00a320/sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "30GBP_Annually",
+                    "label": "\u00a330/sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "40GBP_Annually",
+                    "label": "\u00a340/sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "50GBP_Annually",
+                    "label": "\u00a350/sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "60GBP_Annually",
+                    "label": "\u00a360/sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "70GBP_Annually",
+                    "label": "\u00a370/sqft",
+                    "default": false,
+                    "type": "max"
+                }
+            ]
+        },
+        {
+            "name": "Dynamic.MinArea|Dynamic.TotalArea",
+            "type": "range",
+            "label": "Size",
+            "placement": "lm_secondaryFilter",
+            "minValues": [
+                {
+                    "value": "",
+                    "label": "No min",
+                    "default": true,
+                    "type": "min"
+                },
+                {
+                    "value": "2500",
+                    "label": "2,500 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "5000",
+                    "label": "5,000 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "10000",
+                    "label": "10,000 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "15000",
+                    "label": "15,000 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "20000",
+                    "label": "20,000 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "30000",
+                    "label": "30,000 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "40000",
+                    "label": "40,000 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "50000",
+                    "label": "50,000 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "70000",
+                    "label": "70,000 sqft",
+                    "default": false,
+                    "type": "min"
+                },
+                {
+                    "value": "100000",
+                    "label": "100,000 sqft",
+                    "default": false,
+                    "type": "min"
+                }
+            ],
+            "maxValues": [
+                {
+                    "value": "",
+                    "label": "No max",
+                    "default": true,
+                    "type": "max"
+                },
+                {
+                    "value": "2500",
+                    "label": "2,500 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "5000",
+                    "label": "5,000 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "10000",
+                    "label": "10,000 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "15000",
+                    "label": "15,000 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "20000",
+                    "label": "20,000 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "30000",
+                    "label": "30,000 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "40000",
+                    "label": "40,000 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "50000",
+                    "label": "50,000 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "70000",
+                    "label": "70,000 sqft",
+                    "default": false,
+                    "type": "max"
+                },
+                {
+                    "value": "100000",
+                    "label": "100,000 sqft",
+                    "default": false,
+                    "type": "max"
+                }
+            ]
+        },
+        {
+            "name": "Dynamic.SalePrice",
+            "type": "rangeSlider",
+            "label": "Price",
+            "placement": "lm_primaryFilter",
+            "conditional": {
+                "Common.Aspects": "isSale"
+            },
+            "settings": {
+                "min": "0",
+                "max": "10000000",
+                "step": "",
+                "intl": "currency",
+                "prependText": "",
+                "appendText": "",
+                "prependValue": "",
+                "appendValue": ""
+            }
+        },
+        {
+            "name": "radius",
+            "type": "select",
+            "label": "Radius",
+            "placement": "lm_locationFilter",
+            "conditional": {
+                "searchMode": "bounding"
+            },
+            "options": [
+                {
+                    "value": "0",
+                    "label": "No Radius",
+                    "default": true
+                },
+                {
+                    "value": "0.25",
+                    "label": "0.25 Miles",
+                    "default": false
+                },
+                {
+                    "value": "0.5",
+                    "label": "0.5 Miles",
+                    "default": false
+                },
+                {
+                    "value": "1",
+                    "label": "1 Mile",
+                    "default": false
+                },
+                {
+                    "value": "3",
+                    "label": "3 Miles",
+                    "default": false
+                },
+                {
+                    "value": "5",
+                    "label": "5 Miles",
+                    "default": false
+                },
+                {
+                    "value": "10",
+                    "label": "10 Miles",
+                    "default": false
+                },
+                {
+                    "value": "15",
+                    "label": "15 Miles",
+                    "default": false
+                },
+                {
+                    "value": "20",
+                    "label": "20 Miles",
+                    "default": false
+                },
+                {
+                    "value": "30",
+                    "label": "30 Miles",
+                    "default": false
+                },
+                {
+                    "value": "40",
+                    "label": "40 Miles",
+                    "default": false
+                },
+                {
+                    "value": "50",
+                    "label": "50 Miles",
+                    "default": false
+                },
+                {
+                    "value": "500",
+                    "label": "500 Miles",
+                    "default": false
+                }
+            ]
+        },
+        {
+            "name": "options",
+            "type": "group",
+            "label": "More options",
+            "placement": "lm_groupFilters",
+            "conditional": {
+                "Common.Aspects": "isSale"
+            },
+            "options": [],
+            "children": [
+                {
+                    "label": "Include under offer",
+                    "name": "Dynamic.UnderOffer",
+                    "type": "checkbox",
+                    "action": "SWITCH",
+                    "value": "true,false",
+                    "uncheckedValue": "false",
+                    "checked": true,
+                    "conditional": {}
+                }
+            ]
+        },
+        {
+            "name": "options",
+            "type": "group",
+            "label": "More Options",
+            "placement": "lm_groupFilters",
+            "conditional": {
+                "Common.Aspects": "isLetting"
+            },
+            "children": [
+                {
+                    "label": "Include under offer",
+                    "name": "Dynamic.LetUnderOffer",
+                    "type": "checkbox",
+                    "action": "SWITCH",
+                    "value": "true,false",
+                    "uncheckedValue": "false",
+                    "checked": true,
+                    "conditional": {}
+                }
+            ]
+        }
+    ],
+    "i18n": {
+        "ft": "ft.",
+        "m": "m",
+        "acre": "acre",
+        "acrePlural": "acres",
+        "Annually": "year",
+        "ApproximateSizing": "Square Footage is Approximate",
+        "Asking": "Asking ",
+        "Available": "Available",
+        "AvailableFrom": "Available Date",
+        "AvailableFromNow": "Immediately",
+        "AvailableNow": "Now",
+        "AvailableNeg": "Negotiable",
+        "AvailableSoon": "Soon",
+        "BackToFavourites": "Back to favourites",
+        "BackToResultsButtonText": "Back to results",
+        "BackToSearch": "Back to search",
+        "BackToAllPropertiesButtonText": "Back to all properties",
+        "BackToHomepage": "Home",
+        "BusinessRates": "Business Rates",
+        "carouselPrev": "Prev",
+        "carouselNext": "Next",
+        "ClearFavouritesButton": "Clear all favourites",
+        "CloseTabButtonText": "Close",
+        "Cost": "Cost",
+        "Commercial": "Commercial",
+        "EnergySourceBioEnergy": "Bio energy",
+        "EnergySourceLightGas": "Light gas",
+        "EnergySourceHeavyGas": "Heavy gas",
+        "EnergySourceGeoThermal": "Geothermal",
+        "EnergySourceDistrictHeating": "District heating",
+        "EnergySourceDistrictHeatingSteam": "District heating steam",
+        "EnergySourceLiquidGas": "Liquid gas",
+        "EnergySourceGas": "Gas",
+        "EnergySourceWood": "Wood",
+        "EnergySourceWoodChips": "Wood chips",
+        "EnergySourceWoodPellets": "Wood pellets",
+        "EnergySourceNoInformation": "No information",
+        "EnergySourceCoal": "Coal",
+        "EnergySourceCoalCoke": "Coal/coke",
+        "EnergySourceCombindHeatAndPowerBioEnergy": "Bio energy",
+        "EnergySourceCombindHeatAndPowerRenewableEnergy": "Renewable energy",
+        "EnergySourceCombindHeatAndPowerFossilFuels": "Fossil fuels",
+        "EnergySourceCombindHeatAndPowerRegenerativeEnergy":
+            "Regenerative energy",
+        "EnergySourceLocalHeating": "Local heating",
+        "EnergySourceOil": "Oil",
+        "EnergySourceSolarHeating": "Solar heating",
+        "EnergySourceElectricity": "Electricity",
+        "EnergySourceEnvironmentalThermalEnergy": "Thermal energy",
+        "EnergySourceHeatSupply": "Heat supply",
+        "EnergySourceHydroEnergy": "Hydro energy",
+        "EnergySourceWindEnergy": "Wind energy",
+        "EnergySourceCentralHeating": "Central heating",
+        "EnergyTypeRequirementCertificate": "Requirement certificate",
+        "EnergyTypeConsumptionCertificate": "Consumption certificate",
+        "EnergyTypePerformanceCertificate": "Performance certificate",
+        "EnergyUnitkj": "kJ",
+        "EnergyUnitkwh": "kWh",
+        "EnergyUnitbtu": "BTU",
+        "EnergyUnitj": "J",
+        "ErrorSubTitle": "We\u0027re sorry, there has been an error.",
+        "ErrorText": "Please try again later.",
+        "ErrorTitle": "Sorry",
+        "ErrorBadRequest": "This page does not exist.",
+        "ErrorPageNotFoundTitle": "Sorry, property not found",
+        "ErrorPageNotFoundText":
+            "It seems that you were looking for something that doesn't exist or has moved.",
+        "ErrorPageSearchPageText": "Back to search page",
+        "EstateCharge": "EstateCharge",
+        "ContactFormButtonText": "Send",
+        "ContactFormErrorMessage":
+            "Sorry - there was a problem submitting your enquiry   Please try again",
+        "ContactFormFieldCaptchaErrorMsg":
+            "Please complete valid reCaptcha information",
+        "ContactFormFieldCaptchaLabel": "Verification",
+        "ContactFormFieldEmailDefaultValue": "",
+        "ContactFormFieldEmailErrorMsg":
+            "Please enter a valid email (e.g. me@me.com)",
+        "ContactFormFieldEmailLabel": "Email *",
+        "ContactFormFieldMessageDefaultValue":
+            "I am interested in the property %(propertyDetails)s. Please contact me to discuss.",
+        "ContactFormFieldMessageLabel": "Message",
+        "ContactFormFieldNameDefaultValue": "",
+        "ContactFormFieldNameErrorMsg": "Please enter a valid name",
+        "ContactFormFieldNameLabel": "Name *",
+        "ContactFormFieldTelephoneDefaultValue": "",
+        "ContactFormFieldTelephoneErrorMsg":
+            "Please enter a valid phone number",
+        "ContactFormFieldTelephoneLabel": "Telephone",
+        "ContactFormSuccessMessage":
+            "Thank you for contacting us   We will be in touch shortly",
+        "ContactFormTitle": "Make an enquiry",
+        "Details": "Details",
+        "DistanceUnits_hour": "hour",
+        "DistanceUnits_hours": "hours",
+        "DistanceUnits_kilometre": "kilometre",
+        "DistanceUnits_kilometres": "kilometres",
+        "DistanceUnits_metre": "metre",
+        "DistanceUnits_metres": "metres",
+        "DistanceUnits_mile": "mile",
+        "DistanceUnits_miles": "miles",
+        "DistanceUnits_minute": "minute",
+        "DistanceUnits_minutes": "minutes",
+        "DistanceUnits_yard": "yard",
+        "DistanceUnits_yards": "yards",
+        "EventButtonLoadingText": "Loading...",
+        "ExtendedSearchTitle": "No results",
+        "ExternalParkingSpaces": "External Parking Spaces",
+        "FavouritesViewNoResults":
+            "Sorry we couldn\u0027t find favourited properties within the selected area, so we recommend changing your filters.",
+        "FavouritesViewTitle": "Favourite Properties",
+        "FilterSearchTitle": "Filter your results",
+        "FilterTabButtonText": "Filter",
+        "Fixed": "Fixed ",
+        "FloorsAndUnits": "Floors/Units",
+        "FloorsAvailable": "Floors Available",
+        "Floorplan": "Floorplan",
+        "From": "From ",
+        "FullAddressOnRequest": "Full address available on request",
+        "FullDetailsLink": "Full details",
+        "GenericSearchButton": "Search",
+        "GenericBrochureName": "Document",
+        "GenericVideoLinkName": "Video Link",
+        "GridViewTabText": "Grid View",
+        "Guide": "Guide ",
+        "hectare": "hectare",
+        "Image": "Image",
+        "IncludingVAT": " (including VAT)",
+        "IncludingSalesTax": " (including Sales Tax)",
+        "PolygonSearchPlaceholder": "Select regions to search",
+        "InternalParkingSpaces": "Internal Parking Spaces",
+        "PolygonSearchNoResults": "No more regions available",
+        "Landlord": "Landlord",
+        "LeaseContractStartDate": "Lease Start",
+        "LeaseContractEndDate": "Lease End",
+        "LeaseRentNextReviewDate": "Next Rent Review",
+        "LeaseRentReviewCycle": "Rent Review Cycle",
+        "LeaseContractBreakDate": "Next Lease Break",
+        "LeaseType": "Lease type",
+        "LeaseTypeAssignment": "Assignment",
+        "LeaseTypeGroundease": "Ground Lease",
+        "LeaseTypeHeadLease": "Head Lease",
+        "LeaseTypeLicence": "Licence",
+        "LeaseTypeNew": "New",
+        "LeaseTypeSubLease": "Sublease",
+        "LeaseTypeUnknown": "Unknown",
+        "LeaseTypeLeaseHold": "Leasehold",
+        "LeaseTypeLongLeaseHold": "Long Leasehold",
+        "LeaseTypeLongLet": "Long Let",
+        "LeaseTypeOccupationalLease": "Occupational",
+        "Let": "Let",
+        "letSearchType": "rent",
+        "ListingsRentLabelText": "Rent",
+        "ListingsSaleLabelText": "Sale",
+        "ListViewTabText": "List View",
+        "LMClearFilterButtonText": "Clear",
+        "LMDoneFilterButtonText": "Done",
+        "LMExpandableTextMore": "More ",
+        "LMExpandableTextLess": "Less ",
+        "LMPDPAvailableFrom": "Available from",
+        "LMPdpPointsOfInterest": "Points of Interest",
+        "LMPdpPriceLabelSale": "For sale",
+        "LMPdpPriceLabelRent": "For rent",
+        "LMfilterTabButtonText": "Filters",
+        "LMfilterGroupShow": "Show more",
+        "LMfilterGroupHide": "Show less",
+        "LMPolygonSearchPlaceholder": "Search",
+        "LMPolygonSearchNoResults": "No results",
+        "LocationDescriptionTitle": "Location Description",
+        "sqm": "m\u00b2",
+        "MapViewTabText": "Map View",
+        "MessagePropertyDetailsString":
+            "%(propertyId)s, %(addressLine1)s, %(addressLine2)s",
+        "Mezzanine": "Mezzanine",
+        "Monthly": "pm",
+        "MoreDetailsLink": "More details",
+        "NextPropertyButtonText": "Next property",
+        "NoFavouritesText": "No favourites selected",
+        "NoImageAvailable": "No Image Available",
+        "NoResultsInPolygon":
+            "Sorry we couldn\u0027t find properties within the selected area, so we recommend increasing your search.",
+        "NoResultsSubTitle":
+            "We\u0027re sorry, there is nothing that matches your exact requirements.",
+        "NoResultsText":
+            "Please try a different search using the search options on the left.",
+        "NoResultsTitle": "No results",
+        "Office": "Office",
+        "OffersInExcessOf": "Offers in excess of ",
+        "Owner": "Owner",
+        "PaginationAllButtonText": "All",
+        "PaginationNextButtonText": "Next",
+        "PaginationPreviousButtonText": "Previous",
+        "PdfHeaderTitle": "Properties Listing",
+        "PdfHeaderLinkText": "Visit cbre.co.uk",
+        "PdfHeaderLinkUrl": "http://cbre.co.uk",
+        "PdfContactBlockTitle":
+            "Interested in this property? Contact an agent.",
+        "PdfMapTitle": "Location",
+        "PdfDisclaimer":
+            "DISCLAIMER: CBRE Limited  CBRE Limited on its behalf and for the Vendors or Lessors of this property whose Agents they are, give notice that:  1. These particulars are set out as a general outline only for guidance to intending Purchasers or Lessees, and do not constitute any part of an offer or contract. 2. CBRE Limited uses reasonable endeavours to ensure that the information in these particulars is materially correct, any intending Purchasers, Lessees or Third Parties should not rely on them as statements or representations of fact, but must satisfy themselves by inspection, searches, enquiries, surveys or otherwise as to their accuracy. CBRE Limited as such cannot be held responsible for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss of profits resulting from direct or indirect actions based upon the content of these particulars.  3. No person in the employment of CBRE Limited has any authority to make any representation or warranty whatsoever in relation to this property. 4. Unless otherwise stated, all purchase prices and rents are correct at the date of publication and, unless otherwise stated, are quoted exclusive of VAT. Lease details and service ground rent (where applicable) are given as a guide only and should be checked and confirmed by your solicitor prior to exchange of contracts.",
+        "ParkingTitle": "Parking",
+        "ParkingTypeSingleRatio":
+            "%(ratio)s space per %(ratioPer)s %(ratioPerUnit)s",
+        "ParkingTypeRatio":
+            "%(ratio)s spaces per %(ratioPer)s %(ratioPerUnit)s",
+        "ParkingRatioTitle": "Spaces ratio",
+        "ParkingTypeCarParking": "Car Parking spaces",
+        "ParkingTypeCovered": "Covered spaces",
+        "ParkingTypeCoveredCanopy": "Covered Canopy spaces",
+        "ParkingTypeCoveredEnergized": "Covered Energized spaces",
+        "ParkingTypeCoveredGarage": "Covered Garage spaces",
+        "ParkingTypeCoveredRandom": "Covered Random spaces",
+        "ParkingTypeCoveredReserved": "Covered Reserved spaces",
+        "ParkingTypeCoveredUnreserved": "Covered Unreserved spaces",
+        "ParkingTypeCoveredUnreservedEnergized":
+            "Covered Unreserved Energized spaces",
+        "ParkingTypeGarage": "Garage spaces",
+        "ParkingTypeIncludedInRent": "Included In Rent spaces",
+        "ParkingTypeNone": "None spaces",
+        "ParkingTypeOnSiteParking": "On Site Parking spaces",
+        "ParkingTypeSurface": "Surface spaces",
+        "ParkingTypeSurfaceEnergized": "Surface Energized spaces",
+        "ParkingTypeSurfaceRandom": "Surface Random spaces",
+        "ParkingTypeSurfaceRandomEnergized": "Surface Random Energized spaces",
+        "ParkingTypeSurfaceReserved": "Surface Reserved spaces",
+        "ParkingTypeSurfaceReservedEnergized":
+            "Surface Reserved Energized spaces",
+        "ParkingTypeSurfaceTandem": "Surface Tandem spaces",
+        "ParkingTypeSurfaceUnreserved": "Surface Unreserved spaces",
+        "ParkingTypeSurfaceUnreservedEnergized":
+            "Surface Unreserved Energized spaces",
+        "ParkingTypeTrailerParking": "Trailer Parking spaces",
+        "ParkingTypeUnderground": "Underground spaces",
+        "ParkingTypeUndergroundRandom": "Underground Random spaces",
+        "ParkingTypeUndergroundReserved": "Underground Reserved spaces",
+        "ParkingTypeUndergroundTandem": "Underground Tandem spaces",
+        "ParkingTypeUndergroundUnreserved": "Underground Unreserved spaces",
+        "ParkingTypeVisitor": "Visitor spaces",
+        "ParkingSpaceAndCharge": "%(spaces)s (%(amount)s %(interval)s)",
+        "ParkingSpaces": "%(spaces)s spaces",
+        "PdpArrangeViewingButtonText": "Arrange a viewing",
+        "PDPAvailableFrom": "Available From",
+        "PdpBusinessRates": "Business Rates",
+        "PdpBrokerageFees": "Brokerage Fees",
+        "PdpCarouselSlideIndexOfText": "of",
+        "PdpContactSalesTeamButtonText": "Contact the sales team",
+        "PdpContactTheAgentText": "Contact the agent",
+        "PdpDeposit": "Deposit",
+        "PdpDownloadBrochureButtonText": "Download More Information",
+        "PdpEstateCharge": "Estate Charge",
+        "PdpExternalParkingSpaceCost": "External Parking",
+        "PdpFeaturesTitle": "Features",
+        "PdpFloorsAvailableTitle": "Floors Available",
+        "PdpImagesTitle": "Photos",
+        "PdpInterestedInThisPropertyText": "Interested in this property?",
+        "PdpInternalParkingSpaceCost": "Internal Parking",
+        "PdpInternaParkingSpaceCost": "Internal Parking",
+        "PdpLeaseInformationAndChargesTitle":
+            "Opportunity Information \u0026 Charges",
+        "PDPLeaseType": "Lease Type",
+        "PDPLeaseTypeAssignment": "Assignment",
+        "PDPLeaseTypeFreehold": "Freehold",
+        "PDPLeaseTypeGroundease": "Groundease",
+        "PDPLeaseTypeHeadLease": "Head Lease",
+        "PDPLeaseTypeLeaseHold": "LeaseHold",
+        "PDPLeaseTypeLicence": "Licence",
+        "PDPLeaseTypeLongLeaseHold": "LongLeaseHold",
+        "PDPLeaseTypeLongLet": "LongLet",
+        "PDPLeaseTypeNew": "New",
+        "PDPLeaseTypeOccupationalLease": "OccupationalLease",
+        "PDPLeaseTypeSubLease": "SubLease",
+        "PDPLeaseTypeUnknown": "Unknown",
+        "PdpLoadingDocks": "Loading Docks",
+        "PdpLoadingDoors": "Loading Doors",
+        "PdpOperatingCost": "Operating cost",
+        "PDPPropertyTypePark": "Park",
+        "PDPPropertyTypeHouse": "House",
+        "PDPPropertyTypeApartment": "Apartment",
+        "PDPPropertyTypePrimeLocatoon": "Prime Location",
+        "PDPPropertyTypeDistrict": "District",
+        "PDPPropertyTypeShoppingCentre": "Shopping Centre",
+        "PDPPropertyTypeTier-1": "Data Centre",
+        "PDPPropertyTypeTier-2": "Data Centre",
+        "PDPPropertyTypeTier-3": "Data Centre",
+        "PDPPropertyTypeTier-4": "Data Centre",
+        "PDPPropertyTypeTraditional": "Office",
+        "PDPPropertyTypeCo-working": "Office",
+        "PDPPropertyTypeCreative": "Office",
+        "PDPPropertyTypeOpenPlan": "Office",
+        "PDPPropertyTypeOffice": "Office",
+        "PDPPropertyTypeOfficeBuilding": "Office",
+        "PDPPropertyTypeHighRise": "Office",
+        "PDPPropertyTypeMidRise": "Office",
+        "PDPPropertyTypeLaboratory": "Laboratory",
+        "PDPPropertyTypeMedicalOffice": "Medical Office",
+        "PDPPropertyTypeExecutive": "Office",
+        "PDPPropertyTypeBarPub": "Retail",
+        "PDPPropertyTypeUnknown": "Unknown",
+        "PDPPropertyTypeHotel": "Hotel",
+        "PDPPropertyTypeLand": "Land",
+        "PDPPropertyTypeNursingHome": "Nursing Home",
+        "PDPPropertyTypeRestaurant": "Restaurant",
+        "PDPPropertyTypeShop ": "Shop",
+        "PDPPropertyTypeHighStreet": "High Street",
+        "PDPPropertyTypeSupermarket": "Supermarket",
+        "PDPPropertyTypePowerCenter": "Power Centre",
+        "PDPPropertyTypeStipCenter": "Neighborhood Centre",
+        "PDPPropertyTypeOutletCenter": "Outlet Centre",
+        "PDPPropertyTypeRegionalCenter": "Regional Centre",
+        "PDPPropertyTypeMixedUse": "Lifestyle Centre",
+        "PDPPropertyTypeRetailPad": "Retail Pad",
+        "PDPPropertyTypeVehicleRelated": "Vehicle Related Property",
+        "PDPPropertyTypeTrainingCentre": "Training Centre",
+        "PDPPropertyTypeWarehouse": "Warehouse",
+        "PDPPropertyTypeLightIndustrial": "Office Showroom",
+        "PDPPropertyTypeManufacturing": "Manufacturing Property",
+        "PDPPropertyTypeColdStorage": "Cold Storage",
+        "PDPPropertyTypeTerminal": "Terminal",
+        "PDPPropertyTypeCarDealership": "Car Dealership",
+        "PDPPropertyTypeCarPark": "Car Park",
+        "PDPPropertyTypePetrolFillingStation": "Petrol Filling Station",
+        "PDPPropertyTypeRoadsideRetail": "Roadside Retail",
+        "PDPPropertyTypeWorkshop": "Workshop",
+        "PDPPropertyTypeRetailLand": "Retail Land",
+        "PDPPropertyTypeOfficeLand": "Office Land",
+        "PDPPropertyTypeRetailPadLand": "Pad Land",
+        "PDPPropertyTypeResidentialLand": "Residential Land",
+        "PDPPropertyTypeIndustrialLand": "Industrial Land",
+        "PDPPropertyTypeCommercialLand": "Commercial Land",
+        "PDPPropertyTypeResidential": "Residential Property",
+        "PDPPropertyTypeRetail": "Retail Unit",
+        "PDPPropertyTypeIndustrial": "Industrial Unit",
+        "PDPPropertyTypeDataCentre": "Datacentre",
+        "PDPPropertyTypeHotels": "Hotel",
+        "PDPPropertyTypePetroleumAutomotive": "Petroleum and Automotive space",
+        "PDPPropertyTypeHealthcare": "Healthcare Property",
+        "PDPPropertyTypeInvestment": "Investment Property",
+        "PDPPluralPropertyTypeResidential": "Residential Properties",
+        "PDPPluralPropertyTypeDataCentre": "Datacentres",
+        "PDPPluralPropertyTypeHotels": "Hotels",
+        "PDPPluralPropertyTypePetroleumAutomotive":
+            "Petroleum and Automotive space",
+        "PDPPluralPropertyTypeHealthcare": "Healthcare Properties",
+        "PDPPluralPropertyTypeInvestment": "Investment Properties",
+        "PDPPropertyTypeSinglefamily": "Single Family",
+        "PDPPropertyTypeSinglefamilyMobile": "Single family Mobile",
+        "PDPPropertyTypeDuplex": "Duplex",
+        "PDPPropertyTypeMultifamilyLow-Rise": "Multi family Low-Rise",
+        "PDPPropertyTypeMultifamilyMid-Rise": "Multi family Mid-Rise",
+        "PDPPropertyTypeMultifamilyHigh-Rise": "Multi family High-Rise",
+        "PDPPropertyTypeStudentHousing": "Student Housing",
+        "PDPPropertyTypeVacationHome/Cottage": "Vacation Home / Cottage",
+        "PDPPropertyTypePlaceofworship": "Place of worship",
+        "PDPPropertyTypeCemetery": "Cemetery",
+        "PDPPropertyTypeSchool": "School",
+        "PDPPropertyTypeCommunityCenter": "Community Center",
+        "PDPPropertyTypeMuseum/ArtGallery": "Museum",
+        "PDPPropertyTypeLibrary": "Library",
+        "PDPPropertyTypePerformingArts/Theatre": "Theatre",
+        "PDPPropertyTypeHospital": "Hospital",
+        "PDPPropertyTypeSeniorHousing": "Senior Housing",
+        "PDPPropertyTypeMedicalBuilding": "Medical Building",
+        "PDPPropertyTypeSeniorHousing-LongTermCare":
+            "Senior Housing - Long Term Care",
+        "PDPPropertyTypeSeniorHousing-IndependentLiving":
+            "Senior Housing - Independent Living",
+        "PDPPropertyTypeSeniorHousing-AssistedLiving":
+            "Senior Housing - Assisted Living",
+        "PDPPropertyTypeSeniorHousing-MemoryCare":
+            "Senior Housing - Memory Care",
+        "PDPPropertyTypeHotel-FullService": "Hotel - Full Service",
+        "PDPPropertyTypeHotel-LimitedService": "Hotel - Limited Service",
+        "PDPPropertyTypeHotel-FocusedService": "Hotel - Focused Service",
+        "PDPPropertyTypeHotel-ExtendedStay": "Hotel - Extended Stay",
+        "PDPPropertyTypeResort": "Resort",
+        "PDPPropertyTypeMotel": "Motel",
+        "PDPPropertyTypeInns": "Inn",
+        "PDPPropertyTypeSkiResort": "Ski Resort",
+        "PDPPropertyTypeTouristHomes/B&amp;": "Tourist Homes",
+        "PDPPropertyTypeBowlingAlley": "Bowling Alley",
+        "PDPPropertyTypeFitness": "Fitness",
+        "PDPPropertyTypeSkatingRink": "Skating Rink",
+        "PDPPropertyTypeGolfCourse": "Golf Course",
+        "PDPPropertyTypeMarina": "Marina",
+        "PDPPropertyTypeConverted": "Converted",
+        "PDPPropertyTypeHighTech": "High Tech",
+        "PDPPropertyTypeInstitutional": "Institutional",
+        "PDPPropertyTypeCommunityOrNeighbourhood": "Community Or Neighbourhood",
+        "PDPPropertyTypeNeighbourhoodCentre": "Neighbourhood Centre",
+        "PDPPropertyTypeOutletCentre": "Outlet Centre",
+        "PDPPropertyTypePowerCentre": "Power Centre",
+        "PDPPropertyTypeRegionalCentre": "Regional Centre",
+        "PDPPropertyTypeRecreation": "Recreation",
+        "PDPPropertyTypeReligious": "Religious",
+        "PDPPropertyTypeStreetfront": "Street front",
+        "PDPPropertyTypeCrossdock": "Cross dock",
+        "PDPPropertyTypeDeadStorage": "Dead Storage",
+        "PDPPropertyTypeFoodProcessing": "Food Processing",
+        "PDPPropertyTypeTransportation": "Transportation",
+        "PDPPropertyTypeTruckRepairFacility": "Truck Repair Facility",
+        "PDPPropertyTypeTruckTerminal": "Truck Terminal",
+        "PDPPropertyTypeWarehouseOrDistribution": "Warehouse",
+        "PDPPropertyTypeAgricultural": "Agricultural",
+        "PDPPropertyTypeHighDensityResidential": "Residential",
+        "PDPPropertyTypeLowDensityResidential": "Residential",
+        "PDPPropertyTypeMediumDensityResidential": "Residential",
+        "PDPPropertyTypeFreehold": "Freehold",
+        "PDPPropertyTypeLeasehold": "Leasehold",
+        "PDPPropertyTypeNightclubs": "Nightclub",
+        "PDPPropertyTypeCinemas": "Cinema",
+        "PDPPropertyTypeHealthClubs": "Health club",
+        "PDPPropertyTypeGaming": "Gaming",
+        "PDPPropertyTypeBowling": "Bowling",
+        "PDPPropertyTypeChildrenPlay": "Children play",
+        "PDPPropertyTypeAlternative": "Alternative",
+        "PDPPluralPropertyTypeApartment": "Apartments",
+        "PDPPluralPropertyTypeHouse": "Houses",
+        "PDPPluralPropertyTypeOffice": "Offices",
+        "PDPPluralPropertyTypeWarehouse": "Warehouses",
+        "PDPPluralPropertyTypeRetail": "Retail",
+        "PDPPluralPropertyTypeRetailLand": "Retail Land",
+        "PDPPluralPropertyTypeIndustrial": "Industrial",
+        "PDPPluralPropertyTypeLogistics": "Logistics",
+        "PDPPluralPropertyTypeLand": "Land",
+        "PdpPriceLabelRent": "For Rent",
+        "PdpPriceLabelSale": "For Sale",
+        "PdpRatableValue": "Ratable Value",
+        "PdpRent": "For rent",
+        "PdpSalePrice": "For sale",
+        "PdpServiceCharge": "Service Charge",
+        "PdpSizeAndMeasurementsTitle": "Sizes and Measurements",
+        "PdpSpecificationTitle": "Specification",
+        "PdpStampDutyCalculatorButtonText": "Stamp Duty Tax Calculator",
+        "PdpTenantFeesLinkText": "View our tenant fees",
+        "PdpUbr": "UBR",
+        "PdpViewInteractiveplanButtonText": "View 3D interactive Floor Plan",
+        "PdpViewFloorplanButtonText": "View floorplan",
+        "PdpViewFloorplanPluralButtonText": "View floorplans",
+        "PdpViewEPCGraphButtonText": "View EPC graph",
+        "PdpEnergyPerformanceTitle": "Energy Performance",
+        "PdpEnergyPerformanceYear": "Construction Year",
+        "PdpEnergyPerformanceSource": "Major Energy Sources",
+        "PdpEnergyPerformanceTypes": "Type of energy",
+        "PdpEnergyPerformanceType": "Certification type",
+        "PdpEnergyPerformanceCertificateExpires": "Certificate expires",
+        "PdpEnergyPerformanceTypesHeat": "Heat energy",
+        "PdpEnergyPerformanceTypesElectrical": "Electrical energy",
+        "PdpEnergyPerformanceTypesSeparator": " / ",
+        "PdpEnergyPerformanceAmount": "Total energy",
+        "PdpEnergyPerformanceLink": "Link to EPC",
+        "PdpEnergyPerformanceLinkText": "View EPC Rating",
+        "PdpViewViewPropertyWebsiteText": "View Property Website",
+        "PdpViewErrorText":
+            "The property details page can only be viewed in \u0027Sales\u0027 or \u0027Lettings\u0027 mode.",
+        "Pending": "Pending",
+        "PendingCompletion": "Pending Completion",
+        "PlusVAT": " (+ Vat)",
+        "PlusSalesTax": " (+ Sales Tax)",
+        "PreviousPropertyButtonText": "Previous property",
+        "PriceOnApplication": "Price On Application",
+        "PriceOnListing": "Price In Listing",
+        "PriceIsNegotiable": "Price is negotiable",
+        "CallForInformation": "Call for Information",
+        "PropertySubTypeHeader": "Property Code",
+        "PropertyUsageTypeHeader": "Usage Type",
+        "PropertiesInDevelopment": "Other properties in this development",
+        "PropertiesInArea": "Other properties in this area",
+        "PropertiesInLocation": "Properties at this location",
+        "PropertyGroupExpand": "View more",
+        "PropertyGroupCollapse": "View less",
+        "ReadMoreText": "Read more",
+        "ReducedTo": "Reduced to ",
+        "RefineSearchTitle": "Refine your search",
+        "Rent": "Rent",
+        "ToRent": "for lease",
+        "ForSale": "for Sale",
+        "Residential": "Residential",
+        "Buy": "Buy",
+        "ResultsAreaTitle": "Results",
+        "saleSearchType": "sale",
+        "SalePrice": "sale price",
+        "SalesPrice": "Sales Price",
+        "SearchAll": "Search all",
+        "SearchHeaderLinkText": "Interested in buying a property?",
+        "SearchHeaderTitle": "Search for offices to rent",
+        "SearchErrorSubTitle": "We\u0027re sorry, there has been an error.",
+        "SearchErrorText": "Please try your search again later.",
+        "SearchErrorTitle": "Sorry",
+        "SearchLocationPlaceholder": "Search properties by area or postcode",
+        "SearchResultsButtonText": "Search Results",
+        "SearchTabButtonText": "Search",
+        "SearchToBuyButton": "Buy",
+        "SearchToLetButton": "Let",
+        "ServiceCharge": "Service Charge",
+        "ShareModalTitle": "Share with your friends",
+        "ShareModalLink": "Link share",
+        "ShareModalCopy": "Copy link",
+        "ShareModalSocial": "Social share",
+        "ShareModalEmail": "Email share",
+        "Size": "Size",
+        "SizeKindBuiltDepth": "Built Depth",
+        "SizeKindFrontageWidth": "Frontage Width",
+        "SizeKindGrossFrontageWidth": "Gross Frontage Width",
+        "SizeKindLandSize": "Land Size",
+        "SizeKindLoadingBayArea": "Loading Bay Area",
+        "SizeKindMinimumSize": "Minimum Size",
+        "SizeKindMaximumSize": "Maximum Size",
+        "SizeKindMinimumCeilingHeight": "Minimum Clear Height",
+        "SizeKindMaximumCeilingHeight": "Maximum Clear Height",
+        "SizeKindNetFrontageWidth": "Net Frontage Width",
+        "SizeKindSalesArea": "Sales Area",
+        "SizeKindSalesWidth": "Sales Width",
+        "SizeKindStorageArea": "Storage Area",
+        "SizeKindShopDepth": "Shop Depth",
+        "SizeKindTotalSize": "Total Size",
+        "SizeKindOfficeArea": "Office Area",
+        "SizeKindReturnFrontageWidth": "Return Frontage Width",
+        "SortTabButtonText": "Sort",
+        "SrOnlyPdfLogoText": "CBRE",
+        "SrOnlyPrintButtonText": "Print This Page",
+        "sqft": "sq. ft.",
+        "SrOnlyFavouriteButton": "Favourite button",
+        "SrOnlyPdfButton": "PDF (opens in a new window)",
+        "SrOnlyShareButton": "Share This Page",
+        "stampDutyErrorText": "Numbers only accepted, no punctuation",
+        "stampDutyText": "Enter property price in \u00a3 (numbers only)",
+        "Statuatory": "Statutory ",
+        "Status": "Status",
+        "Studio": "Studio",
+        "Property": "Property",
+        "Properties": "Properties",
+        "Purchaser": "Purchaser",
+        "Tenant": "Tenant",
+        "UnderOffer": "Under offer",
+        "UnderOfferText": "Under offer",
+        "UnderOption": "Under Option",
+        "UnitUseAncillarySpace": "Ancilliary space",
+        "UnitUseAtrium": "Atrium",
+        "UnitUseBankingHall": "Banking Hall",
+        "UnitUseCanteenRest": "Canteen / Rest Area",
+        "UnitUseCarParkingArea": "Car Parking Area",
+        "UnitUseCleanRoomsLabs": "Clean Rooms",
+        "UnitUseColdChilledStores": "Cold Store",
+        "UnitUseCommunityPowerCenter": "Power Centre",
+        "UnitUseComputerUse": "Computer Room",
+        "UnitUseConferenceHall": "Conference Hall",
+        "UnitUseDatacentre": "Data Centre",
+        "UnitUseDevelopment": "Development",
+        "UnitUseDistribution": "Distribution",
+        "UnitUseEducation": "Education",
+        "UnitUseFreeStanding": "Free Standing",
+        "UnitUseGymnasium": "Gymnasius",
+        "UnitUseHighTech": "High Tech",
+        "UnitUseHotel": "Hotel",
+        "UnitUseIndustrial": "Industrial",
+        "UnitUseIndustrialOffices": "Offices",
+        "UnitUseIndustrialRenewal": "Industrial Renewal",
+        "UnitUseLaboratory": "Laboratory",
+        "UnitUseLand": "Land",
+        "UnitUseLeisure": "Leisure",
+        "UnitUseLifestyleCenters": "Lifestyle",
+        "UnitUseLogistics": "Logistics",
+        "UnitUseManufacturing": "Manufacturing",
+        "UnitUseMedical": "Medical",
+        "UnitUseMezzanine": "Mezzanine",
+        "UnitUseMixedUse": "Mixed-Use",
+        "UnitUseMixed-use": "Mixed-Use",
+        "UnitUseMultiUse": "Multi-Use",
+        "UnitUseNonSales": "Non-Sales",
+        "UnitUseNursingHome": "Nursing Home",
+        "UnitUseOffice": "Office",
+        "UnitUseOfficeFittedFurnished": "Fitted-Office",
+        "UnitUseOfficeRenewal": "Office",
+        "UnitUseOpenStorage": "Open Storage",
+        "UnitUseOutletCenter": "Outlet Centre",
+        "UnitUsePlantServices": "Plant Services",
+        "UnitUsePublicHouse": "Public House",
+        "UnitUseReception": "Reception",
+        "UnitUseReceptionArea": "Reception",
+        "UnitUseRegionalSuperRegionalMall": "Mall",
+        "UnitUseResearchDevelopment": "R\u0026D",
+        "UnitUseResidential": "Residential",
+        "UnitUseRestaurant": "Restaurant",
+        "UnitUseRetail": "Retail",
+        "UnitUseRetailAncillary": "Retail Ancillary",
+        "UnitUseRetailGround": "Retail Ground Floor",
+        "UnitUseRetailPad": "Retail Pad",
+        "UnitUseRetailWarehouse": "Warehouse",
+        "UnitUseRoofTerrace": "Roof Terrace",
+        "UnitUseSales": "Sales",
+        "UnitUseServicedOffice": "Serviced Office",
+        "UnitUseShellCore": "Shell Core",
+        "UnitUseShop": "Shop",
+        "UnitUseShoppingCentre": "Shopping Centre",
+        "UnitUseShowroom": "showroom",
+        "UnitUseSite": "Site",
+        "UnitUseStorage": "Storage",
+        "UnitUseStreetRetailUrbanStorefront": "Storefront",
+        "UnitUseStripCenter": "Strip Centre",
+        "UnitUseStudio": "Studio",
+        "UnitUseSupermarket": "Supermarket",
+        "UnitUseTechnicalUse": "Technical Use",
+        "UnitUseTrainingCentre": "Trainining Centre",
+        "UnitUseVault": "Vault",
+        "UnitUseVehicleRelated": "Vehicle Related",
+        "UnitUseWarehouse": "Warehouse",
+        "UnitUseWarehouseOffices": "Offices",
+        "UnitUseWorkshopStorage": "Workshop Storage",
+        "UnitUseWorkshopWorkroom": "Workroom",
+        "unit": "each",
+        "UpdateSearchButtonText": "Update search",
+        "VATPayable": "VAT Payable",
+        "ViewFavourites": "View favourites",
+        "Vacancy": "Vacancy",
+        "VacancyVacant": "Vacant",
+        "VacancyOccupied": "Occupied",
+        "VacancyUnknown": "Unknown",
+        "ViewDetails": "View Details",
+        "Weekly": "pw",
+        "Withdrawn": "Withdrawn",
+        "WalkthroughBadgeText": "Virtual Walkthough",
+        "TokenReplaceStrings": {
+            "AddressSummary": "%(Line1)s, %(Line2)s, %(Line3)s",
+            "AddressSummaryShort": "%(Line1)s",
+            "AddressSummaryLong":
+                "%(Line1)s, %(Line2)s, %(Line3)s, %(Locality)s",
+            "AddressSummaryArea": "%(Locality)s, %(PostCode)s",
+            "AvailableFromKnownQtr": "Q%(quarter)s %(year)s",
+            "AvailableNMonthsAfterLease":
+                "%(numberOfMonths)s months after lease signed",
+            "AvailableNMonthsAfterSale":
+                "%(numberOfMonths)s months after sale signed",
+            "BackToResultsButtonTextNoContext":
+                "Search results in %(PostCode)s",
+            "Charge":
+                "%(chargeModifier)s%(amount)s/%(interval)s%(taxModifier)s",
+            "ChargeByArea":
+                "%(chargeModifier)s%(amount)s/%(unit)s/%(interval)s%(taxModifier)s",
+            "ChargeByAreaTransformed":
+                "%(chargeModifier)s%(amount)s/%(unit)s/%(interval)s%(taxModifier)s (approx %(translatedAmount)s/%(translatedUnit)s/%(translatedInterval)s)",
+            "ChargeByAreaCommissionPayableChargesValue":
+                "%(chargeModifier)s%(amount)s/%(unit)s %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "ChargeByAreaTransformedCommissionPayableChargesValue":
+                "%(chargeModifier)s%(amount)s/%(unit)s %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s) (approx %(translatedAmount)s/%(translatedUnit)s)",
+            "ChargeByAreaWithYear":
+                "%(chargeModifier)s%(amount)s/%(unit)s/%(interval)s%(taxModifier)s (estimated for the year ending %(year)s)",
+            "ChargeByAreaWithYearTransformed":
+                "%(chargeModifier)s%(amount)s/%(unit)s/%(interval)s%(taxModifier)s (approx %(translatedAmount)s/%(translatedUnit)s/%(translatedInterval)s) (estimated for the year ending %(year)s)",
+            "ChargeTransformed":
+                "%(chargeModifier)s%(amount)s/%(interval)s%(taxModifier)s (approx %(translatedAmount)s/%(translatedInterval)s)",
+            "ChargeWithYear":
+                "%(chargeModifier)s%(amount)s/%(interval)s%(taxModifier)s (estimated for the year ending %(year)s)",
+            "ChargeWithYearTransformed":
+                "%(chargeModifier)s%(amount)s/%(interval)s%(taxModifier)s (approx %(translatedAmount)s/%(translatedInterval)s) (estimated for the year ending %(year)s)",
+            "ContactFormHeaderWithName": "Contact %(name)s",
+            "ExtendedSearchText":
+                "Sorry we couldn\u0027t find properties within %(radius)s %(radiusType)s of %(location)s, so we have extended the search.",
+            "ExtendedSearchBoundingText":
+                "Sorry we couldn\u2019t find properties within your chosen search in %(location)s, so we have extended the search.",
+            "FavouritesCount": "%(propertyCount)s favourites",
+            "ListMetaTitle":
+                "%(propertyTypePlural)s %(searchType)s in %(searchLocation)s - CBRE %(siteType)s",
+            "ListMetaDescription":
+                "View CBRE\u0027s %(propertyTypePlural)s %(searchType)s in %(searchLocation)s - CBRE %(siteType)s",
+            "LMCharge":
+                "%(chargeModifier)s%(amount)s/%(interval)s%(taxModifier)s",
+            "LMCharge_sub": "",
+            "LMChargeByAreaCommissionPayableChargesValue":
+                "%(chargeModifier)s%(amount)s/%(unit)s %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "LMChargeByAreaCommissionPayableChargesValue_sub": "",
+            "LMChargeByAreaTransformedCommissionPayableChargesValue":
+                "%(chargeModifier)s%(amount)s/%(unit)s %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "LMChargeByAreaTransformedCommissionPayableChargesValue_sub":
+                "(approx %(translatedAmount)s/%(translatedUnit)s)",
+            "LMChargeByArea":
+                "%(chargeModifier)s%(amount)s/%(unit)s/%(interval)s%(taxModifier)s",
+            "LMChargeByArea_sub": "",
+            "LMChargeByAreaTransformed":
+                "%(chargeModifier)s%(amount)s/%(unit)s/%(interval)s%(taxModifier)s",
+            "LMChargeByAreaTransformed_sub":
+                "(approx %(translatedAmount)s/%(translatedUnit)s/%(translatedInterval)s)",
+            "LMChargeByAreaWithYear":
+                "%(chargeModifier)s%(amount)s/%(unit)s/%(interval)s%(taxModifier)s",
+            "LMChargeByAreaWithYear_sub":
+                "(estimated for the year ending %(year)s)",
+            "LMChargeByAreaWithYearTransformed":
+                "%(chargeModifier)s%(amount)s/%(unit)s/%(interval)s%(taxModifier)s",
+            "LMChargeByAreaWithYearTransformed_sub":
+                "(approx %(translatedAmount)s/%(translatedUnit)s/%(translatedInterval)s) (estimated for the year ending %(year)s)",
+            "LMChargeTransformed":
+                "%(chargeModifier)s%(amount)s/%(interval)s%(taxModifier)s",
+            "LMChargeTransformed_sub":
+                "(approx %(translatedAmount)s/%(translatedInterval)s)",
+            "LMChargeWithYear":
+                "%(chargeModifier)s%(amount)s/%(interval)s%(taxModifier)s",
+            "LMChargeWithYear_sub": "(estimated for the year ending %(year)s)",
+            "LMChargeWithYearTransformed":
+                "%(chargeModifier)s%(amount)s/%(interval)s%(taxModifier)s",
+            "LMChargeWithYearTransformed_sub":
+                "(approx %(translatedAmount)s/%(translatedInterval)s) (estimated for the year ending %(year)s)",
+            "LMCommissionPayableCharges":
+                "%(chargeModifier)s%(amount)s months %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "LMCommissionPayableCharges_sub": "",
+            "LMTransformedCommissionPayableCharges":
+                "%(chargeModifier)s%(amount)s months %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "LMTransformedCommissionPayableCharges_sub": "",
+            "LMCommissionPayableChargesPercentage":
+                "%(chargeModifier)s%(amount)s% of %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "LMCommissionPayableChargesPercentage_sub": "",
+            "LMTransformedCommissionPayableChargesPercentage":
+                "%(chargeModifier)s%(amount)s% of %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "LMTransformedCommissionPayableChargesPercentage_sub": "",
+            "LMCommissionPayableChargesValue":
+                "%(chargeModifier)s%(amount)s %(taxModifier)s (paid by %(paidBy)s)",
+            "LMCommissionPayableChargesValue_sub": "",
+            "LMTransformedCommissionPayableChargesValue":
+                "%(chargeModifier)s%(amount)s %(taxModifier)s (paid by %(paidBy)s)",
+            "LMTransformedCommissionPayableChargesValue_sub":
+                "(approx %(translatedAmount)s)",
+            "LMPoiDistance": "%(amount)s %(units)s from %(name)s",
+            "NoResultsInArea":
+                "Sorry we couldn\u2019t find properties within %(radius)s %(radiusType)s of %(location)s, so we recommend increasing your search.",
+            "NumberOfBedroomsPlural": "%(bedroomCount)s bedrooms",
+            "NumberOfBedroomsSingular": "%(bedroomCount)s bedroom",
+            "PaginationPages": "page %(pageNo)s of %(totalPages)s",
+            "PdfListTitle": "Properties 1 to %(totalItems)s",
+            "PdpEnergyPerformanceAmountString":
+                "%(amount)s %(energyUnits)s/%(perUnit)s/%(interval)s",
+            "PDPMetaTitle":
+                "%(addressSummary)s, %(usageType)s %(searchType)s \u2013 CBRE",
+            "PdpViewStateError":
+                "This property is not available in %(viewType)s mode",
+            "PdpUbrText": "%(unit)sp",
+            "PostCodeText": " (%(PostCode)s)",
+            "PropertiesTruncated":
+                "Showing %(searchResultLimit)s of %(propertyCount)s available properties",
+            "PropertiesFound":
+                "%(propertyCount)s matching %(propertyTypePlural)s for %(searchType)s",
+            "PropertyGroupTeaserText":
+                "%(visible)s properties of %(total)s available at this location",
+            "PropertyGroupMobileTeaserText":
+                "%(total)s properties available in this development",
+            "PropertySize": "%(size)s%(unit)s",
+            "PropertySizeRange":
+                "%(minimumSize)s%(unit)s - %(totalSize)s%(unit)s",
+            "RangeSliderArea": "%(size)s%(unit)s",
+            "SalePrice": "%(chargeModifier)s%(amount)s%(taxModifier)s",
+            "SalePriceTransformed":
+                "%(chargeModifier)s%(amount)s%(taxModifier)s (approx %(translatedAmount)s)",
+            "SalePriceCommissionPayableChargesPercentage":
+                "%(chargeModifier)s%(amount)s% of %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "SalePriceTransformedCommissionPayableChargesPercentage":
+                "%(chargeModifier)s%(amount)s% of %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "SalePriceCommissionPayableCharges":
+                "%(chargeModifier)s%(amount)s months %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "SalePriceTransformedCommissionPayableCharges":
+                "%(chargeModifier)s%(amount)s months %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "SalePriceCommissionPayableChargesValue":
+                "%(chargeModifier)s%(amount)s %(dependentCharge)s %(taxModifier)s (paid by %(paidBy)s)",
+            "SalePriceTransformedCommissionPayableChargesValue":
+                "%(chargeModifier)s%(amount)s %(dependentCharge)s %(taxModifier)s (approx %(translatedAmount)s paid by %(paidBy)s)"
+        }
+    },
+    "pdf": {
+        "staticMapApi":
+            "https://cbre-pdfgenerator.azurewebsites.net/staticmaps",
+        "pdfDownloadApi":
+            "http://cbre-pdfgenerator.azurewebsites.net/pdf/download",
+        "renderMiddleware": ""
+    },
+    "bitlyToken": "357dffe58e9d9b79933980711986da63e88e9acb",
+    "pdpContentDrivenBlock": null,
+    "pdpContentDrivenBlockLettings": null,
+    "breakpoints": {
+        "xsmall": "300",
+        "small": "768",
+        "medium": "992",
+        "large": "1200"
+    },
+    "countryCode": "US",
+    "searchMode": "bounding",
+    "enableClustering": false,
+    "features": {
+        "searchOnEnter": true,
+        "relatedProperties": true,
+        "propertyClustering": true,
+        "developmentClustering": true,
+        "useCarouselAspectRatioFilter": true,
+        "useCarouselAspectRatio": true,
+        "useSocialWidgets": true,
+        "enableFavourites": true,
+        "displayGenericBrochureName": false
+    },
+    "socialSharing": {
+        "facebookAppId": "1728542657413670",
+        "socialServices": {
+            "facebookShare": true,
+            "linkedInShare": true,
+            "pintrestPinIt": false,
+            "twitterTweet": true,
+            "googlePlus": true
+        }
+    },
+    "mapClustering": {
+        "gridSize": 10,
+        "maxZoom": 20,
+        "minimumClusterSize": 4
+    },
+    "backToSearchRadius": "20",
+    "extendSearches": false,
+    "localPropertiesRadius": 500,
+    "carouselAspectRatio": "4:3",
+    "limitListMapResults": "500",
+    "disableMetaData": false,
+    "PDF": {
+        "limitPropertyImages": 4,
+        "limitDisplayedProperties": 10,
+        "maptype": "roadmap",
+        "markerColour": "gray"
+    }
+}

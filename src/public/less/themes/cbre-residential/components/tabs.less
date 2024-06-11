@@ -1,0 +1,29 @@
+.nav-tabs {
+  border-bottom: none;
+  
+  > li,
+  > li.active {
+    > a,
+    > a:hover,
+    > a:focus {
+      color: @brand-primary;
+      border: 1px solid @border-color;
+      border-radius: 0;
+      background: @white;
+    }
+
+    > a:hover,
+    > a:focus {
+      color: @text-color;
+    }
+  }
+
+  > li.active {
+    > a,
+    > a:hover,
+    > a:focus {
+      color: @text-color;
+      border-bottom-color: @white;
+    }
+  }
+}

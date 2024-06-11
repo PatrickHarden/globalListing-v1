@@ -1,0 +1,9 @@
+{
+    "limitListMapResults": "100",
+    "mapZoom": {
+        "listMapMaxZoom": 18,
+        "detailsMapMaxZoom": 18,
+        "detailsMapInitialZoom": 15
+    },
+    "useNetRent": false
+}

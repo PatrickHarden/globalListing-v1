@@ -1,0 +1,215 @@
+// Links
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    //color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+    cursor: pointer;
+  }
+}
+
+// Boostrap btn overrides
+.btn {
+  white-space: normal;
+
+  &:active,
+  &.active {
+    box-shadow: none;
+  }
+}
+
+.btn-default {
+  .button-variant(@btn-default-color; transparent; @btn-default-border);
+  &:hover,
+  &:focus {
+    color: @brand-primary-lighter;
+  }
+}
+
+.btn-primary {
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+
+// Global <buttons>
+button {
+  &:hover,
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// CBRE btns
+.btn--chevron {
+  background-color: transparent;
+  color: @brand-primary;
+
+  &:hover,
+  &:focus {
+    color: @brand-primary-lighter;
+  }
+}
+
+.btn--cbre-icon {
+  background-color: @white;
+
+  .cbre-icon {
+    padding-right: 10px;
+
+    &:before {
+      color: @icon-color-primary;
+      font-size: 20px;
+    }
+  }
+
+  .text {
+    color: @brand-primary;
+  }
+
+  .cbre-icon,
+  .text {
+      display: table-cell;
+      vertical-align: middle;
+
+  }
+
+  &:hover {
+    background-color: @white;
+    span.text {
+      color: @brand-primary-lighter;
+    }
+  }
+
+
+  &:focus,
+  &:active {
+    background-color: @white !important;
+    span.text {
+      color: @brand-primary-lighter;
+    }
+  }
+}
+
+.btn--outline {
+  border: solid 1px @border-color !important;
+  color: @brand-primary-lighter;
+
+  &:hover,
+  &:focus {
+    border: solid 1px @border-color;
+    color: @brand-primary;
+  }
+
+  &:active,
+  &:focus {
+    border: solid 1px @border-color;
+  }
+
+  &.btn--prev:before,
+  &.btn--next:after {
+    .cbre-icon;
+  }
+
+  &.btn--prev:before {
+    content: "\e602";
+    margin-right: 5px;
+  }
+
+  &.btn--next:after {
+    content: "\e603";
+    margin-left: 5px;
+  }
+
+}
+
+.btn--submitButton:after {
+
+  .cbre-icon;
+  content: "\e603";
+  margin-left: 5px;
+
+}
+
+.btn--colors-inverted {
+  background: @brand-primary-lighter;
+
+  .cbre-icon {
+    margin-right: 10px;
+    color: @white;
+  }
+
+  .text {
+    color: @white;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken(@brand-primary-lighter, 10%) !important;
+
+    .text {
+      color: @white !important;
+    }
+  }
+
+  .cbre-icon {
+    &:before {
+      color: @icon-color-inverted;
+    }
+  }
+}
+
+.btn--icon-tab {
+  background-color: @brand-secondary-lighter;
+  position: relative;
+  padding: 10px 50px 10px 15px;
+  border: 1px solid @border-color;
+
+  .text {
+    color: @brand-primary;
+  }
+
+  .cbre-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    border-left: 1px solid @border-color;
+
+    &:before {
+      position: relative;
+      top: 10px;
+      right: 0px;
+      color: @brand-primary;
+      font-size: 20px;
+    }
+  }
+
+  &:hover {
+    border-color: @border-color;
+  }
+
+  &:focus,
+  &:active {
+    border-color: @border-color !important; // bootsrap!
+    background-color: @white !important;
+
+    span.text {
+      color: @brand-primary-lighter;
+    }
+  }
+
+  &.active {
+    opacity: 0.6;
+    border-color: @border-color !important;
+    background-color: @brand-secondary-lighter;
+
+    span.text {
+      color: @brand-primary;
+    }
+  }
+}

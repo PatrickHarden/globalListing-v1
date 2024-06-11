@@ -1,0 +1,75 @@
+{
+  "properties": {
+    "location": {
+      "type": "object",
+      "title": "Location",
+      "format": "grid",
+      "propertyOrder": 49,
+      "options": {
+        "grid_columns": 12,
+        "disable_edit_json": true,
+        "collapsed": true
+      },
+      "properties": {
+        "Lat": { "type": "string" },
+        "Lon": { "type": "string" },
+        "radius": { "type": "string" }
+      },
+      "defaultProperties": []
+    },
+    "params": {
+      "type": "object",
+      "title": "Parameters",
+      "format": "grid",
+      "propertyOrder": 50,
+      "options": {
+        "grid_columns": 12,
+        "disable_edit_json": true,
+        "collapsed": true
+      },
+      "properties": {
+        "Site": { "type": "string" },
+        "RadiusType": {
+          "type": "string",
+          "enum": ["Miles", "Kilometers"]
+        },
+        "PageSize": { "type": "string" },
+        "CurrencyCode": { "type": "string", "description": "e.g. GBP" },
+        "Unit": {
+          "type": "string",
+          "enum": ["sqft", "sqm", "hectare", "acre", "pp"]
+        },
+        "Interval": {
+          "type": "string",
+          "enum": ["Weekly", "Monthly", "Annually"]
+        },
+        "Common.Aspects": {
+          "title": "Common.Aspects",
+          "type": "string"
+        },
+        "Common.UsageType": {
+          "title": "Common.UsageType",
+          "type": "string"
+        },
+        "Common.HomeSite": {
+          "title": "Common.HomeSite",
+          "type": "string"
+        },
+        "Common.RestrictedSites": {
+          "title": "Common.RestrictedSites",
+          "type": "string"
+        },
+        "Common.IsParent": {
+          "title": "Display only parent properties in main search and related properties",
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false,
+          "options": {
+            "grid_columns": 12
+          }
+        }
+      },
+      "defaultProperties": []
+    }
+  }
+}

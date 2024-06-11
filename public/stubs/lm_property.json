@@ -1,0 +1,505 @@
+{
+    "Found": true,
+    "ElapsedTime": "00:00:00.0890000",
+    "Document": {
+        "Common.ActualAddress": {
+            "Common.Line1": "25 Bedford Street",
+            "Common.Locallity": "London",
+            "Common.PostalAddresses": [
+                {
+                    "Common.Language": "en",
+                    "Common.Line1": "25 Bedford Street",
+                    "Common.Locallity": "London"
+                }
+            ],
+            "Common.Country": "UK",
+            "Common.PostCode": "WC2E 9EQ"
+        },
+        "Common.Aspects": [
+            "isLetting",
+            "isLetUnderOffer",
+            "hasAir-Conditioning",
+            "hasCeiling-New",
+            "hasShowers"
+        ],
+        "Common.RelatedListingOffice": "GB-Plus-00002",
+        "Common.Availability": {
+            "Common.AvailabilityKind": "AvailableFromKnownDate",
+            "Common.AvailabilityDate": "2016-04-01"
+        },
+        "Common.AvailableFrom": "2016-04-01T00:00:00",
+        "Common.Brochures": [
+            {
+                "Common.Uri": "/resources/fileassets/GB-Plus-332178/7e9f8783/25%20Bedford%20St_%204th%20floor%20-%20Particulars.pdf",
+                "Common.UriExternal": false,
+                "Common.CultureCode": "en-GB"
+            },
+            {
+                "Common.Uri": "/resources/fileassets/GB-Plus-332178/b848a8cd/25%20Bedford%20Street%20-%20Brochure_final.pdf",
+                "Common.UriExternal": false,
+                "Common.CultureCode": "en-GB"
+            }
+        ],
+        "Common.Charges": [
+            {
+                "Common.ChargeKind": "BusinessRates",
+                "Common.CurrencyCode": "GBP",
+                "Common.Interval": "Annually",
+                "Common.Amount": 31.15,
+                "Common.AmountKind": "Value",
+                "Common.Year": 2018,
+                "Common.PerUnit": "sqft",
+                "Common.TaxModifer": "None"
+            },
+            {
+                "Common.ChargeKind": "ServiceCharge",
+                "Common.CurrencyCode": "GBP",
+                "Common.Interval": "Annually",
+                "Common.Amount": 9.43,
+                "Common.AmountKind": "Value",
+                "Common.Year": 2017,
+                "Common.PerUnit": "sqft",
+                "Common.TaxModifer": "None"
+            },
+            {
+                "Common.ChargeKind": "Rent",
+                "Common.CurrencyCode": "GBP",
+                "Common.Interval": "Annually",
+                "Common.Amount": 79.5,
+                "Common.AmountKind": "Value",
+                "Common.PerUnit": "sqft",
+                "Common.TaxModifer": "None"
+            }
+        ],
+        "Common.ContactGroup": {
+            "Common.Address": {
+                "Common.Line1": "9/12",
+                "Common.Line2": "Bow Street",
+                "Common.Locallity": "London",
+                "Common.PostalAddresses": [
+                    {
+                        "Common.Language": "en",
+                        "Common.Line1": "9/12",
+                        "Common.Line2": "Bow Street",
+                        "Common.Locallity": "London"
+                    }
+                ],
+                "Common.Country": "UK",
+                "Common.PostCode": "WC2E 7AB"
+            },
+            "Common.GroupType": "AreaOffice",
+            "Common.Contacts": [
+                {
+                    "Common.EmailAddress": "Simon.Lee@cbre.com",
+                    "Common.TelephoneNumber": "+44 7420 3067",
+                    "Common.AgentName": "Simon Lee"
+                },
+                {
+                    "Common.EmailAddress": "kate.green@cbre.com",
+                    "Common.TelephoneNumber": "+44 207 182 2730",
+                    "Common.AgentName": "Kate Green"
+                }
+            ]
+        },
+        "Common.Coordinate": { "lat": 51.5110178, "lon": -0.12521249999997508 },
+        "Common.Created": "2015-06-10T16:47:44",
+        "Common.FloorPlans": [
+            {
+                "Common.ImageCaption": "BEDFRORD STREET 25 FLOOR PLAN",
+                "Common.ImageResources": [
+                    {
+                        "Common.Image.Height": 872,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/c9385d6d/Bedfrord%20Street%2025%20Floor%20Plan.JPG",
+                        "Common.Image.Width": 809
+                    }
+                ]
+            }
+        ],
+        "Common.FloorsAndUnits": [
+            {
+                "Common.SubdivisionName": [
+                    { "Common.CultureCode": "en-GB", "Common.Text": "3rd" }
+                ],
+                "Common.Areas": [
+                    { "Common.Units": "sqft", "Common.Area": 9545.0 }
+                ],
+                "Common.Unit.Status": "UnderOffer",
+                "Common.Unit.Use": "Office",
+                "Common.AvailableFrom": "2017-08-18T00:00:00",
+                "Common.Availability": {
+                    "Common.AvailabilityKind": "AvailableFromKnownDate",
+                    "Common.AvailabilityDate": "2017-08-18"
+                }
+            }
+        ],
+        "Common.GeoLocation": {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [51.5110178, -0.12521249999997508]
+            },
+            "Common.Exact": true
+        },
+        "Common.Highlights": [
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "New Air Conditioning"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "New Ceiling"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "Shower(s)"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "F BER Certification"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "3 x Passenger Lifts"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "Contemporary Reception"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "Refurbished Condition"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "1:10 Occupancy Ratio"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "2.6m Floor To Ceiling Height"
+                    }
+                ]
+            },
+            {
+                "Common.Highlight": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "30 Bicycle Racks"
+                    },
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "30 Bicycle Racks"
+                    }
+                ]
+            }
+        ],
+        "Common.HomeSite": "uk-comm",
+        "Common.LastUpdated": "2017-10-27T06:12:03.7933686Z",
+        "Common.LeaseTypes": ["New"],
+        "Common.LongDescription": [
+            {
+                "Common.CultureCode": "en-GB",
+                "Common.Text": "25 Bedford Street is a striking building located on the west side of Bedford Street, at its junction with Garrick and King street. considered one of the best addresses in covent garden, the building is surrounded by everything that the area is renowned for including the famous piazza. The building provides prestigious accommodation with attention to detail lying at the heart of its design. the contemporary reception designed by the award winning Joanna White design consultants provides the perfect first impression for both occupiers and visitors. the available fourth floor has been comprehensively refurbished to provide bright, efficient grade a office space. It also benefits from a feature rotunda and exterior balconies, both of which provide panoramic views over Covent Garden."
+            }
+        ],
+        "Common.MinimumSize": [
+            { "Common.Size": 9545.0, "Common.Units": "sqft" }
+        ],
+        "Common.NumberOfBedrooms": 0,
+        "Common.Photos": [
+            {
+                "Common.ImageCaption": "25 BEDFORD ST",
+                "Common.ImageResources": [
+                    {
+                        "Common.Breakpoint": "original",
+                        "Common.Image.Height": 705,
+                        "Common.Image.Width": 558,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG"
+                    },
+                    {
+                        "Common.Breakpoint": "small",
+                        "Common.Image.Height": 480,
+                        "Common.Image.Width": 379,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St_Photo_1_small.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG"
+                    },
+                    {
+                        "Common.Breakpoint": "medium",
+                        "Common.Image.Height": 960,
+                        "Common.Image.Width": 759,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St_Photo_1_medium.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG"
+                    },
+                    {
+                        "Common.Breakpoint": "large",
+                        "Common.Image.Height": 1200,
+                        "Common.Image.Width": 949,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St_Photo_1_large.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "25 BEDFORD STREET RECEPTION",
+                "Common.ImageResources": [
+                    {
+                        "Common.Breakpoint": "original",
+                        "Common.Image.Height": 720,
+                        "Common.Image.Width": 1080,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "small",
+                        "Common.Image.Height": 426,
+                        "Common.Image.Width": 640,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception_Photo_2_small.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "medium",
+                        "Common.Image.Height": 853,
+                        "Common.Image.Width": 1280,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception_Photo_2_medium.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "large",
+                        "Common.Image.Height": 1066,
+                        "Common.Image.Width": 1600,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception_Photo_2_large.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "25 BEDFORD STREET",
+                "Common.ImageResources": [
+                    {
+                        "Common.Breakpoint": "original",
+                        "Common.Image.Height": 720,
+                        "Common.Image.Width": 1080,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "small",
+                        "Common.Image.Height": 426,
+                        "Common.Image.Width": 640,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street_Photo_3_small.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "medium",
+                        "Common.Image.Height": 853,
+                        "Common.Image.Width": 1280,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street_Photo_3_medium.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "large",
+                        "Common.Image.Height": 1066,
+                        "Common.Image.Width": 1600,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street_Photo_3_large.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "25 BEDFORD STREET RECEPTION",
+                "Common.ImageResources": [
+                    {
+                        "Common.Breakpoint": "original",
+                        "Common.Image.Height": 720,
+                        "Common.Image.Width": 1080,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "small",
+                        "Common.Image.Height": 426,
+                        "Common.Image.Width": 640,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception_Photo_2_small.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "medium",
+                        "Common.Image.Height": 853,
+                        "Common.Image.Width": 1280,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception_Photo_2_medium.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "large",
+                        "Common.Image.Height": 1066,
+                        "Common.Image.Width": 1600,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception_Photo_2_large.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/74d81ac9/25%20Bedford%20Street%20Reception.jpg"
+                    }
+                ]
+            },
+            {
+                "Common.ImageCaption": "25 BEDFORD STREET",
+                "Common.ImageResources": [
+                    {
+                        "Common.Breakpoint": "original",
+                        "Common.Image.Height": 720,
+                        "Common.Image.Width": 1080,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "small",
+                        "Common.Image.Height": 426,
+                        "Common.Image.Width": 640,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street_Photo_3_small.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "medium",
+                        "Common.Image.Height": 853,
+                        "Common.Image.Width": 1280,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street_Photo_3_medium.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg"
+                    },
+                    {
+                        "Common.Breakpoint": "large",
+                        "Common.Image.Height": 1066,
+                        "Common.Image.Width": 1600,
+                        "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street_Photo_3_large.jpg",
+                        "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/931e974a/25%20Bedford%20Street.jpg"
+                    }
+                ]
+            }
+        ],
+        "Common.PrimaryKey": "GB-Plus-332178",
+        "Common.PropertySubType": "Unknown",
+        "Common.PropertyTypes": ["Office"],
+        "Common.Sizes": [
+            {
+                "Common.SizeKind": "MinimumSize",
+                "Common.Dimensions": [
+                    {
+                        "Common.DimensionsUnits": "sqft",
+                        "Common.Amount": 9545.0
+                    }
+                ]
+            },
+            {
+                "Common.SizeKind": "TotalSize",
+                "Common.Dimensions": [
+                    {
+                        "Common.DimensionsUnits": "sqft",
+                        "Common.Amount": 9545.0
+                    }
+                ]
+            }
+        ],
+        "Common.SourceLastupdated": "2017-08-18T13:02:23",
+        "Common.Strapline": [
+            {
+                "Common.CultureCode": "en-GB",
+                "Common.Text": "Refurbished 4th Floor Office to Let"
+            }
+        ],
+        "Common.LocationDescription": [
+            {
+                "Common.CultureCode": "en-GB",
+                "Common.Text": "I am a location description!"
+            }
+        ],
+        "Common.TotalSize": [{ "Common.Size": 9545.0, "Common.Units": "sqft" }],
+        "Common.UsageType": "Office",
+        "Common.Website": "http://25-bedfordstreet.com",
+        "UnitedKingdom.UseClass": ["A"],
+        "UnitedKingdom.VATPayable": false,
+        "Dynamic.NewHome": false,
+        "Dynamic.UnderOffer": false,
+        "Dynamic.LetUnderOffer": true,
+        "Dynamic.Furnished": "unfurnished",
+        "Dynamic.HasSwimmingPool": false,
+        "Dynamic.HasGym": false,
+        "Dynamic.HasDoorkeeper": false,
+        "Dynamic.IsPenthouse": false,
+        "Dynamic.HasBalcony": false,
+        "Dynamic.HasParking": false,
+        "Dynamic.HasLift": false,
+        "Dynamic.HasGarden": false,
+        "Dynamic.DevelopmentOpportunity": false,
+        "Dynamic.LettingCharge": 6.62,
+        "Dynamic.SalePrice": null,
+        "Dynamic.MinArea": 9545.0,
+        "Dynamic.TotalArea": 9545.0,
+        "Dynamic.PrimaryImage": {
+            "Common.ImageCaption": "25 BEDFORD ST",
+            "Common.ImageResources": [
+                {
+                    "Common.Breakpoint": "original",
+                    "Common.Image.Height": 705,
+                    "Common.Image.Width": 558,
+                    "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG",
+                    "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG"
+                },
+                {
+                    "Common.Breakpoint": "small",
+                    "Common.Image.Height": 480,
+                    "Common.Image.Width": 379,
+                    "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St_Photo_1_small.jpg",
+                    "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG"
+                },
+                {
+                    "Common.Breakpoint": "medium",
+                    "Common.Image.Height": 960,
+                    "Common.Image.Width": 759,
+                    "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St_Photo_1_medium.jpg",
+                    "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG"
+                },
+                {
+                    "Common.Breakpoint": "large",
+                    "Common.Image.Height": 1200,
+                    "Common.Image.Width": 949,
+                    "Common.Resource.Uri": "/resources/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St_Photo_1_large.jpg",
+                    "Source.Uri": "https://devlistingsearchcbreeun.blob.core.windows.net/fileassets/GB-Plus-332178/8530f927/25%20Bedford%20St.JPG"
+                }
+            ]
+        },
+        "Common.LastProcessed": "2017-11-07T08:21:27.3902243Z",
+        "Dynamic.MinimumSize": [
+            { "Common.Size": 9545.0, "Common.Units": "sqft" }
+        ],
+        "Dynamic.TotalSize": [{ "Common.Size": 9545.0, "Common.Units": "sqft" }]
+    }
+}

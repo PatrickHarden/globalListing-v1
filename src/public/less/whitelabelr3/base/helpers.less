@@ -1,0 +1,90 @@
+.hide-on-mobile {
+  display:none;
+
+  @media (min-width: @screen-sm) {
+    display: block;
+  }
+}
+
+
+@media (min-width: @screen-sm) and (max-width: @screen-md) {
+  .hide-on-tablet {
+    display:none;
+  }
+}
+
+@media (min-width: @screen-md) {
+  .hide-on-desktop {
+    display:none;
+  }
+}
+
+.show-on-desktop {
+  display: none;
+
+  @media (min-width: @screen-md) {
+    display: block;
+  }
+}
+
+.col--padding-top {
+  padding-top: @grid-gutter-width;
+}
+.col--padding-right {
+  padding-right: @grid-gutter-width;
+}
+.col--padding-bottom {
+  padding-bottom: @grid-gutter-width;
+}
+.col--padding-left {
+  padding-left: @grid-gutter-width;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+// Flexbox helpers
+.cbre_flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &.center-block {
+    display: flex;
+  }
+}
+
+.cbre_flex {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.cbre_order__0 {
+  order: 0;
+}
+
+.cbre_order__1 {
+  order: 1;
+}
+
+.cbre_order__2 {
+  order: 2;
+}
+
+.cbre_order__3 {
+  order: 2;
+}
+
+.cbre_order__4 {
+  order: 2;
+}
+
+.cbre_order__5 {
+  order: 2;
+}

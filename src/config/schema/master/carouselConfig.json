@@ -1,0 +1,53 @@
+{
+  "properties": {
+    "carouselConfig": {
+      "type": "object",
+      "title": "Carousel config",
+      "propertyOrder": 9,
+      "options": {
+        "grid_columns": 12,
+        "disable_edit_json": true,
+        "collapsed": true
+      },
+      "format": "grid",
+      "defaultProperties": [],
+      "properties": {
+        "searchResultsPage": {
+          "type": "string",
+          "title": "Search results page",
+          "propertyOrder": 1
+        },
+        "type": {
+          "type": "string",
+          "title": "Select the carousel style",
+          "propertyOrder": 2,
+          "enum": ["Legacy", "Card"],
+          "default": "Legacy",
+          "format": "select"
+        },
+        "callToActionLinkTitle": {
+          "type": "string",
+          "title": "Call to action link title",
+          "propertyOrder": 3
+        },
+        "callToActionLink": {
+          "type": "string",
+          "title": "Call to action link",
+          "propertyOrder": 4
+        },
+        "callToActionTarget": {
+          "type": "string",
+          "title": "Call to action target",
+          "propertyOrder": 5
+        },
+        "numberOfItems": {
+          "type": "integer",
+          "default": 3,
+          "title":
+            "Number of items to display in each page of carousel, if using Cards",
+          "propertyOrder": 6
+        }
+      }
+    }
+  }
+}

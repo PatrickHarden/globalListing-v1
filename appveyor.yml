@@ -1,0 +1,91 @@
+version: 6.1.{build}
+environment:
+  MajorBuildVersion: $(APPVEYOR_BUILD_VERSION)
+  MinorBuildVersion: $(APPVEYOR_BUILD_VERSION)
+  PatchBuildVersion: $(APPVEYOR_BUILD_VERSION)
+  nodejs_version: LTS
+install:
+- ps: Install-Product node $env:nodejs_version
+init:
+- ps: >-
+    $env:MajorBuildVersion =  $env:APPVEYOR_BUILD_VERSION.Split('.')[0]
+
+    Write-Host $env:MajorBuildVersion
+    
+    $env:MinorBuildVersion =  $env:APPVEYOR_BUILD_VERSION.Split('.')[0] + '.' + $env:APPVEYOR_BUILD_VERSION.Split('.')[1]
+    
+    Write-Host $env:MinorBuildVersion
+    
+    $env:PatchBuildVersion =  $env:APPVEYOR_BUILD_VERSION.Split('.')[0] + '.' + $env:APPVEYOR_BUILD_VERSION.Split('.')[1] + '.'  + $env:APPVEYOR_BUILD_VERSION.Split('.')[2]
+    
+    Write-Host $env:PatchBuildVersion
+build_script:
+- ps: >-
+    cd C:\projects\agency365-search-spa
+
+    npm install -g grunt-cli
+
+    npm install babel-core@"^6.24.1" -g
+
+    Write-Host "beginning npm install"
+
+    npm cache clean --force
+
+    npm install --no-optional
+
+    Write-Host "setting git email"
+
+    git config --global user.email "git@bitbucket.org"
+
+    Write-Host "setting git user"
+
+    git config --global user.name "cbreltd"
+
+    Write-Host "running grunt release"
+
+    grunt release
+
+    Write-Host "completed grunt release"
+
+test: off
+artifacts:
+- path: release/**/*
+branches:
+  only:
+    - master
+skip_non_tags: true
+
+deploy:
+
+- provider: AzureBlob
+  storage_account_name: wwwlistingssearchcbreeun
+  storage_access_key:
+    secure: IknuScOW3JPiQs5B6/jXeoBQxhZPv9zUZ0vQLbPJyR1PAgxXUBYHSVrvEs0r0s/kq3KtcqXWle01NrthrvUQ4tdN9UdAjo2ZCCBo/O748M7+iGyuPnpc1qhUrMzgVErn
+  container: cbre-search-spa
+  folder: $(PatchBuildVersion)
+  set_content_type: true
+
+- provider: AzureBlob
+  storage_account_name: wwwlistingssearchcbreeuw
+  storage_access_key:
+    secure: NHBEwJ+TLSN4ZGxAjf6snmjTPDeKQB376WGlq9xUCcQVDci5M+E3Mf293gCjR2bSWLba13wNrHmaP0Xx9zuwoIAe/f6cp4ouN4qxELiyTImIioIWN0P+/NhRDqNjsTK7
+  container: cbre-search-spa
+  folder: $(PatchBuildVersion)
+  set_content_type: true
+
+- provider: AzureBlob
+  storage_account_name: uatlistingssearchcbreeun
+  storage_access_key:
+    secure: m76r6356xiFQwXL9EUHLqfN/4kewdA8GSsP8eWXgsC/G8owGWr1r1Ir5F4uLjomEAi4Sn/XkhEfimpcILqz4oz3SzVr5OlrXpasruZpf7vUF8fcvXwr2bbqacKZufyhJ
+  container: cbre-search-spa
+  folder: $(PatchBuildVersion)
+  set_content_type: true
+
+- provider: AzureBlob
+  storage_account_name: uatlistingssearchcbreeuw
+  storage_access_key:
+    secure: HzHjT09EYiVXRJksV1ziTFc42cSCo38e29mwh/+IyN4TBi+rSb05etQ4oftjxnM2EP8rsHxyhB2Tej7DUsN9x7jdhrCBYoVGoqVqoMj4wx4IB0nJXJTFGOrj2MFQpd77
+  container: cbre-search-spa
+  folder: $(PatchBuildVersion)
+  set_content_type: true
+

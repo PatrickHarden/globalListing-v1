@@ -1,0 +1,70 @@
+.cbre_table {
+  font-family: 'Calibre Regular';
+    overflow: hidden;
+    font-size: 16px!important;
+    line-height: 30px;
+    color: #435254;
+
+  .propertyDetails_content & {
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.6em;
+    }
+  }
+
+  > .row {
+    margin-bottom: 10px;
+
+    @media (@tabletAndUp) {
+      margin-bottom: 12px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  > .row > [class^="col-"],
+  > .row > [class*=" col-"] {
+    margin-bottom: 10px;
+
+    &.col-xs-12:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: @accentColor;
+    text-decoration: none;
+  }
+
+  .cbre_smallText {
+    font-size: 11px;
+  }
+}
+
+.cbre_table__striped {
+  border-radius: @border-radius-base;
+  border: 1px solid @border;
+
+  > .row {
+    border-bottom: 1px solid @border;
+    background: @white;
+    padding: 10px 15px 3px;
+    margin-bottom: 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:nth-child(2n+1) {
+      background: fade(@lightGrey, 50%);
+    }
+  }
+
+  @media (@tabletAndUp) {
+
+    > .row {
+      padding: 10px 28px 3px;
+    }
+  }
+}

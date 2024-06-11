@@ -1,0 +1,50 @@
+.cbre_button__flat {
+  @media(@tabletLandscapeAndUp) {
+    font-size: 17px;
+  }
+}
+
+.cbre_button__avatar .cbre_button_text {
+  font-weight: 400;
+}
+
+.cbre_button__favourite {
+  &:before {
+    .iconMixin(@char: @icon_heart, @size: 28px);
+  }
+
+  &.is_selected:before {
+    .iconMixin(@char: @icon_heart_selected, @size: 28px);
+  }
+
+  &:before {
+    position: relative;
+    top: 2px !important;
+  }
+}
+
+
+
+
+.cbre_button__favourite {
+  &:before {
+    content: @icon_heart;
+  }
+
+  &.is_selected:before,
+  &.is_selected.is_highlighted:before {
+    content: @icon_heart_selected;
+  }
+
+  &.is_highlighted:before {
+    content: @icon_heart_count;
+
+    @media (@desktopAndUp) {
+      content: @icon_heart_selected;
+    }
+  }
+
+  span.cbre_iconCount {
+    font-size: 9px;
+  }
+}

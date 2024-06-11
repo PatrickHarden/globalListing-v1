@@ -1,0 +1,45 @@
+.external-libraries-card-group-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.external-libraries-card-group-list {
+  border: 1px solid grey;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  overflow: hidden;
+
+  > li:first-child,
+  > div:first-child {
+    border-top: none;
+  }
+}
+
+.external-libraries-card-group-banner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 28px;
+  overflow: hidden;
+  background-color: grey;
+
+  .banner_content,
+  .banner_toggle {
+    color: white;
+    padding: 6px 10px;
+  }
+
+  .banner_content {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .banner_toggle {
+    display: block;
+  }
+}

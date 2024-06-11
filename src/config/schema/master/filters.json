@@ -1,0 +1,265 @@
+{
+    "properties": {
+        "filters": {
+            "type": "array",
+            "title": "Filters",
+            "format": "tab",
+            "propertyOrder": 60,
+            "options": {
+                "grid_columns": 12,
+                "collapsed": true
+            },
+            "items": {
+                "type": "object",
+                "title": "Filter",
+                "options": {
+                    "disable_edit_json": true
+                },
+                "defaultProperties": [],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Name"
+                    },
+                    "includePOA": {
+                        "type": "boolean",
+                        "format": "checkbox"
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Type",
+                        "enum": ["select", "range", "group", "rangeSlider"]
+                    },
+                    "label": {
+                        "type": "string",
+                        "title": "Label"
+                    },
+                    "placement": {
+                        "type": "string",
+                        "title": "Placement",
+                        "enum": [
+                            "primary",
+                            "secondary",
+                            "tertiary",
+                            "quaternary",
+                            "search_pin",
+                            "search_bounding",
+                            "search_polygon",
+                            "search_nonGeo",
+                            "lm_locationFilter",
+                            "lm_primaryFilter",
+                            "lm_secondaryFilter",
+                            "lm_tertiaryFilters",
+                            "lm_groupFilters",
+                            "lm_sortFilter",
+                            "searchBar"
+                        ]
+                    },
+                    "conditional": {
+                        "type": "object",
+                        "title": "Conditional",
+                        "options": {
+                            "disable_edit_json": true,
+                            "collapsed": true
+                        }
+                    },
+                    "options": {
+                        "type": "array",
+                        "format": "table",
+                        "title": "Options (select only)",
+                        "options": {
+                            "collapsed": true
+                        },
+                        "items": {
+                            "type": "object",
+                            "title": "Option",
+                            "defaultProperties": [],
+                            "properties": {
+                                "value": {
+                                    "type": "string",
+                                    "title": "Value"
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "title": "Label"
+                                },
+                                "default": {
+                                    "type": "boolean",
+                                    "title": "Default",
+                                    "format": "checkbox"
+                                }
+                            }
+                        }
+                    },
+                    "settings": {
+                        "type": "object",
+                        "format": "table",
+                        "title": "Range settings (rangeSlider only)",
+                        "options": {
+                            "collapsed": true
+                        },
+                        "properties": {
+                            "min": {
+                                "type": "string",
+                                "title": "Min value"
+                            },
+                            "max": {
+                                "type": "string",
+                                "title": "Max value"
+                            },
+                            "step": {
+                                "type": "string",
+                                "title": "Increment size"
+                            },
+                            "intl": {
+                                "type": "string",
+                                "title": "Unit type",
+                                "enum": ["currency", "area"]
+                            },
+                            "prependText": {
+                                "type": "string",
+                                "title": "Prepend text labels"
+                            },
+                            "appendText": {
+                                "type": "string",
+                                "title": "Append text labels"
+                            },
+                            "prependValue": {
+                                "type": "string",
+                                "title": "Prepend value"
+                            },
+                            "appendValue": {
+                                "type": "string",
+                                "title": "Append value"
+                            }
+                        }
+                    },
+                    "minValues": {
+                        "type": "array",
+                        "format": "table",
+                        "title": "Min options (range only)",
+                        "options": {
+                            "collapsed": true
+                        },
+                        "items": {
+                            "type": "object",
+                            "title": "Option",
+                            "defaultProperties": [],
+                            "properties": {
+                                "value": {
+                                    "type": "string",
+                                    "title": "Value"
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "title": "Label"
+                                },
+                                "default": {
+                                    "type": "boolean",
+                                    "title": "Default",
+                                    "format": "checkbox"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "title": "Type",
+                                    "enum": ["min"],
+                                    "default": "min"
+                                }
+                            }
+                        }
+                    },
+                    "maxValues": {
+                        "type": "array",
+                        "format": "table",
+                        "title": "Max options (range only)",
+                        "options": {
+                            "collapsed": true
+                        },
+                        "items": {
+                            "type": "object",
+                            "title": "Option",
+                            "defaultProperties": [],
+                            "properties": {
+                                "value": {
+                                    "type": "string",
+                                    "title": "Value"
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "title": "Label"
+                                },
+                                "default": {
+                                    "type": "boolean",
+                                    "title": "Default",
+                                    "format": "checkbox"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "title": "Type",
+                                    "enum": ["max"],
+                                    "default": "max"
+                                }
+                            }
+                        }
+                    },
+                    "children": {
+                        "type": "array",
+                        "format": "table",
+                        "title": "Children (group only)",
+                        "options": {
+                            "collapsed": true
+                        },
+                        "items": {
+                            "type": "object",
+                            "title": "Option",
+                            "options": {
+                                "disable_edit_json": true
+                            },
+                            "defaultProperties": [],
+                            "properties": {
+                                "label": {
+                                    "type": "string",
+                                    "title": "Label"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "title": "Name"
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "title": "Type",
+                                    "enum": ["checkbox", "toggle"]
+                                },
+                                "action": {
+                                    "type": "string",
+                                    "title": "Action",
+                                    "enum": ["SWITCH", "AND", "OR"]
+                                },
+                                "value": {
+                                    "type": "string",
+                                    "title": "Value"
+                                },
+                                "uncheckedValue": {
+                                    "type": "string",
+                                    "title": "Unchecked value"
+                                },
+                                "checked": {
+                                    "type": "boolean",
+                                    "format": "checkbox"
+                                },
+                                "conditional": {
+                                    "type": "object",
+                                    "title": "Conditional",
+                                    "options": {
+                                        "disable_edit_json": true,
+                                        "collapsed": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

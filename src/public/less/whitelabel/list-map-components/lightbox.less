@@ -1,0 +1,72 @@
+.pswp--zoomed-in img.pswp__img,
+.pswp img.pswp__img {
+  max-width: none !important;
+}
+
+.pswp__share-modal {
+  display: none;
+}
+
+// From BB.
+// Idle mode has been added.
+.pswp .pswp__button,
+.pswp .pswp__ui--idle .pswp__button {
+  .FontDefault();
+  width: auto;
+  padding: 0 25px;
+  color: @white;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+  .hoverStates({
+    outline: none;
+    color: @white;
+  });
+}
+
+.pswp .pswp__button--arrow--right,
+.pswp .pswp__ui--idle .pswp__button--arrow--right {
+  .arrowButton(right);
+}
+
+.pswp .pswp__button--arrow--left ,
+.pswp .pswp__ui--idle .pswp__button--arrow--right{
+  .arrowButton(left);
+}
+
+.pswp__preloader--active {
+  .pswp__preloader__icn {
+    background: url('/images/spinner.gif');
+  }
+}
+
+.pswp__scroll-wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (@tabletAndUp) {
+    display: block;
+  }
+}
+
+.pswp__container {
+  flex-grow: 1;
+  flex-shrink: 0;
+  position: static;
+
+  @media (@tabletAndUp) {
+    position: absolute;
+  }
+}
+
+.pswp__ui--over-close {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.pswp__top-bar div.pswp__counter {
+  .FontDefault();
+  font-size: 12px;
+  color: @white;
+}
+

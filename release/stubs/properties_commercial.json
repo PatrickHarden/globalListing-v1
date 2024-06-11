@@ -1,0 +1,508 @@
+{
+    "Found": true,
+    "DocumentCount": 107,
+    "Documents": [
+        [
+            {
+                "currentAppVersion": "1.0.0.0",
+                "Common.ActualAddress": {
+                    "Common.HouseName": "Simon Garden House, 57/59",
+                    "Common.HouseNumber": "",
+                    "Common.Line1": "Simon Garden House, 57/59, Long Acre",
+                    "Common.Line3": "London",
+                    "Common.PostCode": "WC2E 9JL"
+                },
+                "Common.Agents": [
+                    {
+                        "Common.EmailAddress": "Ben.Deacon@cbre.com",
+                        "Common.AgentName": "Ben Deacon",
+                        "Common.TelephoneNumber": "+44 7420 3051"
+                    },
+                    {
+                        "Common.EmailAddress": "charlie.killen@cbre.com",
+                        "Common.AgentName": "Charlie Killen",
+                        "Common.TelephoneNumber": "+44 7420 3023"
+                    }
+                ],
+                "Common.Aspects": ["isLetUnderOffer", "isLetting"],
+                "Common.AvailableFrom": "0001-01-01T00:00:00",
+                "Common.Brochures": [
+                    {
+                        "Common.Uri": "263367_Brochure_1.pdf",
+                        "Common.Culture": "en-GB"
+                    }
+                ],
+                "Common.Charges": [
+                    {
+                        "Common.ChargeKind": "Rent",
+                        "Common.CurrencyCode": "USD",
+                        "Common.Interval": "Monthly",
+                        "Common.Amount": 1300.0,
+                        "Common.OnApplication": false,
+                        "Common.Year": 0,
+                        "Common.Exact": false,
+                        "Common.Unit": "sqft",
+                        "Common.TaxModifer": "PlusVAT"
+                    },
+                    {
+                        "Common.ChargeKind": "Rent",
+                        "Common.CurrencyCode": "GBP",
+                        "Common.Interval": "Weekly",
+                        "Common.Amount": 595.0,
+                        "Common.OnApplication": false,
+                        "Common.Year": 0,
+                        "Common.Exact": false,
+                        "Common.Unit": "m2",
+                        "Common.TaxModifer": "PlusSalesTax"
+                    }
+                ],
+                "Common.Coordinate": {
+                    "lat": 51.51355,
+                    "lon": -0.123322
+                },
+                "Common.Created": "2015-04-01T07:39:04.05",
+                "Common.FloorPlans": ["263367_Floorplan_1.jpg"],
+                "Common.FloorsAndUnits": [
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "4th"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "m2",
+                                "Common.Size": 80.0
+                            },
+                            {
+                                "Common.Units": "sqft",
+                                "Common.Size": 861.113
+                            }
+                        ],
+                        "Common.Unit.Status": "UnderOffer",
+                        "Common.Unit.Use": "Office",
+                        "Common.AvailableFrom": "0001-01-01T00:00:00"
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "3rd"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "m2",
+                                "Common.Size": 201.0
+                            },
+                            {
+                                "Common.Units": "sqft",
+                                "Common.Size": 2163.55
+                            }
+                        ],
+                        "Common.Unit.Status": "UnderOffer",
+                        "Common.Unit.Use": "Office",
+                        "Common.AvailableFrom": "0001-01-01T00:00:00"
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "2nd"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "m2",
+                                "Common.Size": 268.0
+                            },
+                            {
+                                "Common.Units": "sqft",
+                                "Common.Size": 2884.73
+                            }
+                        ],
+                        "Common.Unit.Status": "UnderOffer",
+                        "Common.Unit.Use": "Office",
+                        "Common.AvailableFrom": "0001-01-01T00:00:00"
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "1st"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "m2",
+                                "Common.Size": 270.0
+                            },
+                            {
+                                "Common.Units": "sqft",
+                                "Common.Size": 2906.26
+                            }
+                        ],
+                        "Common.Unit.Status": "UnderOffer",
+                        "Common.Unit.Use": "Office",
+                        "Common.AvailableFrom": "0001-01-01T00:00:00"
+                    },
+                    {
+                        "Common.SubdivisionName": [
+                            {
+                                "Common.CultureCode": "en-GB",
+                                "Common.Text": "B/m"
+                            }
+                        ],
+                        "Common.Areas": [
+                            {
+                                "Common.Units": "m2",
+                                "Common.Size": 7.0
+                            },
+                            {
+                                "Common.Units": "sqft",
+                                "Common.Size": 75.3474
+                            }
+                        ],
+                        "Common.Unit.Status": "UnderOffer",
+                        "Common.Unit.Use": "Office",
+                        "Common.AvailableFrom": "0001-01-01T00:00:00"
+                    }
+                ],
+                "Common.Highlights": [
+                    [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "Comfort Cooling"
+                        }
+                    ],
+                    [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "Lifts"
+                        }
+                    ],
+                    [
+                        {
+                            "Common.CultureCode": "en-GB",
+                            "Common.Text": "shower Shower(s)"
+                        }
+                    ]
+                ],
+                "Common.LastProcessed": "2015-10-28T16:34:00.7834116+00:00",
+                "Common.LastUpdated": "2015-06-02T11:51:47.357",
+                "Common.LeaseTypes": ["New By arrangement"],
+                "Common.LongDescription": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text":
+                            "<div>\r\n\tGarden House has recently undergone a comprehensive refurbishment. The Building is a self contained office split over 4 attractive floors around a central atrium. The Building holds a prominent position on one of the most established junctions in Covent Garden. A potential tenant would benefit from all that Covent Garden has to offer, including high end retail and world famous restaurants. The transport links are exceptional with underground, overground and bus networks all on the doorstep and Crossrail arriving at Tottenham Court Road at 2018.</div>\r\n"
+                    }
+                ],
+                "Common.MaximumSize": [
+                    {
+                        "Common.Units": "m2",
+                        "Common.Size": 270.0
+                    },
+                    {
+                        "Common.Units": "sqft",
+                        "Common.Size": 2906.26
+                    }
+                ],
+                "Common.MinimumSize": [
+                    {
+                        "Common.Units": "m2",
+                        "Common.Size": 7.0
+                    },
+                    {
+                        "Common.Units": "sqft",
+                        "Common.Size": 75.3474
+                    }
+                ],
+                "Common.NumberOfBedrooms": 0,
+                "Common.Photos": [
+                    {
+                        "Common.ImageCaption":
+                            "Garden House, Long Acre, exterior photo",
+                        "Common.ImageResources": [
+                            {
+                                "Common.Image.Height": 480,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_1_small.jpg",
+                                "Common.Image.Width": 640,
+                                "Common.Breakpoint": "small"
+                            },
+                            {
+                                "Common.Image.Height": 960,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_1_medium.jpg",
+                                "Common.Image.Width": 1280,
+                                "Common.Breakpoint": "medium"
+                            },
+                            {
+                                "Common.Image.Height": 1200,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_1_large.jpg",
+                                "Common.Image.Width": 1600,
+                                "Common.Breakpoint": "large"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.ImageCaption":
+                            "Garden House, Long Acre, exterior photo",
+                        "Common.ImageResources": [
+                            {
+                                "Common.Image.Height": 480,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_2_small.jpg",
+                                "Common.Image.Width": 640,
+                                "Common.Breakpoint": "small"
+                            },
+                            {
+                                "Common.Image.Height": 960,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_2_medium.jpg",
+                                "Common.Image.Width": 1280,
+                                "Common.Breakpoint": "medium"
+                            },
+                            {
+                                "Common.Image.Height": 1200,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_2_large.jpg",
+                                "Common.Image.Width": 1600,
+                                "Common.Breakpoint": "large"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.ImageCaption":
+                            "Garden House, Long Acre, exterior photo",
+                        "Common.ImageResources": [
+                            {
+                                "Common.Image.Height": 480,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_3_small.jpg",
+                                "Common.Image.Width": 640,
+                                "Common.Breakpoint": "small"
+                            },
+                            {
+                                "Common.Image.Height": 960,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_3_medium.jpg",
+                                "Common.Image.Width": 1280,
+                                "Common.Breakpoint": "medium"
+                            },
+                            {
+                                "Common.Image.Height": 1200,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_3_large.jpg",
+                                "Common.Image.Width": 1600,
+                                "Common.Breakpoint": "large"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.ImageCaption":
+                            "Garden House, Long Acre, floor interior photo",
+                        "Common.ImageResources": [
+                            {
+                                "Common.Image.Height": 480,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_4_small.jpg",
+                                "Common.Image.Width": 640,
+                                "Common.Breakpoint": "small"
+                            },
+                            {
+                                "Common.Image.Height": 960,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_4_medium.jpg",
+                                "Common.Image.Width": 1280,
+                                "Common.Breakpoint": "medium"
+                            },
+                            {
+                                "Common.Image.Height": 1200,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_4_large.jpg",
+                                "Common.Image.Width": 1600,
+                                "Common.Breakpoint": "large"
+                            }
+                        ]
+                    },
+                    {
+                        "Common.ImageCaption":
+                            "Garden House, Long Acre, stairwell",
+                        "Common.ImageResources": [
+                            {
+                                "Common.Image.Height": 480,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_5_small.jpg",
+                                "Common.Image.Width": 640,
+                                "Common.Breakpoint": "small"
+                            },
+                            {
+                                "Common.Image.Height": 960,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_5_medium.jpg",
+                                "Common.Image.Width": 1280,
+                                "Common.Breakpoint": "medium"
+                            },
+                            {
+                                "Common.Image.Height": 1200,
+                                "Common.Resource.Uri":
+                                    "263367_Photo_5_large.jpg",
+                                "Common.Image.Width": 1600,
+                                "Common.Breakpoint": "large"
+                            }
+                        ]
+                    }
+                ],
+                "Common.PrimaryKey": "263367",
+                "Common.PropertyTypes": [],
+                "Common.Strapline": [
+                    {
+                        "Common.CultureCode": "en-GB",
+                        "Common.Text": "Refurbished Grade A office space"
+                    }
+                ],
+                "Common.TotalSize": [
+                    {
+                        "Common.Units": "m2",
+                        "Common.Size": 825.0
+                    },
+                    {
+                        "Common.Units": "sqft",
+                        "Common.Size": 8880.23
+                    }
+                ],
+                "Common.UsageType": "Office",
+                "Common.Walkthrough":
+                    "https://api.inspiredlabs.com/viewer?embed=247700389204341",
+                "Dynamic.SalePrice": 0.0,
+                "Dynamic.LettingPriceAnnual": 69.78,
+                "Dynamic.LettingPriceWeekly": 0.0,
+                "Dynamic.LettingPriceMonthly": 0.0,
+                "Dynamic.MinArea": 71.0,
+                "Dynamic.TotalArea": 2909.0,
+                "Dynamic.NewHome": false,
+                "Dynamic.UnderOffer": false,
+                "Dynamic.LetUnderOffer": true
+            }
+        ]
+    ],
+    "Aggregations": [
+        [
+            {
+                "GroupName": "Dynamic.NewHome",
+                "Items": [
+                    {
+                        "DocCount": 107,
+                        "Key": "F"
+                    }
+                ],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "Dynamic.PropertyState",
+                "Items": [],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "Dynamic.UnderOffer",
+                "Items": [
+                    {
+                        "DocCount": 107,
+                        "Key": "F"
+                    }
+                ],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "Dynamic.LetUnderOffer",
+                "Items": [
+                    {
+                        "DocCount": 90,
+                        "Key": "F"
+                    },
+                    {
+                        "DocCount": 17,
+                        "Key": "T"
+                    }
+                ],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "Common.Aspect",
+                "Items": [],
+                "Type": "Grouped"
+            },
+            {
+                "Key": "Common.NumberOfBedrooms_Min",
+                "Value": 0.0,
+                "Type": "Metric",
+                "Direction": 0
+            },
+            {
+                "GroupName": "isLetUnderOffer",
+                "Items": [
+                    {
+                        "DocCount": 90,
+                        "Key": "F"
+                    },
+                    {
+                        "DocCount": 17,
+                        "Key": "T"
+                    }
+                ],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "isNewHome",
+                "Items": [
+                    {
+                        "DocCount": 107,
+                        "Key": "F"
+                    }
+                ],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "AirConditioning",
+                "Items": [],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "Dynamic.UK.PropertyFacetType",
+                "Items": [],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "Common.PropertyType",
+                "Items": [],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "Dynamic.PriceOnApplication",
+                "Items": [],
+                "Type": "Grouped"
+            },
+            {
+                "GroupName": "isFeatured",
+                "Items": [
+                    {
+                        "DocCount": 107,
+                        "Key": "F"
+                    }
+                ],
+                "Type": "Grouped"
+            },
+            {
+                "Key": "Common.NumberOfBedrooms_Max",
+                "Value": 0.0,
+                "Type": "Metric",
+                "Direction": 1
+            }
+        ]
+    ],
+    "Took": "00:00:00.0300783"
+}

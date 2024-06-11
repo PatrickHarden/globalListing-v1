@@ -1,0 +1,15 @@
+{
+    "name": "agency365.search.spa",
+    "main": "index.js",
+    "version": "6.1.95",
+    "authors": ["Simon Williams <simon.williams@cbre.com>"],
+    "description": "CBRE Search Application",
+    "moduleType": ["es6", "globals", "node"],
+    "license": "MIT",
+    "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+    "dependencies": {
+        "image-scale": "git://github.com/GestiXi/image-scale#~1.3.2",
+        "jquery": "~2.1.4",
+        "jQuery-ajaxTransport-XDomainRequest": "~1.0.4"
+    }
+}

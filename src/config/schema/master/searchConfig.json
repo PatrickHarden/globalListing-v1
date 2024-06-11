@@ -1,0 +1,251 @@
+{
+    "properties": {
+        "searchConfig": {
+            "type": "object",
+            "title": "Search config",
+            "propertyOrder": 10,
+            "options": {
+                "grid_columns": 12,
+                "disable_edit_json": true,
+                "collapsed": true
+            },
+            "format": "grid",
+            "defaultProperties": [],
+            "properties": {
+                "searchResultsPage": {
+                    "type": "string",
+                    "title": "Search results page",
+                    "propertyOrder": 0
+                },
+                "searchType": {
+                    "type": "string",
+                    "title": "Search type",
+                    "propertyOrder": 5
+                },
+                "remainOnCurrentListing": {
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "title": "Remain on current listing",
+                    "propertyOrder": 8
+                },
+                "searchLocationName": {
+                    "type": "string",
+                    "title": "Search location name",
+                    "description":
+                        "Set display name for your default search location (not used with Polygon search)",
+                    "propertyOrder": 10
+                },
+                "restrictToCountry": {
+                    "type": "string",
+                    "title": "Restrict to country",
+                    "propertyOrder": 13
+                },
+                "searchBias": {
+                    "type": "object",
+                    "format": "grid",
+                    "options": {
+                        "grid_columns": 12,
+                        "disable_edit_json": true,
+                        "disable_collapse": true
+                    },
+                    "propertyOrder": 15,
+                    "defaultProperties": [],
+                    "properties": {
+                        "lat": {
+                            "type": "string",
+                            "title": "Latitude",
+                            "propertyOrder": 0
+                        },
+                        "lon": {
+                            "type": "string",
+                            "title": "Longitude",
+                            "propertyOrder": 10
+                        }
+                    }
+                },
+                "biasRadius": {
+                    "type": "number",
+                    "title": "Bias radius",
+                    "propertyOrder": 20
+                },
+                "searchPlaceTypes": {
+                    "type": "array",
+                    "title": "Search place types",
+                    "format": "table",
+                    "options": {
+                        "grid_columns": 12,
+                        "collapsed": true
+                    },
+                    "propertyOrder": 25,
+                    "items": {
+                        "type": "string",
+                        "title": "Item"
+                    }
+                },
+                "locationTypeDefinitions": {
+                    "type": "array",
+                    "format": "table",
+                    "title": "Location type definitions",
+                    "options": {
+                        "grid_columns": 12,
+                        "collapsed": true
+                    },
+                    "propertyOrder": 30,
+                    "items": {
+                        "type": "object",
+                        "title": "Location Type",
+                        "defaultProperties": [],
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "title": "Name",
+                                "propertyOrder": 0
+                            },
+                            "definitions": {
+                                "type": "array",
+                                "format": "table",
+                                "title": "Definitions",
+                                "propertyOrder": 10,
+                                "items": {
+                                    "type": "string",
+                                    "title": "Definition"
+                                }
+                            },
+                            "radius": {
+                                "type": "number",
+                                "title": "Radius",
+                                "propertyOrder": 20
+                            }
+                        }
+                    }
+                },
+                "polygons": {
+                    "type": "array",
+                    "title": "Region polygons",
+                    "display": "table",
+                    "propertyOrder": 35,
+                    "options": {
+                        "grid_columns": 12,
+                        "collapsed": true
+                    },
+                    "items": {
+                        "type": "object",
+                        "title": "Item",
+                        "defaultProperties": [],
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "title": "Name",
+                                "propertyOrder": 0
+                            },
+                            "coords": {
+                                "type": "string",
+                                "title": "Coordinates",
+                                "propertyOrder": 1
+                            }
+                        }
+                    }
+                },
+                "searchHeader": {
+                    "type": "object",
+                    "title": "Search Header",
+                    "format": "grid",
+                    "options": {
+                        "grid_columns": 12,
+                        "disable_edit_json": true,
+                        "disable_collapse": true
+                    },
+                    "propertyOrder": 1,
+                    "properties": {
+                        "searchHeaderTitleText": {
+                            "type": "string",
+                            "title": "Search Header Title",
+                            "propertyOrder": 1,
+                            "options": {
+                                "grid_columns": 12
+                            }
+                        },
+                        "searchHeaderLinkText": {
+                            "type": "string",
+                            "title": "Search Header Link Text",
+                            "propertyOrder": 2,
+                            "options": {
+                                "grid_columns": 6
+                            }
+                        },
+                        "searchHeaderLinkUrl": {
+                            "type": "string",
+                            "title": "Search Header Link Url",
+                            "propertyOrder": 3,
+                            "options": {
+                                "grid_columns": 6
+                            }
+                        }
+                    }
+                },
+                "hideSearchToBuy": {
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "title": "Hide search to buy button",
+                    "propertyOrder": 45,
+                    "default": true,
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "hideSearchToLet": {
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "title": "Hide search to let button",
+                    "propertyOrder": 50,
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "useSearchPathSelector": {
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "title": "Enable search path selector on search box",
+                    "propertyOrder": 45,
+                    "default": false,
+                    "options": {
+                        "grid_columns": 12
+                    }
+                },
+                "searchPathSelector": {
+                    "type": "array",
+                    "format": "table",
+                    "title": "used on search bar to change searchresults path",
+                    "options": {
+                        "collapsed": true
+                    },
+                    "items": {
+                        "type": "object",
+                        "title": "Option",
+                        "defaultProperties": [],
+                        "properties": {
+                            "value": {
+                                "type": "string",
+                                "title": "Path"
+                            },
+                            "label": {
+                                "type": "string",
+                                "title": "Display Label"
+                            },
+                            "default": {
+                                "type": "boolean",
+                                "title": "Default",
+                                "format": "checkbox"
+                            }
+                        }
+                    }
+                },
+                "searchSuggestDebounce": {
+                    "type": "number",
+                    "title": "Search Suggest Debounce",
+                    "propertyOrder": 46
+                }
+            }
+        }
+    }
+}

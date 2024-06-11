@@ -1,0 +1,7 @@
+{
+  "mapClustering": {
+    "gridSize": 60,
+    "maxZoom": 17,
+    "minimumClusterSize": 2
+  }
+}

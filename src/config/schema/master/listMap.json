@@ -1,0 +1,73 @@
+{
+    "properties": {
+        "limitListMapResults": {
+            "type": "string",
+            "title": "Set a limit on list map results",
+            "default": "100",
+            "format": "string",
+            "options": {
+                "grid_columns": 4
+            }
+        },
+        "mapStyle":{
+            "type": "string",
+            "title": "Select the map style",
+            "enum": ["default", "light", "blue", "simple"],
+            "default": "default",
+            "format": "select"
+        },
+        "mapZoom": {
+            "type": "object",
+            "title": "Default map zoom levels",
+            "options": {
+                "grid_columns": 12,
+                "disable_edit_json": true,
+                "collapsed": true
+            },
+            "format": "grid",
+            "defaultProperties": [
+                "listMapMaxZoom",
+                "detailsMapMaxZoom",
+                "detailsMapInitialZoom"
+            ],
+            "properties": {
+                "listMapMaxZoom": {
+                    "type": "integer",
+                    "title": "Limit the maximum zoom on the listings page",
+                    "default": 18,
+                    "format": "string",
+                    "options": {
+                        "grid_columns": 4
+                    }
+                },
+                "detailsMapMaxZoom": {
+                    "type": "integer",
+                    "title": "Limit the maximum zoom on the details page",
+                    "default": 18,
+                    "format": "string",
+                    "options": {
+                        "grid_columns": 4
+                    }
+                },
+                "detailsMapInitialZoom": {
+                    "type": "integer",
+                    "title": "Set the initial zoom on the details page",
+                    "default": 15,
+                    "format": "string",
+                    "options": {
+                        "grid_columns": 4
+                    }
+                }
+            }
+        },
+        "useNetRent": {
+            "type": "boolean",
+            "title": "Use Net rent rather than gross rent",
+            "default": false,
+            "format": "checkbox",
+            "options": {
+                "grid_columns": 12
+            }
+        }
+    }
+}

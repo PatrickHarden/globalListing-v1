@@ -1,0 +1,85 @@
+.cbre-spa--search {
+  .cbre-spa--search_form {
+    .map-search {
+      &:before {
+        position: absolute;
+        display: block;
+        font-size: 24px;
+        z-index: 1;
+        color: @brand-primary;
+        font-family: 'CBRE Icons';
+        content: '\e615';
+        margin: 6px 10px;
+      }
+      input {
+        // border: none;
+        padding-left: 45px;
+      }
+      .geosuggest__suggests {
+        padding-left: 31px;
+      }
+    }
+    &.with-selector {
+      .search-input {
+        @media (min-width: @screen-sm) {
+          width: 55%;
+        }
+        .map-search {
+          &:before {
+            display: none;
+          }
+          input {
+            // border: none;
+            padding-left: 16px;
+          }
+        }
+        .geosuggest {
+          margin-right: 0;
+        }
+      }
+    }
+    &.two-button {
+      .search-input {
+        @media (min-width: @screen-sm) {
+          width: 100%;
+          margin-bottom: 5px;
+          .map-search {
+            margin-right: 0;
+          }
+          .geosuggest {
+            margin-right: 0;
+          }
+        }
+      }
+      &.with-selector {
+        .search-input {
+          @media (min-width: @screen-sm) {
+            width: 75%;
+          }
+          .map-search {
+            &:before {
+              display: none;
+            }
+            input {
+              // border: none;
+              padding-left: 16px;
+            }
+          }
+        }
+      }
+      .search-btn {
+        @media (min-width: @screen-sm) {
+          width: 100%;
+        }
+        @media (min-width: @screen-md) {
+          width: 100%;
+        }
+        a {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

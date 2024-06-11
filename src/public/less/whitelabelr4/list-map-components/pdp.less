@@ -1,0 +1,425 @@
+// CUSTOM ADDITIONS
+// Do not delete with BB updates
+// allow \n to display as new line in property description
+.pdp .propertyDescription {
+  white-space: pre-wrap;
+}
+
+.cbre-react-spa .cbre-react-spa-container .pdp .r3-location-properties .cbre_multiCarousel .r3PropertyCard {
+  min-height: 0 !important;
+}
+
+.pdp {
+  .main {
+    // background: #f9f9f9;
+    .cbre_expandableText {
+      padding-right:32px;
+    }
+  }
+  .cbre_multiCarousel {
+    .r3PropertyCard {
+      min-height: 420px !important;
+      .cbre_subh2.customh2 {
+        margin-top:7px !important;
+      }
+      .card_body {
+        h3 {
+          #addressLine1 {
+            > span {
+              float:left;
+              font-size:20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pdp .locationBlock {
+  white-space: pre-wrap;
+  font-size:18px;
+}
+.header-content {
+  justify-content: space-between;
+  .header-title {
+    .cbre_h1 {
+      font-size:36px !important;
+      color:#003F2D;
+      font-family: 'Financier Display';
+      font-weight:normal !important;
+      #addressLine2 {
+        font-weight:500 !important;
+        font-size:21px !important;
+        color: #435254;
+      }
+    }
+  }
+  .header-size {
+    .headerH4 {
+      margin-bottom: 10px;
+    }
+  }
+  > * {
+    flex: inherit !important;
+    max-width:52%;
+  }
+}
+
+@media screen and (max-width:1023px){
+  .header-content {
+    > * {
+      max-width:100%;
+    }
+  }
+}
+
+.headerH4 {
+  font-size:14px !important;
+  color: #1A1A1A !important;
+  font-family: 'Calibre Regular' !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  margin-bottom: 10px !important;
+  text-transform: capitalize;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+
+  &~div{
+    span {
+      font-family: 'Calibre Semibold' !important;
+      font-weight:500 !important;
+      color: #435254 !important;
+      font-size:21px !important;
+    }
+  }
+  
+  &~span{
+      font-family: 'Calibre Semibold' !important;
+      font-weight:500 !important;
+      color: #435254 !important;
+      font-size:21px !important;
+  }
+}
+.header-price {margin: 0 !important;}
+.pdp .commercial-header.sidebar-header .cbre_subh2 {
+  opacity: 1 !important;
+}
+
+.headerValue {
+  font-size:14px !important;
+  color: #1A1A1A !important;
+  font-family: 'Calibre Regular' !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  margin-bottom: 10px !important;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+
+  &~div{
+    span {
+      font-family: 'Calibre Semibold' !important;
+      font-weight:500 !important;
+      color: #435254 !important;
+      font-size:21px !important;
+    }
+  }
+  
+  &~span{
+      font-family: 'Calibre Semibold' !important;
+      font-weight:500 !important;
+      color: #435254 !important;
+      font-size:21px !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header-title {
+    .cbre_h1 {
+      font-size:22px !important;
+      #addressLine2 {
+        color: #435254;
+      }
+    }
+  }
+  .headerH4 {
+    font-size:14px !important;
+    &~div{
+      span {
+        font-size:16px !important;
+      }
+    }
+    &~span{
+        font-size:16px !important;
+    }
+  }
+  .headerValue {
+    font-size:14px !important;
+    &~div{
+      span {
+        font-size:16px !important;
+      }
+    }
+    &~span{
+        font-size:16px !important;
+    }
+  }
+}
+
+.wrapper.pdp {
+  background: white;
+
+  .pdp_floorplan {
+    cursor: pointer;
+  }
+
+  .cbre_sidebar__logo {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+// From BB.
+.pdp {
+  .cf();
+
+  .cbre_body {
+    min-height: 90vh;
+  }
+
+  .cbre_body .cbre_container {
+    .cf();
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @media (@tabletLandscapeAndUp) {
+      display: block;
+      overflow: visible;
+      margin-bottom: 100px;
+    }
+  }
+
+  .cbre_iframeWrap {
+    height: 40vw;
+    max-height: 70vh;
+
+    @media (@tabletLandscapeAndUp) {
+      height: 480px;
+    }
+
+    @media (@desktopAndUp) {
+      height: 675px;
+    }
+  }
+
+  .cbre_heroWrap {
+    position: relative;
+
+    .cbre_container {
+      padding-bottom: 0;
+    }
+
+    .imageWrap {
+      height: 100%;
+
+      @media (@tabletLandscapeAndUp) {
+        height: 480px;
+      }
+
+      @media (@desktopAndUp) {
+        height: 675px;
+      }
+    }
+  }
+
+  .cbre_heroWrap + .cbre_container .cbre_sidebar {
+    border-top: none;
+  }
+
+  .cbre_contentBySidebar {
+    width: 100%;
+
+    @media (@tabletLandscapeAndUp) {
+      float: left;
+      margin-right: -(@sidebar-width + 20px);
+      padding-right: (@sidebar-width + 20px);
+    }
+
+    @media (min-width: (@container-width + 1)) {
+      margin-right: -(@sidebar-width + 40px);
+      padding-right: (@sidebar-width + 40px);
+    }
+  }
+
+  // When PDP has hero image
+  // then sidebar overlaps hero image
+  .cbre_heroWrap ~ .cbre_container .cbre_contentBySidebar {
+
+    @media (@tabletLandscapeAndUp) {
+      margin-right: -@sidebar-width;
+      padding-right: @sidebar-width;
+    }
+
+    @media (min-width: (@container-width + 1)) {
+      margin-right: -(@sidebar-width + 40px);
+      padding-right: (@sidebar-width + 40px);
+    }
+  }
+
+  .cbre_sidebar {
+    background: @white;
+    clear: right;
+    pointer-events: auto;
+
+    .cbre_divider__large {
+      background: @accentColor;
+    }
+
+    @media (@tabletLandscapeAndUp) {
+      border: 1px solid @lightBorder;
+      border-style: none solid none solid;
+      float: right;
+      width: @sidebar-width;
+      margin-right: 20px;
+      overflow: hidden;
+    }
+  }
+
+  .cbre_sidebar__tabletLandscapeAndUp {
+    border-bottom-style: solid;
+    position: relative;
+    display: none;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: @padding_tablet;
+    z-index: 1;
+
+    &.is_fixed {
+      position: fixed;
+    }
+
+    &.is_anchored {
+      position: relative;
+      bottom: 0;
+      top: auto;
+      margin-bottom: 0;
+    }
+
+    &.is_static {
+      position: relative;
+    }
+
+    &.has_animation {
+      transition: top 0.5s ease;
+    }
+
+    .hiddenInFixedSidebar {
+      overflow: hidden;
+    }
+
+    .hiddenInFixedSidebar_inner.has_animation {
+      transition: margin-top 0.5s ease;
+    }
+
+    @media (@tabletLandscapeAndUp) {
+      display: block;
+    }
+
+    @media (min-width: (@container-width + 1)) {
+      right: 50%;
+      margin-right: -510px;
+    }
+  }
+
+  .cbre_sidebar__placeholder {
+    bottom: 0;
+  }
+
+  .cbre_sidebar__placeholder_top_margin {
+    top: 0px;
+  }
+
+  .propertyDescription + .cbre_contentBySidebar,
+  .cbre_body .subnav + div {
+    div:first-child > .collapsableBlock_header {
+      border-top: none;
+    }
+  }
+
+  .cbre_imageCarousel .imageWrap {
+    height: 75vw;
+    max-height: 70vh;
+
+    @media (@tabletLandscapeAndUp) {
+      .imageWrap__4to3;
+    }
+  }
+
+  .collapsableBlock .imageWrap {
+    height: 0;
+    padding-top: 75%;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+
+  .flag {
+    .flag__large;
+  }
+
+}
+
+@media screen and (max-width:415px){
+  .cbre-react-spa .cbre-react-spa-container .pdp .collapsableBlock_header > h2.cbre_title {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+}
+
+.LineSpaceLevelDisplay {
+  width: calc(~'100% - 40px') !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pdp > .main > div:last-of-type > div:last-of-type .padding-xs-1 {
+  border:none !important;
+}
+
+.cbre-react-spa .cbre-react-spa-container .pdp .cbre_iframeWrap {
+	max-width: none !important;
+}
+
+.noBorder { border: none !important; }
+// .pdp .main .cbre_body:nth-of-type(1) > .cbre_container > div:last-of-type
+
+@media screen and (max-width:520px){
+  .pdp {
+    .cbre_container {
+      .collapsableBlock_header{
+        h2.cbre_title  {
+          padding: 6px;
+        }
+      }
+      .cbre_sidebar {
+        margin-top:10px;
+        ul {
+          .arrange_viewing_row_R3  {
+            li {
+              a.cbre_button {
+                height:auto;
+                padding: 21px 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

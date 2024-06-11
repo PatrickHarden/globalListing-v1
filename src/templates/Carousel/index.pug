@@ -1,0 +1,15 @@
+extend ../layout
+
+block content
+    #container
+
+    script.
+        var cbreRenderType = 'renderCarousel';
+        function initMap() {
+            document.addEventListener('DOMContentLoaded', function() {
+                renderSPA({
+                    path: '/',
+                    subPath: '/results'
+                });
+            }, false);
+        }

@@ -1,0 +1,149 @@
+/* base less */
+
+@mobilePortraitMin: 320px;
+@mobileLandscapeMin: 568px;
+@tabletMin: 768px;
+@tabletLandscapeMin: 1024px;
+@desktopMin: 1440px;
+@mobilePortraitMax: (@mobileLandscapeMin - 1px);
+@mobileMax: (@tabletMin - 1px);
+@tabletPortraitMax: (@tabletLandscapeMin - 1px);
+@tabletMax: (@desktopMin - 1px);
+@mobile: ~"max-width: @{mobileMax}";
+@mobilePortrait: ~"max-width: @{mobilePortraitMax}"; // col-xs
+@mobileLandscapeAndUp: ~"min-width: @{mobileLandscapeMin}"; // col-sm
+@tabletAndUp: ~"min-width: @{tabletMin}"; // col-md
+@tabletLandscapeAndUp: ~"min-width: @{tabletLandscapeMin}"; // col-lg
+@desktopAndUp: ~"min-width: @{desktopMin}"; // col-xl
+@columns: 12;
+@gridGutter: 20px;
+@container-width: 1060px;
+@sidebar-width: 396px;
+@padding: 15px;
+@padding_tablet: 20px;
+@border-radius-base: 2px;
+@border-radius-large: 4px;
+@border-radius-medium: 3px;
+@border-radius-small: 1px;
+// PLP card
+@cardImage-width: 104px;
+@cardImage-width_wide: 288px;
+@cardImage-width: 106px;
+@cardImage-height: 80px;
+@cardImage-width_wide: 290px;
+@cardImage-height_wide: 218px;
+@cardImage-width_location: 160px;
+@cardImage-height_location: 120px;
+// Colors
+@cbreGreen: #006B4C;
+@white: #FFFFFF;
+@ghostWhite: #F9F9F9;
+@chiffon: #FDFBF9;
+@lightGrey: #F5F5F5;
+@midGrey: #D8D8D8;
+@grey: #B0B0B0;
+@black: #000000;
+@highlightColor: rgba(245, 245, 245, 0.5);
+@darkerText: #111111;
+@defaultText: #333333;
+@lighterText: #717171;
+@errorRed: #AF3434;
+@errorBg: rgba(255, 0, 0, 0.1);
+@lightBorder: #EEEEEE;
+@border: #D1D1D1;
+@lightGreen: #5CA623;
+@accentColor: @cbreGreen;
+@accentColorHover: @lightGreen;
+@dividerColor: @border;
+// Type
+.FontDefault() {
+  font-family: @font-family-sans-serif;
+  font-weight: normal;
+}
+
+.FontAlternative() {
+  font-family: @font-family-sans-serif;
+  font-weight: 600;
+}
+
+@h1-size: 22px;
+@h1-size_tablet: 24px;
+@h2-size: 15px;
+@h2-size_tablet: 22px;
+@h2-weight: 600;
+@h3-size: 14px;
+@h3-size_tablet: 20px;
+@h4-size: 14px;
+@h4-size_tablet: 18px;
+@h4-weight: 600;
+@h5-size: 17px;
+@h6-size: 11px;
+@headingJumbo-size: 27px;
+@headingJumbo-size_tablet: 37px;
+@cbre_subh1-size: 14px;
+@cbre_subh1-weight: 400;
+@cbre_subh1-size_tablet: 15px;
+@cbre_subh1-weight_tablet: 600;
+@cbre_subh2-size: 12px;
+@cbre_subh2-weight: 300;
+@cbre_subh2-size_tablet: 15px;
+@cbre_subh2-weight_tablet: 300;
+@p_small-size: 12px;
+@p-size: 13px;
+@p-size_tablet: 13px;
+@p_large-size: 14px;
+@p_large-size_tabletPortrait: 15px;
+@p_large-size_tablet: 16px;
+@blockLink-fontSize: 15px;
+@uppercase-letterSpacing: 1px;
+// Header
+@headerHeight_mobile: 50px;
+@headerHeight_tablet: 50px;
+@headerHeight_desktop: 50px;
+@headerNav-paddingX: 20px;
+@headerNav-paddingY: 12px;
+@headerNav-lineHeight: 1.5em;
+@headerNav-fontWeight: 600;
+@headerNav-fontSize: 16px;
+@headerNav-fontSize_largeScreen: 14px;
+@headerNav-arrow-color: @grey;
+@headerNav-arrow-fontSize: 8px;
+@headerSubnav-fontSize: 14px;
+@headerSubnav-fontSize_largeScreen: 13px;
+// Select menu
+@selectMenu-textTransform: uppercase;
+// Select ribbon alt
+@select-ribbonAlt-value-color: @defaultText;
+@select-ribbonAlt-arrow-color: @grey;
+@select-ribbonAlt-fontSize: 14px;
+@select-ribbonAlt-option-fontSize: 13px;
+// PLP filter ribbon
+@filterRibbon-fontSize: 14px;
+@filterRibbon-fontSize_desktop: 15px;
+@filterRibbon-height: 44px;
+@filterRibbon-height_tablet: 49px;
+// PDP Breadcrumb
+@breadcrumb-height: 30px;
+@breadcrumb-height_tabletLandscape: 42px;
+@breadcrumb-fontSize: 13px;
+@breadcrumb-fontSize_tabletLandscape: 15px;
+// Bootstrap modal
+@modal-inner-padding: 15px;
+@modal-title-padding: 12px;
+@modal-title-line-height: 25px;
+@modal-content-bg: @white;
+@modal-content-border-color: @border;
+@modal-content-fallback-border-color: @border;
+@modal-header-border-color: transparent;
+@modal-lg: 900px;
+@modal-md: 600px;
+@modal-sm: 360px;
+.FontDefault() {
+  font-family: @font-family-sans-serif;
+  font-weight: normal;
+}
+
+.FontAlternative() {
+  font-family: @font-family-sans-serif;
+  font-weight: 600;
+}

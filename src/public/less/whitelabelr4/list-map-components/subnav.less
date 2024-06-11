@@ -1,0 +1,109 @@
+.subnav {
+    .cf();
+    border: 1px solid #CAD1D3;
+    background: #E6EAEA;
+    font-family: 'Calibre Regular';
+    font-weight:500;
+    height: 50px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 1010px) {
+        padding-top: 8px;
+    }
+
+    @media screen and (max-width: 752px) {
+        padding-top: 3px;
+    }
+
+    a, a:after, span{
+        color: #435254 !important;
+        transition: .2s ease all;
+    }
+
+    a, span {
+        font-family: 'Calibre Regular' !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+    }
+
+    a:before, a:after, li:after, li:before, a:hover span, .subnav_link:hover, .breadcrumb_item a:hover  {
+        color: #003F2D !important;
+    }
+
+    a:before, a:after, li:after, li:before {
+        position:relative;
+        top:-1px;
+    }
+
+
+    .cbre_container {
+        display: block !important;
+    }
+
+    .cbre_body & {
+        border-color: @border;
+    }
+
+    .breadcrumb {
+        float: left;
+    }
+
+    .subnav_links {
+        float: right;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        .propertyNavigationDivider {
+            position:relative;
+            top:-1px;
+            opacity:.6;
+        }
+        .subnav_link{
+            text-transform:none !important;
+        }
+    }
+
+    @media (@tabletLandscapeAndUp) {
+        .breadcrumb {
+            padding-left: 0;
+        }
+
+     .subnav_link:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .container {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:520px){
+    .subnav_links .subnav_link__next {
+        margin-left:25px !important;
+    }
+    .subnav {
+        a:before, a:after, li:after, li:before {
+            top:0;
+        }
+    }
+}
+
+.subnav.graySubnav {
+    // background: #EBEBEB !important;
+    margin-bottom:50px !important;
+
+    // a, span{
+    //     color: #616161 !important;
+    // }
+
+    // a:before, a:after, li:after, li:before, a:hover span, .subnav_link:hover, .breadcrumb_item a:hover  {
+    //     color: #69BE28 !important;
+    // }
+
+    // #propertyNavigationDivider {
+    //     color: #D2D2D2 !important;
+    // }
+}

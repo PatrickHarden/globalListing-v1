@@ -1,0 +1,26 @@
+{
+  "title": "Demo Search widget",
+  "language": "en-CA",
+  "api": "/api",
+  "propertyContactApiUrl": "/api/reactpropertycontactrequest",
+  "cdnUrl": "https://uat.commerciallistings.cbre.co.uk",
+  "smallPlaceholderImageUrl":
+    "https://placeholdit.imgix.net/~text?txtsize=20&txt=No%20image%20available&w=640&h=480",
+  "mediumPlaceholderImageUrl":
+    "https://placeholdit.imgix.net/~text?txtsize=20&txt=No%20image%20available&w=1280&h=960",
+  "largePlaceholderImageUrl":
+    "https://placeholdit.imgix.net/~text?txtsize=20&txt=No%20image%20available&w=1600&h=1200",
+  "urlPropertyAddressFormat": "%(Line1)s-%(Line2)s",
+  "placesAddressLookupStringFormat": "%(PostCode)s, %(Country)s",
+  "recaptchaKey": "6LfKO3wUAAAAAMw7fKx3yHpyApTykEkJBCG_m4lv",
+  "siteId": "uk-resi",
+  "tenantFeesLinkUrl": "/uk/rent/tenant-fees",
+  "searchMode": "pin",
+  "imageOrientation": "landscape",
+  "localPropertiesRadius": 1,
+  "carouselAspectRatioFilter": "1:1",
+  "backToSearchRadius": "20",
+  "bitlyToken": "c0a4e900ed8cbdf581de2ece25535e2b62138044",
+  "defaultAvatar": "/resources/avatars/cbre.png",
+  "noResultsSecondaryButtonUrl": "/"
+}

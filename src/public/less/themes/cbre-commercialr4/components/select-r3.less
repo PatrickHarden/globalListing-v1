@@ -1,0 +1,88 @@
+.select-r3-container {
+    &:focus {
+      appearance: none;
+      outline: none;
+    }
+}
+  
+.show {
+  display: block;
+}
+  
+.hide {
+  display: none;
+}
+  
+.selectControl,
+.selectMenuOuter {
+  border: 1px solid #ccc;
+}
+
+.selectMenuOuterDropUp {
+  margin-top: -165px;
+}
+
+.r4-select {
+  border: none;
+  box-shadow: none !important;
+  background: none !important;
+
+  .Select-arrow:after {
+    color: #003F2D !important;
+  }
+}
+
+.r4-select-menu {
+  margin-left: 9px !important;
+}
+  
+.SelectControl {
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+  
+.selectControl {
+  height: 45px;
+  line-height: 45px;
+  cursor: pointer;
+}
+  
+.formLabel {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+  
+.selectOption {
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+
+  &:hover {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+}
+
+.selectValueIndicator {
+  display: none;
+}
+
+@media(@tabletAndUp){
+  .selectValueIndicator{
+    display: block;
+    font-size: 12px;
+    font-family: 'futura-pt';
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .selectValueLabel{
+    font-size: 14px;
+    font-family: 'futura-pt';
+    font-weight: 700;
+    line-height: 1px;
+  }
+}
+  

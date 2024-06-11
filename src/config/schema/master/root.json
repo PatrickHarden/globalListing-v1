@@ -1,0 +1,146 @@
+{
+    "type": "object",
+    "title": "Config",
+    "format": "grid",
+    "options": {
+        "disable_collapse": true
+    },
+    "defaultProperties": ["imageOrientation"],
+    "properties": {
+        "enableStampDutyCalculator": {
+            "title": "Enable stamp duty calculator",
+            "type": "boolean",
+            "default": false,
+            "format": "checkbox",
+            "options": {
+                "grid_columns": 12
+            }
+        },
+        "stampDutyCalculatorConfigUrl": {
+            "title": "Stamp Duty Calculator Config URL",
+            "type": "string",
+            "options": {
+                "grid_columns": 12
+            }
+        },
+        "tenantFeesLinkUrl": {
+            "type": "string",
+            "title": "Tenant fees link url",
+            "propertyOrder": 0,
+            "options": {
+                "grid_columns": 4
+            }
+        },
+        "extendSearches": {
+            "title": "Extend search on no results",
+            "type": "boolean",
+            "format": "checkbox",
+            "options": {
+                "grid_columns": 12
+            }
+        },
+        "disableMetaData": {
+            "title": "Disable SPA Meta Data",
+            "type": "boolean",
+            "format": "checkbox",
+            "options": {
+                "grid_columns": 12
+            }
+        },
+        "imageOrientation": {
+            "type": "string",
+            "title": "Set image orientation",
+            "default": "fill",
+            "format": "select",
+            "enum": ["landscape", "portrait", "fill"],
+            "options": {
+                "grid_columns": 3,
+                "enum_titles": ["landscape", "portrait", "fill"]
+            }
+        },
+        "searchMode": {
+            "type": "string",
+            "title": "Select widget search mode",
+            "default": "pin",
+            "format": "select",
+            "enum": ["pin", "bounding", "polygon", "nonGeo"],
+            "options": {
+                "enum_titles": [
+                    "Google pin/radius",
+                    "Google bounding box",
+                    "User defined polygon",
+                    "Non-geographic"
+                ]
+            }
+        },
+        "localPropertiesRadius": {
+            "title":
+                "Proximity of properties to display in nearby properties carousel",
+            "type": "integer",
+            "default": 1,
+            "options": {
+                "grid_columns": 12
+            }
+        },
+        "carouselAspectRatio": {
+            "type": "string",
+            "title":
+                "Minimum aspect ratio to qualify for carousel (in standard aspect ratio i.e: 4:3)",
+            "default": "1:1",
+            "format": "string"
+        },
+        "defaultAvatar": {
+            "type": "string",
+            "title":
+                "Default image for Avatar if one doesn't exist and feature is turned on",
+            "default": "/resources/avatars/cbre.png",
+            "format": "string"
+        },
+        "errorLogging": {
+            "type": "object",
+            "title": "Error Logging",
+            "format": "grid",
+            "options": {
+                "disable_collapse": true
+            },
+            "properties": {
+                "enableErrorLogging": {
+                    "title": "Enable SPA error loggin in Sentry.io",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "options": {
+                        "grid_columns": 12
+                    },
+                    "default": false
+                },
+                "errorLoggingConfigUrl": {
+                    "type": "string",
+                    "title": "Sentry.io config url",
+                    "default": "",
+                    "format": "string"
+                }
+            }
+        },
+        "additionalEmailAddresses": {
+            "type": "array",
+            "title": "Email addresses to CC property requests to",
+            "format": "table",
+            "options": {
+                "grid_columns": 12,
+                "collapsed": true
+            },
+            "propertyOrder": 25,
+            "items": {
+                "type": "string",
+                "title": "EmailAddress"
+            }
+        },
+        "noResultsSecondaryButtonUrl": {
+            "title": "URL for secondary button on no results view",
+            "type": "string",
+            "options": {
+                "grid_columns": 12
+            }
+        }
+    }
+}
